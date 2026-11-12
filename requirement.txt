@@ -1,0 +1,12 @@
+numpy
+pandas
+scipy
+scikit-learn
+sentence-transformers
+faiss-cpu
+networkx
+matplotlib
+plotly
+streamlit
+datasets
+umap-learn
