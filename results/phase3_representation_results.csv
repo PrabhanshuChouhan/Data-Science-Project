@@ -1,0 +1,5 @@
+,knn_acc
+embed-cosine,0.8355
+embed-euclid,0.8355
+tfidf-cosine,0.665
+bow-jaccard,0.5375
