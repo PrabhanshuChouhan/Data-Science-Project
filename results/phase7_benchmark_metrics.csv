@@ -1,0 +1,5 @@
+method,flagged,TP,FP,FN,precision,recall,f1
+Uncorrected (p < 0.05),98,4,94,1,0.0408,0.8,0.0777
+Benjamini-Hochberg (q < 0.05),61,4,57,1,0.0656,0.8,0.1212
+Bonferroni (p_bonf < 0.05),0,0,0,5,0.0,0.0,0.0
+Bayes Factor (BF10 > 10),46,3,43,2,0.0652,0.6,0.1176
