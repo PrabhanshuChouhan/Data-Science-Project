@@ -1,0 +1,4 @@
+method,NMI
+DiagGMM (from scratch),0.43587114887928635
+sklearn GaussianMixture,0.4824603971815496
+K-Means,0.5265921940662237
