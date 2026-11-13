@@ -1,0 +1,4034 @@
+[
+  {
+    "window": "2012-01",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 5.0,
+    "noisy_share": 0.023696682464454975
+  },
+  {
+    "window": "2012-01",
+    "category": "FOOD & DRINK",
+    "noisy_count": 13.0,
+    "noisy_share": 0.061611374407582936
+  },
+  {
+    "window": "2012-01",
+    "category": "PARENTING",
+    "noisy_count": 27.0,
+    "noisy_share": 0.12796208530805686
+  },
+  {
+    "window": "2012-01",
+    "category": "POLITICS",
+    "noisy_count": 3.0,
+    "noisy_share": 0.014218009478672985
+  },
+  {
+    "window": "2012-01",
+    "category": "QUEER VOICES",
+    "noisy_count": 8.0,
+    "noisy_share": 0.037914691943127965
+  },
+  {
+    "window": "2012-01",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 67.0,
+    "noisy_share": 0.3175355450236967
+  },
+  {
+    "window": "2012-01",
+    "category": "TRAVEL",
+    "noisy_count": 38.0,
+    "noisy_share": 0.18009478672985782
+  },
+  {
+    "window": "2012-01",
+    "category": "WELLNESS",
+    "noisy_count": 50.0,
+    "noisy_share": 0.23696682464454977
+  },
+  {
+    "window": "2012-02",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 50.0,
+    "noisy_share": 0.026567481402763018
+  },
+  {
+    "window": "2012-02",
+    "category": "FOOD & DRINK",
+    "noisy_count": 124.0,
+    "noisy_share": 0.06588735387885228
+  },
+  {
+    "window": "2012-02",
+    "category": "PARENTING",
+    "noisy_count": 227.0,
+    "noisy_share": 0.1206163655685441
+  },
+  {
+    "window": "2012-02",
+    "category": "POLITICS",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2012-02",
+    "category": "QUEER VOICES",
+    "noisy_count": 45.0,
+    "noisy_share": 0.023910733262486716
+  },
+  {
+    "window": "2012-02",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 633.0,
+    "noisy_share": 0.3363443145589798
+  },
+  {
+    "window": "2012-02",
+    "category": "TRAVEL",
+    "noisy_count": 239.0,
+    "noisy_share": 0.12699256110520724
+  },
+  {
+    "window": "2012-02",
+    "category": "WELLNESS",
+    "noisy_count": 564.0,
+    "noisy_share": 0.29968119022316686
+  },
+  {
+    "window": "2012-03",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 36.0,
+    "noisy_share": 0.019251336898395723
+  },
+  {
+    "window": "2012-03",
+    "category": "FOOD & DRINK",
+    "noisy_count": 122.0,
+    "noisy_share": 0.06524064171122995
+  },
+  {
+    "window": "2012-03",
+    "category": "PARENTING",
+    "noisy_count": 227.0,
+    "noisy_share": 0.1213903743315508
+  },
+  {
+    "window": "2012-03",
+    "category": "POLITICS",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2012-03",
+    "category": "QUEER VOICES",
+    "noisy_count": 27.0,
+    "noisy_share": 0.014438502673796792
+  },
+  {
+    "window": "2012-03",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 587.0,
+    "noisy_share": 0.313903743315508
+  },
+  {
+    "window": "2012-03",
+    "category": "TRAVEL",
+    "noisy_count": 279.0,
+    "noisy_share": 0.14919786096256685
+  },
+  {
+    "window": "2012-03",
+    "category": "WELLNESS",
+    "noisy_count": 592.0,
+    "noisy_share": 0.3165775401069519
+  },
+  {
+    "window": "2012-04",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 49.0,
+    "noisy_share": 0.026175213675213676
+  },
+  {
+    "window": "2012-04",
+    "category": "FOOD & DRINK",
+    "noisy_count": 113.0,
+    "noisy_share": 0.060363247863247864
+  },
+  {
+    "window": "2012-04",
+    "category": "PARENTING",
+    "noisy_count": 265.0,
+    "noisy_share": 0.14155982905982906
+  },
+  {
+    "window": "2012-04",
+    "category": "POLITICS",
+    "noisy_count": 3.0,
+    "noisy_share": 0.0016025641025641025
+  },
+  {
+    "window": "2012-04",
+    "category": "QUEER VOICES",
+    "noisy_count": 41.0,
+    "noisy_share": 0.0219017094017094
+  },
+  {
+    "window": "2012-04",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 540.0,
+    "noisy_share": 0.28846153846153844
+  },
+  {
+    "window": "2012-04",
+    "category": "TRAVEL",
+    "noisy_count": 262.0,
+    "noisy_share": 0.13995726495726496
+  },
+  {
+    "window": "2012-04",
+    "category": "WELLNESS",
+    "noisy_count": 599.0,
+    "noisy_share": 0.31997863247863245
+  },
+  {
+    "window": "2012-05",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 41.0,
+    "noisy_share": 0.020748987854251014
+  },
+  {
+    "window": "2012-05",
+    "category": "FOOD & DRINK",
+    "noisy_count": 133.0,
+    "noisy_share": 0.0673076923076923
+  },
+  {
+    "window": "2012-05",
+    "category": "PARENTING",
+    "noisy_count": 299.0,
+    "noisy_share": 0.1513157894736842
+  },
+  {
+    "window": "2012-05",
+    "category": "POLITICS",
+    "noisy_count": 1.0,
+    "noisy_share": 0.0005060728744939271
+  },
+  {
+    "window": "2012-05",
+    "category": "QUEER VOICES",
+    "noisy_count": 60.0,
+    "noisy_share": 0.030364372469635626
+  },
+  {
+    "window": "2012-05",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 544.0,
+    "noisy_share": 0.27530364372469635
+  },
+  {
+    "window": "2012-05",
+    "category": "TRAVEL",
+    "noisy_count": 257.0,
+    "noisy_share": 0.13006072874493926
+  },
+  {
+    "window": "2012-05",
+    "category": "WELLNESS",
+    "noisy_count": 641.0,
+    "noisy_share": 0.3243927125506073
+  },
+  {
+    "window": "2012-06",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 47.0,
+    "noisy_share": 0.024581589958158997
+  },
+  {
+    "window": "2012-06",
+    "category": "FOOD & DRINK",
+    "noisy_count": 131.0,
+    "noisy_share": 0.06851464435146444
+  },
+  {
+    "window": "2012-06",
+    "category": "PARENTING",
+    "noisy_count": 306.0,
+    "noisy_share": 0.1600418410041841
+  },
+  {
+    "window": "2012-06",
+    "category": "POLITICS",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2012-06",
+    "category": "QUEER VOICES",
+    "noisy_count": 32.0,
+    "noisy_share": 0.016736401673640166
+  },
+  {
+    "window": "2012-06",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 421.0,
+    "noisy_share": 0.22018828451882846
+  },
+  {
+    "window": "2012-06",
+    "category": "TRAVEL",
+    "noisy_count": 261.0,
+    "noisy_share": 0.1365062761506276
+  },
+  {
+    "window": "2012-06",
+    "category": "WELLNESS",
+    "noisy_count": 714.0,
+    "noisy_share": 0.37343096234309625
+  },
+  {
+    "window": "2012-07",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 69.0,
+    "noisy_share": 0.034396809571286144
+  },
+  {
+    "window": "2012-07",
+    "category": "FOOD & DRINK",
+    "noisy_count": 141.0,
+    "noisy_share": 0.07028913260219342
+  },
+  {
+    "window": "2012-07",
+    "category": "PARENTING",
+    "noisy_count": 273.0,
+    "noisy_share": 0.13609172482552342
+  },
+  {
+    "window": "2012-07",
+    "category": "POLITICS",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2012-07",
+    "category": "QUEER VOICES",
+    "noisy_count": 50.0,
+    "noisy_share": 0.024925224327018942
+  },
+  {
+    "window": "2012-07",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 419.0,
+    "noisy_share": 0.20887337986041873
+  },
+  {
+    "window": "2012-07",
+    "category": "TRAVEL",
+    "noisy_count": 359.0,
+    "noisy_share": 0.178963110667996
+  },
+  {
+    "window": "2012-07",
+    "category": "WELLNESS",
+    "noisy_count": 695.0,
+    "noisy_share": 0.34646061814556334
+  },
+  {
+    "window": "2012-08",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 42.0,
+    "noisy_share": 0.02074074074074074
+  },
+  {
+    "window": "2012-08",
+    "category": "FOOD & DRINK",
+    "noisy_count": 171.0,
+    "noisy_share": 0.08444444444444445
+  },
+  {
+    "window": "2012-08",
+    "category": "PARENTING",
+    "noisy_count": 305.0,
+    "noisy_share": 0.1506172839506173
+  },
+  {
+    "window": "2012-08",
+    "category": "POLITICS",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2012-08",
+    "category": "QUEER VOICES",
+    "noisy_count": 21.0,
+    "noisy_share": 0.01037037037037037
+  },
+  {
+    "window": "2012-08",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 479.0,
+    "noisy_share": 0.2365432098765432
+  },
+  {
+    "window": "2012-08",
+    "category": "TRAVEL",
+    "noisy_count": 333.0,
+    "noisy_share": 0.16444444444444445
+  },
+  {
+    "window": "2012-08",
+    "category": "WELLNESS",
+    "noisy_count": 674.0,
+    "noisy_share": 0.3328395061728395
+  },
+  {
+    "window": "2012-09",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 48.0,
+    "noisy_share": 0.0249609984399376
+  },
+  {
+    "window": "2012-09",
+    "category": "FOOD & DRINK",
+    "noisy_count": 223.0,
+    "noisy_share": 0.11596463858554343
+  },
+  {
+    "window": "2012-09",
+    "category": "PARENTING",
+    "noisy_count": 284.0,
+    "noisy_share": 0.14768590743629745
+  },
+  {
+    "window": "2012-09",
+    "category": "POLITICS",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2012-09",
+    "category": "QUEER VOICES",
+    "noisy_count": 43.0,
+    "noisy_share": 0.02236089443577743
+  },
+  {
+    "window": "2012-09",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 386.0,
+    "noisy_share": 0.20072802912116486
+  },
+  {
+    "window": "2012-09",
+    "category": "TRAVEL",
+    "noisy_count": 293.0,
+    "noisy_share": 0.15236609464378575
+  },
+  {
+    "window": "2012-09",
+    "category": "WELLNESS",
+    "noisy_count": 646.0,
+    "noisy_share": 0.3359334373374935
+  },
+  {
+    "window": "2012-10",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 54.0,
+    "noisy_share": 0.02702702702702703
+  },
+  {
+    "window": "2012-10",
+    "category": "FOOD & DRINK",
+    "noisy_count": 264.0,
+    "noisy_share": 0.13213213213213212
+  },
+  {
+    "window": "2012-10",
+    "category": "PARENTING",
+    "noisy_count": 279.0,
+    "noisy_share": 0.13963963963963963
+  },
+  {
+    "window": "2012-10",
+    "category": "POLITICS",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2012-10",
+    "category": "QUEER VOICES",
+    "noisy_count": 52.0,
+    "noisy_share": 0.026026026026026026
+  },
+  {
+    "window": "2012-10",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 364.0,
+    "noisy_share": 0.18218218218218218
+  },
+  {
+    "window": "2012-10",
+    "category": "TRAVEL",
+    "noisy_count": 294.0,
+    "noisy_share": 0.14714714714714713
+  },
+  {
+    "window": "2012-10",
+    "category": "WELLNESS",
+    "noisy_count": 691.0,
+    "noisy_share": 0.3458458458458458
+  },
+  {
+    "window": "2012-11",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 64.0,
+    "noisy_share": 0.034408602150537634
+  },
+  {
+    "window": "2012-11",
+    "category": "FOOD & DRINK",
+    "noisy_count": 203.0,
+    "noisy_share": 0.10913978494623656
+  },
+  {
+    "window": "2012-11",
+    "category": "PARENTING",
+    "noisy_count": 306.0,
+    "noisy_share": 0.16451612903225807
+  },
+  {
+    "window": "2012-11",
+    "category": "POLITICS",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2012-11",
+    "category": "QUEER VOICES",
+    "noisy_count": 35.0,
+    "noisy_share": 0.01881720430107527
+  },
+  {
+    "window": "2012-11",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 323.0,
+    "noisy_share": 0.1736559139784946
+  },
+  {
+    "window": "2012-11",
+    "category": "TRAVEL",
+    "noisy_count": 311.0,
+    "noisy_share": 0.16720430107526882
+  },
+  {
+    "window": "2012-11",
+    "category": "WELLNESS",
+    "noisy_count": 618.0,
+    "noisy_share": 0.33225806451612905
+  },
+  {
+    "window": "2012-12",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 52.0,
+    "noisy_share": 0.027586206896551724
+  },
+  {
+    "window": "2012-12",
+    "category": "FOOD & DRINK",
+    "noisy_count": 184.0,
+    "noisy_share": 0.09761273209549072
+  },
+  {
+    "window": "2012-12",
+    "category": "PARENTING",
+    "noisy_count": 329.0,
+    "noisy_share": 0.17453580901856763
+  },
+  {
+    "window": "2012-12",
+    "category": "POLITICS",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2012-12",
+    "category": "QUEER VOICES",
+    "noisy_count": 57.0,
+    "noisy_share": 0.030238726790450927
+  },
+  {
+    "window": "2012-12",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 316.0,
+    "noisy_share": 0.16763925729442972
+  },
+  {
+    "window": "2012-12",
+    "category": "TRAVEL",
+    "noisy_count": 296.0,
+    "noisy_share": 0.1570291777188329
+  },
+  {
+    "window": "2012-12",
+    "category": "WELLNESS",
+    "noisy_count": 651.0,
+    "noisy_share": 0.34535809018567637
+  },
+  {
+    "window": "2013-01",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 51.0,
+    "noisy_share": 0.0245074483421432
+  },
+  {
+    "window": "2013-01",
+    "category": "FOOD & DRINK",
+    "noisy_count": 276.0,
+    "noisy_share": 0.13262854396924556
+  },
+  {
+    "window": "2013-01",
+    "category": "PARENTING",
+    "noisy_count": 445.0,
+    "noisy_share": 0.2138395002402691
+  },
+  {
+    "window": "2013-01",
+    "category": "POLITICS",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2013-01",
+    "category": "QUEER VOICES",
+    "noisy_count": 51.0,
+    "noisy_share": 0.0245074483421432
+  },
+  {
+    "window": "2013-01",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 261.0,
+    "noisy_share": 0.12542047092743874
+  },
+  {
+    "window": "2013-01",
+    "category": "TRAVEL",
+    "noisy_count": 287.0,
+    "noisy_share": 0.13791446419990389
+  },
+  {
+    "window": "2013-01",
+    "category": "WELLNESS",
+    "noisy_count": 710.0,
+    "noisy_share": 0.34118212397885633
+  },
+  {
+    "window": "2013-02",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 60.0,
+    "noisy_share": 0.03110419906687403
+  },
+  {
+    "window": "2013-02",
+    "category": "FOOD & DRINK",
+    "noisy_count": 307.0,
+    "noisy_share": 0.15914981855883878
+  },
+  {
+    "window": "2013-02",
+    "category": "PARENTING",
+    "noisy_count": 351.0,
+    "noisy_share": 0.18195956454121306
+  },
+  {
+    "window": "2013-02",
+    "category": "POLITICS",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2013-02",
+    "category": "QUEER VOICES",
+    "noisy_count": 56.0,
+    "noisy_share": 0.029030585795749093
+  },
+  {
+    "window": "2013-02",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 312.0,
+    "noisy_share": 0.16174183514774496
+  },
+  {
+    "window": "2013-02",
+    "category": "TRAVEL",
+    "noisy_count": 238.0,
+    "noisy_share": 0.12337998963193364
+  },
+  {
+    "window": "2013-02",
+    "category": "WELLNESS",
+    "noisy_count": 605.0,
+    "noisy_share": 0.31363400725764645
+  },
+  {
+    "window": "2013-03",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 94.0,
+    "noisy_share": 0.04491161012900143
+  },
+  {
+    "window": "2013-03",
+    "category": "FOOD & DRINK",
+    "noisy_count": 322.0,
+    "noisy_share": 0.15384615384615385
+  },
+  {
+    "window": "2013-03",
+    "category": "PARENTING",
+    "noisy_count": 407.0,
+    "noisy_share": 0.19445771619684663
+  },
+  {
+    "window": "2013-03",
+    "category": "POLITICS",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2013-03",
+    "category": "QUEER VOICES",
+    "noisy_count": 54.0,
+    "noisy_share": 0.025800286669851888
+  },
+  {
+    "window": "2013-03",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 257.0,
+    "noisy_share": 0.12279025322503584
+  },
+  {
+    "window": "2013-03",
+    "category": "TRAVEL",
+    "noisy_count": 281.0,
+    "noisy_share": 0.13425704730052557
+  },
+  {
+    "window": "2013-03",
+    "category": "WELLNESS",
+    "noisy_count": 678.0,
+    "noisy_share": 0.32393693263258483
+  },
+  {
+    "window": "2013-04",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 61.0,
+    "noisy_share": 0.029975429975429974
+  },
+  {
+    "window": "2013-04",
+    "category": "FOOD & DRINK",
+    "noisy_count": 278.0,
+    "noisy_share": 0.1366093366093366
+  },
+  {
+    "window": "2013-04",
+    "category": "PARENTING",
+    "noisy_count": 389.0,
+    "noisy_share": 0.19115479115479114
+  },
+  {
+    "window": "2013-04",
+    "category": "POLITICS",
+    "noisy_count": 2.0,
+    "noisy_share": 0.0009828009828009828
+  },
+  {
+    "window": "2013-04",
+    "category": "QUEER VOICES",
+    "noisy_count": 36.0,
+    "noisy_share": 0.01769041769041769
+  },
+  {
+    "window": "2013-04",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 313.0,
+    "noisy_share": 0.1538083538083538
+  },
+  {
+    "window": "2013-04",
+    "category": "TRAVEL",
+    "noisy_count": 254.0,
+    "noisy_share": 0.12481572481572481
+  },
+  {
+    "window": "2013-04",
+    "category": "WELLNESS",
+    "noisy_count": 702.0,
+    "noisy_share": 0.34496314496314495
+  },
+  {
+    "window": "2013-05",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 95.0,
+    "noisy_share": 0.04894384337970119
+  },
+  {
+    "window": "2013-05",
+    "category": "FOOD & DRINK",
+    "noisy_count": 285.0,
+    "noisy_share": 0.14683153013910355
+  },
+  {
+    "window": "2013-05",
+    "category": "PARENTING",
+    "noisy_count": 358.0,
+    "noisy_share": 0.18444100978876868
+  },
+  {
+    "window": "2013-05",
+    "category": "POLITICS",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2013-05",
+    "category": "QUEER VOICES",
+    "noisy_count": 46.0,
+    "noisy_share": 0.02369912416280268
+  },
+  {
+    "window": "2013-05",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 272.0,
+    "noisy_share": 0.14013395157135497
+  },
+  {
+    "window": "2013-05",
+    "category": "TRAVEL",
+    "noisy_count": 252.0,
+    "noisy_share": 0.12982998454404945
+  },
+  {
+    "window": "2013-05",
+    "category": "WELLNESS",
+    "noisy_count": 633.0,
+    "noisy_share": 0.3261205564142195
+  },
+  {
+    "window": "2013-06",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 100.0,
+    "noisy_share": 0.0546448087431694
+  },
+  {
+    "window": "2013-06",
+    "category": "FOOD & DRINK",
+    "noisy_count": 246.0,
+    "noisy_share": 0.13442622950819672
+  },
+  {
+    "window": "2013-06",
+    "category": "PARENTING",
+    "noisy_count": 274.0,
+    "noisy_share": 0.14972677595628414
+  },
+  {
+    "window": "2013-06",
+    "category": "POLITICS",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2013-06",
+    "category": "QUEER VOICES",
+    "noisy_count": 75.0,
+    "noisy_share": 0.040983606557377046
+  },
+  {
+    "window": "2013-06",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 259.0,
+    "noisy_share": 0.14153005464480875
+  },
+  {
+    "window": "2013-06",
+    "category": "TRAVEL",
+    "noisy_count": 276.0,
+    "noisy_share": 0.15081967213114755
+  },
+  {
+    "window": "2013-06",
+    "category": "WELLNESS",
+    "noisy_count": 600.0,
+    "noisy_share": 0.32786885245901637
+  },
+  {
+    "window": "2013-07",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 96.0,
+    "noisy_share": 0.04915514592933948
+  },
+  {
+    "window": "2013-07",
+    "category": "FOOD & DRINK",
+    "noisy_count": 296.0,
+    "noisy_share": 0.15156169994879673
+  },
+  {
+    "window": "2013-07",
+    "category": "PARENTING",
+    "noisy_count": 325.0,
+    "noisy_share": 0.16641065028161803
+  },
+  {
+    "window": "2013-07",
+    "category": "POLITICS",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2013-07",
+    "category": "QUEER VOICES",
+    "noisy_count": 45.0,
+    "noisy_share": 0.02304147465437788
+  },
+  {
+    "window": "2013-07",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 267.0,
+    "noisy_share": 0.13671274961597543
+  },
+  {
+    "window": "2013-07",
+    "category": "TRAVEL",
+    "noisy_count": 283.0,
+    "noisy_share": 0.144905273937532
+  },
+  {
+    "window": "2013-07",
+    "category": "WELLNESS",
+    "noisy_count": 641.0,
+    "noisy_share": 0.32821300563236044
+  },
+  {
+    "window": "2013-08",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 65.0,
+    "noisy_share": 0.03350515463917526
+  },
+  {
+    "window": "2013-08",
+    "category": "FOOD & DRINK",
+    "noisy_count": 318.0,
+    "noisy_share": 0.16391752577319588
+  },
+  {
+    "window": "2013-08",
+    "category": "PARENTING",
+    "noisy_count": 303.0,
+    "noisy_share": 0.15618556701030928
+  },
+  {
+    "window": "2013-08",
+    "category": "POLITICS",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2013-08",
+    "category": "QUEER VOICES",
+    "noisy_count": 66.0,
+    "noisy_share": 0.03402061855670103
+  },
+  {
+    "window": "2013-08",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 265.0,
+    "noisy_share": 0.13659793814432988
+  },
+  {
+    "window": "2013-08",
+    "category": "TRAVEL",
+    "noisy_count": 328.0,
+    "noisy_share": 0.16907216494845362
+  },
+  {
+    "window": "2013-08",
+    "category": "WELLNESS",
+    "noisy_count": 595.0,
+    "noisy_share": 0.30670103092783507
+  },
+  {
+    "window": "2013-09",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 78.0,
+    "noisy_share": 0.03890274314214464
+  },
+  {
+    "window": "2013-09",
+    "category": "FOOD & DRINK",
+    "noisy_count": 258.0,
+    "noisy_share": 0.1286783042394015
+  },
+  {
+    "window": "2013-09",
+    "category": "PARENTING",
+    "noisy_count": 323.0,
+    "noisy_share": 0.16109725685785536
+  },
+  {
+    "window": "2013-09",
+    "category": "POLITICS",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2013-09",
+    "category": "QUEER VOICES",
+    "noisy_count": 51.0,
+    "noisy_share": 0.02543640897755611
+  },
+  {
+    "window": "2013-09",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 363.0,
+    "noisy_share": 0.18104738154613467
+  },
+  {
+    "window": "2013-09",
+    "category": "TRAVEL",
+    "noisy_count": 258.0,
+    "noisy_share": 0.1286783042394015
+  },
+  {
+    "window": "2013-09",
+    "category": "WELLNESS",
+    "noisy_count": 674.0,
+    "noisy_share": 0.33615960099750625
+  },
+  {
+    "window": "2013-10",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 60.0,
+    "noisy_share": 0.027137042062415198
+  },
+  {
+    "window": "2013-10",
+    "category": "FOOD & DRINK",
+    "noisy_count": 320.0,
+    "noisy_share": 0.14473089099954772
+  },
+  {
+    "window": "2013-10",
+    "category": "PARENTING",
+    "noisy_count": 386.0,
+    "noisy_share": 0.17458163726820444
+  },
+  {
+    "window": "2013-10",
+    "category": "POLITICS",
+    "noisy_count": 2.0,
+    "noisy_share": 0.0009045680687471732
+  },
+  {
+    "window": "2013-10",
+    "category": "QUEER VOICES",
+    "noisy_count": 65.0,
+    "noisy_share": 0.02939846223428313
+  },
+  {
+    "window": "2013-10",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 310.0,
+    "noisy_share": 0.14020805065581185
+  },
+  {
+    "window": "2013-10",
+    "category": "TRAVEL",
+    "noisy_count": 341.0,
+    "noisy_share": 0.15422885572139303
+  },
+  {
+    "window": "2013-10",
+    "category": "WELLNESS",
+    "noisy_count": 727.0,
+    "noisy_share": 0.32881049298959747
+  },
+  {
+    "window": "2013-11",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 121.0,
+    "noisy_share": 0.0602589641434263
+  },
+  {
+    "window": "2013-11",
+    "category": "FOOD & DRINK",
+    "noisy_count": 273.0,
+    "noisy_share": 0.13595617529880477
+  },
+  {
+    "window": "2013-11",
+    "category": "PARENTING",
+    "noisy_count": 281.0,
+    "noisy_share": 0.1399402390438247
+  },
+  {
+    "window": "2013-11",
+    "category": "POLITICS",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2013-11",
+    "category": "QUEER VOICES",
+    "noisy_count": 63.0,
+    "noisy_share": 0.03137450199203187
+  },
+  {
+    "window": "2013-11",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 293.0,
+    "noisy_share": 0.1459163346613546
+  },
+  {
+    "window": "2013-11",
+    "category": "TRAVEL",
+    "noisy_count": 271.0,
+    "noisy_share": 0.1349601593625498
+  },
+  {
+    "window": "2013-11",
+    "category": "WELLNESS",
+    "noisy_count": 706.0,
+    "noisy_share": 0.351593625498008
+  },
+  {
+    "window": "2013-12",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 136.0,
+    "noisy_share": 0.06334420121099209
+  },
+  {
+    "window": "2013-12",
+    "category": "FOOD & DRINK",
+    "noisy_count": 241.0,
+    "noisy_share": 0.11224965067536097
+  },
+  {
+    "window": "2013-12",
+    "category": "PARENTING",
+    "noisy_count": 339.0,
+    "noisy_share": 0.15789473684210525
+  },
+  {
+    "window": "2013-12",
+    "category": "POLITICS",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2013-12",
+    "category": "QUEER VOICES",
+    "noisy_count": 76.0,
+    "noisy_share": 0.035398230088495575
+  },
+  {
+    "window": "2013-12",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 292.0,
+    "noisy_share": 0.136003726129483
+  },
+  {
+    "window": "2013-12",
+    "category": "TRAVEL",
+    "noisy_count": 319.0,
+    "noisy_share": 0.14857941313460643
+  },
+  {
+    "window": "2013-12",
+    "category": "WELLNESS",
+    "noisy_count": 744.0,
+    "noisy_share": 0.3465300419189567
+  },
+  {
+    "window": "2014-01",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 59.0,
+    "noisy_share": 0.027264325323475048
+  },
+  {
+    "window": "2014-01",
+    "category": "FOOD & DRINK",
+    "noisy_count": 273.0,
+    "noisy_share": 0.12615526802218113
+  },
+  {
+    "window": "2014-01",
+    "category": "PARENTING",
+    "noisy_count": 363.0,
+    "noisy_share": 0.16774491682070242
+  },
+  {
+    "window": "2014-01",
+    "category": "POLITICS",
+    "noisy_count": 1.0,
+    "noisy_share": 0.0004621072088724584
+  },
+  {
+    "window": "2014-01",
+    "category": "QUEER VOICES",
+    "noisy_count": 56.0,
+    "noisy_share": 0.025878003696857672
+  },
+  {
+    "window": "2014-01",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 281.0,
+    "noisy_share": 0.12985212569316082
+  },
+  {
+    "window": "2014-01",
+    "category": "TRAVEL",
+    "noisy_count": 358.0,
+    "noisy_share": 0.16543438077634012
+  },
+  {
+    "window": "2014-01",
+    "category": "WELLNESS",
+    "noisy_count": 773.0,
+    "noisy_share": 0.3572088724584104
+  },
+  {
+    "window": "2014-02",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 64.0,
+    "noisy_share": 0.032355915065722954
+  },
+  {
+    "window": "2014-02",
+    "category": "FOOD & DRINK",
+    "noisy_count": 263.0,
+    "noisy_share": 0.13296258847320525
+  },
+  {
+    "window": "2014-02",
+    "category": "PARENTING",
+    "noisy_count": 364.0,
+    "noisy_share": 0.18402426693629928
+  },
+  {
+    "window": "2014-02",
+    "category": "POLITICS",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2014-02",
+    "category": "QUEER VOICES",
+    "noisy_count": 42.0,
+    "noisy_share": 0.021233569261880688
+  },
+  {
+    "window": "2014-02",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 267.0,
+    "noisy_share": 0.13498483316481294
+  },
+  {
+    "window": "2014-02",
+    "category": "TRAVEL",
+    "noisy_count": 275.0,
+    "noisy_share": 0.1390293225480283
+  },
+  {
+    "window": "2014-02",
+    "category": "WELLNESS",
+    "noisy_count": 703.0,
+    "noisy_share": 0.35540950455005055
+  },
+  {
+    "window": "2014-03",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 71.0,
+    "noisy_share": 0.033713200379867046
+  },
+  {
+    "window": "2014-03",
+    "category": "FOOD & DRINK",
+    "noisy_count": 278.0,
+    "noisy_share": 0.13200379867046533
+  },
+  {
+    "window": "2014-03",
+    "category": "PARENTING",
+    "noisy_count": 377.0,
+    "noisy_share": 0.17901234567901234
+  },
+  {
+    "window": "2014-03",
+    "category": "POLITICS",
+    "noisy_count": 1.0,
+    "noisy_share": 0.0004748338081671415
+  },
+  {
+    "window": "2014-03",
+    "category": "QUEER VOICES",
+    "noisy_count": 52.0,
+    "noisy_share": 0.024691358024691357
+  },
+  {
+    "window": "2014-03",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 272.0,
+    "noisy_share": 0.1291547958214625
+  },
+  {
+    "window": "2014-03",
+    "category": "TRAVEL",
+    "noisy_count": 307.0,
+    "noisy_share": 0.14577397910731243
+  },
+  {
+    "window": "2014-03",
+    "category": "WELLNESS",
+    "noisy_count": 748.0,
+    "noisy_share": 0.35517568850902187
+  },
+  {
+    "window": "2014-04",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 81.0,
+    "noisy_share": 0.05139593908629442
+  },
+  {
+    "window": "2014-04",
+    "category": "FOOD & DRINK",
+    "noisy_count": 173.0,
+    "noisy_share": 0.10977157360406091
+  },
+  {
+    "window": "2014-04",
+    "category": "PARENTING",
+    "noisy_count": 236.0,
+    "noisy_share": 0.14974619289340102
+  },
+  {
+    "window": "2014-04",
+    "category": "POLITICS",
+    "noisy_count": 129.0,
+    "noisy_share": 0.08185279187817258
+  },
+  {
+    "window": "2014-04",
+    "category": "QUEER VOICES",
+    "noisy_count": 57.0,
+    "noisy_share": 0.03616751269035533
+  },
+  {
+    "window": "2014-04",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 153.0,
+    "noisy_share": 0.09708121827411167
+  },
+  {
+    "window": "2014-04",
+    "category": "TRAVEL",
+    "noisy_count": 224.0,
+    "noisy_share": 0.14213197969543148
+  },
+  {
+    "window": "2014-04",
+    "category": "WELLNESS",
+    "noisy_count": 523.0,
+    "noisy_share": 0.33185279187817257
+  },
+  {
+    "window": "2014-05",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 123.0,
+    "noisy_share": 0.13268608414239483
+  },
+  {
+    "window": "2014-05",
+    "category": "FOOD & DRINK",
+    "noisy_count": 3.0,
+    "noisy_share": 0.003236245954692557
+  },
+  {
+    "window": "2014-05",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2014-05",
+    "category": "POLITICS",
+    "noisy_count": 342.0,
+    "noisy_share": 0.36893203883495146
+  },
+  {
+    "window": "2014-05",
+    "category": "QUEER VOICES",
+    "noisy_count": 98.0,
+    "noisy_share": 0.10571736785329018
+  },
+  {
+    "window": "2014-05",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2014-05",
+    "category": "TRAVEL",
+    "noisy_count": 120.0,
+    "noisy_share": 0.12944983818770225
+  },
+  {
+    "window": "2014-05",
+    "category": "WELLNESS",
+    "noisy_count": 241.0,
+    "noisy_share": 0.2599784250269687
+  },
+  {
+    "window": "2014-06",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 230.0,
+    "noisy_share": 0.21759697256385999
+  },
+  {
+    "window": "2014-06",
+    "category": "FOOD & DRINK",
+    "noisy_count": 1.0,
+    "noisy_share": 0.000946073793755913
+  },
+  {
+    "window": "2014-06",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2014-06",
+    "category": "POLITICS",
+    "noisy_count": 380.0,
+    "noisy_share": 0.3595080416272469
+  },
+  {
+    "window": "2014-06",
+    "category": "QUEER VOICES",
+    "noisy_count": 112.0,
+    "noisy_share": 0.10596026490066225
+  },
+  {
+    "window": "2014-06",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2014-06",
+    "category": "TRAVEL",
+    "noisy_count": 103.0,
+    "noisy_share": 0.09744560075685904
+  },
+  {
+    "window": "2014-06",
+    "category": "WELLNESS",
+    "noisy_count": 231.0,
+    "noisy_share": 0.2185430463576159
+  },
+  {
+    "window": "2014-07",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 253.0,
+    "noisy_share": 0.24539282250242483
+  },
+  {
+    "window": "2014-07",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2014-07",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2014-07",
+    "category": "POLITICS",
+    "noisy_count": 410.0,
+    "noisy_share": 0.3976721629485936
+  },
+  {
+    "window": "2014-07",
+    "category": "QUEER VOICES",
+    "noisy_count": 84.0,
+    "noisy_share": 0.08147429679922405
+  },
+  {
+    "window": "2014-07",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 1.0,
+    "noisy_share": 0.0009699321047526673
+  },
+  {
+    "window": "2014-07",
+    "category": "TRAVEL",
+    "noisy_count": 86.0,
+    "noisy_share": 0.08341416100872939
+  },
+  {
+    "window": "2014-07",
+    "category": "WELLNESS",
+    "noisy_count": 197.0,
+    "noisy_share": 0.19107662463627545
+  },
+  {
+    "window": "2014-08",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 238.0,
+    "noisy_share": 0.2317429406037001
+  },
+  {
+    "window": "2014-08",
+    "category": "FOOD & DRINK",
+    "noisy_count": 1.0,
+    "noisy_share": 0.0009737098344693282
+  },
+  {
+    "window": "2014-08",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2014-08",
+    "category": "POLITICS",
+    "noisy_count": 397.0,
+    "noisy_share": 0.38656280428432327
+  },
+  {
+    "window": "2014-08",
+    "category": "QUEER VOICES",
+    "noisy_count": 88.0,
+    "noisy_share": 0.08568646543330087
+  },
+  {
+    "window": "2014-08",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2014-08",
+    "category": "TRAVEL",
+    "noisy_count": 91.0,
+    "noisy_share": 0.08860759493670886
+  },
+  {
+    "window": "2014-08",
+    "category": "WELLNESS",
+    "noisy_count": 212.0,
+    "noisy_share": 0.20642648490749757
+  },
+  {
+    "window": "2014-09",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 236.0,
+    "noisy_share": 0.24532224532224534
+  },
+  {
+    "window": "2014-09",
+    "category": "FOOD & DRINK",
+    "noisy_count": 1.0,
+    "noisy_share": 0.0010395010395010396
+  },
+  {
+    "window": "2014-09",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2014-09",
+    "category": "POLITICS",
+    "noisy_count": 357.0,
+    "noisy_share": 0.3711018711018711
+  },
+  {
+    "window": "2014-09",
+    "category": "QUEER VOICES",
+    "noisy_count": 85.0,
+    "noisy_share": 0.08835758835758836
+  },
+  {
+    "window": "2014-09",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2014-09",
+    "category": "TRAVEL",
+    "noisy_count": 60.0,
+    "noisy_share": 0.062370062370062374
+  },
+  {
+    "window": "2014-09",
+    "category": "WELLNESS",
+    "noisy_count": 223.0,
+    "noisy_share": 0.23180873180873182
+  },
+  {
+    "window": "2014-10",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 246.0,
+    "noisy_share": 0.231203007518797
+  },
+  {
+    "window": "2014-10",
+    "category": "FOOD & DRINK",
+    "noisy_count": 2.0,
+    "noisy_share": 0.0018796992481203006
+  },
+  {
+    "window": "2014-10",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2014-10",
+    "category": "POLITICS",
+    "noisy_count": 377.0,
+    "noisy_share": 0.3543233082706767
+  },
+  {
+    "window": "2014-10",
+    "category": "QUEER VOICES",
+    "noisy_count": 99.0,
+    "noisy_share": 0.09304511278195489
+  },
+  {
+    "window": "2014-10",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2014-10",
+    "category": "TRAVEL",
+    "noisy_count": 63.0,
+    "noisy_share": 0.05921052631578947
+  },
+  {
+    "window": "2014-10",
+    "category": "WELLNESS",
+    "noisy_count": 277.0,
+    "noisy_share": 0.26033834586466165
+  },
+  {
+    "window": "2014-11",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 239.0,
+    "noisy_share": 0.2164855072463768
+  },
+  {
+    "window": "2014-11",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2014-11",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2014-11",
+    "category": "POLITICS",
+    "noisy_count": 454.0,
+    "noisy_share": 0.411231884057971
+  },
+  {
+    "window": "2014-11",
+    "category": "QUEER VOICES",
+    "noisy_count": 102.0,
+    "noisy_share": 0.09239130434782608
+  },
+  {
+    "window": "2014-11",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 1.0,
+    "noisy_share": 0.0009057971014492754
+  },
+  {
+    "window": "2014-11",
+    "category": "TRAVEL",
+    "noisy_count": 79.0,
+    "noisy_share": 0.07155797101449275
+  },
+  {
+    "window": "2014-11",
+    "category": "WELLNESS",
+    "noisy_count": 229.0,
+    "noisy_share": 0.20742753623188406
+  },
+  {
+    "window": "2014-12",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 264.0,
+    "noisy_share": 0.25806451612903225
+  },
+  {
+    "window": "2014-12",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2014-12",
+    "category": "PARENTING",
+    "noisy_count": 1.0,
+    "noisy_share": 0.0009775171065493646
+  },
+  {
+    "window": "2014-12",
+    "category": "POLITICS",
+    "noisy_count": 309.0,
+    "noisy_share": 0.3020527859237537
+  },
+  {
+    "window": "2014-12",
+    "category": "QUEER VOICES",
+    "noisy_count": 95.0,
+    "noisy_share": 0.09286412512218964
+  },
+  {
+    "window": "2014-12",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2014-12",
+    "category": "TRAVEL",
+    "noisy_count": 84.0,
+    "noisy_share": 0.08211143695014662
+  },
+  {
+    "window": "2014-12",
+    "category": "WELLNESS",
+    "noisy_count": 270.0,
+    "noisy_share": 0.26392961876832843
+  },
+  {
+    "window": "2015-01",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 282.0,
+    "noisy_share": 0.2722007722007722
+  },
+  {
+    "window": "2015-01",
+    "category": "FOOD & DRINK",
+    "noisy_count": 1.0,
+    "noisy_share": 0.0009652509652509653
+  },
+  {
+    "window": "2015-01",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-01",
+    "category": "POLITICS",
+    "noisy_count": 362.0,
+    "noisy_share": 0.34942084942084944
+  },
+  {
+    "window": "2015-01",
+    "category": "QUEER VOICES",
+    "noisy_count": 94.0,
+    "noisy_share": 0.09073359073359073
+  },
+  {
+    "window": "2015-01",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-01",
+    "category": "TRAVEL",
+    "noisy_count": 56.0,
+    "noisy_share": 0.05405405405405406
+  },
+  {
+    "window": "2015-01",
+    "category": "WELLNESS",
+    "noisy_count": 241.0,
+    "noisy_share": 0.23262548262548263
+  },
+  {
+    "window": "2015-02",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 248.0,
+    "noisy_share": 0.25914315569487983
+  },
+  {
+    "window": "2015-02",
+    "category": "FOOD & DRINK",
+    "noisy_count": 3.0,
+    "noisy_share": 0.003134796238244514
+  },
+  {
+    "window": "2015-02",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-02",
+    "category": "POLITICS",
+    "noisy_count": 311.0,
+    "noisy_share": 0.32497387669801464
+  },
+  {
+    "window": "2015-02",
+    "category": "QUEER VOICES",
+    "noisy_count": 99.0,
+    "noisy_share": 0.10344827586206896
+  },
+  {
+    "window": "2015-02",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-02",
+    "category": "TRAVEL",
+    "noisy_count": 70.0,
+    "noisy_share": 0.07314524555903866
+  },
+  {
+    "window": "2015-02",
+    "category": "WELLNESS",
+    "noisy_count": 226.0,
+    "noisy_share": 0.2361546499477534
+  },
+  {
+    "window": "2015-03",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 237.0,
+    "noisy_share": 0.23054474708171208
+  },
+  {
+    "window": "2015-03",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-03",
+    "category": "PARENTING",
+    "noisy_count": 1.0,
+    "noisy_share": 0.0009727626459143969
+  },
+  {
+    "window": "2015-03",
+    "category": "POLITICS",
+    "noisy_count": 380.0,
+    "noisy_share": 0.36964980544747084
+  },
+  {
+    "window": "2015-03",
+    "category": "QUEER VOICES",
+    "noisy_count": 90.0,
+    "noisy_share": 0.08754863813229571
+  },
+  {
+    "window": "2015-03",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-03",
+    "category": "TRAVEL",
+    "noisy_count": 103.0,
+    "noisy_share": 0.10019455252918288
+  },
+  {
+    "window": "2015-03",
+    "category": "WELLNESS",
+    "noisy_count": 217.0,
+    "noisy_share": 0.21108949416342412
+  },
+  {
+    "window": "2015-04",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 236.0,
+    "noisy_share": 0.23910840932117527
+  },
+  {
+    "window": "2015-04",
+    "category": "FOOD & DRINK",
+    "noisy_count": 1.0,
+    "noisy_share": 0.0010131712259371835
+  },
+  {
+    "window": "2015-04",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-04",
+    "category": "POLITICS",
+    "noisy_count": 371.0,
+    "noisy_share": 0.375886524822695
+  },
+  {
+    "window": "2015-04",
+    "category": "QUEER VOICES",
+    "noisy_count": 104.0,
+    "noisy_share": 0.10536980749746708
+  },
+  {
+    "window": "2015-04",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-04",
+    "category": "TRAVEL",
+    "noisy_count": 88.0,
+    "noisy_share": 0.08915906788247213
+  },
+  {
+    "window": "2015-04",
+    "category": "WELLNESS",
+    "noisy_count": 187.0,
+    "noisy_share": 0.1894630192502533
+  },
+  {
+    "window": "2015-05",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 241.0,
+    "noisy_share": 0.23604309500489715
+  },
+  {
+    "window": "2015-05",
+    "category": "FOOD & DRINK",
+    "noisy_count": 1.0,
+    "noisy_share": 0.0009794319294809011
+  },
+  {
+    "window": "2015-05",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-05",
+    "category": "POLITICS",
+    "noisy_count": 372.0,
+    "noisy_share": 0.3643486777668952
+  },
+  {
+    "window": "2015-05",
+    "category": "QUEER VOICES",
+    "noisy_count": 88.0,
+    "noisy_share": 0.08619000979431929
+  },
+  {
+    "window": "2015-05",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-05",
+    "category": "TRAVEL",
+    "noisy_count": 96.0,
+    "noisy_share": 0.0940254652301665
+  },
+  {
+    "window": "2015-05",
+    "category": "WELLNESS",
+    "noisy_count": 223.0,
+    "noisy_share": 0.21841332027424093
+  },
+  {
+    "window": "2015-06",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 255.0,
+    "noisy_share": 0.24056603773584906
+  },
+  {
+    "window": "2015-06",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-06",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-06",
+    "category": "POLITICS",
+    "noisy_count": 395.0,
+    "noisy_share": 0.37264150943396224
+  },
+  {
+    "window": "2015-06",
+    "category": "QUEER VOICES",
+    "noisy_count": 124.0,
+    "noisy_share": 0.1169811320754717
+  },
+  {
+    "window": "2015-06",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-06",
+    "category": "TRAVEL",
+    "noisy_count": 86.0,
+    "noisy_share": 0.08113207547169811
+  },
+  {
+    "window": "2015-06",
+    "category": "WELLNESS",
+    "noisy_count": 200.0,
+    "noisy_share": 0.18867924528301888
+  },
+  {
+    "window": "2015-07",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 526.0,
+    "noisy_share": 0.4151539068666141
+  },
+  {
+    "window": "2015-07",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-07",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-07",
+    "category": "POLITICS",
+    "noisy_count": 452.0,
+    "noisy_share": 0.35674822415153906
+  },
+  {
+    "window": "2015-07",
+    "category": "QUEER VOICES",
+    "noisy_count": 111.0,
+    "noisy_share": 0.08760852407261246
+  },
+  {
+    "window": "2015-07",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-07",
+    "category": "TRAVEL",
+    "noisy_count": 43.0,
+    "noisy_share": 0.03393843725335438
+  },
+  {
+    "window": "2015-07",
+    "category": "WELLNESS",
+    "noisy_count": 135.0,
+    "noisy_share": 0.10655090765588003
+  },
+  {
+    "window": "2015-08",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 418.0,
+    "noisy_share": 0.3457402812241522
+  },
+  {
+    "window": "2015-08",
+    "category": "FOOD & DRINK",
+    "noisy_count": 4.0,
+    "noisy_share": 0.0033085194375516956
+  },
+  {
+    "window": "2015-08",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-08",
+    "category": "POLITICS",
+    "noisy_count": 571.0,
+    "noisy_share": 0.47229114971050457
+  },
+  {
+    "window": "2015-08",
+    "category": "QUEER VOICES",
+    "noisy_count": 94.0,
+    "noisy_share": 0.07775020678246485
+  },
+  {
+    "window": "2015-08",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 2.0,
+    "noisy_share": 0.0016542597187758478
+  },
+  {
+    "window": "2015-08",
+    "category": "TRAVEL",
+    "noisy_count": 26.0,
+    "noisy_share": 0.021505376344086023
+  },
+  {
+    "window": "2015-08",
+    "category": "WELLNESS",
+    "noisy_count": 94.0,
+    "noisy_share": 0.07775020678246485
+  },
+  {
+    "window": "2015-09",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 396.0,
+    "noisy_share": 0.3130434782608696
+  },
+  {
+    "window": "2015-09",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-09",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-09",
+    "category": "POLITICS",
+    "noisy_count": 647.0,
+    "noisy_share": 0.5114624505928854
+  },
+  {
+    "window": "2015-09",
+    "category": "QUEER VOICES",
+    "noisy_count": 98.0,
+    "noisy_share": 0.0774703557312253
+  },
+  {
+    "window": "2015-09",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-09",
+    "category": "TRAVEL",
+    "noisy_count": 10.0,
+    "noisy_share": 0.007905138339920948
+  },
+  {
+    "window": "2015-09",
+    "category": "WELLNESS",
+    "noisy_count": 114.0,
+    "noisy_share": 0.09011857707509881
+  },
+  {
+    "window": "2015-10",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 378.0,
+    "noisy_share": 0.274310595065312
+  },
+  {
+    "window": "2015-10",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-10",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-10",
+    "category": "POLITICS",
+    "noisy_count": 779.0,
+    "noisy_share": 0.5653120464441219
+  },
+  {
+    "window": "2015-10",
+    "category": "QUEER VOICES",
+    "noisy_count": 80.0,
+    "noisy_share": 0.05805515239477504
+  },
+  {
+    "window": "2015-10",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-10",
+    "category": "TRAVEL",
+    "noisy_count": 18.0,
+    "noisy_share": 0.013062409288824383
+  },
+  {
+    "window": "2015-10",
+    "category": "WELLNESS",
+    "noisy_count": 123.0,
+    "noisy_share": 0.08925979680696662
+  },
+  {
+    "window": "2015-11",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 399.0,
+    "noisy_share": 0.3389974511469839
+  },
+  {
+    "window": "2015-11",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-11",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-11",
+    "category": "POLITICS",
+    "noisy_count": 568.0,
+    "noisy_share": 0.4825828377230246
+  },
+  {
+    "window": "2015-11",
+    "category": "QUEER VOICES",
+    "noisy_count": 84.0,
+    "noisy_share": 0.0713678844519966
+  },
+  {
+    "window": "2015-11",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-11",
+    "category": "TRAVEL",
+    "noisy_count": 27.0,
+    "noisy_share": 0.022939677145284623
+  },
+  {
+    "window": "2015-11",
+    "category": "WELLNESS",
+    "noisy_count": 99.0,
+    "noisy_share": 0.08411214953271028
+  },
+  {
+    "window": "2015-12",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 307.0,
+    "noisy_share": 0.26039016115351993
+  },
+  {
+    "window": "2015-12",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-12",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2015-12",
+    "category": "POLITICS",
+    "noisy_count": 659.0,
+    "noisy_share": 0.5589482612383376
+  },
+  {
+    "window": "2015-12",
+    "category": "QUEER VOICES",
+    "noisy_count": 73.0,
+    "noisy_share": 0.06191687871077184
+  },
+  {
+    "window": "2015-12",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 1.0,
+    "noisy_share": 0.0008481764206955047
+  },
+  {
+    "window": "2015-12",
+    "category": "TRAVEL",
+    "noisy_count": 32.0,
+    "noisy_share": 0.02714164546225615
+  },
+  {
+    "window": "2015-12",
+    "category": "WELLNESS",
+    "noisy_count": 107.0,
+    "noisy_share": 0.090754877014419
+  },
+  {
+    "window": "2016-01",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 341.0,
+    "noisy_share": 0.26703210649960846
+  },
+  {
+    "window": "2016-01",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-01",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-01",
+    "category": "POLITICS",
+    "noisy_count": 743.0,
+    "noisy_share": 0.581832419733751
+  },
+  {
+    "window": "2016-01",
+    "category": "QUEER VOICES",
+    "noisy_count": 65.0,
+    "noisy_share": 0.05090054815974941
+  },
+  {
+    "window": "2016-01",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 2.0,
+    "noisy_share": 0.0015661707126076742
+  },
+  {
+    "window": "2016-01",
+    "category": "TRAVEL",
+    "noisy_count": 26.0,
+    "noisy_share": 0.020360219263899765
+  },
+  {
+    "window": "2016-01",
+    "category": "WELLNESS",
+    "noisy_count": 100.0,
+    "noisy_share": 0.07830853563038372
+  },
+  {
+    "window": "2016-02",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 310.0,
+    "noisy_share": 0.2189265536723164
+  },
+  {
+    "window": "2016-02",
+    "category": "FOOD & DRINK",
+    "noisy_count": 2.0,
+    "noisy_share": 0.0014124293785310734
+  },
+  {
+    "window": "2016-02",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-02",
+    "category": "POLITICS",
+    "noisy_count": 921.0,
+    "noisy_share": 0.6504237288135594
+  },
+  {
+    "window": "2016-02",
+    "category": "QUEER VOICES",
+    "noisy_count": 74.0,
+    "noisy_share": 0.052259887005649715
+  },
+  {
+    "window": "2016-02",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-02",
+    "category": "TRAVEL",
+    "noisy_count": 23.0,
+    "noisy_share": 0.016242937853107344
+  },
+  {
+    "window": "2016-02",
+    "category": "WELLNESS",
+    "noisy_count": 86.0,
+    "noisy_share": 0.06073446327683616
+  },
+  {
+    "window": "2016-03",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 302.0,
+    "noisy_share": 0.21207865168539325
+  },
+  {
+    "window": "2016-03",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-03",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-03",
+    "category": "POLITICS",
+    "noisy_count": 842.0,
+    "noisy_share": 0.5912921348314607
+  },
+  {
+    "window": "2016-03",
+    "category": "QUEER VOICES",
+    "noisy_count": 81.0,
+    "noisy_share": 0.05688202247191011
+  },
+  {
+    "window": "2016-03",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-03",
+    "category": "TRAVEL",
+    "noisy_count": 36.0,
+    "noisy_share": 0.025280898876404494
+  },
+  {
+    "window": "2016-03",
+    "category": "WELLNESS",
+    "noisy_count": 163.0,
+    "noisy_share": 0.11446629213483146
+  },
+  {
+    "window": "2016-04",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 283.0,
+    "noisy_share": 0.21619556913674562
+  },
+  {
+    "window": "2016-04",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-04",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-04",
+    "category": "POLITICS",
+    "noisy_count": 792.0,
+    "noisy_share": 0.6050420168067226
+  },
+  {
+    "window": "2016-04",
+    "category": "QUEER VOICES",
+    "noisy_count": 97.0,
+    "noisy_share": 0.07410236822001529
+  },
+  {
+    "window": "2016-04",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-04",
+    "category": "TRAVEL",
+    "noisy_count": 36.0,
+    "noisy_share": 0.02750190985485103
+  },
+  {
+    "window": "2016-04",
+    "category": "WELLNESS",
+    "noisy_count": 101.0,
+    "noisy_share": 0.07715813598166539
+  },
+  {
+    "window": "2016-05",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 247.0,
+    "noisy_share": 0.18811881188118812
+  },
+  {
+    "window": "2016-05",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-05",
+    "category": "PARENTING",
+    "noisy_count": 2.0,
+    "noisy_share": 0.0015232292460015233
+  },
+  {
+    "window": "2016-05",
+    "category": "POLITICS",
+    "noisy_count": 827.0,
+    "noisy_share": 0.6298552932216298
+  },
+  {
+    "window": "2016-05",
+    "category": "QUEER VOICES",
+    "noisy_count": 103.0,
+    "noisy_share": 0.07844630616907845
+  },
+  {
+    "window": "2016-05",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 2.0,
+    "noisy_share": 0.0015232292460015233
+  },
+  {
+    "window": "2016-05",
+    "category": "TRAVEL",
+    "noisy_count": 49.0,
+    "noisy_share": 0.037319116527037316
+  },
+  {
+    "window": "2016-05",
+    "category": "WELLNESS",
+    "noisy_count": 83.0,
+    "noisy_share": 0.06321401370906321
+  },
+  {
+    "window": "2016-06",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 232.0,
+    "noisy_share": 0.1864951768488746
+  },
+  {
+    "window": "2016-06",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-06",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-06",
+    "category": "POLITICS",
+    "noisy_count": 759.0,
+    "noisy_share": 0.610128617363344
+  },
+  {
+    "window": "2016-06",
+    "category": "QUEER VOICES",
+    "noisy_count": 138.0,
+    "noisy_share": 0.11093247588424437
+  },
+  {
+    "window": "2016-06",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-06",
+    "category": "TRAVEL",
+    "noisy_count": 47.0,
+    "noisy_share": 0.03778135048231511
+  },
+  {
+    "window": "2016-06",
+    "category": "WELLNESS",
+    "noisy_count": 68.0,
+    "noisy_share": 0.05466237942122187
+  },
+  {
+    "window": "2016-07",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 290.0,
+    "noisy_share": 0.2207001522070015
+  },
+  {
+    "window": "2016-07",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-07",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-07",
+    "category": "POLITICS",
+    "noisy_count": 806.0,
+    "noisy_share": 0.6133942161339422
+  },
+  {
+    "window": "2016-07",
+    "category": "QUEER VOICES",
+    "noisy_count": 94.0,
+    "noisy_share": 0.0715372907153729
+  },
+  {
+    "window": "2016-07",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-07",
+    "category": "TRAVEL",
+    "noisy_count": 39.0,
+    "noisy_share": 0.02968036529680365
+  },
+  {
+    "window": "2016-07",
+    "category": "WELLNESS",
+    "noisy_count": 85.0,
+    "noisy_share": 0.06468797564687975
+  },
+  {
+    "window": "2016-08",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 329.0,
+    "noisy_share": 0.25946372239747634
+  },
+  {
+    "window": "2016-08",
+    "category": "FOOD & DRINK",
+    "noisy_count": 1.0,
+    "noisy_share": 0.0007886435331230284
+  },
+  {
+    "window": "2016-08",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-08",
+    "category": "POLITICS",
+    "noisy_count": 677.0,
+    "noisy_share": 0.5339116719242902
+  },
+  {
+    "window": "2016-08",
+    "category": "QUEER VOICES",
+    "noisy_count": 104.0,
+    "noisy_share": 0.08201892744479496
+  },
+  {
+    "window": "2016-08",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-08",
+    "category": "TRAVEL",
+    "noisy_count": 38.0,
+    "noisy_share": 0.02996845425867508
+  },
+  {
+    "window": "2016-08",
+    "category": "WELLNESS",
+    "noisy_count": 119.0,
+    "noisy_share": 0.09384858044164038
+  },
+  {
+    "window": "2016-09",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 293.0,
+    "noisy_share": 0.21623616236162363
+  },
+  {
+    "window": "2016-09",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-09",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-09",
+    "category": "POLITICS",
+    "noisy_count": 820.0,
+    "noisy_share": 0.6051660516605166
+  },
+  {
+    "window": "2016-09",
+    "category": "QUEER VOICES",
+    "noisy_count": 99.0,
+    "noisy_share": 0.07306273062730627
+  },
+  {
+    "window": "2016-09",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-09",
+    "category": "TRAVEL",
+    "noisy_count": 43.0,
+    "noisy_share": 0.03173431734317343
+  },
+  {
+    "window": "2016-09",
+    "category": "WELLNESS",
+    "noisy_count": 100.0,
+    "noisy_share": 0.07380073800738007
+  },
+  {
+    "window": "2016-10",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 321.0,
+    "noisy_share": 0.20749838396897222
+  },
+  {
+    "window": "2016-10",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-10",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-10",
+    "category": "POLITICS",
+    "noisy_count": 1006.0,
+    "noisy_share": 0.6502908855850033
+  },
+  {
+    "window": "2016-10",
+    "category": "QUEER VOICES",
+    "noisy_count": 95.0,
+    "noisy_share": 0.06140917905623788
+  },
+  {
+    "window": "2016-10",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-10",
+    "category": "TRAVEL",
+    "noisy_count": 36.0,
+    "noisy_share": 0.023270846800258566
+  },
+  {
+    "window": "2016-10",
+    "category": "WELLNESS",
+    "noisy_count": 89.0,
+    "noisy_share": 0.057530704589528116
+  },
+  {
+    "window": "2016-11",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 285.0,
+    "noisy_share": 0.18590998043052837
+  },
+  {
+    "window": "2016-11",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-11",
+    "category": "PARENTING",
+    "noisy_count": 2.0,
+    "noisy_share": 0.001304631441617743
+  },
+  {
+    "window": "2016-11",
+    "category": "POLITICS",
+    "noisy_count": 1018.0,
+    "noisy_share": 0.6640574037834311
+  },
+  {
+    "window": "2016-11",
+    "category": "QUEER VOICES",
+    "noisy_count": 97.0,
+    "noisy_share": 0.06327462491846053
+  },
+  {
+    "window": "2016-11",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-11",
+    "category": "TRAVEL",
+    "noisy_count": 24.0,
+    "noisy_share": 0.015655577299412915
+  },
+  {
+    "window": "2016-11",
+    "category": "WELLNESS",
+    "noisy_count": 107.0,
+    "noisy_share": 0.06979778212654925
+  },
+  {
+    "window": "2016-12",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 281.0,
+    "noisy_share": 0.2087667161961367
+  },
+  {
+    "window": "2016-12",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-12",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-12",
+    "category": "POLITICS",
+    "noisy_count": 773.0,
+    "noisy_share": 0.5742942050520059
+  },
+  {
+    "window": "2016-12",
+    "category": "QUEER VOICES",
+    "noisy_count": 112.0,
+    "noisy_share": 0.08320950965824665
+  },
+  {
+    "window": "2016-12",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2016-12",
+    "category": "TRAVEL",
+    "noisy_count": 36.0,
+    "noisy_share": 0.02674591381872214
+  },
+  {
+    "window": "2016-12",
+    "category": "WELLNESS",
+    "noisy_count": 144.0,
+    "noisy_share": 0.10698365527488855
+  },
+  {
+    "window": "2017-01",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 360.0,
+    "noisy_share": 0.21951219512195122
+  },
+  {
+    "window": "2017-01",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2017-01",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2017-01",
+    "category": "POLITICS",
+    "noisy_count": 1047.0,
+    "noisy_share": 0.6384146341463415
+  },
+  {
+    "window": "2017-01",
+    "category": "QUEER VOICES",
+    "noisy_count": 118.0,
+    "noisy_share": 0.07195121951219512
+  },
+  {
+    "window": "2017-01",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2017-01",
+    "category": "TRAVEL",
+    "noisy_count": 16.0,
+    "noisy_share": 0.00975609756097561
+  },
+  {
+    "window": "2017-01",
+    "category": "WELLNESS",
+    "noisy_count": 99.0,
+    "noisy_share": 0.060365853658536583
+  },
+  {
+    "window": "2017-02",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 329.0,
+    "noisy_share": 0.22289972899728996
+  },
+  {
+    "window": "2017-02",
+    "category": "FOOD & DRINK",
+    "noisy_count": 2.0,
+    "noisy_share": 0.0013550135501355014
+  },
+  {
+    "window": "2017-02",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2017-02",
+    "category": "POLITICS",
+    "noisy_count": 921.0,
+    "noisy_share": 0.6239837398373984
+  },
+  {
+    "window": "2017-02",
+    "category": "QUEER VOICES",
+    "noisy_count": 121.0,
+    "noisy_share": 0.08197831978319783
+  },
+  {
+    "window": "2017-02",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2017-02",
+    "category": "TRAVEL",
+    "noisy_count": 16.0,
+    "noisy_share": 0.01084010840108401
+  },
+  {
+    "window": "2017-02",
+    "category": "WELLNESS",
+    "noisy_count": 87.0,
+    "noisy_share": 0.05894308943089431
+  },
+  {
+    "window": "2017-03",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 283.0,
+    "noisy_share": 0.19082939986513822
+  },
+  {
+    "window": "2017-03",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2017-03",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2017-03",
+    "category": "POLITICS",
+    "noisy_count": 960.0,
+    "noisy_share": 0.6473364801078895
+  },
+  {
+    "window": "2017-03",
+    "category": "QUEER VOICES",
+    "noisy_count": 101.0,
+    "noisy_share": 0.06810519217801753
+  },
+  {
+    "window": "2017-03",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2017-03",
+    "category": "TRAVEL",
+    "noisy_count": 24.0,
+    "noisy_share": 0.016183412002697236
+  },
+  {
+    "window": "2017-03",
+    "category": "WELLNESS",
+    "noisy_count": 115.0,
+    "noisy_share": 0.07754551584625759
+  },
+  {
+    "window": "2017-04",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 218.0,
+    "noisy_share": 0.15994130594277328
+  },
+  {
+    "window": "2017-04",
+    "category": "FOOD & DRINK",
+    "noisy_count": 1.0,
+    "noisy_share": 0.0007336757153338225
+  },
+  {
+    "window": "2017-04",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2017-04",
+    "category": "POLITICS",
+    "noisy_count": 873.0,
+    "noisy_share": 0.640498899486427
+  },
+  {
+    "window": "2017-04",
+    "category": "QUEER VOICES",
+    "noisy_count": 100.0,
+    "noisy_share": 0.07336757153338225
+  },
+  {
+    "window": "2017-04",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2017-04",
+    "category": "TRAVEL",
+    "noisy_count": 44.0,
+    "noisy_share": 0.032281731474688186
+  },
+  {
+    "window": "2017-04",
+    "category": "WELLNESS",
+    "noisy_count": 127.0,
+    "noisy_share": 0.09317681584739546
+  },
+  {
+    "window": "2017-05",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 225.0,
+    "noisy_share": 0.1493032514930325
+  },
+  {
+    "window": "2017-05",
+    "category": "FOOD & DRINK",
+    "noisy_count": 2.0,
+    "noisy_share": 0.0013271400132714001
+  },
+  {
+    "window": "2017-05",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2017-05",
+    "category": "POLITICS",
+    "noisy_count": 991.0,
+    "noisy_share": 0.6575978765759788
+  },
+  {
+    "window": "2017-05",
+    "category": "QUEER VOICES",
+    "noisy_count": 108.0,
+    "noisy_share": 0.07166556071665561
+  },
+  {
+    "window": "2017-05",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2017-05",
+    "category": "TRAVEL",
+    "noisy_count": 15.0,
+    "noisy_share": 0.009953550099535502
+  },
+  {
+    "window": "2017-05",
+    "category": "WELLNESS",
+    "noisy_count": 166.0,
+    "noisy_share": 0.11015262110152621
+  },
+  {
+    "window": "2017-06",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 190.0,
+    "noisy_share": 0.1278600269179004
+  },
+  {
+    "window": "2017-06",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2017-06",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2017-06",
+    "category": "POLITICS",
+    "noisy_count": 955.0,
+    "noisy_share": 0.642664872139973
+  },
+  {
+    "window": "2017-06",
+    "category": "QUEER VOICES",
+    "noisy_count": 174.0,
+    "noisy_share": 0.11709286675639301
+  },
+  {
+    "window": "2017-06",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 1.0,
+    "noisy_share": 0.0006729475100942127
+  },
+  {
+    "window": "2017-06",
+    "category": "TRAVEL",
+    "noisy_count": 15.0,
+    "noisy_share": 0.010094212651413189
+  },
+  {
+    "window": "2017-06",
+    "category": "WELLNESS",
+    "noisy_count": 151.0,
+    "noisy_share": 0.1016150740242261
+  },
+  {
+    "window": "2017-07",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 245.0,
+    "noisy_share": 0.16896551724137931
+  },
+  {
+    "window": "2017-07",
+    "category": "FOOD & DRINK",
+    "noisy_count": 1.0,
+    "noisy_share": 0.000689655172413793
+  },
+  {
+    "window": "2017-07",
+    "category": "PARENTING",
+    "noisy_count": 1.0,
+    "noisy_share": 0.000689655172413793
+  },
+  {
+    "window": "2017-07",
+    "category": "POLITICS",
+    "noisy_count": 884.0,
+    "noisy_share": 0.6096551724137931
+  },
+  {
+    "window": "2017-07",
+    "category": "QUEER VOICES",
+    "noisy_count": 134.0,
+    "noisy_share": 0.09241379310344827
+  },
+  {
+    "window": "2017-07",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2017-07",
+    "category": "TRAVEL",
+    "noisy_count": 24.0,
+    "noisy_share": 0.016551724137931035
+  },
+  {
+    "window": "2017-07",
+    "category": "WELLNESS",
+    "noisy_count": 161.0,
+    "noisy_share": 0.11103448275862068
+  },
+  {
+    "window": "2017-08",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 260.0,
+    "noisy_share": 0.1742627345844504
+  },
+  {
+    "window": "2017-08",
+    "category": "FOOD & DRINK",
+    "noisy_count": 1.0,
+    "noisy_share": 0.0006702412868632708
+  },
+  {
+    "window": "2017-08",
+    "category": "PARENTING",
+    "noisy_count": 4.0,
+    "noisy_share": 0.002680965147453083
+  },
+  {
+    "window": "2017-08",
+    "category": "POLITICS",
+    "noisy_count": 912.0,
+    "noisy_share": 0.6112600536193029
+  },
+  {
+    "window": "2017-08",
+    "category": "QUEER VOICES",
+    "noisy_count": 137.0,
+    "noisy_share": 0.0918230563002681
+  },
+  {
+    "window": "2017-08",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2017-08",
+    "category": "TRAVEL",
+    "noisy_count": 25.0,
+    "noisy_share": 0.01675603217158177
+  },
+  {
+    "window": "2017-08",
+    "category": "WELLNESS",
+    "noisy_count": 153.0,
+    "noisy_share": 0.10254691689008043
+  },
+  {
+    "window": "2017-09",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 227.0,
+    "noisy_share": 0.18291700241740533
+  },
+  {
+    "window": "2017-09",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2017-09",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2017-09",
+    "category": "POLITICS",
+    "noisy_count": 768.0,
+    "noisy_share": 0.6188557614826753
+  },
+  {
+    "window": "2017-09",
+    "category": "QUEER VOICES",
+    "noisy_count": 105.0,
+    "noisy_share": 0.08460918614020951
+  },
+  {
+    "window": "2017-09",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2017-09",
+    "category": "TRAVEL",
+    "noisy_count": 10.0,
+    "noisy_share": 0.008058017727639
+  },
+  {
+    "window": "2017-09",
+    "category": "WELLNESS",
+    "noisy_count": 131.0,
+    "noisy_share": 0.10556003223207092
+  },
+  {
+    "window": "2017-10",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 296.0,
+    "noisy_share": 0.21796759941089838
+  },
+  {
+    "window": "2017-10",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2017-10",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2017-10",
+    "category": "POLITICS",
+    "noisy_count": 773.0,
+    "noisy_share": 0.569219440353461
+  },
+  {
+    "window": "2017-10",
+    "category": "QUEER VOICES",
+    "noisy_count": 143.0,
+    "noisy_share": 0.1053019145802651
+  },
+  {
+    "window": "2017-10",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 1.0,
+    "noisy_share": 0.0007363770250368188
+  },
+  {
+    "window": "2017-10",
+    "category": "TRAVEL",
+    "noisy_count": 23.0,
+    "noisy_share": 0.016936671575846832
+  },
+  {
+    "window": "2017-10",
+    "category": "WELLNESS",
+    "noisy_count": 122.0,
+    "noisy_share": 0.0898379970544919
+  },
+  {
+    "window": "2017-11",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 292.0,
+    "noisy_share": 0.2310126582278481
+  },
+  {
+    "window": "2017-11",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2017-11",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2017-11",
+    "category": "POLITICS",
+    "noisy_count": 770.0,
+    "noisy_share": 0.6091772151898734
+  },
+  {
+    "window": "2017-11",
+    "category": "QUEER VOICES",
+    "noisy_count": 96.0,
+    "noisy_share": 0.0759493670886076
+  },
+  {
+    "window": "2017-11",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 1.0,
+    "noisy_share": 0.0007911392405063291
+  },
+  {
+    "window": "2017-11",
+    "category": "TRAVEL",
+    "noisy_count": 28.0,
+    "noisy_share": 0.022151898734177215
+  },
+  {
+    "window": "2017-11",
+    "category": "WELLNESS",
+    "noisy_count": 77.0,
+    "noisy_share": 0.06091772151898734
+  },
+  {
+    "window": "2017-12",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 266.0,
+    "noisy_share": 0.22561492790500423
+  },
+  {
+    "window": "2017-12",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2017-12",
+    "category": "PARENTING",
+    "noisy_count": 1.0,
+    "noisy_share": 0.0008481764206955047
+  },
+  {
+    "window": "2017-12",
+    "category": "POLITICS",
+    "noisy_count": 755.0,
+    "noisy_share": 0.640373197625106
+  },
+  {
+    "window": "2017-12",
+    "category": "QUEER VOICES",
+    "noisy_count": 96.0,
+    "noisy_share": 0.08142493638676845
+  },
+  {
+    "window": "2017-12",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2017-12",
+    "category": "TRAVEL",
+    "noisy_count": 8.0,
+    "noisy_share": 0.006785411365564037
+  },
+  {
+    "window": "2017-12",
+    "category": "WELLNESS",
+    "noisy_count": 53.0,
+    "noisy_share": 0.04495335029686175
+  },
+  {
+    "window": "2018-01",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 416.0,
+    "noisy_share": 0.33226837060702874
+  },
+  {
+    "window": "2018-01",
+    "category": "FOOD & DRINK",
+    "noisy_count": 2.0,
+    "noisy_share": 0.001597444089456869
+  },
+  {
+    "window": "2018-01",
+    "category": "PARENTING",
+    "noisy_count": 1.0,
+    "noisy_share": 0.0007987220447284345
+  },
+  {
+    "window": "2018-01",
+    "category": "POLITICS",
+    "noisy_count": 704.0,
+    "noisy_share": 0.5623003194888179
+  },
+  {
+    "window": "2018-01",
+    "category": "QUEER VOICES",
+    "noisy_count": 102.0,
+    "noisy_share": 0.08146964856230032
+  },
+  {
+    "window": "2018-01",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-01",
+    "category": "TRAVEL",
+    "noisy_count": 12.0,
+    "noisy_share": 0.009584664536741214
+  },
+  {
+    "window": "2018-01",
+    "category": "WELLNESS",
+    "noisy_count": 15.0,
+    "noisy_share": 0.011980830670926517
+  },
+  {
+    "window": "2018-02",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 279.0,
+    "noisy_share": 0.2894190871369295
+  },
+  {
+    "window": "2018-02",
+    "category": "FOOD & DRINK",
+    "noisy_count": 2.0,
+    "noisy_share": 0.002074688796680498
+  },
+  {
+    "window": "2018-02",
+    "category": "PARENTING",
+    "noisy_count": 1.0,
+    "noisy_share": 0.001037344398340249
+  },
+  {
+    "window": "2018-02",
+    "category": "POLITICS",
+    "noisy_count": 579.0,
+    "noisy_share": 0.6006224066390041
+  },
+  {
+    "window": "2018-02",
+    "category": "QUEER VOICES",
+    "noisy_count": 89.0,
+    "noisy_share": 0.09232365145228216
+  },
+  {
+    "window": "2018-02",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-02",
+    "category": "TRAVEL",
+    "noisy_count": 12.0,
+    "noisy_share": 0.012448132780082987
+  },
+  {
+    "window": "2018-02",
+    "category": "WELLNESS",
+    "noisy_count": 2.0,
+    "noisy_share": 0.002074688796680498
+  },
+  {
+    "window": "2018-03",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 352.0,
+    "noisy_share": 0.29679595278246207
+  },
+  {
+    "window": "2018-03",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-03",
+    "category": "PARENTING",
+    "noisy_count": 2.0,
+    "noisy_share": 0.0016863406408094434
+  },
+  {
+    "window": "2018-03",
+    "category": "POLITICS",
+    "noisy_count": 698.0,
+    "noisy_share": 0.5885328836424958
+  },
+  {
+    "window": "2018-03",
+    "category": "QUEER VOICES",
+    "noisy_count": 108.0,
+    "noisy_share": 0.09106239460370995
+  },
+  {
+    "window": "2018-03",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-03",
+    "category": "TRAVEL",
+    "noisy_count": 26.0,
+    "noisy_share": 0.021922428330522766
+  },
+  {
+    "window": "2018-03",
+    "category": "WELLNESS",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-04",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 362.0,
+    "noisy_share": 0.3542074363992172
+  },
+  {
+    "window": "2018-04",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-04",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-04",
+    "category": "POLITICS",
+    "noisy_count": 570.0,
+    "noisy_share": 0.5577299412915852
+  },
+  {
+    "window": "2018-04",
+    "category": "QUEER VOICES",
+    "noisy_count": 79.0,
+    "noisy_share": 0.07729941291585127
+  },
+  {
+    "window": "2018-04",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-04",
+    "category": "TRAVEL",
+    "noisy_count": 11.0,
+    "noisy_share": 0.010763209393346379
+  },
+  {
+    "window": "2018-04",
+    "category": "WELLNESS",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-05",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 313.0,
+    "noisy_share": 0.3454746136865342
+  },
+  {
+    "window": "2018-05",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-05",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-05",
+    "category": "POLITICS",
+    "noisy_count": 510.0,
+    "noisy_share": 0.5629139072847682
+  },
+  {
+    "window": "2018-05",
+    "category": "QUEER VOICES",
+    "noisy_count": 71.0,
+    "noisy_share": 0.07836644591611479
+  },
+  {
+    "window": "2018-05",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-05",
+    "category": "TRAVEL",
+    "noisy_count": 10.0,
+    "noisy_share": 0.011037527593818985
+  },
+  {
+    "window": "2018-05",
+    "category": "WELLNESS",
+    "noisy_count": 2.0,
+    "noisy_share": 0.002207505518763797
+  },
+  {
+    "window": "2018-06",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 15.0,
+    "noisy_share": 0.3125
+  },
+  {
+    "window": "2018-06",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-06",
+    "category": "PARENTING",
+    "noisy_count": 2.0,
+    "noisy_share": 0.041666666666666664
+  },
+  {
+    "window": "2018-06",
+    "category": "POLITICS",
+    "noisy_count": 30.0,
+    "noisy_share": 0.625
+  },
+  {
+    "window": "2018-06",
+    "category": "QUEER VOICES",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-06",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 1.0,
+    "noisy_share": 0.020833333333333332
+  },
+  {
+    "window": "2018-06",
+    "category": "TRAVEL",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-06",
+    "category": "WELLNESS",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-07",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 10.0,
+    "noisy_share": 0.22727272727272727
+  },
+  {
+    "window": "2018-07",
+    "category": "FOOD & DRINK",
+    "noisy_count": 2.0,
+    "noisy_share": 0.045454545454545456
+  },
+  {
+    "window": "2018-07",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-07",
+    "category": "POLITICS",
+    "noisy_count": 27.0,
+    "noisy_share": 0.6136363636363636
+  },
+  {
+    "window": "2018-07",
+    "category": "QUEER VOICES",
+    "noisy_count": 4.0,
+    "noisy_share": 0.09090909090909091
+  },
+  {
+    "window": "2018-07",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 1.0,
+    "noisy_share": 0.022727272727272728
+  },
+  {
+    "window": "2018-07",
+    "category": "TRAVEL",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-07",
+    "category": "WELLNESS",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-08",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 7.0,
+    "noisy_share": 0.30434782608695654
+  },
+  {
+    "window": "2018-08",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-08",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-08",
+    "category": "POLITICS",
+    "noisy_count": 16.0,
+    "noisy_share": 0.6956521739130435
+  },
+  {
+    "window": "2018-08",
+    "category": "QUEER VOICES",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-08",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-08",
+    "category": "TRAVEL",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-08",
+    "category": "WELLNESS",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-09",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 18.0,
+    "noisy_share": 0.2903225806451613
+  },
+  {
+    "window": "2018-09",
+    "category": "FOOD & DRINK",
+    "noisy_count": 1.0,
+    "noisy_share": 0.016129032258064516
+  },
+  {
+    "window": "2018-09",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-09",
+    "category": "POLITICS",
+    "noisy_count": 40.0,
+    "noisy_share": 0.6451612903225806
+  },
+  {
+    "window": "2018-09",
+    "category": "QUEER VOICES",
+    "noisy_count": 1.0,
+    "noisy_share": 0.016129032258064516
+  },
+  {
+    "window": "2018-09",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 2.0,
+    "noisy_share": 0.03225806451612903
+  },
+  {
+    "window": "2018-09",
+    "category": "TRAVEL",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-09",
+    "category": "WELLNESS",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-10",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 28.0,
+    "noisy_share": 0.23529411764705882
+  },
+  {
+    "window": "2018-10",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-10",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-10",
+    "category": "POLITICS",
+    "noisy_count": 83.0,
+    "noisy_share": 0.6974789915966386
+  },
+  {
+    "window": "2018-10",
+    "category": "QUEER VOICES",
+    "noisy_count": 4.0,
+    "noisy_share": 0.03361344537815126
+  },
+  {
+    "window": "2018-10",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 1.0,
+    "noisy_share": 0.008403361344537815
+  },
+  {
+    "window": "2018-10",
+    "category": "TRAVEL",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-10",
+    "category": "WELLNESS",
+    "noisy_count": 3.0,
+    "noisy_share": 0.025210084033613446
+  },
+  {
+    "window": "2018-11",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 38.0,
+    "noisy_share": 0.33043478260869563
+  },
+  {
+    "window": "2018-11",
+    "category": "FOOD & DRINK",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-11",
+    "category": "PARENTING",
+    "noisy_count": 2.0,
+    "noisy_share": 0.017391304347826087
+  },
+  {
+    "window": "2018-11",
+    "category": "POLITICS",
+    "noisy_count": 69.0,
+    "noisy_share": 0.6
+  },
+  {
+    "window": "2018-11",
+    "category": "QUEER VOICES",
+    "noisy_count": 4.0,
+    "noisy_share": 0.034782608695652174
+  },
+  {
+    "window": "2018-11",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 2.0,
+    "noisy_share": 0.017391304347826087
+  },
+  {
+    "window": "2018-11",
+    "category": "TRAVEL",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-11",
+    "category": "WELLNESS",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-12",
+    "category": "ENTERTAINMENT",
+    "noisy_count": 28.0,
+    "noisy_share": 0.24778761061946902
+  },
+  {
+    "window": "2018-12",
+    "category": "FOOD & DRINK",
+    "noisy_count": 1.0,
+    "noisy_share": 0.008849557522123894
+  },
+  {
+    "window": "2018-12",
+    "category": "PARENTING",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-12",
+    "category": "POLITICS",
+    "noisy_count": 79.0,
+    "noisy_share": 0.6991150442477876
+  },
+  {
+    "window": "2018-12",
+    "category": "QUEER VOICES",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-12",
+    "category": "STYLE & BEAUTY",
+    "noisy_count": 4.0,
+    "noisy_share": 0.035398230088495575
+  },
+  {
+    "window": "2018-12",
+    "category": "TRAVEL",
+    "noisy_count": 0.0,
+    "noisy_share": 0.0
+  },
+  {
+    "window": "2018-12",
+    "category": "WELLNESS",
+    "noisy_count": 1.0,
+    "noisy_share": 0.008849557522123894
+  }
+]

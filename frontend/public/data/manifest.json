@@ -1,0 +1,28 @@
+{
+  "generated_from": "Data-Science-Project pipeline outputs",
+  "files": [
+    "author_concentration.json",
+    "category_by_author_cohort.json",
+    "category_disparity.json",
+    "category_drift.json",
+    "category_shares.json",
+    "causal_effects.json",
+    "causal_panel.json",
+    "central_articles.json",
+    "clustering_metrics.json",
+    "cohort_distribution_divergence.json",
+    "communities.json",
+    "event_impact.json",
+    "event_summary.json",
+    "fairness_comparison.json",
+    "fairness_summary.json",
+    "overview.json",
+    "privacy_metadata.json",
+    "private_statistics.json",
+    "semantic_drift.json",
+    "topic_examples.json",
+    "topic_keywords.json",
+    "topic_prevalence.json"
+  ],
+  "file_count": 22
+}

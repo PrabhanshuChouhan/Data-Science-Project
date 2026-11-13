@@ -1,0 +1,9 @@
+{
+    "number_of_articles": 114219,
+    "id_column": "id",
+    "id_alignment": "row_index_equals_article_id",
+    "embedding_model": null,
+    "embedding_shape": null,
+    "tfidf_shape": null,
+    "tfidf_description": null
+}

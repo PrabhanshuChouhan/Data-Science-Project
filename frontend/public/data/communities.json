@@ -1,0 +1,1602 @@
+[
+  {
+    "community": 0,
+    "article_count": 1,
+    "dominant_category": "ENTERTAINMENT",
+    "category_distribution": "{\"ENTERTAINMENT\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[0]"
+  },
+  {
+    "community": 1,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[1]"
+  },
+  {
+    "community": 2,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[2]"
+  },
+  {
+    "community": 3,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[3]"
+  },
+  {
+    "community": 4,
+    "article_count": 2,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 2}",
+    "average_pagerank": 1.4083688198990061e-05,
+    "top_article_ids": "[4, 123]"
+  },
+  {
+    "community": 5,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[5]"
+  },
+  {
+    "community": 6,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[6]"
+  },
+  {
+    "community": 7,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[8]"
+  },
+  {
+    "community": 8,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[9]"
+  },
+  {
+    "community": 9,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[14]"
+  },
+  {
+    "community": 10,
+    "article_count": 1,
+    "dominant_category": "QUEER VOICES",
+    "category_distribution": "{\"QUEER VOICES\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[15]"
+  },
+  {
+    "community": 11,
+    "article_count": 1,
+    "dominant_category": "QUEER VOICES",
+    "category_distribution": "{\"QUEER VOICES\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[17]"
+  },
+  {
+    "community": 12,
+    "article_count": 1,
+    "dominant_category": "QUEER VOICES",
+    "category_distribution": "{\"QUEER VOICES\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[18]"
+  },
+  {
+    "community": 13,
+    "article_count": 1,
+    "dominant_category": "QUEER VOICES",
+    "category_distribution": "{\"QUEER VOICES\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[19]"
+  },
+  {
+    "community": 14,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[22]"
+  },
+  {
+    "community": 15,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[23]"
+  },
+  {
+    "community": 16,
+    "article_count": 1,
+    "dominant_category": "QUEER VOICES",
+    "category_distribution": "{\"QUEER VOICES\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[24]"
+  },
+  {
+    "community": 17,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[25]"
+  },
+  {
+    "community": 18,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[27]"
+  },
+  {
+    "community": 19,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[28]"
+  },
+  {
+    "community": 20,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[29]"
+  },
+  {
+    "community": 21,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[30]"
+  },
+  {
+    "community": 22,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[33]"
+  },
+  {
+    "community": 23,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[34]"
+  },
+  {
+    "community": 24,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[35]"
+  },
+  {
+    "community": 25,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[36]"
+  },
+  {
+    "community": 26,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[37]"
+  },
+  {
+    "community": 27,
+    "article_count": 1,
+    "dominant_category": "ENTERTAINMENT",
+    "category_distribution": "{\"ENTERTAINMENT\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[38]"
+  },
+  {
+    "community": 28,
+    "article_count": 1,
+    "dominant_category": "ENTERTAINMENT",
+    "category_distribution": "{\"ENTERTAINMENT\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[39]"
+  },
+  {
+    "community": 29,
+    "article_count": 1,
+    "dominant_category": "ENTERTAINMENT",
+    "category_distribution": "{\"ENTERTAINMENT\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[42]"
+  },
+  {
+    "community": 30,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[43]"
+  },
+  {
+    "community": 31,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[45]"
+  },
+  {
+    "community": 32,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[46]"
+  },
+  {
+    "community": 33,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[47]"
+  },
+  {
+    "community": 34,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[48]"
+  },
+  {
+    "community": 35,
+    "article_count": 1,
+    "dominant_category": "FOOD & DRINK",
+    "category_distribution": "{\"FOOD & DRINK\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[49]"
+  },
+  {
+    "community": 36,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[50]"
+  },
+  {
+    "community": 37,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[51]"
+  },
+  {
+    "community": 38,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[52]"
+  },
+  {
+    "community": 39,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[53]"
+  },
+  {
+    "community": 40,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[54]"
+  },
+  {
+    "community": 41,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[55]"
+  },
+  {
+    "community": 42,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[56]"
+  },
+  {
+    "community": 43,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[59]"
+  },
+  {
+    "community": 44,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[61]"
+  },
+  {
+    "community": 45,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[62]"
+  },
+  {
+    "community": 46,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[64]"
+  },
+  {
+    "community": 47,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[66]"
+  },
+  {
+    "community": 48,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[68]"
+  },
+  {
+    "community": 49,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[69]"
+  },
+  {
+    "community": 50,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[70]"
+  },
+  {
+    "community": 51,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[71]"
+  },
+  {
+    "community": 52,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[73]"
+  },
+  {
+    "community": 53,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[74]"
+  },
+  {
+    "community": 54,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[76]"
+  },
+  {
+    "community": 55,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[77]"
+  },
+  {
+    "community": 56,
+    "article_count": 1,
+    "dominant_category": "FOOD & DRINK",
+    "category_distribution": "{\"FOOD & DRINK\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[78]"
+  },
+  {
+    "community": 57,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[79]"
+  },
+  {
+    "community": 58,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[80]"
+  },
+  {
+    "community": 59,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[81]"
+  },
+  {
+    "community": 60,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[82]"
+  },
+  {
+    "community": 61,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[84]"
+  },
+  {
+    "community": 62,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[86]"
+  },
+  {
+    "community": 63,
+    "article_count": 17,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 16, \"PARENTING\": 1}",
+    "average_pagerank": 1.4083688198990065e-05,
+    "top_article_ids": "[29796, 46490, 87, 50049, 52992]"
+  },
+  {
+    "community": 64,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[88]"
+  },
+  {
+    "community": 65,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[89]"
+  },
+  {
+    "community": 66,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[91]"
+  },
+  {
+    "community": 67,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[93]"
+  },
+  {
+    "community": 68,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[98]"
+  },
+  {
+    "community": 69,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[100]"
+  },
+  {
+    "community": 70,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[103]"
+  },
+  {
+    "community": 71,
+    "article_count": 2,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 2}",
+    "average_pagerank": 1.4083688198990065e-05,
+    "top_article_ids": "[106, 20249]"
+  },
+  {
+    "community": 72,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[109]"
+  },
+  {
+    "community": 73,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[111]"
+  },
+  {
+    "community": 74,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[113]"
+  },
+  {
+    "community": 75,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[115]"
+  },
+  {
+    "community": 76,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[116]"
+  },
+  {
+    "community": 77,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[117]"
+  },
+  {
+    "community": 78,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[118]"
+  },
+  {
+    "community": 79,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[120]"
+  },
+  {
+    "community": 80,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[125]"
+  },
+  {
+    "community": 81,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[126]"
+  },
+  {
+    "community": 82,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[127]"
+  },
+  {
+    "community": 83,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[130]"
+  },
+  {
+    "community": 84,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[131]"
+  },
+  {
+    "community": 85,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[132]"
+  },
+  {
+    "community": 86,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[134]"
+  },
+  {
+    "community": 87,
+    "article_count": 1,
+    "dominant_category": "FOOD & DRINK",
+    "category_distribution": "{\"FOOD & DRINK\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[137]"
+  },
+  {
+    "community": 88,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[138]"
+  },
+  {
+    "community": 89,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[140]"
+  },
+  {
+    "community": 90,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[141]"
+  },
+  {
+    "community": 91,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[142]"
+  },
+  {
+    "community": 92,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[144]"
+  },
+  {
+    "community": 93,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[145]"
+  },
+  {
+    "community": 94,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[146]"
+  },
+  {
+    "community": 95,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[147]"
+  },
+  {
+    "community": 96,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[153]"
+  },
+  {
+    "community": 97,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[154]"
+  },
+  {
+    "community": 98,
+    "article_count": 1,
+    "dominant_category": "FOOD & DRINK",
+    "category_distribution": "{\"FOOD & DRINK\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[155]"
+  },
+  {
+    "community": 99,
+    "article_count": 2,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 2}",
+    "average_pagerank": 1.4083688198990065e-05,
+    "top_article_ids": "[157, 335]"
+  },
+  {
+    "community": 100,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[158]"
+  },
+  {
+    "community": 101,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[161]"
+  },
+  {
+    "community": 102,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[162]"
+  },
+  {
+    "community": 103,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[163]"
+  },
+  {
+    "community": 104,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[165]"
+  },
+  {
+    "community": 105,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[166]"
+  },
+  {
+    "community": 106,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[167]"
+  },
+  {
+    "community": 107,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[169]"
+  },
+  {
+    "community": 108,
+    "article_count": 1,
+    "dominant_category": "FOOD & DRINK",
+    "category_distribution": "{\"FOOD & DRINK\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[170]"
+  },
+  {
+    "community": 109,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[174]"
+  },
+  {
+    "community": 110,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[176]"
+  },
+  {
+    "community": 111,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[180]"
+  },
+  {
+    "community": 112,
+    "article_count": 1,
+    "dominant_category": "FOOD & DRINK",
+    "category_distribution": "{\"FOOD & DRINK\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[182]"
+  },
+  {
+    "community": 113,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[183]"
+  },
+  {
+    "community": 114,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[185]"
+  },
+  {
+    "community": 115,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[186]"
+  },
+  {
+    "community": 116,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[188]"
+  },
+  {
+    "community": 117,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[189]"
+  },
+  {
+    "community": 118,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[190]"
+  },
+  {
+    "community": 119,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[192]"
+  },
+  {
+    "community": 120,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[194]"
+  },
+  {
+    "community": 121,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[195]"
+  },
+  {
+    "community": 122,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[197]"
+  },
+  {
+    "community": 123,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[200]"
+  },
+  {
+    "community": 124,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[203]"
+  },
+  {
+    "community": 125,
+    "article_count": 2,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 2}",
+    "average_pagerank": 1.4083688198990065e-05,
+    "top_article_ids": "[205, 6368]"
+  },
+  {
+    "community": 126,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[206]"
+  },
+  {
+    "community": 127,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[210]"
+  },
+  {
+    "community": 128,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[212]"
+  },
+  {
+    "community": 129,
+    "article_count": 2,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 2}",
+    "average_pagerank": 1.4083688198990065e-05,
+    "top_article_ids": "[218, 35145]"
+  },
+  {
+    "community": 130,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[219]"
+  },
+  {
+    "community": 131,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[221]"
+  },
+  {
+    "community": 132,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[223]"
+  },
+  {
+    "community": 133,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[227]"
+  },
+  {
+    "community": 134,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[229]"
+  },
+  {
+    "community": 135,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[230]"
+  },
+  {
+    "community": 136,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[231]"
+  },
+  {
+    "community": 137,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[232]"
+  },
+  {
+    "community": 138,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[234]"
+  },
+  {
+    "community": 139,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[236]"
+  },
+  {
+    "community": 140,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[239]"
+  },
+  {
+    "community": 141,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[240]"
+  },
+  {
+    "community": 142,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[242]"
+  },
+  {
+    "community": 143,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[245]"
+  },
+  {
+    "community": 144,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[246]"
+  },
+  {
+    "community": 145,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[250]"
+  },
+  {
+    "community": 146,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[252]"
+  },
+  {
+    "community": 147,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[253]"
+  },
+  {
+    "community": 148,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[254]"
+  },
+  {
+    "community": 149,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[255]"
+  },
+  {
+    "community": 150,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[258]"
+  },
+  {
+    "community": 151,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[260]"
+  },
+  {
+    "community": 152,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[261]"
+  },
+  {
+    "community": 153,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[262]"
+  },
+  {
+    "community": 154,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[264]"
+  },
+  {
+    "community": 155,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[265]"
+  },
+  {
+    "community": 156,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[266]"
+  },
+  {
+    "community": 157,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[269]"
+  },
+  {
+    "community": 158,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[270]"
+  },
+  {
+    "community": 159,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[272]"
+  },
+  {
+    "community": 160,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[273]"
+  },
+  {
+    "community": 161,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[274]"
+  },
+  {
+    "community": 162,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[275]"
+  },
+  {
+    "community": 163,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[278]"
+  },
+  {
+    "community": 164,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[280]"
+  },
+  {
+    "community": 165,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[281]"
+  },
+  {
+    "community": 166,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[284]"
+  },
+  {
+    "community": 167,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[286]"
+  },
+  {
+    "community": 168,
+    "article_count": 5,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 5}",
+    "average_pagerank": 1.4083688198990063e-05,
+    "top_article_ids": "[29639, 21568, 288, 30478, 22044]"
+  },
+  {
+    "community": 169,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[289]"
+  },
+  {
+    "community": 170,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[291]"
+  },
+  {
+    "community": 171,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[295]"
+  },
+  {
+    "community": 172,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[296]"
+  },
+  {
+    "community": 173,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[297]"
+  },
+  {
+    "community": 174,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[299]"
+  },
+  {
+    "community": 175,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[301]"
+  },
+  {
+    "community": 176,
+    "article_count": 2,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 2}",
+    "average_pagerank": 1.4083688198990065e-05,
+    "top_article_ids": "[305, 15742]"
+  },
+  {
+    "community": 177,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[309]"
+  },
+  {
+    "community": 178,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[314]"
+  },
+  {
+    "community": 179,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[317]"
+  },
+  {
+    "community": 180,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[318]"
+  },
+  {
+    "community": 181,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[322]"
+  },
+  {
+    "community": 182,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[323]"
+  },
+  {
+    "community": 183,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[325]"
+  },
+  {
+    "community": 184,
+    "article_count": 2,
+    "dominant_category": "FOOD & DRINK",
+    "category_distribution": "{\"FOOD & DRINK\": 2}",
+    "average_pagerank": 1.4083688198990061e-05,
+    "top_article_ids": "[326, 790]"
+  },
+  {
+    "community": 185,
+    "article_count": 1,
+    "dominant_category": "TRAVEL",
+    "category_distribution": "{\"TRAVEL\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[331]"
+  },
+  {
+    "community": 186,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[332]"
+  },
+  {
+    "community": 187,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[333]"
+  },
+  {
+    "community": 188,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[334]"
+  },
+  {
+    "community": 189,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[336]"
+  },
+  {
+    "community": 190,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[337]"
+  },
+  {
+    "community": 191,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[338]"
+  },
+  {
+    "community": 192,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[340]"
+  },
+  {
+    "community": 193,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[342]"
+  },
+  {
+    "community": 194,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[344]"
+  },
+  {
+    "community": 195,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[345]"
+  },
+  {
+    "community": 196,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[346]"
+  },
+  {
+    "community": 197,
+    "article_count": 1,
+    "dominant_category": "PARENTING",
+    "category_distribution": "{\"PARENTING\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[347]"
+  },
+  {
+    "community": 198,
+    "article_count": 1,
+    "dominant_category": "STYLE & BEAUTY",
+    "category_distribution": "{\"STYLE & BEAUTY\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[349]"
+  },
+  {
+    "community": 199,
+    "article_count": 1,
+    "dominant_category": "WELLNESS",
+    "category_distribution": "{\"WELLNESS\": 1}",
+    "average_pagerank": 2.5649936533894333e-06,
+    "top_article_ids": "[350]"
+  }
+]

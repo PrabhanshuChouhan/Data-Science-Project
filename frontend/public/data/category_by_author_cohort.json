@@ -1,0 +1,226 @@
+[
+  {
+    "author_cohort": "High activity",
+    "category": "ENTERTAINMENT",
+    "article_count": 13702,
+    "cohort_total": 83060,
+    "category_share": 0.16496508548037564
+  },
+  {
+    "author_cohort": "High activity",
+    "category": "FOOD & DRINK",
+    "article_count": 4250,
+    "cohort_total": 83060,
+    "category_share": 0.05116783048398748
+  },
+  {
+    "author_cohort": "High activity",
+    "category": "PARENTING",
+    "article_count": 5490,
+    "cohort_total": 83060,
+    "category_share": 0.06609679749578617
+  },
+  {
+    "author_cohort": "High activity",
+    "category": "POLITICS",
+    "article_count": 25557,
+    "cohort_total": 83060,
+    "category_share": 0.30769323380688657
+  },
+  {
+    "author_cohort": "High activity",
+    "category": "QUEER VOICES",
+    "article_count": 4088,
+    "cohort_total": 83060,
+    "category_share": 0.04921743318083313
+  },
+  {
+    "author_cohort": "High activity",
+    "category": "STYLE & BEAUTY",
+    "article_count": 6702,
+    "cohort_total": 83060,
+    "category_share": 0.08068865880086684
+  },
+  {
+    "author_cohort": "High activity",
+    "category": "TRAVEL",
+    "article_count": 7631,
+    "cohort_total": 83060,
+    "category_share": 0.09187334457019022
+  },
+  {
+    "author_cohort": "High activity",
+    "category": "WELLNESS",
+    "article_count": 15640,
+    "cohort_total": 83060,
+    "category_share": 0.18829761618107393
+  },
+  {
+    "author_cohort": "Low activity",
+    "category": "ENTERTAINMENT",
+    "article_count": 313,
+    "cohort_total": 5145,
+    "category_share": 0.0608357628765792
+  },
+  {
+    "author_cohort": "Low activity",
+    "category": "FOOD & DRINK",
+    "article_count": 79,
+    "cohort_total": 5145,
+    "category_share": 0.015354713313896987
+  },
+  {
+    "author_cohort": "Low activity",
+    "category": "PARENTING",
+    "article_count": 395,
+    "cohort_total": 5145,
+    "category_share": 0.07677356656948493
+  },
+  {
+    "author_cohort": "Low activity",
+    "category": "POLITICS",
+    "article_count": 1809,
+    "cohort_total": 5145,
+    "category_share": 0.3516034985422741
+  },
+  {
+    "author_cohort": "Low activity",
+    "category": "QUEER VOICES",
+    "article_count": 563,
+    "cohort_total": 5145,
+    "category_share": 0.10942662779397473
+  },
+  {
+    "author_cohort": "Low activity",
+    "category": "STYLE & BEAUTY",
+    "article_count": 130,
+    "cohort_total": 5145,
+    "category_share": 0.025267249757045675
+  },
+  {
+    "author_cohort": "Low activity",
+    "category": "TRAVEL",
+    "article_count": 343,
+    "cohort_total": 5145,
+    "category_share": 0.06666666666666667
+  },
+  {
+    "author_cohort": "Low activity",
+    "category": "WELLNESS",
+    "article_count": 1513,
+    "cohort_total": 5145,
+    "category_share": 0.29407191448007775
+  },
+  {
+    "author_cohort": "Medium activity",
+    "category": "ENTERTAINMENT",
+    "article_count": 419,
+    "cohort_total": 6383,
+    "category_share": 0.06564311452295159
+  },
+  {
+    "author_cohort": "Medium activity",
+    "category": "FOOD & DRINK",
+    "article_count": 93,
+    "cohort_total": 6383,
+    "category_share": 0.014569951433495222
+  },
+  {
+    "author_cohort": "Medium activity",
+    "category": "PARENTING",
+    "article_count": 524,
+    "cohort_total": 6383,
+    "category_share": 0.08209305968980103
+  },
+  {
+    "author_cohort": "Medium activity",
+    "category": "POLITICS",
+    "article_count": 2112,
+    "cohort_total": 6383,
+    "category_share": 0.3308788970703431
+  },
+  {
+    "author_cohort": "Medium activity",
+    "category": "QUEER VOICES",
+    "article_count": 605,
+    "cohort_total": 6383,
+    "category_share": 0.09478301738994203
+  },
+  {
+    "author_cohort": "Medium activity",
+    "category": "STYLE & BEAUTY",
+    "article_count": 198,
+    "cohort_total": 6383,
+    "category_share": 0.031019896600344665
+  },
+  {
+    "author_cohort": "Medium activity",
+    "category": "TRAVEL",
+    "article_count": 490,
+    "cohort_total": 6383,
+    "category_share": 0.07676641077863074
+  },
+  {
+    "author_cohort": "Medium activity",
+    "category": "WELLNESS",
+    "article_count": 1942,
+    "cohort_total": 6383,
+    "category_share": 0.3042456525144916
+  },
+  {
+    "author_cohort": "Unknown",
+    "category": "ENTERTAINMENT",
+    "article_count": 1743,
+    "cohort_total": 19631,
+    "category_share": 0.08878814120523662
+  },
+  {
+    "author_cohort": "Unknown",
+    "category": "FOOD & DRINK",
+    "article_count": 1804,
+    "cohort_total": 19631,
+    "category_share": 0.09189547144821965
+  },
+  {
+    "author_cohort": "Unknown",
+    "category": "PARENTING",
+    "article_count": 2243,
+    "cohort_total": 19631,
+    "category_share": 0.11425806122968774
+  },
+  {
+    "author_cohort": "Unknown",
+    "category": "POLITICS",
+    "article_count": 3529,
+    "cohort_total": 19631,
+    "category_share": 0.17976669553257602
+  },
+  {
+    "author_cohort": "Unknown",
+    "category": "QUEER VOICES",
+    "article_count": 1064,
+    "cohort_total": 19631,
+    "category_share": 0.05419998981203199
+  },
+  {
+    "author_cohort": "Unknown",
+    "category": "STYLE & BEAUTY",
+    "article_count": 2490,
+    "cohort_total": 19631,
+    "category_share": 0.1268402017217666
+  },
+  {
+    "author_cohort": "Unknown",
+    "category": "TRAVEL",
+    "article_count": 1403,
+    "cohort_total": 19631,
+    "category_share": 0.07146859558860985
+  },
+  {
+    "author_cohort": "Unknown",
+    "category": "WELLNESS",
+    "article_count": 5355,
+    "cohort_total": 19631,
+    "category_share": 0.27278284346187154
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "cohort": "High activity",
+    "jensen_shannon_distance": 0.14607020290155634
+  },
+  {
+    "cohort": "Low activity",
+    "jensen_shannon_distance": 0.09367537631026406
+  },
+  {
+    "cohort": "Medium activity",
+    "jensen_shannon_distance": 0.0778289795354288
+  }
+]

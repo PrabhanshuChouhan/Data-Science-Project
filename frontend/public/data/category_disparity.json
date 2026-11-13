@@ -1,0 +1,50 @@
+[
+  {
+    "category": "WELLNESS",
+    "minimum_cohort_share": 0.18829761618107393,
+    "maximum_cohort_share": 0.3042456525144916,
+    "absolute_share_gap": 0.11594803633341766
+  },
+  {
+    "category": "ENTERTAINMENT",
+    "minimum_cohort_share": 0.0608357628765792,
+    "maximum_cohort_share": 0.16496508548037564,
+    "absolute_share_gap": 0.10412932260379644
+  },
+  {
+    "category": "QUEER VOICES",
+    "minimum_cohort_share": 0.04921743318083313,
+    "maximum_cohort_share": 0.10942662779397473,
+    "absolute_share_gap": 0.0602091946131416
+  },
+  {
+    "category": "STYLE & BEAUTY",
+    "minimum_cohort_share": 0.025267249757045675,
+    "maximum_cohort_share": 0.08068865880086684,
+    "absolute_share_gap": 0.05542140904382117
+  },
+  {
+    "category": "POLITICS",
+    "minimum_cohort_share": 0.30769323380688657,
+    "maximum_cohort_share": 0.3516034985422741,
+    "absolute_share_gap": 0.043910264735387505
+  },
+  {
+    "category": "FOOD & DRINK",
+    "minimum_cohort_share": 0.014569951433495222,
+    "maximum_cohort_share": 0.05116783048398748,
+    "absolute_share_gap": 0.036597879050492256
+  },
+  {
+    "category": "TRAVEL",
+    "minimum_cohort_share": 0.06666666666666667,
+    "maximum_cohort_share": 0.09187334457019022,
+    "absolute_share_gap": 0.02520667790352356
+  },
+  {
+    "category": "PARENTING",
+    "minimum_cohort_share": 0.06609679749578617,
+    "maximum_cohort_share": 0.08209305968980103,
+    "absolute_share_gap": 0.015996262194014857
+  }
+]

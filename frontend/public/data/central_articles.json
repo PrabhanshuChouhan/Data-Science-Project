@@ -1,0 +1,702 @@
+[
+  {
+    "id": 92446,
+    "pagerank": 0.00010439073981638432,
+    "degree_centrality": 0.0005428216218109229,
+    "weighted_degree": 44.86453276872635,
+    "community": 46956
+  },
+  {
+    "id": 38591,
+    "pagerank": 9.86403052907227e-05,
+    "degree_centrality": 0.0005865975590537393,
+    "weighted_degree": 47.46862035989761,
+    "community": 50939
+  },
+  {
+    "id": 17876,
+    "pagerank": 8.909137575217953e-05,
+    "degree_centrality": 0.0006041079339508659,
+    "weighted_degree": 49.064866065979004,
+    "community": 57411
+  },
+  {
+    "id": 60772,
+    "pagerank": 8.486685917449726e-05,
+    "degree_centrality": 0.00037647306028822076,
+    "weighted_degree": 30.115750670433044,
+    "community": 37289
+  },
+  {
+    "id": 84972,
+    "pagerank": 8.046936738015526e-05,
+    "degree_centrality": 0.0005340664343623597,
+    "weighted_degree": 42.4524946808815,
+    "community": 42399
+  },
+  {
+    "id": 102625,
+    "pagerank": 8.040156687525287e-05,
+    "degree_centrality": 0.0003414523104939677,
+    "weighted_degree": 26.73727411031723,
+    "community": 22407
+  },
+  {
+    "id": 83216,
+    "pagerank": 8.034816931319787e-05,
+    "degree_centrality": 0.0005165560594652331,
+    "weighted_degree": 41.18713194131851,
+    "community": 42399
+  },
+  {
+    "id": 74865,
+    "pagerank": 8.019528425400777e-05,
+    "degree_centrality": 0.00027141081090546146,
+    "weighted_degree": 21.19725811481476,
+    "community": 44345
+  },
+  {
+    "id": 78956,
+    "pagerank": 8.010924905020868e-05,
+    "degree_centrality": 0.00015759337407413891,
+    "weighted_degree": 12.416208326816559,
+    "community": 37126
+  },
+  {
+    "id": 104067,
+    "pagerank": 7.987713893722217e-05,
+    "degree_centrality": 0.0005253112469137964,
+    "weighted_degree": 42.90715026855469,
+    "community": 50171
+  },
+  {
+    "id": 91060,
+    "pagerank": 7.964978402255084e-05,
+    "degree_centrality": 0.0007091701833336252,
+    "weighted_degree": 57.9790643453598,
+    "community": 53270
+  },
+  {
+    "id": 95550,
+    "pagerank": 7.849003844361848e-05,
+    "degree_centrality": 0.0006216183088479924,
+    "weighted_degree": 49.82643657922745,
+    "community": 53270
+  },
+  {
+    "id": 104887,
+    "pagerank": 7.827788832031354e-05,
+    "degree_centrality": 0.00025390043600833495,
+    "weighted_degree": 20.20551896095276,
+    "community": 53867
+  },
+  {
+    "id": 104590,
+    "pagerank": 7.806663539889762e-05,
+    "degree_centrality": 0.0003414523104939677,
+    "weighted_degree": 26.97228103876114,
+    "community": 38696
+  },
+  {
+    "id": 107270,
+    "pagerank": 7.805842196440689e-05,
+    "degree_centrality": 0.0004990456845681066,
+    "weighted_degree": 40.04815149307251,
+    "community": 53270
+  },
+  {
+    "id": 60075,
+    "pagerank": 7.779615140271415e-05,
+    "degree_centrality": 0.0004640249347738535,
+    "weighted_degree": 37.59929710626602,
+    "community": 42399
+  },
+  {
+    "id": 89079,
+    "pagerank": 7.715171101602615e-05,
+    "degree_centrality": 0.0004290041849796004,
+    "weighted_degree": 34.787295162677765,
+    "community": 49391
+  },
+  {
+    "id": 107458,
+    "pagerank": 7.681791434407274e-05,
+    "degree_centrality": 0.0003326971230454044,
+    "weighted_degree": 26.294100284576416,
+    "community": 48343
+  },
+  {
+    "id": 80301,
+    "pagerank": 7.678373158183504e-05,
+    "degree_centrality": 0.00028016599835402475,
+    "weighted_degree": 22.011066913604736,
+    "community": 44400
+  },
+  {
+    "id": 67668,
+    "pagerank": 7.630748065861347e-05,
+    "degree_centrality": 0.00021887968621408184,
+    "weighted_degree": 17.17053323984146,
+    "community": 3996
+  },
+  {
+    "id": 72847,
+    "pagerank": 7.606150678453276e-05,
+    "degree_centrality": 0.0002626556234568982,
+    "weighted_degree": 20.73405420780182,
+    "community": 42399
+  },
+  {
+    "id": 76013,
+    "pagerank": 7.505842443843104e-05,
+    "degree_centrality": 0.0003326971230454044,
+    "weighted_degree": 26.590077757835388,
+    "community": 52699
+  },
+  {
+    "id": 81023,
+    "pagerank": 7.249037651921719e-05,
+    "degree_centrality": 0.00047278012222241677,
+    "weighted_degree": 37.52233403921127,
+    "community": 42399
+  },
+  {
+    "id": 25473,
+    "pagerank": 7.220716284327021e-05,
+    "degree_centrality": 0.00037647306028822076,
+    "weighted_degree": 30.129192531108856,
+    "community": 16709
+  },
+  {
+    "id": 68365,
+    "pagerank": 7.182937872228975e-05,
+    "degree_centrality": 0.00019261412386839202,
+    "weighted_degree": 15.230030834674835,
+    "community": 37126
+  },
+  {
+    "id": 31579,
+    "pagerank": 7.17838975106116e-05,
+    "degree_centrality": 0.0005515768092594863,
+    "weighted_degree": 45.20696020126343,
+    "community": 28928
+  },
+  {
+    "id": 74100,
+    "pagerank": 7.122216190384464e-05,
+    "degree_centrality": 0.0006128631213994291,
+    "weighted_degree": 50.57756733894348,
+    "community": 53270
+  },
+  {
+    "id": 31963,
+    "pagerank": 7.070823456319587e-05,
+    "degree_centrality": 0.00025390043600833495,
+    "weighted_degree": 19.73038786649704,
+    "community": 11805
+  },
+  {
+    "id": 22847,
+    "pagerank": 7.061752805410282e-05,
+    "degree_centrality": 0.00027141081090546146,
+    "weighted_degree": 21.64867925643921,
+    "community": 27235
+  },
+  {
+    "id": 57204,
+    "pagerank": 7.060920925947215e-05,
+    "degree_centrality": 0.00030643156069971454,
+    "weighted_degree": 24.07720446586609,
+    "community": 37289
+  },
+  {
+    "id": 14043,
+    "pagerank": 7.048217989217293e-05,
+    "degree_centrality": 0.0003589626853910942,
+    "weighted_degree": 28.634867548942566,
+    "community": 27235
+  },
+  {
+    "id": 97971,
+    "pagerank": 7.017242751715654e-05,
+    "degree_centrality": 0.0004290041849796004,
+    "weighted_degree": 35.4218487739563,
+    "community": 3597
+  },
+  {
+    "id": 93695,
+    "pagerank": 7.010786747622572e-05,
+    "degree_centrality": 0.00040273862263391055,
+    "weighted_degree": 32.46125942468643,
+    "community": 42399
+  },
+  {
+    "id": 1520,
+    "pagerank": 6.978007007305417e-05,
+    "degree_centrality": 0.00048153530967098005,
+    "weighted_degree": 39.24121034145355,
+    "community": 490
+  },
+  {
+    "id": 6728,
+    "pagerank": 6.900720770088511e-05,
+    "degree_centrality": 0.00038522824773678404,
+    "weighted_degree": 31.302263379096985,
+    "community": 20519
+  },
+  {
+    "id": 42452,
+    "pagerank": 6.894208170565676e-05,
+    "degree_centrality": 0.0005778423716051761,
+    "weighted_degree": 47.11170828342438,
+    "community": 28928
+  },
+  {
+    "id": 95875,
+    "pagerank": 6.886820301733813e-05,
+    "degree_centrality": 0.00041149381008247384,
+    "weighted_degree": 32.56305891275406,
+    "community": 48090
+  },
+  {
+    "id": 58589,
+    "pagerank": 6.886005036634962e-05,
+    "degree_centrality": 0.0005428216218109229,
+    "weighted_degree": 44.291721761226654,
+    "community": 28928
+  },
+  {
+    "id": 101192,
+    "pagerank": 6.88045176828672e-05,
+    "degree_centrality": 0.0006303734962965557,
+    "weighted_degree": 51.69097489118576,
+    "community": 53270
+  },
+  {
+    "id": 35528,
+    "pagerank": 6.836165356353595e-05,
+    "degree_centrality": 0.0006216183088479924,
+    "weighted_degree": 51.20587658882141,
+    "community": 9026
+  },
+  {
+    "id": 62369,
+    "pagerank": 6.822334992062897e-05,
+    "degree_centrality": 0.0004465145598767269,
+    "weighted_degree": 35.51059299707413,
+    "community": 42399
+  },
+  {
+    "id": 1280,
+    "pagerank": 6.819950365739677e-05,
+    "degree_centrality": 0.0004552697473252902,
+    "weighted_degree": 37.10874718427658,
+    "community": 490
+  },
+  {
+    "id": 59339,
+    "pagerank": 6.784016042637391e-05,
+    "degree_centrality": 0.0004640249347738535,
+    "weighted_degree": 37.87989830970764,
+    "community": 7533
+  },
+  {
+    "id": 4287,
+    "pagerank": 6.703873364565359e-05,
+    "degree_centrality": 0.00021012449876551856,
+    "weighted_degree": 16.55195814371109,
+    "community": 5370
+  },
+  {
+    "id": 27890,
+    "pagerank": 6.681891695605793e-05,
+    "degree_centrality": 0.00024514524855977167,
+    "weighted_degree": 19.47748237848282,
+    "community": 490
+  },
+  {
+    "id": 33605,
+    "pagerank": 6.667487158926409e-05,
+    "degree_centrality": 0.00031518674814827783,
+    "weighted_degree": 25.08671134710312,
+    "community": 42399
+  },
+  {
+    "id": 88799,
+    "pagerank": 6.665207268385539e-05,
+    "degree_centrality": 0.00023639006111120838,
+    "weighted_degree": 18.951865673065186,
+    "community": 53864
+  },
+  {
+    "id": 1955,
+    "pagerank": 6.648509371545055e-05,
+    "degree_centrality": 0.0004290041849796004,
+    "weighted_degree": 35.144336342811584,
+    "community": 26766
+  },
+  {
+    "id": 100169,
+    "pagerank": 6.556516155959127e-05,
+    "degree_centrality": 0.0006041079339508659,
+    "weighted_degree": 49.37753748893738,
+    "community": 53270
+  },
+  {
+    "id": 40336,
+    "pagerank": 6.53953143963716e-05,
+    "degree_centrality": 0.00038522824773678404,
+    "weighted_degree": 30.880043506622314,
+    "community": 20519
+  },
+  {
+    "id": 28289,
+    "pagerank": 6.508241346363346e-05,
+    "degree_centrality": 0.0005253112469137964,
+    "weighted_degree": 42.60211616754532,
+    "community": 28928
+  },
+  {
+    "id": 17176,
+    "pagerank": 6.49356301445188e-05,
+    "degree_centrality": 0.00038522824773678404,
+    "weighted_degree": 30.966383635997772,
+    "community": 20519
+  },
+  {
+    "id": 8973,
+    "pagerank": 6.464672562576789e-05,
+    "degree_centrality": 0.00025390043600833495,
+    "weighted_degree": 20.34171575307846,
+    "community": 11805
+  },
+  {
+    "id": 51617,
+    "pagerank": 6.454796896726942e-05,
+    "degree_centrality": 0.0002626556234568982,
+    "weighted_degree": 20.392922163009644,
+    "community": 27235
+  },
+  {
+    "id": 50153,
+    "pagerank": 6.404203226394859e-05,
+    "degree_centrality": 0.00018385893641982874,
+    "weighted_degree": 14.40337187051773,
+    "community": 8569
+  },
+  {
+    "id": 39297,
+    "pagerank": 6.40395617822821e-05,
+    "degree_centrality": 0.0001663485615227022,
+    "weighted_degree": 13.074350357055664,
+    "community": 11805
+  },
+  {
+    "id": 91961,
+    "pagerank": 6.385485913520086e-05,
+    "degree_centrality": 0.0004290041849796004,
+    "weighted_degree": 34.437008023262024,
+    "community": 48090
+  },
+  {
+    "id": 29177,
+    "pagerank": 6.361155349600505e-05,
+    "degree_centrality": 0.0004202489975310371,
+    "weighted_degree": 33.60334008932114,
+    "community": 16709
+  },
+  {
+    "id": 45847,
+    "pagerank": 6.358814375688814e-05,
+    "degree_centrality": 0.00023639006111120838,
+    "weighted_degree": 19.20221871137619,
+    "community": 5370
+  },
+  {
+    "id": 48688,
+    "pagerank": 6.324915944615485e-05,
+    "degree_centrality": 0.00048153530967098005,
+    "weighted_degree": 40.25967901945114,
+    "community": 490
+  },
+  {
+    "id": 26935,
+    "pagerank": 6.312322025793143e-05,
+    "degree_centrality": 0.0004465145598767269,
+    "weighted_degree": 35.82957965135574,
+    "community": 16709
+  },
+  {
+    "id": 82841,
+    "pagerank": 6.308395216766605e-05,
+    "degree_centrality": 0.0003677178728396575,
+    "weighted_degree": 29.6644629240036,
+    "community": 42399
+  },
+  {
+    "id": 41126,
+    "pagerank": 6.275168188177092e-05,
+    "degree_centrality": 0.00019261412386839202,
+    "weighted_degree": 15.191812634468079,
+    "community": 11805
+  },
+  {
+    "id": 19819,
+    "pagerank": 6.26215960546199e-05,
+    "degree_centrality": 0.0003239419355968411,
+    "weighted_degree": 25.643166482448578,
+    "community": 12872
+  },
+  {
+    "id": 9027,
+    "pagerank": 6.244091604914567e-05,
+    "degree_centrality": 0.0005778423716051761,
+    "weighted_degree": 49.519393026828766,
+    "community": 322
+  },
+  {
+    "id": 81960,
+    "pagerank": 6.21274113541887e-05,
+    "degree_centrality": 0.00010506224938275928,
+    "weighted_degree": 8.106427133083344,
+    "community": 44345
+  },
+  {
+    "id": 73482,
+    "pagerank": 6.211419860910179e-05,
+    "degree_centrality": 0.00038522824773678404,
+    "weighted_degree": 30.487255692481995,
+    "community": 42399
+  },
+  {
+    "id": 100502,
+    "pagerank": 6.206049609506073e-05,
+    "degree_centrality": 0.00018385893641982874,
+    "weighted_degree": 14.376735270023346,
+    "community": 51838
+  },
+  {
+    "id": 60224,
+    "pagerank": 6.193615165126262e-05,
+    "degree_centrality": 0.00027141081090546146,
+    "weighted_degree": 21.680364966392517,
+    "community": 37289
+  },
+  {
+    "id": 75605,
+    "pagerank": 6.160465653555048e-05,
+    "degree_centrality": 0.00021012449876551856,
+    "weighted_degree": 16.14204704761505,
+    "community": 47569
+  },
+  {
+    "id": 12726,
+    "pagerank": 6.111031238414538e-05,
+    "degree_centrality": 0.00030643156069971454,
+    "weighted_degree": 24.716281473636627,
+    "community": 27235
+  },
+  {
+    "id": 94184,
+    "pagerank": 6.090333564572509e-05,
+    "degree_centrality": 0.0005165560594652331,
+    "weighted_degree": 42.7572186589241,
+    "community": 48090
+  },
+  {
+    "id": 106578,
+    "pagerank": 6.0839713187781345e-05,
+    "degree_centrality": 0.00040273862263391055,
+    "weighted_degree": 32.43489611148834,
+    "community": 53270
+  },
+  {
+    "id": 68108,
+    "pagerank": 6.077752949178074e-05,
+    "degree_centrality": 0.00018385893641982874,
+    "weighted_degree": 14.58004879951477,
+    "community": 38696
+  },
+  {
+    "id": 67433,
+    "pagerank": 6.0773202593795956e-05,
+    "degree_centrality": 0.00023639006111120838,
+    "weighted_degree": 18.54879593849182,
+    "community": 53270
+  },
+  {
+    "id": 61503,
+    "pagerank": 6.07574908624006e-05,
+    "degree_centrality": 0.0003239419355968411,
+    "weighted_degree": 25.689095616340637,
+    "community": 42399
+  },
+  {
+    "id": 89573,
+    "pagerank": 6.073767482312441e-05,
+    "degree_centrality": 0.0003589626853910942,
+    "weighted_degree": 28.521483063697815,
+    "community": 42399
+  },
+  {
+    "id": 19931,
+    "pagerank": 6.0365570074024264e-05,
+    "degree_centrality": 0.00037647306028822076,
+    "weighted_degree": 30.922710478305817,
+    "community": 19489
+  },
+  {
+    "id": 107060,
+    "pagerank": 6.0363966775708626e-05,
+    "degree_centrality": 0.0003939834351853473,
+    "weighted_degree": 32.00643688440323,
+    "community": 53270
+  },
+  {
+    "id": 10742,
+    "pagerank": 5.995289127236834e-05,
+    "degree_centrality": 0.00027141081090546146,
+    "weighted_degree": 21.125380218029022,
+    "community": 22407
+  },
+  {
+    "id": 72013,
+    "pagerank": 5.98036843758291e-05,
+    "degree_centrality": 0.00037647306028822076,
+    "weighted_degree": 30.28068518638611,
+    "community": 48090
+  },
+  {
+    "id": 29411,
+    "pagerank": 5.961040638179334e-05,
+    "degree_centrality": 0.00021012449876551856,
+    "weighted_degree": 16.360335648059845,
+    "community": 7533
+  },
+  {
+    "id": 81356,
+    "pagerank": 5.956446542332349e-05,
+    "degree_centrality": 0.0002276348736626451,
+    "weighted_degree": 17.755728542804718,
+    "community": 43816
+  },
+  {
+    "id": 79666,
+    "pagerank": 5.9551237283229164e-05,
+    "degree_centrality": 0.0003677178728396575,
+    "weighted_degree": 29.406747221946716,
+    "community": 42399
+  },
+  {
+    "id": 37695,
+    "pagerank": 5.946590797637506e-05,
+    "degree_centrality": 0.0004290041849796004,
+    "weighted_degree": 35.469369530677795,
+    "community": 490
+  },
+  {
+    "id": 14681,
+    "pagerank": 5.936865252679585e-05,
+    "degree_centrality": 0.0005515768092594863,
+    "weighted_degree": 46.862936079502106,
+    "community": 322
+  },
+  {
+    "id": 21101,
+    "pagerank": 5.9328266487153e-05,
+    "degree_centrality": 0.00015759337407413891,
+    "weighted_degree": 12.580743074417114,
+    "community": 22407
+  },
+  {
+    "id": 103621,
+    "pagerank": 5.920485908327472e-05,
+    "degree_centrality": 0.0005340664343623597,
+    "weighted_degree": 46.11420798301697,
+    "community": 43816
+  },
+  {
+    "id": 98690,
+    "pagerank": 5.908235507177608e-05,
+    "degree_centrality": 0.00025390043600833495,
+    "weighted_degree": 19.693354964256287,
+    "community": 49391
+  },
+  {
+    "id": 58947,
+    "pagerank": 5.881790885466672e-05,
+    "degree_centrality": 0.0002276348736626451,
+    "weighted_degree": 17.79005056619644,
+    "community": 11805
+  },
+  {
+    "id": 112506,
+    "pagerank": 5.87139228754224e-05,
+    "degree_centrality": 0.0005165560594652331,
+    "weighted_degree": 42.27083057165146,
+    "community": 53270
+  },
+  {
+    "id": 60049,
+    "pagerank": 5.868314176802723e-05,
+    "degree_centrality": 0.00015759337407413891,
+    "weighted_degree": 12.392687737941742,
+    "community": 27235
+  },
+  {
+    "id": 97469,
+    "pagerank": 5.86537050381557e-05,
+    "degree_centrality": 0.00017510374897126545,
+    "weighted_degree": 14.290241539478302,
+    "community": 41662
+  },
+  {
+    "id": 58788,
+    "pagerank": 5.859039400758891e-05,
+    "degree_centrality": 0.00028016599835402475,
+    "weighted_degree": 22.025065302848816,
+    "community": 7533
+  },
+  {
+    "id": 29883,
+    "pagerank": 5.855676793134958e-05,
+    "degree_centrality": 0.0003589626853910942,
+    "weighted_degree": 29.283879339694977,
+    "community": 16297
+  },
+  {
+    "id": 95925,
+    "pagerank": 5.84779025116931e-05,
+    "degree_centrality": 0.00030643156069971454,
+    "weighted_degree": 24.223192870616913,
+    "community": 42399
+  },
+  {
+    "id": 6984,
+    "pagerank": 5.838289311872533e-05,
+    "degree_centrality": 0.0004465145598767269,
+    "weighted_degree": 36.97367578744888,
+    "community": 9026
+  },
+  {
+    "id": 25375,
+    "pagerank": 5.8237314002544715e-05,
+    "degree_centrality": 0.0002276348736626451,
+    "weighted_degree": 17.85148799419403,
+    "community": 21486
+  },
+  {
+    "id": 113507,
+    "pagerank": 5.819764081553162e-05,
+    "degree_centrality": 0.00021887968621408184,
+    "weighted_degree": 17.624460756778717,
+    "community": 53871
+  },
+  {
+    "id": 91763,
+    "pagerank": 5.8000666779512714e-05,
+    "degree_centrality": 0.0004640249347738535,
+    "weighted_degree": 37.74219959974289,
+    "community": 53270
+  }
+]

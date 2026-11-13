@@ -1,0 +1,20 @@
+{
+    "original_embedding_shape": [
+        114219,
+        768
+    ],
+    "pca_shape": [
+        114219,
+        50
+    ],
+    "pca_components": 50,
+    "pca_explained_variance_ratio": 0.4822390079498291,
+    "tsne_shape": [
+        5000,
+        2
+    ],
+    "tsne_sample_size": 5000,
+    "tsne_perplexity": 30.0,
+    "random_state": 42,
+    "id_alignment": "row_index_equals_article_id"
+}

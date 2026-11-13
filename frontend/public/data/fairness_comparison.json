@@ -1,0 +1,14 @@
+[
+  {
+    "method": "kmeans",
+    "association_nmi": 0.5567019086027047,
+    "mean_normalized_entropy": 0.4357621549376756,
+    "mean_js_distance": 0.5167378784707961
+  },
+  {
+    "method": "gmm",
+    "association_nmi": 0.5458835130434816,
+    "mean_normalized_entropy": 0.4455683833532419,
+    "mean_js_distance": 0.509358846115924
+  }
+]

@@ -1,0 +1,6 @@
+{
+    "share_mae": 0.0014404782762399368,
+    "share_rmse": 0.006307284727994727,
+    "evaluated_records": 672,
+    "warning": "Internal evaluation only. These metrics are not differentially private."
+}

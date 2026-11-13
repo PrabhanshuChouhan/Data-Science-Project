@@ -1,0 +1,16 @@
+[
+  {
+    "category": "ENTERTAINMENT",
+    "window": "2014-12",
+    "factor": 1.8,
+    "share_before": 0.2566,
+    "share_after": 0.4622
+  },
+  {
+    "category": "ENTERTAINMENT",
+    "window": "2015-01",
+    "factor": 1.8,
+    "share_before": 0.2705,
+    "share_after": 0.487
+  }
+]

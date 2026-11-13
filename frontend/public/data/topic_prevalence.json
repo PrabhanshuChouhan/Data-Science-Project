@@ -1,0 +1,4706 @@
+[
+  {
+    "window": "2012-01",
+    "kmeans_cluster": 0,
+    "count": 23,
+    "total": 208,
+    "prevalence": 0.11057692307692307
+  },
+  {
+    "window": "2012-01",
+    "kmeans_cluster": 1,
+    "count": 25,
+    "total": 208,
+    "prevalence": 0.1201923076923077
+  },
+  {
+    "window": "2012-01",
+    "kmeans_cluster": 2,
+    "count": 14,
+    "total": 208,
+    "prevalence": 0.0673076923076923
+  },
+  {
+    "window": "2012-01",
+    "kmeans_cluster": 3,
+    "count": 32,
+    "total": 208,
+    "prevalence": 0.15384615384615385
+  },
+  {
+    "window": "2012-01",
+    "kmeans_cluster": 4,
+    "count": 1,
+    "total": 208,
+    "prevalence": 0.004807692307692308
+  },
+  {
+    "window": "2012-01",
+    "kmeans_cluster": 5,
+    "count": 15,
+    "total": 208,
+    "prevalence": 0.07211538461538461
+  },
+  {
+    "window": "2012-01",
+    "kmeans_cluster": 6,
+    "count": 61,
+    "total": 208,
+    "prevalence": 0.2932692307692308
+  },
+  {
+    "window": "2012-01",
+    "kmeans_cluster": 7,
+    "count": 37,
+    "total": 208,
+    "prevalence": 0.1778846153846154
+  },
+  {
+    "window": "2012-02",
+    "kmeans_cluster": 0,
+    "count": 197,
+    "total": 1877,
+    "prevalence": 0.10495471497069792
+  },
+  {
+    "window": "2012-02",
+    "kmeans_cluster": 1,
+    "count": 276,
+    "total": 1877,
+    "prevalence": 0.14704315396909962
+  },
+  {
+    "window": "2012-02",
+    "kmeans_cluster": 2,
+    "count": 86,
+    "total": 1877,
+    "prevalence": 0.04581779435269046
+  },
+  {
+    "window": "2012-02",
+    "kmeans_cluster": 3,
+    "count": 224,
+    "total": 1877,
+    "prevalence": 0.11933937133724028
+  },
+  {
+    "window": "2012-02",
+    "kmeans_cluster": 4,
+    "count": 7,
+    "total": 1877,
+    "prevalence": 0.0037293553542887587
+  },
+  {
+    "window": "2012-02",
+    "kmeans_cluster": 5,
+    "count": 148,
+    "total": 1877,
+    "prevalence": 0.07884922749067662
+  },
+  {
+    "window": "2012-02",
+    "kmeans_cluster": 6,
+    "count": 589,
+    "total": 1877,
+    "prevalence": 0.3137986148108684
+  },
+  {
+    "window": "2012-02",
+    "kmeans_cluster": 7,
+    "count": 350,
+    "total": 1877,
+    "prevalence": 0.18646776771443793
+  },
+  {
+    "window": "2012-03",
+    "kmeans_cluster": 0,
+    "count": 207,
+    "total": 1871,
+    "prevalence": 0.11063602351683592
+  },
+  {
+    "window": "2012-03",
+    "kmeans_cluster": 1,
+    "count": 279,
+    "total": 1871,
+    "prevalence": 0.14911811865312666
+  },
+  {
+    "window": "2012-03",
+    "kmeans_cluster": 2,
+    "count": 77,
+    "total": 1871,
+    "prevalence": 0.04115446285408872
+  },
+  {
+    "window": "2012-03",
+    "kmeans_cluster": 3,
+    "count": 252,
+    "total": 1871,
+    "prevalence": 0.13468733297701763
+  },
+  {
+    "window": "2012-03",
+    "kmeans_cluster": 4,
+    "count": 5,
+    "total": 1871,
+    "prevalence": 0.002672367717797969
+  },
+  {
+    "window": "2012-03",
+    "kmeans_cluster": 5,
+    "count": 125,
+    "total": 1871,
+    "prevalence": 0.06680919294494922
+  },
+  {
+    "window": "2012-03",
+    "kmeans_cluster": 6,
+    "count": 523,
+    "total": 1871,
+    "prevalence": 0.27952966328166756
+  },
+  {
+    "window": "2012-03",
+    "kmeans_cluster": 7,
+    "count": 403,
+    "total": 1871,
+    "prevalence": 0.2153928380545163
+  },
+  {
+    "window": "2012-04",
+    "kmeans_cluster": 0,
+    "count": 250,
+    "total": 1873,
+    "prevalence": 0.13347570742124934
+  },
+  {
+    "window": "2012-04",
+    "kmeans_cluster": 1,
+    "count": 265,
+    "total": 1873,
+    "prevalence": 0.1414842498665243
+  },
+  {
+    "window": "2012-04",
+    "kmeans_cluster": 2,
+    "count": 75,
+    "total": 1873,
+    "prevalence": 0.0400427122263748
+  },
+  {
+    "window": "2012-04",
+    "kmeans_cluster": 3,
+    "count": 245,
+    "total": 1873,
+    "prevalence": 0.13080619327282433
+  },
+  {
+    "window": "2012-04",
+    "kmeans_cluster": 4,
+    "count": 10,
+    "total": 1873,
+    "prevalence": 0.005339028296849973
+  },
+  {
+    "window": "2012-04",
+    "kmeans_cluster": 5,
+    "count": 145,
+    "total": 1873,
+    "prevalence": 0.07741591030432461
+  },
+  {
+    "window": "2012-04",
+    "kmeans_cluster": 6,
+    "count": 483,
+    "total": 1873,
+    "prevalence": 0.2578750667378537
+  },
+  {
+    "window": "2012-04",
+    "kmeans_cluster": 7,
+    "count": 400,
+    "total": 1873,
+    "prevalence": 0.21356113187399894
+  },
+  {
+    "window": "2012-05",
+    "kmeans_cluster": 0,
+    "count": 317,
+    "total": 1981,
+    "prevalence": 0.16002019182231197
+  },
+  {
+    "window": "2012-05",
+    "kmeans_cluster": 1,
+    "count": 285,
+    "total": 1981,
+    "prevalence": 0.14386673397274105
+  },
+  {
+    "window": "2012-05",
+    "kmeans_cluster": 2,
+    "count": 91,
+    "total": 1981,
+    "prevalence": 0.045936395759717315
+  },
+  {
+    "window": "2012-05",
+    "kmeans_cluster": 3,
+    "count": 245,
+    "total": 1981,
+    "prevalence": 0.12367491166077739
+  },
+  {
+    "window": "2012-05",
+    "kmeans_cluster": 4,
+    "count": 11,
+    "total": 1981,
+    "prevalence": 0.005552751135790005
+  },
+  {
+    "window": "2012-05",
+    "kmeans_cluster": 5,
+    "count": 117,
+    "total": 1981,
+    "prevalence": 0.05906108026249369
+  },
+  {
+    "window": "2012-05",
+    "kmeans_cluster": 6,
+    "count": 488,
+    "total": 1981,
+    "prevalence": 0.24634023220595658
+  },
+  {
+    "window": "2012-05",
+    "kmeans_cluster": 7,
+    "count": 427,
+    "total": 1981,
+    "prevalence": 0.21554770318021202
+  },
+  {
+    "window": "2012-06",
+    "kmeans_cluster": 0,
+    "count": 304,
+    "total": 1914,
+    "prevalence": 0.1588296760710554
+  },
+  {
+    "window": "2012-06",
+    "kmeans_cluster": 1,
+    "count": 279,
+    "total": 1914,
+    "prevalence": 0.14576802507836992
+  },
+  {
+    "window": "2012-06",
+    "kmeans_cluster": 2,
+    "count": 93,
+    "total": 1914,
+    "prevalence": 0.048589341692789965
+  },
+  {
+    "window": "2012-06",
+    "kmeans_cluster": 3,
+    "count": 263,
+    "total": 1914,
+    "prevalence": 0.13740856844305122
+  },
+  {
+    "window": "2012-06",
+    "kmeans_cluster": 4,
+    "count": 8,
+    "total": 1914,
+    "prevalence": 0.0041797283176593526
+  },
+  {
+    "window": "2012-06",
+    "kmeans_cluster": 5,
+    "count": 135,
+    "total": 1914,
+    "prevalence": 0.07053291536050156
+  },
+  {
+    "window": "2012-06",
+    "kmeans_cluster": 6,
+    "count": 366,
+    "total": 1914,
+    "prevalence": 0.19122257053291536
+  },
+  {
+    "window": "2012-06",
+    "kmeans_cluster": 7,
+    "count": 466,
+    "total": 1914,
+    "prevalence": 0.24346917450365727
+  },
+  {
+    "window": "2012-07",
+    "kmeans_cluster": 0,
+    "count": 245,
+    "total": 1998,
+    "prevalence": 0.12262262262262262
+  },
+  {
+    "window": "2012-07",
+    "kmeans_cluster": 1,
+    "count": 288,
+    "total": 1998,
+    "prevalence": 0.14414414414414414
+  },
+  {
+    "window": "2012-07",
+    "kmeans_cluster": 2,
+    "count": 109,
+    "total": 1998,
+    "prevalence": 0.05455455455455455
+  },
+  {
+    "window": "2012-07",
+    "kmeans_cluster": 3,
+    "count": 348,
+    "total": 1998,
+    "prevalence": 0.17417417417417416
+  },
+  {
+    "window": "2012-07",
+    "kmeans_cluster": 4,
+    "count": 7,
+    "total": 1998,
+    "prevalence": 0.0035035035035035035
+  },
+  {
+    "window": "2012-07",
+    "kmeans_cluster": 5,
+    "count": 151,
+    "total": 1998,
+    "prevalence": 0.07557557557557558
+  },
+  {
+    "window": "2012-07",
+    "kmeans_cluster": 6,
+    "count": 382,
+    "total": 1998,
+    "prevalence": 0.19119119119119118
+  },
+  {
+    "window": "2012-07",
+    "kmeans_cluster": 7,
+    "count": 468,
+    "total": 1998,
+    "prevalence": 0.23423423423423423
+  },
+  {
+    "window": "2012-08",
+    "kmeans_cluster": 0,
+    "count": 290,
+    "total": 2025,
+    "prevalence": 0.14320987654320988
+  },
+  {
+    "window": "2012-08",
+    "kmeans_cluster": 1,
+    "count": 323,
+    "total": 2025,
+    "prevalence": 0.15950617283950616
+  },
+  {
+    "window": "2012-08",
+    "kmeans_cluster": 2,
+    "count": 77,
+    "total": 2025,
+    "prevalence": 0.03802469135802469
+  },
+  {
+    "window": "2012-08",
+    "kmeans_cluster": 3,
+    "count": 330,
+    "total": 2025,
+    "prevalence": 0.16296296296296298
+  },
+  {
+    "window": "2012-08",
+    "kmeans_cluster": 4,
+    "count": 20,
+    "total": 2025,
+    "prevalence": 0.009876543209876543
+  },
+  {
+    "window": "2012-08",
+    "kmeans_cluster": 5,
+    "count": 123,
+    "total": 2025,
+    "prevalence": 0.06074074074074074
+  },
+  {
+    "window": "2012-08",
+    "kmeans_cluster": 6,
+    "count": 407,
+    "total": 2025,
+    "prevalence": 0.20098765432098764
+  },
+  {
+    "window": "2012-08",
+    "kmeans_cluster": 7,
+    "count": 455,
+    "total": 2025,
+    "prevalence": 0.22469135802469137
+  },
+  {
+    "window": "2012-09",
+    "kmeans_cluster": 0,
+    "count": 256,
+    "total": 1926,
+    "prevalence": 0.13291796469366562
+  },
+  {
+    "window": "2012-09",
+    "kmeans_cluster": 1,
+    "count": 351,
+    "total": 1926,
+    "prevalence": 0.1822429906542056
+  },
+  {
+    "window": "2012-09",
+    "kmeans_cluster": 2,
+    "count": 95,
+    "total": 1926,
+    "prevalence": 0.04932502596053998
+  },
+  {
+    "window": "2012-09",
+    "kmeans_cluster": 3,
+    "count": 284,
+    "total": 1926,
+    "prevalence": 0.1474558670820353
+  },
+  {
+    "window": "2012-09",
+    "kmeans_cluster": 4,
+    "count": 16,
+    "total": 1926,
+    "prevalence": 0.008307372793354102
+  },
+  {
+    "window": "2012-09",
+    "kmeans_cluster": 5,
+    "count": 136,
+    "total": 1926,
+    "prevalence": 0.07061266874350987
+  },
+  {
+    "window": "2012-09",
+    "kmeans_cluster": 6,
+    "count": 358,
+    "total": 1926,
+    "prevalence": 0.18587746625129803
+  },
+  {
+    "window": "2012-09",
+    "kmeans_cluster": 7,
+    "count": 430,
+    "total": 1926,
+    "prevalence": 0.2232606438213915
+  },
+  {
+    "window": "2012-10",
+    "kmeans_cluster": 0,
+    "count": 251,
+    "total": 1997,
+    "prevalence": 0.1256885327991988
+  },
+  {
+    "window": "2012-10",
+    "kmeans_cluster": 1,
+    "count": 414,
+    "total": 1997,
+    "prevalence": 0.2073109664496745
+  },
+  {
+    "window": "2012-10",
+    "kmeans_cluster": 2,
+    "count": 109,
+    "total": 1997,
+    "prevalence": 0.05458187280921382
+  },
+  {
+    "window": "2012-10",
+    "kmeans_cluster": 3,
+    "count": 283,
+    "total": 1997,
+    "prevalence": 0.14171256885327993
+  },
+  {
+    "window": "2012-10",
+    "kmeans_cluster": 4,
+    "count": 32,
+    "total": 1997,
+    "prevalence": 0.01602403605408112
+  },
+  {
+    "window": "2012-10",
+    "kmeans_cluster": 5,
+    "count": 128,
+    "total": 1997,
+    "prevalence": 0.06409614421632448
+  },
+  {
+    "window": "2012-10",
+    "kmeans_cluster": 6,
+    "count": 316,
+    "total": 1997,
+    "prevalence": 0.15823735603405106
+  },
+  {
+    "window": "2012-10",
+    "kmeans_cluster": 7,
+    "count": 464,
+    "total": 1997,
+    "prevalence": 0.23234852278417625
+  },
+  {
+    "window": "2012-11",
+    "kmeans_cluster": 0,
+    "count": 275,
+    "total": 1860,
+    "prevalence": 0.1478494623655914
+  },
+  {
+    "window": "2012-11",
+    "kmeans_cluster": 1,
+    "count": 364,
+    "total": 1860,
+    "prevalence": 0.1956989247311828
+  },
+  {
+    "window": "2012-11",
+    "kmeans_cluster": 2,
+    "count": 91,
+    "total": 1860,
+    "prevalence": 0.0489247311827957
+  },
+  {
+    "window": "2012-11",
+    "kmeans_cluster": 3,
+    "count": 297,
+    "total": 1860,
+    "prevalence": 0.1596774193548387
+  },
+  {
+    "window": "2012-11",
+    "kmeans_cluster": 4,
+    "count": 31,
+    "total": 1860,
+    "prevalence": 0.016666666666666666
+  },
+  {
+    "window": "2012-11",
+    "kmeans_cluster": 5,
+    "count": 121,
+    "total": 1860,
+    "prevalence": 0.06505376344086021
+  },
+  {
+    "window": "2012-11",
+    "kmeans_cluster": 6,
+    "count": 277,
+    "total": 1860,
+    "prevalence": 0.1489247311827957
+  },
+  {
+    "window": "2012-11",
+    "kmeans_cluster": 7,
+    "count": 404,
+    "total": 1860,
+    "prevalence": 0.2172043010752688
+  },
+  {
+    "window": "2012-12",
+    "kmeans_cluster": 0,
+    "count": 293,
+    "total": 1886,
+    "prevalence": 0.15535524920466595
+  },
+  {
+    "window": "2012-12",
+    "kmeans_cluster": 1,
+    "count": 313,
+    "total": 1886,
+    "prevalence": 0.16595970307529162
+  },
+  {
+    "window": "2012-12",
+    "kmeans_cluster": 2,
+    "count": 118,
+    "total": 1886,
+    "prevalence": 0.06256627783669141
+  },
+  {
+    "window": "2012-12",
+    "kmeans_cluster": 3,
+    "count": 338,
+    "total": 1886,
+    "prevalence": 0.1792152704135737
+  },
+  {
+    "window": "2012-12",
+    "kmeans_cluster": 4,
+    "count": 10,
+    "total": 1886,
+    "prevalence": 0.005302226935312832
+  },
+  {
+    "window": "2012-12",
+    "kmeans_cluster": 5,
+    "count": 122,
+    "total": 1886,
+    "prevalence": 0.06468716861081654
+  },
+  {
+    "window": "2012-12",
+    "kmeans_cluster": 6,
+    "count": 250,
+    "total": 1886,
+    "prevalence": 0.1325556733828208
+  },
+  {
+    "window": "2012-12",
+    "kmeans_cluster": 7,
+    "count": 442,
+    "total": 1886,
+    "prevalence": 0.23435843054082714
+  },
+  {
+    "window": "2013-01",
+    "kmeans_cluster": 0,
+    "count": 387,
+    "total": 2082,
+    "prevalence": 0.18587896253602307
+  },
+  {
+    "window": "2013-01",
+    "kmeans_cluster": 1,
+    "count": 411,
+    "total": 2082,
+    "prevalence": 0.19740634005763688
+  },
+  {
+    "window": "2013-01",
+    "kmeans_cluster": 2,
+    "count": 98,
+    "total": 2082,
+    "prevalence": 0.04707012487992315
+  },
+  {
+    "window": "2013-01",
+    "kmeans_cluster": 3,
+    "count": 282,
+    "total": 2082,
+    "prevalence": 0.13544668587896252
+  },
+  {
+    "window": "2013-01",
+    "kmeans_cluster": 4,
+    "count": 6,
+    "total": 2082,
+    "prevalence": 0.002881844380403458
+  },
+  {
+    "window": "2013-01",
+    "kmeans_cluster": 5,
+    "count": 132,
+    "total": 2082,
+    "prevalence": 0.06340057636887608
+  },
+  {
+    "window": "2013-01",
+    "kmeans_cluster": 6,
+    "count": 240,
+    "total": 2082,
+    "prevalence": 0.11527377521613832
+  },
+  {
+    "window": "2013-01",
+    "kmeans_cluster": 7,
+    "count": 526,
+    "total": 2082,
+    "prevalence": 0.2526416906820365
+  },
+  {
+    "window": "2013-02",
+    "kmeans_cluster": 0,
+    "count": 297,
+    "total": 1930,
+    "prevalence": 0.1538860103626943
+  },
+  {
+    "window": "2013-02",
+    "kmeans_cluster": 1,
+    "count": 410,
+    "total": 1930,
+    "prevalence": 0.21243523316062177
+  },
+  {
+    "window": "2013-02",
+    "kmeans_cluster": 2,
+    "count": 92,
+    "total": 1930,
+    "prevalence": 0.04766839378238342
+  },
+  {
+    "window": "2013-02",
+    "kmeans_cluster": 3,
+    "count": 251,
+    "total": 1930,
+    "prevalence": 0.1300518134715026
+  },
+  {
+    "window": "2013-02",
+    "kmeans_cluster": 4,
+    "count": 6,
+    "total": 1930,
+    "prevalence": 0.0031088082901554403
+  },
+  {
+    "window": "2013-02",
+    "kmeans_cluster": 5,
+    "count": 146,
+    "total": 1930,
+    "prevalence": 0.07564766839378238
+  },
+  {
+    "window": "2013-02",
+    "kmeans_cluster": 6,
+    "count": 292,
+    "total": 1930,
+    "prevalence": 0.15129533678756477
+  },
+  {
+    "window": "2013-02",
+    "kmeans_cluster": 7,
+    "count": 436,
+    "total": 1930,
+    "prevalence": 0.22590673575129533
+  },
+  {
+    "window": "2013-03",
+    "kmeans_cluster": 0,
+    "count": 370,
+    "total": 2096,
+    "prevalence": 0.1765267175572519
+  },
+  {
+    "window": "2013-03",
+    "kmeans_cluster": 1,
+    "count": 450,
+    "total": 2096,
+    "prevalence": 0.21469465648854963
+  },
+  {
+    "window": "2013-03",
+    "kmeans_cluster": 2,
+    "count": 112,
+    "total": 2096,
+    "prevalence": 0.05343511450381679
+  },
+  {
+    "window": "2013-03",
+    "kmeans_cluster": 3,
+    "count": 284,
+    "total": 2096,
+    "prevalence": 0.13549618320610687
+  },
+  {
+    "window": "2013-03",
+    "kmeans_cluster": 4,
+    "count": 3,
+    "total": 2096,
+    "prevalence": 0.0014312977099236641
+  },
+  {
+    "window": "2013-03",
+    "kmeans_cluster": 5,
+    "count": 154,
+    "total": 2096,
+    "prevalence": 0.07347328244274809
+  },
+  {
+    "window": "2013-03",
+    "kmeans_cluster": 6,
+    "count": 232,
+    "total": 2096,
+    "prevalence": 0.11068702290076336
+  },
+  {
+    "window": "2013-03",
+    "kmeans_cluster": 7,
+    "count": 491,
+    "total": 2096,
+    "prevalence": 0.2342557251908397
+  },
+  {
+    "window": "2013-04",
+    "kmeans_cluster": 0,
+    "count": 344,
+    "total": 2035,
+    "prevalence": 0.16904176904176904
+  },
+  {
+    "window": "2013-04",
+    "kmeans_cluster": 1,
+    "count": 402,
+    "total": 2035,
+    "prevalence": 0.19754299754299753
+  },
+  {
+    "window": "2013-04",
+    "kmeans_cluster": 2,
+    "count": 120,
+    "total": 2035,
+    "prevalence": 0.05896805896805897
+  },
+  {
+    "window": "2013-04",
+    "kmeans_cluster": 3,
+    "count": 266,
+    "total": 2035,
+    "prevalence": 0.13071253071253072
+  },
+  {
+    "window": "2013-04",
+    "kmeans_cluster": 4,
+    "count": 7,
+    "total": 2035,
+    "prevalence": 0.0034398034398034397
+  },
+  {
+    "window": "2013-04",
+    "kmeans_cluster": 5,
+    "count": 120,
+    "total": 2035,
+    "prevalence": 0.05896805896805897
+  },
+  {
+    "window": "2013-04",
+    "kmeans_cluster": 6,
+    "count": 282,
+    "total": 2035,
+    "prevalence": 0.13857493857493858
+  },
+  {
+    "window": "2013-04",
+    "kmeans_cluster": 7,
+    "count": 494,
+    "total": 2035,
+    "prevalence": 0.24275184275184275
+  },
+  {
+    "window": "2013-05",
+    "kmeans_cluster": 0,
+    "count": 339,
+    "total": 1942,
+    "prevalence": 0.174562306900103
+  },
+  {
+    "window": "2013-05",
+    "kmeans_cluster": 1,
+    "count": 393,
+    "total": 1942,
+    "prevalence": 0.2023686920700309
+  },
+  {
+    "window": "2013-05",
+    "kmeans_cluster": 2,
+    "count": 93,
+    "total": 1942,
+    "prevalence": 0.047888774459320285
+  },
+  {
+    "window": "2013-05",
+    "kmeans_cluster": 3,
+    "count": 264,
+    "total": 1942,
+    "prevalence": 0.13594232749742532
+  },
+  {
+    "window": "2013-05",
+    "kmeans_cluster": 4,
+    "count": 2,
+    "total": 1942,
+    "prevalence": 0.0010298661174047373
+  },
+  {
+    "window": "2013-05",
+    "kmeans_cluster": 5,
+    "count": 167,
+    "total": 1942,
+    "prevalence": 0.08599382080329557
+  },
+  {
+    "window": "2013-05",
+    "kmeans_cluster": 6,
+    "count": 240,
+    "total": 1942,
+    "prevalence": 0.12358393408856849
+  },
+  {
+    "window": "2013-05",
+    "kmeans_cluster": 7,
+    "count": 444,
+    "total": 1942,
+    "prevalence": 0.2286302780638517
+  },
+  {
+    "window": "2013-06",
+    "kmeans_cluster": 0,
+    "count": 277,
+    "total": 1834,
+    "prevalence": 0.1510359869138495
+  },
+  {
+    "window": "2013-06",
+    "kmeans_cluster": 1,
+    "count": 354,
+    "total": 1834,
+    "prevalence": 0.193020719738277
+  },
+  {
+    "window": "2013-06",
+    "kmeans_cluster": 2,
+    "count": 103,
+    "total": 1834,
+    "prevalence": 0.05616139585605234
+  },
+  {
+    "window": "2013-06",
+    "kmeans_cluster": 3,
+    "count": 297,
+    "total": 1834,
+    "prevalence": 0.1619411123227917
+  },
+  {
+    "window": "2013-06",
+    "kmeans_cluster": 4,
+    "count": 3,
+    "total": 1834,
+    "prevalence": 0.0016357688113413304
+  },
+  {
+    "window": "2013-06",
+    "kmeans_cluster": 5,
+    "count": 176,
+    "total": 1834,
+    "prevalence": 0.09596510359869138
+  },
+  {
+    "window": "2013-06",
+    "kmeans_cluster": 6,
+    "count": 215,
+    "total": 1834,
+    "prevalence": 0.11723009814612868
+  },
+  {
+    "window": "2013-06",
+    "kmeans_cluster": 7,
+    "count": 409,
+    "total": 1834,
+    "prevalence": 0.22300981461286803
+  },
+  {
+    "window": "2013-07",
+    "kmeans_cluster": 0,
+    "count": 282,
+    "total": 1953,
+    "prevalence": 0.1443932411674347
+  },
+  {
+    "window": "2013-07",
+    "kmeans_cluster": 1,
+    "count": 423,
+    "total": 1953,
+    "prevalence": 0.21658986175115208
+  },
+  {
+    "window": "2013-07",
+    "kmeans_cluster": 2,
+    "count": 80,
+    "total": 1953,
+    "prevalence": 0.0409626216077829
+  },
+  {
+    "window": "2013-07",
+    "kmeans_cluster": 3,
+    "count": 319,
+    "total": 1953,
+    "prevalence": 0.1633384536610343
+  },
+  {
+    "window": "2013-07",
+    "kmeans_cluster": 4,
+    "count": 4,
+    "total": 1953,
+    "prevalence": 0.002048131080389145
+  },
+  {
+    "window": "2013-07",
+    "kmeans_cluster": 5,
+    "count": 163,
+    "total": 1953,
+    "prevalence": 0.08346134152585766
+  },
+  {
+    "window": "2013-07",
+    "kmeans_cluster": 6,
+    "count": 223,
+    "total": 1953,
+    "prevalence": 0.11418330773169483
+  },
+  {
+    "window": "2013-07",
+    "kmeans_cluster": 7,
+    "count": 459,
+    "total": 1953,
+    "prevalence": 0.2350230414746544
+  },
+  {
+    "window": "2013-08",
+    "kmeans_cluster": 0,
+    "count": 276,
+    "total": 1940,
+    "prevalence": 0.1422680412371134
+  },
+  {
+    "window": "2013-08",
+    "kmeans_cluster": 1,
+    "count": 431,
+    "total": 1940,
+    "prevalence": 0.22216494845360824
+  },
+  {
+    "window": "2013-08",
+    "kmeans_cluster": 2,
+    "count": 77,
+    "total": 1940,
+    "prevalence": 0.039690721649484534
+  },
+  {
+    "window": "2013-08",
+    "kmeans_cluster": 3,
+    "count": 340,
+    "total": 1940,
+    "prevalence": 0.17525773195876287
+  },
+  {
+    "window": "2013-08",
+    "kmeans_cluster": 4,
+    "count": 2,
+    "total": 1940,
+    "prevalence": 0.0010309278350515464
+  },
+  {
+    "window": "2013-08",
+    "kmeans_cluster": 5,
+    "count": 142,
+    "total": 1940,
+    "prevalence": 0.0731958762886598
+  },
+  {
+    "window": "2013-08",
+    "kmeans_cluster": 6,
+    "count": 233,
+    "total": 1940,
+    "prevalence": 0.12010309278350516
+  },
+  {
+    "window": "2013-08",
+    "kmeans_cluster": 7,
+    "count": 439,
+    "total": 1940,
+    "prevalence": 0.22628865979381443
+  },
+  {
+    "window": "2013-09",
+    "kmeans_cluster": 0,
+    "count": 293,
+    "total": 2007,
+    "prevalence": 0.14598903836571997
+  },
+  {
+    "window": "2013-09",
+    "kmeans_cluster": 1,
+    "count": 369,
+    "total": 2007,
+    "prevalence": 0.18385650224215247
+  },
+  {
+    "window": "2013-09",
+    "kmeans_cluster": 2,
+    "count": 76,
+    "total": 2007,
+    "prevalence": 0.037867463876432486
+  },
+  {
+    "window": "2013-09",
+    "kmeans_cluster": 3,
+    "count": 300,
+    "total": 2007,
+    "prevalence": 0.14947683109118087
+  },
+  {
+    "window": "2013-09",
+    "kmeans_cluster": 4,
+    "count": 2,
+    "total": 2007,
+    "prevalence": 0.000996512207274539
+  },
+  {
+    "window": "2013-09",
+    "kmeans_cluster": 5,
+    "count": 154,
+    "total": 2007,
+    "prevalence": 0.07673143996013951
+  },
+  {
+    "window": "2013-09",
+    "kmeans_cluster": 6,
+    "count": 326,
+    "total": 2007,
+    "prevalence": 0.16243148978574987
+  },
+  {
+    "window": "2013-09",
+    "kmeans_cluster": 7,
+    "count": 487,
+    "total": 2007,
+    "prevalence": 0.24265072247135028
+  },
+  {
+    "window": "2013-10",
+    "kmeans_cluster": 0,
+    "count": 330,
+    "total": 2202,
+    "prevalence": 0.14986376021798364
+  },
+  {
+    "window": "2013-10",
+    "kmeans_cluster": 1,
+    "count": 465,
+    "total": 2202,
+    "prevalence": 0.2111716621253406
+  },
+  {
+    "window": "2013-10",
+    "kmeans_cluster": 2,
+    "count": 114,
+    "total": 2202,
+    "prevalence": 0.051771117166212535
+  },
+  {
+    "window": "2013-10",
+    "kmeans_cluster": 3,
+    "count": 336,
+    "total": 2202,
+    "prevalence": 0.15258855585831063
+  },
+  {
+    "window": "2013-10",
+    "kmeans_cluster": 4,
+    "count": 3,
+    "total": 2202,
+    "prevalence": 0.0013623978201634877
+  },
+  {
+    "window": "2013-10",
+    "kmeans_cluster": 5,
+    "count": 141,
+    "total": 2202,
+    "prevalence": 0.06403269754768393
+  },
+  {
+    "window": "2013-10",
+    "kmeans_cluster": 6,
+    "count": 281,
+    "total": 2202,
+    "prevalence": 0.12761126248864668
+  },
+  {
+    "window": "2013-10",
+    "kmeans_cluster": 7,
+    "count": 532,
+    "total": 2202,
+    "prevalence": 0.24159854677565848
+  },
+  {
+    "window": "2013-11",
+    "kmeans_cluster": 0,
+    "count": 269,
+    "total": 2009,
+    "prevalence": 0.13389746142359382
+  },
+  {
+    "window": "2013-11",
+    "kmeans_cluster": 1,
+    "count": 424,
+    "total": 2009,
+    "prevalence": 0.2110502737680438
+  },
+  {
+    "window": "2013-11",
+    "kmeans_cluster": 2,
+    "count": 86,
+    "total": 2009,
+    "prevalence": 0.0428073668491787
+  },
+  {
+    "window": "2013-11",
+    "kmeans_cluster": 3,
+    "count": 299,
+    "total": 2009,
+    "prevalence": 0.1488302638128422
+  },
+  {
+    "window": "2013-11",
+    "kmeans_cluster": 4,
+    "count": 4,
+    "total": 2009,
+    "prevalence": 0.001991040318566451
+  },
+  {
+    "window": "2013-11",
+    "kmeans_cluster": 5,
+    "count": 167,
+    "total": 2009,
+    "prevalence": 0.08312593330014932
+  },
+  {
+    "window": "2013-11",
+    "kmeans_cluster": 6,
+    "count": 267,
+    "total": 2009,
+    "prevalence": 0.1329019412643106
+  },
+  {
+    "window": "2013-11",
+    "kmeans_cluster": 7,
+    "count": 493,
+    "total": 2009,
+    "prevalence": 0.24539571926331508
+  },
+  {
+    "window": "2013-12",
+    "kmeans_cluster": 0,
+    "count": 329,
+    "total": 2146,
+    "prevalence": 0.1533084808946878
+  },
+  {
+    "window": "2013-12",
+    "kmeans_cluster": 1,
+    "count": 367,
+    "total": 2146,
+    "prevalence": 0.17101584342963652
+  },
+  {
+    "window": "2013-12",
+    "kmeans_cluster": 2,
+    "count": 98,
+    "total": 2146,
+    "prevalence": 0.045666356011183594
+  },
+  {
+    "window": "2013-12",
+    "kmeans_cluster": 3,
+    "count": 355,
+    "total": 2146,
+    "prevalence": 0.16542404473438957
+  },
+  {
+    "window": "2013-12",
+    "kmeans_cluster": 4,
+    "count": 1,
+    "total": 2146,
+    "prevalence": 0.00046598322460391424
+  },
+  {
+    "window": "2013-12",
+    "kmeans_cluster": 5,
+    "count": 197,
+    "total": 2146,
+    "prevalence": 0.09179869524697111
+  },
+  {
+    "window": "2013-12",
+    "kmeans_cluster": 6,
+    "count": 246,
+    "total": 2146,
+    "prevalence": 0.11463187325256291
+  },
+  {
+    "window": "2013-12",
+    "kmeans_cluster": 7,
+    "count": 553,
+    "total": 2146,
+    "prevalence": 0.2576887232059646
+  },
+  {
+    "window": "2014-01",
+    "kmeans_cluster": 0,
+    "count": 318,
+    "total": 2161,
+    "prevalence": 0.14715409532623785
+  },
+  {
+    "window": "2014-01",
+    "kmeans_cluster": 1,
+    "count": 403,
+    "total": 2161,
+    "prevalence": 0.18648773715872283
+  },
+  {
+    "window": "2014-01",
+    "kmeans_cluster": 2,
+    "count": 99,
+    "total": 2161,
+    "prevalence": 0.045812124016658955
+  },
+  {
+    "window": "2014-01",
+    "kmeans_cluster": 3,
+    "count": 361,
+    "total": 2161,
+    "prevalence": 0.16705229060620083
+  },
+  {
+    "window": "2014-01",
+    "kmeans_cluster": 4,
+    "count": 4,
+    "total": 2161,
+    "prevalence": 0.0018509949097639982
+  },
+  {
+    "window": "2014-01",
+    "kmeans_cluster": 5,
+    "count": 140,
+    "total": 2161,
+    "prevalence": 0.06478482184173993
+  },
+  {
+    "window": "2014-01",
+    "kmeans_cluster": 6,
+    "count": 231,
+    "total": 2161,
+    "prevalence": 0.10689495603887089
+  },
+  {
+    "window": "2014-01",
+    "kmeans_cluster": 7,
+    "count": 605,
+    "total": 2161,
+    "prevalence": 0.2799629801018047
+  },
+  {
+    "window": "2014-02",
+    "kmeans_cluster": 0,
+    "count": 335,
+    "total": 1977,
+    "prevalence": 0.16944865958523014
+  },
+  {
+    "window": "2014-02",
+    "kmeans_cluster": 1,
+    "count": 367,
+    "total": 1977,
+    "prevalence": 0.18563480020232676
+  },
+  {
+    "window": "2014-02",
+    "kmeans_cluster": 2,
+    "count": 83,
+    "total": 1977,
+    "prevalence": 0.041982802225594334
+  },
+  {
+    "window": "2014-02",
+    "kmeans_cluster": 3,
+    "count": 274,
+    "total": 1977,
+    "prevalence": 0.13859382903388973
+  },
+  {
+    "window": "2014-02",
+    "kmeans_cluster": 4,
+    "count": 7,
+    "total": 1977,
+    "prevalence": 0.0035407182599898838
+  },
+  {
+    "window": "2014-02",
+    "kmeans_cluster": 5,
+    "count": 143,
+    "total": 1977,
+    "prevalence": 0.07233181588265047
+  },
+  {
+    "window": "2014-02",
+    "kmeans_cluster": 6,
+    "count": 237,
+    "total": 1977,
+    "prevalence": 0.11987860394537178
+  },
+  {
+    "window": "2014-02",
+    "kmeans_cluster": 7,
+    "count": 531,
+    "total": 1977,
+    "prevalence": 0.26858877086494687
+  },
+  {
+    "window": "2014-03",
+    "kmeans_cluster": 0,
+    "count": 337,
+    "total": 2106,
+    "prevalence": 0.1600189933523267
+  },
+  {
+    "window": "2014-03",
+    "kmeans_cluster": 1,
+    "count": 387,
+    "total": 2106,
+    "prevalence": 0.18376068376068377
+  },
+  {
+    "window": "2014-03",
+    "kmeans_cluster": 2,
+    "count": 110,
+    "total": 2106,
+    "prevalence": 0.052231718898385564
+  },
+  {
+    "window": "2014-03",
+    "kmeans_cluster": 3,
+    "count": 312,
+    "total": 2106,
+    "prevalence": 0.14814814814814814
+  },
+  {
+    "window": "2014-03",
+    "kmeans_cluster": 4,
+    "count": 3,
+    "total": 2106,
+    "prevalence": 0.0014245014245014246
+  },
+  {
+    "window": "2014-03",
+    "kmeans_cluster": 5,
+    "count": 148,
+    "total": 2106,
+    "prevalence": 0.07027540360873694
+  },
+  {
+    "window": "2014-03",
+    "kmeans_cluster": 6,
+    "count": 244,
+    "total": 2106,
+    "prevalence": 0.11585944919278253
+  },
+  {
+    "window": "2014-03",
+    "kmeans_cluster": 7,
+    "count": 565,
+    "total": 2106,
+    "prevalence": 0.26828110161443497
+  },
+  {
+    "window": "2014-04",
+    "kmeans_cluster": 0,
+    "count": 219,
+    "total": 1577,
+    "prevalence": 0.1388712745719721
+  },
+  {
+    "window": "2014-04",
+    "kmeans_cluster": 1,
+    "count": 271,
+    "total": 1577,
+    "prevalence": 0.17184527584020293
+  },
+  {
+    "window": "2014-04",
+    "kmeans_cluster": 2,
+    "count": 142,
+    "total": 1577,
+    "prevalence": 0.09004438807863031
+  },
+  {
+    "window": "2014-04",
+    "kmeans_cluster": 3,
+    "count": 233,
+    "total": 1577,
+    "prevalence": 0.14774889029803423
+  },
+  {
+    "window": "2014-04",
+    "kmeans_cluster": 4,
+    "count": 52,
+    "total": 1577,
+    "prevalence": 0.032974001268230815
+  },
+  {
+    "window": "2014-04",
+    "kmeans_cluster": 5,
+    "count": 124,
+    "total": 1577,
+    "prevalence": 0.07863031071655041
+  },
+  {
+    "window": "2014-04",
+    "kmeans_cluster": 6,
+    "count": 137,
+    "total": 1577,
+    "prevalence": 0.08687381103360811
+  },
+  {
+    "window": "2014-04",
+    "kmeans_cluster": 7,
+    "count": 399,
+    "total": 1577,
+    "prevalence": 0.25301204819277107
+  },
+  {
+    "window": "2014-05",
+    "kmeans_cluster": 0,
+    "count": 48,
+    "total": 924,
+    "prevalence": 0.05194805194805195
+  },
+  {
+    "window": "2014-05",
+    "kmeans_cluster": 1,
+    "count": 34,
+    "total": 924,
+    "prevalence": 0.0367965367965368
+  },
+  {
+    "window": "2014-05",
+    "kmeans_cluster": 2,
+    "count": 211,
+    "total": 924,
+    "prevalence": 0.22835497835497837
+  },
+  {
+    "window": "2014-05",
+    "kmeans_cluster": 3,
+    "count": 124,
+    "total": 924,
+    "prevalence": 0.1341991341991342
+  },
+  {
+    "window": "2014-05",
+    "kmeans_cluster": 4,
+    "count": 163,
+    "total": 924,
+    "prevalence": 0.1764069264069264
+  },
+  {
+    "window": "2014-05",
+    "kmeans_cluster": 5,
+    "count": 152,
+    "total": 924,
+    "prevalence": 0.1645021645021645
+  },
+  {
+    "window": "2014-05",
+    "kmeans_cluster": 6,
+    "count": 10,
+    "total": 924,
+    "prevalence": 0.010822510822510822
+  },
+  {
+    "window": "2014-05",
+    "kmeans_cluster": 7,
+    "count": 182,
+    "total": 924,
+    "prevalence": 0.19696969696969696
+  },
+  {
+    "window": "2014-06",
+    "kmeans_cluster": 0,
+    "count": 46,
+    "total": 1048,
+    "prevalence": 0.04389312977099236
+  },
+  {
+    "window": "2014-06",
+    "kmeans_cluster": 1,
+    "count": 40,
+    "total": 1048,
+    "prevalence": 0.03816793893129771
+  },
+  {
+    "window": "2014-06",
+    "kmeans_cluster": 2,
+    "count": 253,
+    "total": 1048,
+    "prevalence": 0.24141221374045801
+  },
+  {
+    "window": "2014-06",
+    "kmeans_cluster": 3,
+    "count": 105,
+    "total": 1048,
+    "prevalence": 0.10019083969465649
+  },
+  {
+    "window": "2014-06",
+    "kmeans_cluster": 4,
+    "count": 164,
+    "total": 1048,
+    "prevalence": 0.15648854961832062
+  },
+  {
+    "window": "2014-06",
+    "kmeans_cluster": 5,
+    "count": 233,
+    "total": 1048,
+    "prevalence": 0.22232824427480916
+  },
+  {
+    "window": "2014-06",
+    "kmeans_cluster": 6,
+    "count": 31,
+    "total": 1048,
+    "prevalence": 0.029580152671755726
+  },
+  {
+    "window": "2014-06",
+    "kmeans_cluster": 7,
+    "count": 176,
+    "total": 1048,
+    "prevalence": 0.16793893129770993
+  },
+  {
+    "window": "2014-07",
+    "kmeans_cluster": 0,
+    "count": 23,
+    "total": 1030,
+    "prevalence": 0.02233009708737864
+  },
+  {
+    "window": "2014-07",
+    "kmeans_cluster": 1,
+    "count": 31,
+    "total": 1030,
+    "prevalence": 0.030097087378640777
+  },
+  {
+    "window": "2014-07",
+    "kmeans_cluster": 2,
+    "count": 283,
+    "total": 1030,
+    "prevalence": 0.27475728155339807
+  },
+  {
+    "window": "2014-07",
+    "kmeans_cluster": 3,
+    "count": 87,
+    "total": 1030,
+    "prevalence": 0.08446601941747572
+  },
+  {
+    "window": "2014-07",
+    "kmeans_cluster": 4,
+    "count": 166,
+    "total": 1030,
+    "prevalence": 0.16116504854368932
+  },
+  {
+    "window": "2014-07",
+    "kmeans_cluster": 5,
+    "count": 253,
+    "total": 1030,
+    "prevalence": 0.24563106796116504
+  },
+  {
+    "window": "2014-07",
+    "kmeans_cluster": 6,
+    "count": 31,
+    "total": 1030,
+    "prevalence": 0.030097087378640777
+  },
+  {
+    "window": "2014-07",
+    "kmeans_cluster": 7,
+    "count": 156,
+    "total": 1030,
+    "prevalence": 0.15145631067961166
+  },
+  {
+    "window": "2014-08",
+    "kmeans_cluster": 0,
+    "count": 28,
+    "total": 1031,
+    "prevalence": 0.027158098933074686
+  },
+  {
+    "window": "2014-08",
+    "kmeans_cluster": 1,
+    "count": 29,
+    "total": 1031,
+    "prevalence": 0.028128031037827354
+  },
+  {
+    "window": "2014-08",
+    "kmeans_cluster": 2,
+    "count": 257,
+    "total": 1031,
+    "prevalence": 0.2492725509214355
+  },
+  {
+    "window": "2014-08",
+    "kmeans_cluster": 3,
+    "count": 96,
+    "total": 1031,
+    "prevalence": 0.09311348205625607
+  },
+  {
+    "window": "2014-08",
+    "kmeans_cluster": 4,
+    "count": 170,
+    "total": 1031,
+    "prevalence": 0.16488845780795344
+  },
+  {
+    "window": "2014-08",
+    "kmeans_cluster": 5,
+    "count": 248,
+    "total": 1031,
+    "prevalence": 0.2405431619786615
+  },
+  {
+    "window": "2014-08",
+    "kmeans_cluster": 6,
+    "count": 37,
+    "total": 1031,
+    "prevalence": 0.03588748787584869
+  },
+  {
+    "window": "2014-08",
+    "kmeans_cluster": 7,
+    "count": 166,
+    "total": 1031,
+    "prevalence": 0.16100872938894278
+  },
+  {
+    "window": "2014-09",
+    "kmeans_cluster": 0,
+    "count": 32,
+    "total": 962,
+    "prevalence": 0.033264033264033266
+  },
+  {
+    "window": "2014-09",
+    "kmeans_cluster": 1,
+    "count": 31,
+    "total": 962,
+    "prevalence": 0.032224532224532226
+  },
+  {
+    "window": "2014-09",
+    "kmeans_cluster": 2,
+    "count": 213,
+    "total": 962,
+    "prevalence": 0.22141372141372143
+  },
+  {
+    "window": "2014-09",
+    "kmeans_cluster": 3,
+    "count": 70,
+    "total": 962,
+    "prevalence": 0.07276507276507277
+  },
+  {
+    "window": "2014-09",
+    "kmeans_cluster": 4,
+    "count": 172,
+    "total": 962,
+    "prevalence": 0.1787941787941788
+  },
+  {
+    "window": "2014-09",
+    "kmeans_cluster": 5,
+    "count": 260,
+    "total": 962,
+    "prevalence": 0.2702702702702703
+  },
+  {
+    "window": "2014-09",
+    "kmeans_cluster": 6,
+    "count": 25,
+    "total": 962,
+    "prevalence": 0.02598752598752599
+  },
+  {
+    "window": "2014-09",
+    "kmeans_cluster": 7,
+    "count": 159,
+    "total": 962,
+    "prevalence": 0.1652806652806653
+  },
+  {
+    "window": "2014-10",
+    "kmeans_cluster": 0,
+    "count": 36,
+    "total": 1059,
+    "prevalence": 0.0339943342776204
+  },
+  {
+    "window": "2014-10",
+    "kmeans_cluster": 1,
+    "count": 29,
+    "total": 1059,
+    "prevalence": 0.027384324834749764
+  },
+  {
+    "window": "2014-10",
+    "kmeans_cluster": 2,
+    "count": 284,
+    "total": 1059,
+    "prevalence": 0.26817752596789424
+  },
+  {
+    "window": "2014-10",
+    "kmeans_cluster": 3,
+    "count": 83,
+    "total": 1059,
+    "prevalence": 0.07837582625118036
+  },
+  {
+    "window": "2014-10",
+    "kmeans_cluster": 4,
+    "count": 171,
+    "total": 1059,
+    "prevalence": 0.16147308781869688
+  },
+  {
+    "window": "2014-10",
+    "kmeans_cluster": 5,
+    "count": 228,
+    "total": 1059,
+    "prevalence": 0.21529745042492918
+  },
+  {
+    "window": "2014-10",
+    "kmeans_cluster": 6,
+    "count": 33,
+    "total": 1059,
+    "prevalence": 0.031161473087818695
+  },
+  {
+    "window": "2014-10",
+    "kmeans_cluster": 7,
+    "count": 195,
+    "total": 1059,
+    "prevalence": 0.18413597733711048
+  },
+  {
+    "window": "2014-11",
+    "kmeans_cluster": 0,
+    "count": 29,
+    "total": 1101,
+    "prevalence": 0.02633969118982743
+  },
+  {
+    "window": "2014-11",
+    "kmeans_cluster": 1,
+    "count": 49,
+    "total": 1101,
+    "prevalence": 0.04450499545867393
+  },
+  {
+    "window": "2014-11",
+    "kmeans_cluster": 2,
+    "count": 228,
+    "total": 1101,
+    "prevalence": 0.20708446866485014
+  },
+  {
+    "window": "2014-11",
+    "kmeans_cluster": 3,
+    "count": 82,
+    "total": 1101,
+    "prevalence": 0.07447774750227067
+  },
+  {
+    "window": "2014-11",
+    "kmeans_cluster": 4,
+    "count": 256,
+    "total": 1101,
+    "prevalence": 0.23251589464123523
+  },
+  {
+    "window": "2014-11",
+    "kmeans_cluster": 5,
+    "count": 246,
+    "total": 1101,
+    "prevalence": 0.22343324250681199
+  },
+  {
+    "window": "2014-11",
+    "kmeans_cluster": 6,
+    "count": 30,
+    "total": 1101,
+    "prevalence": 0.027247956403269755
+  },
+  {
+    "window": "2014-11",
+    "kmeans_cluster": 7,
+    "count": 181,
+    "total": 1101,
+    "prevalence": 0.16439600363306087
+  },
+  {
+    "window": "2014-12",
+    "kmeans_cluster": 0,
+    "count": 31,
+    "total": 1025,
+    "prevalence": 0.03024390243902439
+  },
+  {
+    "window": "2014-12",
+    "kmeans_cluster": 1,
+    "count": 34,
+    "total": 1025,
+    "prevalence": 0.033170731707317075
+  },
+  {
+    "window": "2014-12",
+    "kmeans_cluster": 2,
+    "count": 230,
+    "total": 1025,
+    "prevalence": 0.22439024390243903
+  },
+  {
+    "window": "2014-12",
+    "kmeans_cluster": 3,
+    "count": 103,
+    "total": 1025,
+    "prevalence": 0.10048780487804879
+  },
+  {
+    "window": "2014-12",
+    "kmeans_cluster": 4,
+    "count": 128,
+    "total": 1025,
+    "prevalence": 0.1248780487804878
+  },
+  {
+    "window": "2014-12",
+    "kmeans_cluster": 5,
+    "count": 249,
+    "total": 1025,
+    "prevalence": 0.24292682926829268
+  },
+  {
+    "window": "2014-12",
+    "kmeans_cluster": 6,
+    "count": 21,
+    "total": 1025,
+    "prevalence": 0.02048780487804878
+  },
+  {
+    "window": "2014-12",
+    "kmeans_cluster": 7,
+    "count": 229,
+    "total": 1025,
+    "prevalence": 0.22341463414634147
+  },
+  {
+    "window": "2015-01",
+    "kmeans_cluster": 0,
+    "count": 45,
+    "total": 1035,
+    "prevalence": 0.043478260869565216
+  },
+  {
+    "window": "2015-01",
+    "kmeans_cluster": 1,
+    "count": 33,
+    "total": 1035,
+    "prevalence": 0.03188405797101449
+  },
+  {
+    "window": "2015-01",
+    "kmeans_cluster": 2,
+    "count": 209,
+    "total": 1035,
+    "prevalence": 0.20193236714975846
+  },
+  {
+    "window": "2015-01",
+    "kmeans_cluster": 3,
+    "count": 63,
+    "total": 1035,
+    "prevalence": 0.06086956521739131
+  },
+  {
+    "window": "2015-01",
+    "kmeans_cluster": 4,
+    "count": 182,
+    "total": 1035,
+    "prevalence": 0.1758454106280193
+  },
+  {
+    "window": "2015-01",
+    "kmeans_cluster": 5,
+    "count": 280,
+    "total": 1035,
+    "prevalence": 0.27053140096618356
+  },
+  {
+    "window": "2015-01",
+    "kmeans_cluster": 6,
+    "count": 27,
+    "total": 1035,
+    "prevalence": 0.02608695652173913
+  },
+  {
+    "window": "2015-01",
+    "kmeans_cluster": 7,
+    "count": 196,
+    "total": 1035,
+    "prevalence": 0.18937198067632852
+  },
+  {
+    "window": "2015-02",
+    "kmeans_cluster": 0,
+    "count": 23,
+    "total": 954,
+    "prevalence": 0.02410901467505241
+  },
+  {
+    "window": "2015-02",
+    "kmeans_cluster": 1,
+    "count": 42,
+    "total": 954,
+    "prevalence": 0.0440251572327044
+  },
+  {
+    "window": "2015-02",
+    "kmeans_cluster": 2,
+    "count": 185,
+    "total": 954,
+    "prevalence": 0.19392033542976939
+  },
+  {
+    "window": "2015-02",
+    "kmeans_cluster": 3,
+    "count": 69,
+    "total": 954,
+    "prevalence": 0.07232704402515723
+  },
+  {
+    "window": "2015-02",
+    "kmeans_cluster": 4,
+    "count": 169,
+    "total": 954,
+    "prevalence": 0.17714884696016772
+  },
+  {
+    "window": "2015-02",
+    "kmeans_cluster": 5,
+    "count": 253,
+    "total": 954,
+    "prevalence": 0.26519916142557654
+  },
+  {
+    "window": "2015-02",
+    "kmeans_cluster": 6,
+    "count": 36,
+    "total": 954,
+    "prevalence": 0.03773584905660377
+  },
+  {
+    "window": "2015-02",
+    "kmeans_cluster": 7,
+    "count": 177,
+    "total": 954,
+    "prevalence": 0.18553459119496854
+  },
+  {
+    "window": "2015-03",
+    "kmeans_cluster": 0,
+    "count": 30,
+    "total": 1027,
+    "prevalence": 0.029211295034079845
+  },
+  {
+    "window": "2015-03",
+    "kmeans_cluster": 1,
+    "count": 33,
+    "total": 1027,
+    "prevalence": 0.03213242453748783
+  },
+  {
+    "window": "2015-03",
+    "kmeans_cluster": 2,
+    "count": 217,
+    "total": 1027,
+    "prevalence": 0.2112950340798442
+  },
+  {
+    "window": "2015-03",
+    "kmeans_cluster": 3,
+    "count": 114,
+    "total": 1027,
+    "prevalence": 0.11100292112950341
+  },
+  {
+    "window": "2015-03",
+    "kmeans_cluster": 4,
+    "count": 190,
+    "total": 1027,
+    "prevalence": 0.18500486854917234
+  },
+  {
+    "window": "2015-03",
+    "kmeans_cluster": 5,
+    "count": 227,
+    "total": 1027,
+    "prevalence": 0.22103213242453748
+  },
+  {
+    "window": "2015-03",
+    "kmeans_cluster": 6,
+    "count": 32,
+    "total": 1027,
+    "prevalence": 0.0311587147030185
+  },
+  {
+    "window": "2015-03",
+    "kmeans_cluster": 7,
+    "count": 184,
+    "total": 1027,
+    "prevalence": 0.17916260954235638
+  },
+  {
+    "window": "2015-04",
+    "kmeans_cluster": 0,
+    "count": 24,
+    "total": 986,
+    "prevalence": 0.02434077079107505
+  },
+  {
+    "window": "2015-04",
+    "kmeans_cluster": 1,
+    "count": 29,
+    "total": 986,
+    "prevalence": 0.029411764705882353
+  },
+  {
+    "window": "2015-04",
+    "kmeans_cluster": 2,
+    "count": 223,
+    "total": 986,
+    "prevalence": 0.22616632860040567
+  },
+  {
+    "window": "2015-04",
+    "kmeans_cluster": 3,
+    "count": 92,
+    "total": 986,
+    "prevalence": 0.09330628803245436
+  },
+  {
+    "window": "2015-04",
+    "kmeans_cluster": 4,
+    "count": 199,
+    "total": 986,
+    "prevalence": 0.20182555780933062
+  },
+  {
+    "window": "2015-04",
+    "kmeans_cluster": 5,
+    "count": 227,
+    "total": 986,
+    "prevalence": 0.2302231237322515
+  },
+  {
+    "window": "2015-04",
+    "kmeans_cluster": 6,
+    "count": 32,
+    "total": 986,
+    "prevalence": 0.032454361054766734
+  },
+  {
+    "window": "2015-04",
+    "kmeans_cluster": 7,
+    "count": 160,
+    "total": 986,
+    "prevalence": 0.16227180527383367
+  },
+  {
+    "window": "2015-05",
+    "kmeans_cluster": 0,
+    "count": 38,
+    "total": 1020,
+    "prevalence": 0.03725490196078431
+  },
+  {
+    "window": "2015-05",
+    "kmeans_cluster": 1,
+    "count": 43,
+    "total": 1020,
+    "prevalence": 0.04215686274509804
+  },
+  {
+    "window": "2015-05",
+    "kmeans_cluster": 2,
+    "count": 223,
+    "total": 1020,
+    "prevalence": 0.21862745098039216
+  },
+  {
+    "window": "2015-05",
+    "kmeans_cluster": 3,
+    "count": 121,
+    "total": 1020,
+    "prevalence": 0.11862745098039215
+  },
+  {
+    "window": "2015-05",
+    "kmeans_cluster": 4,
+    "count": 169,
+    "total": 1020,
+    "prevalence": 0.16568627450980392
+  },
+  {
+    "window": "2015-05",
+    "kmeans_cluster": 5,
+    "count": 239,
+    "total": 1020,
+    "prevalence": 0.23431372549019608
+  },
+  {
+    "window": "2015-05",
+    "kmeans_cluster": 6,
+    "count": 28,
+    "total": 1020,
+    "prevalence": 0.027450980392156862
+  },
+  {
+    "window": "2015-05",
+    "kmeans_cluster": 7,
+    "count": 159,
+    "total": 1020,
+    "prevalence": 0.15588235294117647
+  },
+  {
+    "window": "2015-06",
+    "kmeans_cluster": 0,
+    "count": 36,
+    "total": 1061,
+    "prevalence": 0.033930254476908575
+  },
+  {
+    "window": "2015-06",
+    "kmeans_cluster": 1,
+    "count": 34,
+    "total": 1061,
+    "prevalence": 0.03204524033930255
+  },
+  {
+    "window": "2015-06",
+    "kmeans_cluster": 2,
+    "count": 295,
+    "total": 1061,
+    "prevalence": 0.2780395852968897
+  },
+  {
+    "window": "2015-06",
+    "kmeans_cluster": 3,
+    "count": 89,
+    "total": 1061,
+    "prevalence": 0.08388312912346843
+  },
+  {
+    "window": "2015-06",
+    "kmeans_cluster": 4,
+    "count": 159,
+    "total": 1061,
+    "prevalence": 0.14985862393967955
+  },
+  {
+    "window": "2015-06",
+    "kmeans_cluster": 5,
+    "count": 240,
+    "total": 1061,
+    "prevalence": 0.22620169651272384
+  },
+  {
+    "window": "2015-06",
+    "kmeans_cluster": 6,
+    "count": 39,
+    "total": 1061,
+    "prevalence": 0.036757775683317624
+  },
+  {
+    "window": "2015-06",
+    "kmeans_cluster": 7,
+    "count": 169,
+    "total": 1061,
+    "prevalence": 0.15928369462770972
+  },
+  {
+    "window": "2015-07",
+    "kmeans_cluster": 0,
+    "count": 23,
+    "total": 1267,
+    "prevalence": 0.018153117600631413
+  },
+  {
+    "window": "2015-07",
+    "kmeans_cluster": 1,
+    "count": 36,
+    "total": 1267,
+    "prevalence": 0.028413575374901343
+  },
+  {
+    "window": "2015-07",
+    "kmeans_cluster": 2,
+    "count": 288,
+    "total": 1267,
+    "prevalence": 0.22730860299921074
+  },
+  {
+    "window": "2015-07",
+    "kmeans_cluster": 3,
+    "count": 51,
+    "total": 1267,
+    "prevalence": 0.04025256511444357
+  },
+  {
+    "window": "2015-07",
+    "kmeans_cluster": 4,
+    "count": 262,
+    "total": 1267,
+    "prevalence": 0.2067876874506709
+  },
+  {
+    "window": "2015-07",
+    "kmeans_cluster": 5,
+    "count": 423,
+    "total": 1267,
+    "prevalence": 0.3338595106550908
+  },
+  {
+    "window": "2015-07",
+    "kmeans_cluster": 6,
+    "count": 89,
+    "total": 1267,
+    "prevalence": 0.0702446724546172
+  },
+  {
+    "window": "2015-07",
+    "kmeans_cluster": 7,
+    "count": 95,
+    "total": 1267,
+    "prevalence": 0.0749802683504341
+  },
+  {
+    "window": "2015-08",
+    "kmeans_cluster": 0,
+    "count": 30,
+    "total": 1205,
+    "prevalence": 0.024896265560165973
+  },
+  {
+    "window": "2015-08",
+    "kmeans_cluster": 1,
+    "count": 20,
+    "total": 1205,
+    "prevalence": 0.016597510373443983
+  },
+  {
+    "window": "2015-08",
+    "kmeans_cluster": 2,
+    "count": 291,
+    "total": 1205,
+    "prevalence": 0.24149377593360996
+  },
+  {
+    "window": "2015-08",
+    "kmeans_cluster": 3,
+    "count": 34,
+    "total": 1205,
+    "prevalence": 0.028215767634854772
+  },
+  {
+    "window": "2015-08",
+    "kmeans_cluster": 4,
+    "count": 377,
+    "total": 1205,
+    "prevalence": 0.3128630705394191
+  },
+  {
+    "window": "2015-08",
+    "kmeans_cluster": 5,
+    "count": 344,
+    "total": 1205,
+    "prevalence": 0.2854771784232365
+  },
+  {
+    "window": "2015-08",
+    "kmeans_cluster": 6,
+    "count": 63,
+    "total": 1205,
+    "prevalence": 0.05228215767634855
+  },
+  {
+    "window": "2015-08",
+    "kmeans_cluster": 7,
+    "count": 46,
+    "total": 1205,
+    "prevalence": 0.038174273858921165
+  },
+  {
+    "window": "2015-09",
+    "kmeans_cluster": 0,
+    "count": 35,
+    "total": 1263,
+    "prevalence": 0.027711797307996833
+  },
+  {
+    "window": "2015-09",
+    "kmeans_cluster": 1,
+    "count": 26,
+    "total": 1263,
+    "prevalence": 0.02058590657165479
+  },
+  {
+    "window": "2015-09",
+    "kmeans_cluster": 2,
+    "count": 308,
+    "total": 1263,
+    "prevalence": 0.24386381631037213
+  },
+  {
+    "window": "2015-09",
+    "kmeans_cluster": 3,
+    "count": 20,
+    "total": 1263,
+    "prevalence": 0.01583531274742676
+  },
+  {
+    "window": "2015-09",
+    "kmeans_cluster": 4,
+    "count": 429,
+    "total": 1263,
+    "prevalence": 0.33966745843230406
+  },
+  {
+    "window": "2015-09",
+    "kmeans_cluster": 5,
+    "count": 319,
+    "total": 1263,
+    "prevalence": 0.25257323832145684
+  },
+  {
+    "window": "2015-09",
+    "kmeans_cluster": 6,
+    "count": 62,
+    "total": 1263,
+    "prevalence": 0.04908946951702296
+  },
+  {
+    "window": "2015-09",
+    "kmeans_cluster": 7,
+    "count": 64,
+    "total": 1263,
+    "prevalence": 0.050673000791765635
+  },
+  {
+    "window": "2015-10",
+    "kmeans_cluster": 0,
+    "count": 33,
+    "total": 1379,
+    "prevalence": 0.023930384336475707
+  },
+  {
+    "window": "2015-10",
+    "kmeans_cluster": 1,
+    "count": 34,
+    "total": 1379,
+    "prevalence": 0.024655547498187092
+  },
+  {
+    "window": "2015-10",
+    "kmeans_cluster": 2,
+    "count": 335,
+    "total": 1379,
+    "prevalence": 0.242929659173314
+  },
+  {
+    "window": "2015-10",
+    "kmeans_cluster": 3,
+    "count": 19,
+    "total": 1379,
+    "prevalence": 0.013778100072516316
+  },
+  {
+    "window": "2015-10",
+    "kmeans_cluster": 4,
+    "count": 483,
+    "total": 1379,
+    "prevalence": 0.350253807106599
+  },
+  {
+    "window": "2015-10",
+    "kmeans_cluster": 5,
+    "count": 346,
+    "total": 1379,
+    "prevalence": 0.25090645395213923
+  },
+  {
+    "window": "2015-10",
+    "kmeans_cluster": 6,
+    "count": 50,
+    "total": 1379,
+    "prevalence": 0.03625815808556925
+  },
+  {
+    "window": "2015-10",
+    "kmeans_cluster": 7,
+    "count": 79,
+    "total": 1379,
+    "prevalence": 0.05728788977519942
+  },
+  {
+    "window": "2015-11",
+    "kmeans_cluster": 0,
+    "count": 22,
+    "total": 1178,
+    "prevalence": 0.01867572156196944
+  },
+  {
+    "window": "2015-11",
+    "kmeans_cluster": 1,
+    "count": 38,
+    "total": 1178,
+    "prevalence": 0.03225806451612903
+  },
+  {
+    "window": "2015-11",
+    "kmeans_cluster": 2,
+    "count": 313,
+    "total": 1178,
+    "prevalence": 0.26570458404074704
+  },
+  {
+    "window": "2015-11",
+    "kmeans_cluster": 3,
+    "count": 31,
+    "total": 1178,
+    "prevalence": 0.02631578947368421
+  },
+  {
+    "window": "2015-11",
+    "kmeans_cluster": 4,
+    "count": 316,
+    "total": 1178,
+    "prevalence": 0.26825127334465193
+  },
+  {
+    "window": "2015-11",
+    "kmeans_cluster": 5,
+    "count": 334,
+    "total": 1178,
+    "prevalence": 0.2835314091680815
+  },
+  {
+    "window": "2015-11",
+    "kmeans_cluster": 6,
+    "count": 57,
+    "total": 1178,
+    "prevalence": 0.04838709677419355
+  },
+  {
+    "window": "2015-11",
+    "kmeans_cluster": 7,
+    "count": 67,
+    "total": 1178,
+    "prevalence": 0.056876061120543296
+  },
+  {
+    "window": "2015-12",
+    "kmeans_cluster": 0,
+    "count": 36,
+    "total": 1170,
+    "prevalence": 0.03076923076923077
+  },
+  {
+    "window": "2015-12",
+    "kmeans_cluster": 1,
+    "count": 26,
+    "total": 1170,
+    "prevalence": 0.022222222222222223
+  },
+  {
+    "window": "2015-12",
+    "kmeans_cluster": 2,
+    "count": 303,
+    "total": 1170,
+    "prevalence": 0.258974358974359
+  },
+  {
+    "window": "2015-12",
+    "kmeans_cluster": 3,
+    "count": 43,
+    "total": 1170,
+    "prevalence": 0.03675213675213675
+  },
+  {
+    "window": "2015-12",
+    "kmeans_cluster": 4,
+    "count": 345,
+    "total": 1170,
+    "prevalence": 0.2948717948717949
+  },
+  {
+    "window": "2015-12",
+    "kmeans_cluster": 5,
+    "count": 296,
+    "total": 1170,
+    "prevalence": 0.252991452991453
+  },
+  {
+    "window": "2015-12",
+    "kmeans_cluster": 6,
+    "count": 35,
+    "total": 1170,
+    "prevalence": 0.029914529914529916
+  },
+  {
+    "window": "2015-12",
+    "kmeans_cluster": 7,
+    "count": 86,
+    "total": 1170,
+    "prevalence": 0.0735042735042735
+  },
+  {
+    "window": "2016-01",
+    "kmeans_cluster": 0,
+    "count": 27,
+    "total": 1279,
+    "prevalence": 0.02111024237685692
+  },
+  {
+    "window": "2016-01",
+    "kmeans_cluster": 1,
+    "count": 29,
+    "total": 1279,
+    "prevalence": 0.022673964034401875
+  },
+  {
+    "window": "2016-01",
+    "kmeans_cluster": 2,
+    "count": 268,
+    "total": 1279,
+    "prevalence": 0.20953870211102424
+  },
+  {
+    "window": "2016-01",
+    "kmeans_cluster": 3,
+    "count": 26,
+    "total": 1279,
+    "prevalence": 0.020328381548084442
+  },
+  {
+    "window": "2016-01",
+    "kmeans_cluster": 4,
+    "count": 479,
+    "total": 1279,
+    "prevalence": 0.3745113369820172
+  },
+  {
+    "window": "2016-01",
+    "kmeans_cluster": 5,
+    "count": 355,
+    "total": 1279,
+    "prevalence": 0.27756059421422985
+  },
+  {
+    "window": "2016-01",
+    "kmeans_cluster": 6,
+    "count": 22,
+    "total": 1279,
+    "prevalence": 0.017200938232994525
+  },
+  {
+    "window": "2016-01",
+    "kmeans_cluster": 7,
+    "count": 73,
+    "total": 1279,
+    "prevalence": 0.05707584050039093
+  },
+  {
+    "window": "2016-02",
+    "kmeans_cluster": 0,
+    "count": 15,
+    "total": 1418,
+    "prevalence": 0.010578279266572637
+  },
+  {
+    "window": "2016-02",
+    "kmeans_cluster": 1,
+    "count": 19,
+    "total": 1418,
+    "prevalence": 0.013399153737658674
+  },
+  {
+    "window": "2016-02",
+    "kmeans_cluster": 2,
+    "count": 226,
+    "total": 1418,
+    "prevalence": 0.15937940761636107
+  },
+  {
+    "window": "2016-02",
+    "kmeans_cluster": 3,
+    "count": 18,
+    "total": 1418,
+    "prevalence": 0.012693935119887164
+  },
+  {
+    "window": "2016-02",
+    "kmeans_cluster": 4,
+    "count": 701,
+    "total": 1418,
+    "prevalence": 0.49435825105782794
+  },
+  {
+    "window": "2016-02",
+    "kmeans_cluster": 5,
+    "count": 326,
+    "total": 1418,
+    "prevalence": 0.229901269393512
+  },
+  {
+    "window": "2016-02",
+    "kmeans_cluster": 6,
+    "count": 39,
+    "total": 1418,
+    "prevalence": 0.027503526093088856
+  },
+  {
+    "window": "2016-02",
+    "kmeans_cluster": 7,
+    "count": 74,
+    "total": 1418,
+    "prevalence": 0.05218617771509168
+  },
+  {
+    "window": "2016-03",
+    "kmeans_cluster": 0,
+    "count": 24,
+    "total": 1427,
+    "prevalence": 0.016818500350385426
+  },
+  {
+    "window": "2016-03",
+    "kmeans_cluster": 1,
+    "count": 27,
+    "total": 1427,
+    "prevalence": 0.0189208128941836
+  },
+  {
+    "window": "2016-03",
+    "kmeans_cluster": 2,
+    "count": 235,
+    "total": 1427,
+    "prevalence": 0.1646811492641906
+  },
+  {
+    "window": "2016-03",
+    "kmeans_cluster": 3,
+    "count": 45,
+    "total": 1427,
+    "prevalence": 0.03153468815697267
+  },
+  {
+    "window": "2016-03",
+    "kmeans_cluster": 4,
+    "count": 647,
+    "total": 1427,
+    "prevalence": 0.4533987386124737
+  },
+  {
+    "window": "2016-03",
+    "kmeans_cluster": 5,
+    "count": 286,
+    "total": 1427,
+    "prevalence": 0.20042046250875964
+  },
+  {
+    "window": "2016-03",
+    "kmeans_cluster": 6,
+    "count": 34,
+    "total": 1427,
+    "prevalence": 0.023826208829712685
+  },
+  {
+    "window": "2016-03",
+    "kmeans_cluster": 7,
+    "count": 129,
+    "total": 1427,
+    "prevalence": 0.09039943938332165
+  },
+  {
+    "window": "2016-04",
+    "kmeans_cluster": 0,
+    "count": 21,
+    "total": 1307,
+    "prevalence": 0.016067329762815608
+  },
+  {
+    "window": "2016-04",
+    "kmeans_cluster": 1,
+    "count": 29,
+    "total": 1307,
+    "prevalence": 0.02218821729150727
+  },
+  {
+    "window": "2016-04",
+    "kmeans_cluster": 2,
+    "count": 296,
+    "total": 1307,
+    "prevalence": 0.22647283856159142
+  },
+  {
+    "window": "2016-04",
+    "kmeans_cluster": 3,
+    "count": 30,
+    "total": 1307,
+    "prevalence": 0.022953328232593728
+  },
+  {
+    "window": "2016-04",
+    "kmeans_cluster": 4,
+    "count": 530,
+    "total": 1307,
+    "prevalence": 0.4055087987758225
+  },
+  {
+    "window": "2016-04",
+    "kmeans_cluster": 5,
+    "count": 283,
+    "total": 1307,
+    "prevalence": 0.21652639632746748
+  },
+  {
+    "window": "2016-04",
+    "kmeans_cluster": 6,
+    "count": 23,
+    "total": 1307,
+    "prevalence": 0.017597551644988524
+  },
+  {
+    "window": "2016-04",
+    "kmeans_cluster": 7,
+    "count": 95,
+    "total": 1307,
+    "prevalence": 0.07268553940321347
+  },
+  {
+    "window": "2016-05",
+    "kmeans_cluster": 0,
+    "count": 32,
+    "total": 1311,
+    "prevalence": 0.02440884820747521
+  },
+  {
+    "window": "2016-05",
+    "kmeans_cluster": 1,
+    "count": 18,
+    "total": 1311,
+    "prevalence": 0.013729977116704805
+  },
+  {
+    "window": "2016-05",
+    "kmeans_cluster": 2,
+    "count": 285,
+    "total": 1311,
+    "prevalence": 0.21739130434782608
+  },
+  {
+    "window": "2016-05",
+    "kmeans_cluster": 3,
+    "count": 37,
+    "total": 1311,
+    "prevalence": 0.02822273073989321
+  },
+  {
+    "window": "2016-05",
+    "kmeans_cluster": 4,
+    "count": 556,
+    "total": 1311,
+    "prevalence": 0.4241037376048818
+  },
+  {
+    "window": "2016-05",
+    "kmeans_cluster": 5,
+    "count": 277,
+    "total": 1311,
+    "prevalence": 0.2112890922959573
+  },
+  {
+    "window": "2016-05",
+    "kmeans_cluster": 6,
+    "count": 18,
+    "total": 1311,
+    "prevalence": 0.013729977116704805
+  },
+  {
+    "window": "2016-05",
+    "kmeans_cluster": 7,
+    "count": 88,
+    "total": 1311,
+    "prevalence": 0.06712433257055683
+  },
+  {
+    "window": "2016-06",
+    "kmeans_cluster": 0,
+    "count": 27,
+    "total": 1243,
+    "prevalence": 0.02172164119066774
+  },
+  {
+    "window": "2016-06",
+    "kmeans_cluster": 1,
+    "count": 18,
+    "total": 1243,
+    "prevalence": 0.014481094127111826
+  },
+  {
+    "window": "2016-06",
+    "kmeans_cluster": 2,
+    "count": 290,
+    "total": 1243,
+    "prevalence": 0.2333065164923572
+  },
+  {
+    "window": "2016-06",
+    "kmeans_cluster": 3,
+    "count": 43,
+    "total": 1243,
+    "prevalence": 0.03459372485921158
+  },
+  {
+    "window": "2016-06",
+    "kmeans_cluster": 4,
+    "count": 530,
+    "total": 1243,
+    "prevalence": 0.4263877715205149
+  },
+  {
+    "window": "2016-06",
+    "kmeans_cluster": 5,
+    "count": 261,
+    "total": 1243,
+    "prevalence": 0.20997586484312147
+  },
+  {
+    "window": "2016-06",
+    "kmeans_cluster": 6,
+    "count": 13,
+    "total": 1243,
+    "prevalence": 0.010458567980691875
+  },
+  {
+    "window": "2016-06",
+    "kmeans_cluster": 7,
+    "count": 61,
+    "total": 1243,
+    "prevalence": 0.04907481898632341
+  },
+  {
+    "window": "2016-07",
+    "kmeans_cluster": 0,
+    "count": 24,
+    "total": 1313,
+    "prevalence": 0.01827875095201828
+  },
+  {
+    "window": "2016-07",
+    "kmeans_cluster": 1,
+    "count": 15,
+    "total": 1313,
+    "prevalence": 0.011424219345011425
+  },
+  {
+    "window": "2016-07",
+    "kmeans_cluster": 2,
+    "count": 233,
+    "total": 1313,
+    "prevalence": 0.17745620715917745
+  },
+  {
+    "window": "2016-07",
+    "kmeans_cluster": 3,
+    "count": 41,
+    "total": 1313,
+    "prevalence": 0.031226199543031227
+  },
+  {
+    "window": "2016-07",
+    "kmeans_cluster": 4,
+    "count": 642,
+    "total": 1313,
+    "prevalence": 0.48895658796648894
+  },
+  {
+    "window": "2016-07",
+    "kmeans_cluster": 5,
+    "count": 265,
+    "total": 1313,
+    "prevalence": 0.20182787509520184
+  },
+  {
+    "window": "2016-07",
+    "kmeans_cluster": 6,
+    "count": 27,
+    "total": 1313,
+    "prevalence": 0.020563594821020565
+  },
+  {
+    "window": "2016-07",
+    "kmeans_cluster": 7,
+    "count": 66,
+    "total": 1313,
+    "prevalence": 0.05026656511805026
+  },
+  {
+    "window": "2016-08",
+    "kmeans_cluster": 0,
+    "count": 24,
+    "total": 1263,
+    "prevalence": 0.019002375296912115
+  },
+  {
+    "window": "2016-08",
+    "kmeans_cluster": 1,
+    "count": 24,
+    "total": 1263,
+    "prevalence": 0.019002375296912115
+  },
+  {
+    "window": "2016-08",
+    "kmeans_cluster": 2,
+    "count": 231,
+    "total": 1263,
+    "prevalence": 0.1828978622327791
+  },
+  {
+    "window": "2016-08",
+    "kmeans_cluster": 3,
+    "count": 41,
+    "total": 1263,
+    "prevalence": 0.03246239113222486
+  },
+  {
+    "window": "2016-08",
+    "kmeans_cluster": 4,
+    "count": 528,
+    "total": 1263,
+    "prevalence": 0.4180522565320665
+  },
+  {
+    "window": "2016-08",
+    "kmeans_cluster": 5,
+    "count": 319,
+    "total": 1263,
+    "prevalence": 0.25257323832145684
+  },
+  {
+    "window": "2016-08",
+    "kmeans_cluster": 6,
+    "count": 22,
+    "total": 1263,
+    "prevalence": 0.01741884402216944
+  },
+  {
+    "window": "2016-08",
+    "kmeans_cluster": 7,
+    "count": 74,
+    "total": 1263,
+    "prevalence": 0.05859065716547902
+  },
+  {
+    "window": "2016-09",
+    "kmeans_cluster": 0,
+    "count": 34,
+    "total": 1355,
+    "prevalence": 0.025092250922509225
+  },
+  {
+    "window": "2016-09",
+    "kmeans_cluster": 1,
+    "count": 17,
+    "total": 1355,
+    "prevalence": 0.012546125461254613
+  },
+  {
+    "window": "2016-09",
+    "kmeans_cluster": 2,
+    "count": 254,
+    "total": 1355,
+    "prevalence": 0.18745387453874537
+  },
+  {
+    "window": "2016-09",
+    "kmeans_cluster": 3,
+    "count": 46,
+    "total": 1355,
+    "prevalence": 0.03394833948339483
+  },
+  {
+    "window": "2016-09",
+    "kmeans_cluster": 4,
+    "count": 626,
+    "total": 1355,
+    "prevalence": 0.4619926199261993
+  },
+  {
+    "window": "2016-09",
+    "kmeans_cluster": 5,
+    "count": 295,
+    "total": 1355,
+    "prevalence": 0.2177121771217712
+  },
+  {
+    "window": "2016-09",
+    "kmeans_cluster": 6,
+    "count": 30,
+    "total": 1355,
+    "prevalence": 0.02214022140221402
+  },
+  {
+    "window": "2016-09",
+    "kmeans_cluster": 7,
+    "count": 53,
+    "total": 1355,
+    "prevalence": 0.03911439114391144
+  },
+  {
+    "window": "2016-10",
+    "kmeans_cluster": 0,
+    "count": 35,
+    "total": 1548,
+    "prevalence": 0.02260981912144703
+  },
+  {
+    "window": "2016-10",
+    "kmeans_cluster": 1,
+    "count": 12,
+    "total": 1548,
+    "prevalence": 0.007751937984496124
+  },
+  {
+    "window": "2016-10",
+    "kmeans_cluster": 2,
+    "count": 215,
+    "total": 1548,
+    "prevalence": 0.1388888888888889
+  },
+  {
+    "window": "2016-10",
+    "kmeans_cluster": 3,
+    "count": 25,
+    "total": 1548,
+    "prevalence": 0.01614987080103359
+  },
+  {
+    "window": "2016-10",
+    "kmeans_cluster": 4,
+    "count": 886,
+    "total": 1548,
+    "prevalence": 0.5723514211886305
+  },
+  {
+    "window": "2016-10",
+    "kmeans_cluster": 5,
+    "count": 288,
+    "total": 1548,
+    "prevalence": 0.18604651162790697
+  },
+  {
+    "window": "2016-10",
+    "kmeans_cluster": 6,
+    "count": 32,
+    "total": 1548,
+    "prevalence": 0.020671834625323
+  },
+  {
+    "window": "2016-10",
+    "kmeans_cluster": 7,
+    "count": 55,
+    "total": 1548,
+    "prevalence": 0.0355297157622739
+  },
+  {
+    "window": "2016-11",
+    "kmeans_cluster": 0,
+    "count": 34,
+    "total": 1530,
+    "prevalence": 0.022222222222222223
+  },
+  {
+    "window": "2016-11",
+    "kmeans_cluster": 1,
+    "count": 24,
+    "total": 1530,
+    "prevalence": 0.01568627450980392
+  },
+  {
+    "window": "2016-11",
+    "kmeans_cluster": 2,
+    "count": 279,
+    "total": 1530,
+    "prevalence": 0.18235294117647058
+  },
+  {
+    "window": "2016-11",
+    "kmeans_cluster": 3,
+    "count": 22,
+    "total": 1530,
+    "prevalence": 0.01437908496732026
+  },
+  {
+    "window": "2016-11",
+    "kmeans_cluster": 4,
+    "count": 847,
+    "total": 1530,
+    "prevalence": 0.5535947712418301
+  },
+  {
+    "window": "2016-11",
+    "kmeans_cluster": 5,
+    "count": 246,
+    "total": 1530,
+    "prevalence": 0.1607843137254902
+  },
+  {
+    "window": "2016-11",
+    "kmeans_cluster": 6,
+    "count": 20,
+    "total": 1530,
+    "prevalence": 0.013071895424836602
+  },
+  {
+    "window": "2016-11",
+    "kmeans_cluster": 7,
+    "count": 58,
+    "total": 1530,
+    "prevalence": 0.03790849673202614
+  },
+  {
+    "window": "2016-12",
+    "kmeans_cluster": 0,
+    "count": 43,
+    "total": 1348,
+    "prevalence": 0.031899109792284865
+  },
+  {
+    "window": "2016-12",
+    "kmeans_cluster": 1,
+    "count": 17,
+    "total": 1348,
+    "prevalence": 0.012611275964391691
+  },
+  {
+    "window": "2016-12",
+    "kmeans_cluster": 2,
+    "count": 280,
+    "total": 1348,
+    "prevalence": 0.20771513353115728
+  },
+  {
+    "window": "2016-12",
+    "kmeans_cluster": 3,
+    "count": 39,
+    "total": 1348,
+    "prevalence": 0.028931750741839762
+  },
+  {
+    "window": "2016-12",
+    "kmeans_cluster": 4,
+    "count": 575,
+    "total": 1348,
+    "prevalence": 0.42655786350148367
+  },
+  {
+    "window": "2016-12",
+    "kmeans_cluster": 5,
+    "count": 300,
+    "total": 1348,
+    "prevalence": 0.22255192878338279
+  },
+  {
+    "window": "2016-12",
+    "kmeans_cluster": 6,
+    "count": 13,
+    "total": 1348,
+    "prevalence": 0.009643916913946587
+  },
+  {
+    "window": "2016-12",
+    "kmeans_cluster": 7,
+    "count": 81,
+    "total": 1348,
+    "prevalence": 0.06008902077151335
+  },
+  {
+    "window": "2017-01",
+    "kmeans_cluster": 0,
+    "count": 20,
+    "total": 1641,
+    "prevalence": 0.01218769043266301
+  },
+  {
+    "window": "2017-01",
+    "kmeans_cluster": 1,
+    "count": 20,
+    "total": 1641,
+    "prevalence": 0.01218769043266301
+  },
+  {
+    "window": "2017-01",
+    "kmeans_cluster": 2,
+    "count": 368,
+    "total": 1641,
+    "prevalence": 0.22425350396099938
+  },
+  {
+    "window": "2017-01",
+    "kmeans_cluster": 3,
+    "count": 16,
+    "total": 1641,
+    "prevalence": 0.009750152346130409
+  },
+  {
+    "window": "2017-01",
+    "kmeans_cluster": 4,
+    "count": 818,
+    "total": 1641,
+    "prevalence": 0.4984765386959171
+  },
+  {
+    "window": "2017-01",
+    "kmeans_cluster": 5,
+    "count": 335,
+    "total": 1641,
+    "prevalence": 0.2041438147471054
+  },
+  {
+    "window": "2017-01",
+    "kmeans_cluster": 6,
+    "count": 27,
+    "total": 1641,
+    "prevalence": 0.016453382084095063
+  },
+  {
+    "window": "2017-01",
+    "kmeans_cluster": 7,
+    "count": 37,
+    "total": 1641,
+    "prevalence": 0.02254722730042657
+  },
+  {
+    "window": "2017-02",
+    "kmeans_cluster": 0,
+    "count": 17,
+    "total": 1473,
+    "prevalence": 0.011541072640868975
+  },
+  {
+    "window": "2017-02",
+    "kmeans_cluster": 1,
+    "count": 20,
+    "total": 1473,
+    "prevalence": 0.013577732518669382
+  },
+  {
+    "window": "2017-02",
+    "kmeans_cluster": 2,
+    "count": 358,
+    "total": 1473,
+    "prevalence": 0.24304141208418195
+  },
+  {
+    "window": "2017-02",
+    "kmeans_cluster": 3,
+    "count": 16,
+    "total": 1473,
+    "prevalence": 0.010862186014935505
+  },
+  {
+    "window": "2017-02",
+    "kmeans_cluster": 4,
+    "count": 689,
+    "total": 1473,
+    "prevalence": 0.4677528852681602
+  },
+  {
+    "window": "2017-02",
+    "kmeans_cluster": 5,
+    "count": 312,
+    "total": 1473,
+    "prevalence": 0.21181262729124237
+  },
+  {
+    "window": "2017-02",
+    "kmeans_cluster": 6,
+    "count": 14,
+    "total": 1473,
+    "prevalence": 0.009504412763068567
+  },
+  {
+    "window": "2017-02",
+    "kmeans_cluster": 7,
+    "count": 47,
+    "total": 1473,
+    "prevalence": 0.031907671418873046
+  },
+  {
+    "window": "2017-03",
+    "kmeans_cluster": 0,
+    "count": 19,
+    "total": 1481,
+    "prevalence": 0.012829169480081027
+  },
+  {
+    "window": "2017-03",
+    "kmeans_cluster": 1,
+    "count": 15,
+    "total": 1481,
+    "prevalence": 0.01012829169480081
+  },
+  {
+    "window": "2017-03",
+    "kmeans_cluster": 2,
+    "count": 393,
+    "total": 1481,
+    "prevalence": 0.26536124240378123
+  },
+  {
+    "window": "2017-03",
+    "kmeans_cluster": 3,
+    "count": 25,
+    "total": 1481,
+    "prevalence": 0.01688048615800135
+  },
+  {
+    "window": "2017-03",
+    "kmeans_cluster": 4,
+    "count": 686,
+    "total": 1481,
+    "prevalence": 0.46320054017555706
+  },
+  {
+    "window": "2017-03",
+    "kmeans_cluster": 5,
+    "count": 282,
+    "total": 1481,
+    "prevalence": 0.19041188386225524
+  },
+  {
+    "window": "2017-03",
+    "kmeans_cluster": 6,
+    "count": 13,
+    "total": 1481,
+    "prevalence": 0.008777852802160702
+  },
+  {
+    "window": "2017-03",
+    "kmeans_cluster": 7,
+    "count": 48,
+    "total": 1481,
+    "prevalence": 0.03241053342336259
+  },
+  {
+    "window": "2017-04",
+    "kmeans_cluster": 0,
+    "count": 21,
+    "total": 1360,
+    "prevalence": 0.015441176470588236
+  },
+  {
+    "window": "2017-04",
+    "kmeans_cluster": 1,
+    "count": 17,
+    "total": 1360,
+    "prevalence": 0.0125
+  },
+  {
+    "window": "2017-04",
+    "kmeans_cluster": 2,
+    "count": 357,
+    "total": 1360,
+    "prevalence": 0.2625
+  },
+  {
+    "window": "2017-04",
+    "kmeans_cluster": 3,
+    "count": 34,
+    "total": 1360,
+    "prevalence": 0.025
+  },
+  {
+    "window": "2017-04",
+    "kmeans_cluster": 4,
+    "count": 605,
+    "total": 1360,
+    "prevalence": 0.44485294117647056
+  },
+  {
+    "window": "2017-04",
+    "kmeans_cluster": 5,
+    "count": 230,
+    "total": 1360,
+    "prevalence": 0.16911764705882354
+  },
+  {
+    "window": "2017-04",
+    "kmeans_cluster": 6,
+    "count": 10,
+    "total": 1360,
+    "prevalence": 0.007352941176470588
+  },
+  {
+    "window": "2017-04",
+    "kmeans_cluster": 7,
+    "count": 86,
+    "total": 1360,
+    "prevalence": 0.06323529411764706
+  },
+  {
+    "window": "2017-05",
+    "kmeans_cluster": 0,
+    "count": 36,
+    "total": 1502,
+    "prevalence": 0.023968042609853527
+  },
+  {
+    "window": "2017-05",
+    "kmeans_cluster": 1,
+    "count": 17,
+    "total": 1502,
+    "prevalence": 0.011318242343541944
+  },
+  {
+    "window": "2017-05",
+    "kmeans_cluster": 2,
+    "count": 358,
+    "total": 1502,
+    "prevalence": 0.23834886817576564
+  },
+  {
+    "window": "2017-05",
+    "kmeans_cluster": 3,
+    "count": 24,
+    "total": 1502,
+    "prevalence": 0.015978695073235686
+  },
+  {
+    "window": "2017-05",
+    "kmeans_cluster": 4,
+    "count": 740,
+    "total": 1502,
+    "prevalence": 0.49267643142476697
+  },
+  {
+    "window": "2017-05",
+    "kmeans_cluster": 5,
+    "count": 215,
+    "total": 1502,
+    "prevalence": 0.14314247669773636
+  },
+  {
+    "window": "2017-05",
+    "kmeans_cluster": 6,
+    "count": 15,
+    "total": 1502,
+    "prevalence": 0.009986684420772303
+  },
+  {
+    "window": "2017-05",
+    "kmeans_cluster": 7,
+    "count": 97,
+    "total": 1502,
+    "prevalence": 0.06458055925432757
+  },
+  {
+    "window": "2017-06",
+    "kmeans_cluster": 0,
+    "count": 39,
+    "total": 1486,
+    "prevalence": 0.026244952893674293
+  },
+  {
+    "window": "2017-06",
+    "kmeans_cluster": 1,
+    "count": 10,
+    "total": 1486,
+    "prevalence": 0.006729475100942127
+  },
+  {
+    "window": "2017-06",
+    "kmeans_cluster": 2,
+    "count": 482,
+    "total": 1486,
+    "prevalence": 0.3243606998654105
+  },
+  {
+    "window": "2017-06",
+    "kmeans_cluster": 3,
+    "count": 26,
+    "total": 1486,
+    "prevalence": 0.017496635262449527
+  },
+  {
+    "window": "2017-06",
+    "kmeans_cluster": 4,
+    "count": 637,
+    "total": 1486,
+    "prevalence": 0.4286675639300135
+  },
+  {
+    "window": "2017-06",
+    "kmeans_cluster": 5,
+    "count": 213,
+    "total": 1486,
+    "prevalence": 0.14333781965006728
+  },
+  {
+    "window": "2017-06",
+    "kmeans_cluster": 6,
+    "count": 8,
+    "total": 1486,
+    "prevalence": 0.005383580080753701
+  },
+  {
+    "window": "2017-06",
+    "kmeans_cluster": 7,
+    "count": 71,
+    "total": 1486,
+    "prevalence": 0.0477792732166891
+  },
+  {
+    "window": "2017-07",
+    "kmeans_cluster": 0,
+    "count": 23,
+    "total": 1448,
+    "prevalence": 0.015883977900552487
+  },
+  {
+    "window": "2017-07",
+    "kmeans_cluster": 1,
+    "count": 16,
+    "total": 1448,
+    "prevalence": 0.011049723756906077
+  },
+  {
+    "window": "2017-07",
+    "kmeans_cluster": 2,
+    "count": 429,
+    "total": 1448,
+    "prevalence": 0.2962707182320442
+  },
+  {
+    "window": "2017-07",
+    "kmeans_cluster": 3,
+    "count": 27,
+    "total": 1448,
+    "prevalence": 0.018646408839779006
+  },
+  {
+    "window": "2017-07",
+    "kmeans_cluster": 4,
+    "count": 585,
+    "total": 1448,
+    "prevalence": 0.40400552486187846
+  },
+  {
+    "window": "2017-07",
+    "kmeans_cluster": 5,
+    "count": 259,
+    "total": 1448,
+    "prevalence": 0.17886740331491713
+  },
+  {
+    "window": "2017-07",
+    "kmeans_cluster": 6,
+    "count": 16,
+    "total": 1448,
+    "prevalence": 0.011049723756906077
+  },
+  {
+    "window": "2017-07",
+    "kmeans_cluster": 7,
+    "count": 93,
+    "total": 1448,
+    "prevalence": 0.06422651933701658
+  },
+  {
+    "window": "2017-08",
+    "kmeans_cluster": 0,
+    "count": 25,
+    "total": 1487,
+    "prevalence": 0.016812373907195696
+  },
+  {
+    "window": "2017-08",
+    "kmeans_cluster": 1,
+    "count": 20,
+    "total": 1487,
+    "prevalence": 0.013449899125756557
+  },
+  {
+    "window": "2017-08",
+    "kmeans_cluster": 2,
+    "count": 459,
+    "total": 1487,
+    "prevalence": 0.30867518493611296
+  },
+  {
+    "window": "2017-08",
+    "kmeans_cluster": 3,
+    "count": 37,
+    "total": 1487,
+    "prevalence": 0.02488231338264963
+  },
+  {
+    "window": "2017-08",
+    "kmeans_cluster": 4,
+    "count": 571,
+    "total": 1487,
+    "prevalence": 0.3839946200403497
+  },
+  {
+    "window": "2017-08",
+    "kmeans_cluster": 5,
+    "count": 280,
+    "total": 1487,
+    "prevalence": 0.1882985877605918
+  },
+  {
+    "window": "2017-08",
+    "kmeans_cluster": 6,
+    "count": 6,
+    "total": 1487,
+    "prevalence": 0.004034969737726967
+  },
+  {
+    "window": "2017-08",
+    "kmeans_cluster": 7,
+    "count": 89,
+    "total": 1487,
+    "prevalence": 0.05985205110961668
+  },
+  {
+    "window": "2017-09",
+    "kmeans_cluster": 0,
+    "count": 28,
+    "total": 1237,
+    "prevalence": 0.02263540824575586
+  },
+  {
+    "window": "2017-09",
+    "kmeans_cluster": 1,
+    "count": 16,
+    "total": 1237,
+    "prevalence": 0.012934518997574777
+  },
+  {
+    "window": "2017-09",
+    "kmeans_cluster": 2,
+    "count": 380,
+    "total": 1237,
+    "prevalence": 0.30719482619240096
+  },
+  {
+    "window": "2017-09",
+    "kmeans_cluster": 3,
+    "count": 36,
+    "total": 1237,
+    "prevalence": 0.02910266774454325
+  },
+  {
+    "window": "2017-09",
+    "kmeans_cluster": 4,
+    "count": 469,
+    "total": 1237,
+    "prevalence": 0.3791430881164107
+  },
+  {
+    "window": "2017-09",
+    "kmeans_cluster": 5,
+    "count": 234,
+    "total": 1237,
+    "prevalence": 0.18916734033953111
+  },
+  {
+    "window": "2017-09",
+    "kmeans_cluster": 6,
+    "count": 12,
+    "total": 1237,
+    "prevalence": 0.009700889248181084
+  },
+  {
+    "window": "2017-09",
+    "kmeans_cluster": 7,
+    "count": 62,
+    "total": 1237,
+    "prevalence": 0.050121261115602264
+  },
+  {
+    "window": "2017-10",
+    "kmeans_cluster": 0,
+    "count": 25,
+    "total": 1357,
+    "prevalence": 0.018422991893883568
+  },
+  {
+    "window": "2017-10",
+    "kmeans_cluster": 1,
+    "count": 12,
+    "total": 1357,
+    "prevalence": 0.008843036109064112
+  },
+  {
+    "window": "2017-10",
+    "kmeans_cluster": 2,
+    "count": 403,
+    "total": 1357,
+    "prevalence": 0.2969786293294031
+  },
+  {
+    "window": "2017-10",
+    "kmeans_cluster": 3,
+    "count": 43,
+    "total": 1357,
+    "prevalence": 0.03168754605747973
+  },
+  {
+    "window": "2017-10",
+    "kmeans_cluster": 4,
+    "count": 488,
+    "total": 1357,
+    "prevalence": 0.3596168017686072
+  },
+  {
+    "window": "2017-10",
+    "kmeans_cluster": 5,
+    "count": 303,
+    "total": 1357,
+    "prevalence": 0.22328666175386883
+  },
+  {
+    "window": "2017-10",
+    "kmeans_cluster": 6,
+    "count": 16,
+    "total": 1357,
+    "prevalence": 0.011790714812085483
+  },
+  {
+    "window": "2017-10",
+    "kmeans_cluster": 7,
+    "count": 67,
+    "total": 1357,
+    "prevalence": 0.04937361827560796
+  },
+  {
+    "window": "2017-11",
+    "kmeans_cluster": 0,
+    "count": 19,
+    "total": 1262,
+    "prevalence": 0.015055467511885896
+  },
+  {
+    "window": "2017-11",
+    "kmeans_cluster": 1,
+    "count": 21,
+    "total": 1262,
+    "prevalence": 0.01664025356576862
+  },
+  {
+    "window": "2017-11",
+    "kmeans_cluster": 2,
+    "count": 298,
+    "total": 1262,
+    "prevalence": 0.23613312202852615
+  },
+  {
+    "window": "2017-11",
+    "kmeans_cluster": 3,
+    "count": 24,
+    "total": 1262,
+    "prevalence": 0.01901743264659271
+  },
+  {
+    "window": "2017-11",
+    "kmeans_cluster": 4,
+    "count": 543,
+    "total": 1262,
+    "prevalence": 0.43026941362916005
+  },
+  {
+    "window": "2017-11",
+    "kmeans_cluster": 5,
+    "count": 283,
+    "total": 1262,
+    "prevalence": 0.22424722662440572
+  },
+  {
+    "window": "2017-11",
+    "kmeans_cluster": 6,
+    "count": 23,
+    "total": 1262,
+    "prevalence": 0.018225039619651346
+  },
+  {
+    "window": "2017-11",
+    "kmeans_cluster": 7,
+    "count": 51,
+    "total": 1262,
+    "prevalence": 0.04041204437400951
+  },
+  {
+    "window": "2017-12",
+    "kmeans_cluster": 0,
+    "count": 24,
+    "total": 1176,
+    "prevalence": 0.02040816326530612
+  },
+  {
+    "window": "2017-12",
+    "kmeans_cluster": 1,
+    "count": 12,
+    "total": 1176,
+    "prevalence": 0.01020408163265306
+  },
+  {
+    "window": "2017-12",
+    "kmeans_cluster": 2,
+    "count": 256,
+    "total": 1176,
+    "prevalence": 0.21768707482993196
+  },
+  {
+    "window": "2017-12",
+    "kmeans_cluster": 3,
+    "count": 12,
+    "total": 1176,
+    "prevalence": 0.01020408163265306
+  },
+  {
+    "window": "2017-12",
+    "kmeans_cluster": 4,
+    "count": 549,
+    "total": 1176,
+    "prevalence": 0.46683673469387754
+  },
+  {
+    "window": "2017-12",
+    "kmeans_cluster": 5,
+    "count": 271,
+    "total": 1176,
+    "prevalence": 0.2304421768707483
+  },
+  {
+    "window": "2017-12",
+    "kmeans_cluster": 6,
+    "count": 17,
+    "total": 1176,
+    "prevalence": 0.01445578231292517
+  },
+  {
+    "window": "2017-12",
+    "kmeans_cluster": 7,
+    "count": 35,
+    "total": 1176,
+    "prevalence": 0.02976190476190476
+  },
+  {
+    "window": "2018-01",
+    "kmeans_cluster": 0,
+    "count": 15,
+    "total": 1252,
+    "prevalence": 0.011980830670926517
+  },
+  {
+    "window": "2018-01",
+    "kmeans_cluster": 1,
+    "count": 8,
+    "total": 1252,
+    "prevalence": 0.006389776357827476
+  },
+  {
+    "window": "2018-01",
+    "kmeans_cluster": 2,
+    "count": 246,
+    "total": 1252,
+    "prevalence": 0.1964856230031949
+  },
+  {
+    "window": "2018-01",
+    "kmeans_cluster": 3,
+    "count": 17,
+    "total": 1252,
+    "prevalence": 0.013578274760383386
+  },
+  {
+    "window": "2018-01",
+    "kmeans_cluster": 4,
+    "count": 517,
+    "total": 1252,
+    "prevalence": 0.41293929712460065
+  },
+  {
+    "window": "2018-01",
+    "kmeans_cluster": 5,
+    "count": 402,
+    "total": 1252,
+    "prevalence": 0.3210862619808307
+  },
+  {
+    "window": "2018-01",
+    "kmeans_cluster": 6,
+    "count": 36,
+    "total": 1252,
+    "prevalence": 0.02875399361022364
+  },
+  {
+    "window": "2018-01",
+    "kmeans_cluster": 7,
+    "count": 11,
+    "total": 1252,
+    "prevalence": 0.00878594249201278
+  },
+  {
+    "window": "2018-02",
+    "kmeans_cluster": 0,
+    "count": 9,
+    "total": 960,
+    "prevalence": 0.009375
+  },
+  {
+    "window": "2018-02",
+    "kmeans_cluster": 1,
+    "count": 2,
+    "total": 960,
+    "prevalence": 0.0020833333333333333
+  },
+  {
+    "window": "2018-02",
+    "kmeans_cluster": 2,
+    "count": 234,
+    "total": 960,
+    "prevalence": 0.24375
+  },
+  {
+    "window": "2018-02",
+    "kmeans_cluster": 3,
+    "count": 12,
+    "total": 960,
+    "prevalence": 0.0125
+  },
+  {
+    "window": "2018-02",
+    "kmeans_cluster": 4,
+    "count": 400,
+    "total": 960,
+    "prevalence": 0.4166666666666667
+  },
+  {
+    "window": "2018-02",
+    "kmeans_cluster": 5,
+    "count": 273,
+    "total": 960,
+    "prevalence": 0.284375
+  },
+  {
+    "window": "2018-02",
+    "kmeans_cluster": 6,
+    "count": 23,
+    "total": 960,
+    "prevalence": 0.023958333333333335
+  },
+  {
+    "window": "2018-02",
+    "kmeans_cluster": 7,
+    "count": 7,
+    "total": 960,
+    "prevalence": 0.007291666666666667
+  },
+  {
+    "window": "2018-03",
+    "kmeans_cluster": 0,
+    "count": 9,
+    "total": 1182,
+    "prevalence": 0.007614213197969543
+  },
+  {
+    "window": "2018-03",
+    "kmeans_cluster": 1,
+    "count": 1,
+    "total": 1182,
+    "prevalence": 0.0008460236886632825
+  },
+  {
+    "window": "2018-03",
+    "kmeans_cluster": 2,
+    "count": 272,
+    "total": 1182,
+    "prevalence": 0.23011844331641285
+  },
+  {
+    "window": "2018-03",
+    "kmeans_cluster": 3,
+    "count": 24,
+    "total": 1182,
+    "prevalence": 0.02030456852791878
+  },
+  {
+    "window": "2018-03",
+    "kmeans_cluster": 4,
+    "count": 469,
+    "total": 1182,
+    "prevalence": 0.39678510998307953
+  },
+  {
+    "window": "2018-03",
+    "kmeans_cluster": 5,
+    "count": 380,
+    "total": 1182,
+    "prevalence": 0.32148900169204736
+  },
+  {
+    "window": "2018-03",
+    "kmeans_cluster": 6,
+    "count": 24,
+    "total": 1182,
+    "prevalence": 0.02030456852791878
+  },
+  {
+    "window": "2018-03",
+    "kmeans_cluster": 7,
+    "count": 3,
+    "total": 1182,
+    "prevalence": 0.0025380710659898475
+  },
+  {
+    "window": "2018-04",
+    "kmeans_cluster": 0,
+    "count": 17,
+    "total": 1023,
+    "prevalence": 0.016617790811339198
+  },
+  {
+    "window": "2018-04",
+    "kmeans_cluster": 1,
+    "count": 4,
+    "total": 1023,
+    "prevalence": 0.0039100684261974585
+  },
+  {
+    "window": "2018-04",
+    "kmeans_cluster": 2,
+    "count": 190,
+    "total": 1023,
+    "prevalence": 0.18572825024437928
+  },
+  {
+    "window": "2018-04",
+    "kmeans_cluster": 3,
+    "count": 19,
+    "total": 1023,
+    "prevalence": 0.01857282502443793
+  },
+  {
+    "window": "2018-04",
+    "kmeans_cluster": 4,
+    "count": 431,
+    "total": 1023,
+    "prevalence": 0.42130987292277616
+  },
+  {
+    "window": "2018-04",
+    "kmeans_cluster": 5,
+    "count": 340,
+    "total": 1023,
+    "prevalence": 0.33235581622678395
+  },
+  {
+    "window": "2018-04",
+    "kmeans_cluster": 6,
+    "count": 16,
+    "total": 1023,
+    "prevalence": 0.015640273704789834
+  },
+  {
+    "window": "2018-04",
+    "kmeans_cluster": 7,
+    "count": 6,
+    "total": 1023,
+    "prevalence": 0.005865102639296188
+  },
+  {
+    "window": "2018-05",
+    "kmeans_cluster": 0,
+    "count": 8,
+    "total": 908,
+    "prevalence": 0.00881057268722467
+  },
+  {
+    "window": "2018-05",
+    "kmeans_cluster": 1,
+    "count": 1,
+    "total": 908,
+    "prevalence": 0.0011013215859030838
+  },
+  {
+    "window": "2018-05",
+    "kmeans_cluster": 2,
+    "count": 173,
+    "total": 908,
+    "prevalence": 0.1905286343612335
+  },
+  {
+    "window": "2018-05",
+    "kmeans_cluster": 3,
+    "count": 11,
+    "total": 908,
+    "prevalence": 0.012114537444933921
+  },
+  {
+    "window": "2018-05",
+    "kmeans_cluster": 4,
+    "count": 383,
+    "total": 908,
+    "prevalence": 0.42180616740088106
+  },
+  {
+    "window": "2018-05",
+    "kmeans_cluster": 5,
+    "count": 311,
+    "total": 908,
+    "prevalence": 0.34251101321585903
+  },
+  {
+    "window": "2018-05",
+    "kmeans_cluster": 6,
+    "count": 17,
+    "total": 908,
+    "prevalence": 0.018722466960352423
+  },
+  {
+    "window": "2018-05",
+    "kmeans_cluster": 7,
+    "count": 4,
+    "total": 908,
+    "prevalence": 0.004405286343612335
+  },
+  {
+    "window": "2018-06",
+    "kmeans_cluster": 0,
+    "count": 1,
+    "total": 46,
+    "prevalence": 0.021739130434782608
+  },
+  {
+    "window": "2018-06",
+    "kmeans_cluster": 1,
+    "count": 0,
+    "total": 46,
+    "prevalence": 0.0
+  },
+  {
+    "window": "2018-06",
+    "kmeans_cluster": 2,
+    "count": 9,
+    "total": 46,
+    "prevalence": 0.1956521739130435
+  },
+  {
+    "window": "2018-06",
+    "kmeans_cluster": 3,
+    "count": 1,
+    "total": 46,
+    "prevalence": 0.021739130434782608
+  },
+  {
+    "window": "2018-06",
+    "kmeans_cluster": 4,
+    "count": 21,
+    "total": 46,
+    "prevalence": 0.45652173913043476
+  },
+  {
+    "window": "2018-06",
+    "kmeans_cluster": 5,
+    "count": 14,
+    "total": 46,
+    "prevalence": 0.30434782608695654
+  },
+  {
+    "window": "2018-06",
+    "kmeans_cluster": 6,
+    "count": 0,
+    "total": 46,
+    "prevalence": 0.0
+  },
+  {
+    "window": "2018-06",
+    "kmeans_cluster": 7,
+    "count": 0,
+    "total": 46,
+    "prevalence": 0.0
+  },
+  {
+    "window": "2018-07",
+    "kmeans_cluster": 0,
+    "count": 3,
+    "total": 37,
+    "prevalence": 0.08108108108108109
+  },
+  {
+    "window": "2018-07",
+    "kmeans_cluster": 1,
+    "count": 0,
+    "total": 37,
+    "prevalence": 0.0
+  },
+  {
+    "window": "2018-07",
+    "kmeans_cluster": 2,
+    "count": 8,
+    "total": 37,
+    "prevalence": 0.21621621621621623
+  },
+  {
+    "window": "2018-07",
+    "kmeans_cluster": 3,
+    "count": 0,
+    "total": 37,
+    "prevalence": 0.0
+  },
+  {
+    "window": "2018-07",
+    "kmeans_cluster": 4,
+    "count": 14,
+    "total": 37,
+    "prevalence": 0.3783783783783784
+  },
+  {
+    "window": "2018-07",
+    "kmeans_cluster": 5,
+    "count": 12,
+    "total": 37,
+    "prevalence": 0.32432432432432434
+  },
+  {
+    "window": "2018-07",
+    "kmeans_cluster": 6,
+    "count": 0,
+    "total": 37,
+    "prevalence": 0.0
+  },
+  {
+    "window": "2018-07",
+    "kmeans_cluster": 7,
+    "count": 0,
+    "total": 37,
+    "prevalence": 0.0
+  },
+  {
+    "window": "2018-08",
+    "kmeans_cluster": 0,
+    "count": 0,
+    "total": 18,
+    "prevalence": 0.0
+  },
+  {
+    "window": "2018-08",
+    "kmeans_cluster": 1,
+    "count": 1,
+    "total": 18,
+    "prevalence": 0.05555555555555555
+  },
+  {
+    "window": "2018-08",
+    "kmeans_cluster": 2,
+    "count": 0,
+    "total": 18,
+    "prevalence": 0.0
+  },
+  {
+    "window": "2018-08",
+    "kmeans_cluster": 3,
+    "count": 0,
+    "total": 18,
+    "prevalence": 0.0
+  },
+  {
+    "window": "2018-08",
+    "kmeans_cluster": 4,
+    "count": 10,
+    "total": 18,
+    "prevalence": 0.5555555555555556
+  },
+  {
+    "window": "2018-08",
+    "kmeans_cluster": 5,
+    "count": 6,
+    "total": 18,
+    "prevalence": 0.3333333333333333
+  },
+  {
+    "window": "2018-08",
+    "kmeans_cluster": 6,
+    "count": 1,
+    "total": 18,
+    "prevalence": 0.05555555555555555
+  },
+  {
+    "window": "2018-08",
+    "kmeans_cluster": 7,
+    "count": 0,
+    "total": 18,
+    "prevalence": 0.0
+  },
+  {
+    "window": "2018-09",
+    "kmeans_cluster": 0,
+    "count": 1,
+    "total": 62,
+    "prevalence": 0.016129032258064516
+  },
+  {
+    "window": "2018-09",
+    "kmeans_cluster": 1,
+    "count": 0,
+    "total": 62,
+    "prevalence": 0.0
+  },
+  {
+    "window": "2018-09",
+    "kmeans_cluster": 2,
+    "count": 8,
+    "total": 62,
+    "prevalence": 0.12903225806451613
+  },
+  {
+    "window": "2018-09",
+    "kmeans_cluster": 3,
+    "count": 0,
+    "total": 62,
+    "prevalence": 0.0
+  },
+  {
+    "window": "2018-09",
+    "kmeans_cluster": 4,
+    "count": 34,
+    "total": 62,
+    "prevalence": 0.5483870967741935
+  },
+  {
+    "window": "2018-09",
+    "kmeans_cluster": 5,
+    "count": 17,
+    "total": 62,
+    "prevalence": 0.27419354838709675
+  },
+  {
+    "window": "2018-09",
+    "kmeans_cluster": 6,
+    "count": 2,
+    "total": 62,
+    "prevalence": 0.03225806451612903
+  },
+  {
+    "window": "2018-09",
+    "kmeans_cluster": 7,
+    "count": 0,
+    "total": 62,
+    "prevalence": 0.0
+  },
+  {
+    "window": "2018-10",
+    "kmeans_cluster": 0,
+    "count": 1,
+    "total": 119,
+    "prevalence": 0.008403361344537815
+  },
+  {
+    "window": "2018-10",
+    "kmeans_cluster": 1,
+    "count": 2,
+    "total": 119,
+    "prevalence": 0.01680672268907563
+  },
+  {
+    "window": "2018-10",
+    "kmeans_cluster": 2,
+    "count": 18,
+    "total": 119,
+    "prevalence": 0.15126050420168066
+  },
+  {
+    "window": "2018-10",
+    "kmeans_cluster": 3,
+    "count": 0,
+    "total": 119,
+    "prevalence": 0.0
+  },
+  {
+    "window": "2018-10",
+    "kmeans_cluster": 4,
+    "count": 63,
+    "total": 119,
+    "prevalence": 0.5294117647058824
+  },
+  {
+    "window": "2018-10",
+    "kmeans_cluster": 5,
+    "count": 28,
+    "total": 119,
+    "prevalence": 0.23529411764705882
+  },
+  {
+    "window": "2018-10",
+    "kmeans_cluster": 6,
+    "count": 6,
+    "total": 119,
+    "prevalence": 0.05042016806722689
+  },
+  {
+    "window": "2018-10",
+    "kmeans_cluster": 7,
+    "count": 1,
+    "total": 119,
+    "prevalence": 0.008403361344537815
+  },
+  {
+    "window": "2018-11",
+    "kmeans_cluster": 0,
+    "count": 3,
+    "total": 111,
+    "prevalence": 0.02702702702702703
+  },
+  {
+    "window": "2018-11",
+    "kmeans_cluster": 1,
+    "count": 0,
+    "total": 111,
+    "prevalence": 0.0
+  },
+  {
+    "window": "2018-11",
+    "kmeans_cluster": 2,
+    "count": 21,
+    "total": 111,
+    "prevalence": 0.1891891891891892
+  },
+  {
+    "window": "2018-11",
+    "kmeans_cluster": 3,
+    "count": 1,
+    "total": 111,
+    "prevalence": 0.009009009009009009
+  },
+  {
+    "window": "2018-11",
+    "kmeans_cluster": 4,
+    "count": 54,
+    "total": 111,
+    "prevalence": 0.4864864864864865
+  },
+  {
+    "window": "2018-11",
+    "kmeans_cluster": 5,
+    "count": 30,
+    "total": 111,
+    "prevalence": 0.2702702702702703
+  },
+  {
+    "window": "2018-11",
+    "kmeans_cluster": 6,
+    "count": 1,
+    "total": 111,
+    "prevalence": 0.009009009009009009
+  },
+  {
+    "window": "2018-11",
+    "kmeans_cluster": 7,
+    "count": 1,
+    "total": 111,
+    "prevalence": 0.009009009009009009
+  },
+  {
+    "window": "2018-12",
+    "kmeans_cluster": 0,
+    "count": 1,
+    "total": 111,
+    "prevalence": 0.009009009009009009
+  },
+  {
+    "window": "2018-12",
+    "kmeans_cluster": 1,
+    "count": 0,
+    "total": 111,
+    "prevalence": 0.0
+  },
+  {
+    "window": "2018-12",
+    "kmeans_cluster": 2,
+    "count": 15,
+    "total": 111,
+    "prevalence": 0.13513513513513514
+  },
+  {
+    "window": "2018-12",
+    "kmeans_cluster": 3,
+    "count": 0,
+    "total": 111,
+    "prevalence": 0.0
+  },
+  {
+    "window": "2018-12",
+    "kmeans_cluster": 4,
+    "count": 65,
+    "total": 111,
+    "prevalence": 0.5855855855855856
+  },
+  {
+    "window": "2018-12",
+    "kmeans_cluster": 5,
+    "count": 23,
+    "total": 111,
+    "prevalence": 0.2072072072072072
+  },
+  {
+    "window": "2018-12",
+    "kmeans_cluster": 6,
+    "count": 5,
+    "total": 111,
+    "prevalence": 0.04504504504504504
+  },
+  {
+    "window": "2018-12",
+    "kmeans_cluster": 7,
+    "count": 2,
+    "total": 111,
+    "prevalence": 0.018018018018018018
+  }
+]

@@ -1,158 +1,386 @@
-﻿import time
+﻿
+"""
+Dimensionality reduction module.
+
+Input:
+    data/processed/news.parquet
+    data/processed/emb.npy
+
+Outputs:
+    data/processed/pca_embeddings.npy
+    data/processed/pca_model.joblib
+    data/processed/tsne_2d.npy
+    data/processed/tsne_ids.npy
+    data/processed/reduction_metadata.json
+
+PCA:
+    Applied to all article embeddings.
+
+t-SNE:
+    Applied to a reproducible sample of PCA-reduced embeddings.
+    Used for 2D visualization, not downstream model training.
+"""
+
+import argparse
+import json
+from pathlib import Path
+
+import joblib
 import numpy as np
 import pandas as pd
-import faiss
-import matplotlib.pyplot as plt
-from collections import Counter
 from sklearn.decomposition import PCA
-from sklearn.neighbors import NearestNeighbors
 from sklearn.manifold import TSNE
 
-base = pd.read_parquet("data/processed/news.parquet")
-E_all = np.load("data/processed/emb.npy")
+# ---------------------------------------------------------
+# Paths and configuration
+# ---------------------------------------------------------
 
-# (a) PCA via SVD (from scratch) on a 30k sample
-mu = E_all.mean(0)
-sample = E_all[np.random.default_rng(0).choice(len(E_all), 30000, replace=False)] - mu
-U, S, Vt = np.linalg.svd(sample, full_matrices=False)
-explained = np.cumsum(S**2) / np.sum(S**2)
-rank_err = 1 - explained  # relative low-rank approximation error
+BASE_DIR = Path(__file__).resolve().parent.parent
+PROCESSED_DIR = BASE_DIR / "data" / "processed"
 
-# Verify against sklearn
-sk_pca = PCA(50).fit(sample)
-print("Max diff vs sklearn explained variance (top 50):",
-      np.max(np.abs((S[:50]**2 / np.sum(S**2)) - sk_pca.explained_variance_ratio_)))
+DATA_PATH = PROCESSED_DIR / "news.parquet"
+EMBEDDINGS_PATH = PROCESSED_DIR / "emb.npy"
 
-def project(X, k=50):
-    return (X - mu) @ Vt[:k].T
+PCA_OUTPUT_PATH = PROCESSED_DIR / "pca_embeddings.npy"
+PCA_MODEL_PATH = PROCESSED_DIR / "pca_model.joblib"
 
-Z = project(E_all, 50)  # (N, 50)
-np.save("data/processed/emb_pca50.npy", Z.astype("float32"))
-np.savez("data/processed/pca_params.npz", mu=mu.astype("float32"), Vt=Vt[:50].astype("float32"))
+TSNE_OUTPUT_PATH = PROCESSED_DIR / "tsne_2d.npy"
+TSNE_IDS_PATH = PROCESSED_DIR / "tsne_ids.npy"
 
-# Plot explained variance and low-rank approximation error
-fig, ax = plt.subplots(1, 2, figsize=(11, 4))
-ax[0].plot(np.arange(1, len(explained) + 1), explained)
-ax[0].set(title="PCA Explained Variance", xlabel="Rank k", ylabel="Cumulative Variance")
-ax[1].plot(np.arange(1, len(rank_err) + 1), rank_err)
-ax[1].set(title="Low-Rank Approximation Error (1 - Explained)", xlabel="Rank k", ylabel="Relative Error")
-plt.tight_layout()
-plt.savefig("results/phase4_pca_variance.png")
-plt.close()
+METADATA_PATH = PROCESSED_DIR / "reduction_metadata.json"
 
-# (b) Retrieval versus k
-idx = np.random.default_rng(0).choice(len(base), 2000, replace=False)
-y = base.category.values[idx]
+# ---------------------------------------------------------
+# Load and validate data
+# ---------------------------------------------------------
 
-def knn_acc(X, metric="cosine", k=10):
-    nn = NearestNeighbors(n_neighbors=k + 1, metric=metric).fit(X)
-    nbrs = nn.kneighbors(X, return_distance=False)[:, 1:]
-    return np.mean([Counter(y[n]).most_common(1)[0][0] == y[i] for i, n in enumerate(nbrs)])
+def load_data():
+    """Load articles and embeddings while preserving ID alignment."""
 
-ks = [5, 10, 20, 50, 100, 384]
-accs = [knn_acc(project(E_all[idx], k) if k < 384 else E_all[idx]) for k in ks]
-pd.DataFrame({"k": ks, "knn_acc": accs}).to_csv("results/phase4_retrieval_vs_k.csv", index=False)
+    if not DATA_PATH.exists():
+        raise FileNotFoundError(f"Dataset not found: {DATA_PATH}")
 
-plt.figure(figsize=(7, 4))
-plt.plot(ks, accs, marker="o")
-plt.title("Retrieval Accuracy (kNN@10) vs PCA Rank k")
-plt.xlabel("Dimensions (k)")
-plt.ylabel("Accuracy")
-plt.tight_layout()
-plt.savefig("results/phase4_retrieval_vs_k.png")
-plt.close()
+    if not EMBEDDINGS_PATH.exists():
+        raise FileNotFoundError(
+            f"Embeddings not found: {EMBEDDINGS_PATH}. "
+            "Run represent.py first."
+        )
 
-# (c) LSH from scratch (random hyperplanes) with FAISS as reference
-class LSH:
-    def __init__(self, d, bits=12, tables=8, seed=0):
-        rng = np.random.default_rng(seed)
-        self.P = [rng.standard_normal((bits, d)) for _ in range(tables)]
-        self.T = [dict() for _ in range(tables)]
+    df = pd.read_parquet(DATA_PATH)
+    embeddings = np.load(EMBEDDINGS_PATH, mmap_mode="r")
 
-    def _keys(self, X, P):
-        return [r.tobytes() for r in (X @ P.T > 0)]
+    if "id" not in df.columns:
+        raise ValueError("Dataset must contain an 'id' column.")
 
-    def add(self, X):
-        for P, T in zip(self.P, self.T):
-            for i, k in enumerate(self._keys(X, P)):
-                T.setdefault(k, []).append(i)
+    if df["id"].duplicated().any():
+        raise ValueError("Article IDs must be unique.")
 
-    def candidates(self, x):
-        c = set()
-        for P, T in zip(self.P, self.T):
-            c.update(T.get(self._keys(x[None], P)[0], []))
-        return list(c)
+    df = df.sort_values("id").reset_index(drop=True)
 
-Xn = E_all / np.linalg.norm(E_all, axis=1, keepdims=True)
-Xf = Xn.astype("float32")
-index = faiss.IndexFlatIP(Xf.shape[1])
-index.add(Xf)
+    expected_ids = np.arange(len(df))
 
-t0 = time.perf_counter()
-D, I = index.search(Xf[:200], 11)
-faiss_ms = (time.perf_counter() - t0) * 1000
+    if not np.array_equal(df["id"].to_numpy(), expected_ids):
+        raise ValueError(
+            "Article IDs must be contiguous from 0 to N-1."
+        )
 
-lsh_rows = []
-for bits, tables in [(8, 4), (12, 8), (12, 16), (16, 16)]:
-    lsh = LSH(Xn.shape[1], bits=bits, tables=tables)
-    lsh.add(Xn)
-    t0 = time.perf_counter()
-    recalls, cand_counts = [], []
-    for q in range(200):
-        cands = np.array(lsh.candidates(Xn[q]))
-        cand_counts.append(len(cands))
-        if len(cands) > 0:
-            sims = Xn[cands] @ Xn[q]
-            top10 = cands[np.argsort(-sims)[:11]]
-            recalls.append(len(set(top10) & set(I[q, 1:])) / 10.0)
-        else:
-            recalls.append(0.0)
-    lsh_ms = (time.perf_counter() - t0) * 1000
-    lsh_rows.append({
-        "bits": bits,
-        "tables": tables,
-        "recall@10": np.mean(recalls),
-        "avg_candidates": np.mean(cand_counts),
-        "candidate_ratio": np.mean(cand_counts) / len(Xn),
-        "query_ms_200": lsh_ms,
-        "faiss_ms_200": faiss_ms,
-    })
+    if embeddings.ndim != 2:
+        raise ValueError("Embedding matrix must be two-dimensional.")
 
-lsh_df = pd.DataFrame(lsh_rows)
-lsh_df.to_csv("results/phase4_lsh_comparison.csv", index=False)
-print("\nLSH vs FAISS:\n", lsh_df)
+    if embeddings.shape[0] != len(df):
+        raise ValueError(
+            "Article count and embedding count do not match."
+        )
 
-# (d) Near-duplicate removal per batch
-def dedup(Xb, thr=0.95):
-    Xb = Xb / np.linalg.norm(Xb, axis=1, keepdims=True)
-    S = np.triu(Xb @ Xb.T, k=1)
-    return ~(S > thr).any(axis=0)  # boolean mask: keep items with no earlier near-duplicate
+    print(f"Articles loaded: {len(df):,}")
+    print(f"Original embedding shape: {embeddings.shape}")
 
-kept_total, total_items = 0, 0
-for _, g in base.groupby("month", sort=True):
-    mask = dedup(Z[g.id.values], thr=0.95)
-    kept_total += mask.sum()
-    total_items += len(g)
-pct_dropped = 100 * (1 - kept_total / total_items)
-print(f"\nNear-duplicates dropped across stream: {pct_dropped:.2f}%")
+    return df, embeddings
 
-# (e) t-SNE on 3,000 items from one batch
-largest_month = base.month.value_counts().idxmax()
-b_idx = base[base.month == largest_month].id.values[:3000]
-tsne_xy = TSNE(n_components=2, perplexity=30, init="pca", random_state=0).fit_transform(Z[b_idx])
-tsne_df = pd.DataFrame({
-    "x": tsne_xy[:, 0],
-    "y": tsne_xy[:, 1],
-    "category": base.loc[b_idx, "category"].values
-})
-tsne_df.to_csv("results/tsne_sample.csv", index=False)
+# ---------------------------------------------------------
+# PCA
+# ---------------------------------------------------------
 
-plt.figure(figsize=(9, 6))
-for cat, grp in tsne_df.groupby("category"):
-    plt.scatter(grp.x, grp.y, s=8, alpha=0.7, label=cat)
-plt.legend(markerscale=2, bbox_to_anchor=(1.02, 1), loc="upper left")
-plt.title(f"t-SNE Map of Batch {largest_month} (PCA-50)")
-plt.tight_layout()
-plt.savefig("results/phase4_tsne.png")
-plt.close()
-print("Phase 4 complete! Saved all plots and CSVs to results/.")
+def reduce_with_pca(
+    embeddings,
+    n_components=50,
+    random_state=42,
+):
+    """
+    Reduce all embeddings using scikit-learn PCA.
+
+    Returns:
+        reduced: PCA representation.
+        model: fitted PCA model.
+    """
+
+    n_samples, n_features = embeddings.shape
+
+    if n_components <= 0:
+        raise ValueError("n_components must be positive.")
+
+    if n_components > min(n_samples, n_features):
+        raise ValueError(
+            f"n_components cannot exceed {min(n_samples, n_features)}."
+        )
+
+    print(f"\nRunning PCA: {n_features} -> {n_components} dimensions")
+
+    model = PCA(
+        n_components=n_components,
+        svd_solver="randomized",
+        random_state=random_state,
+    )
+
+    reduced = model.fit_transform(embeddings)
+    reduced = np.asarray(reduced, dtype=np.float32)
+
+    if not np.isfinite(reduced).all():
+        raise ValueError("PCA output contains invalid values.")
+
+    explained = float(model.explained_variance_ratio_.sum())
+
+    print(f"PCA output shape: {reduced.shape}")
+    print(f"Total explained variance: {explained:.4f}")
+
+    return reduced, model
+
+# ---------------------------------------------------------
+# t-SNE
+# ---------------------------------------------------------
+
+def reduce_with_tsne(
+    pca_embeddings,
+    article_ids,
+    sample_size=5000,
+    perplexity=30,
+    random_state=42,
+):
+    """
+    Generate a 2D t-SNE representation from a reproducible sample.
+
+    t-SNE is intentionally not run on the entire dataset because
+    its computational cost grows significantly with sample size.
+
+    Returns:
+        coordinates: 2D t-SNE coordinates.
+        sampled_ids: original article IDs corresponding to coordinates.
+    """
+
+    n_samples = len(pca_embeddings)
+
+    if sample_size < 2:
+        raise ValueError("t-SNE requires at least two samples.")
+
+    actual_size = min(sample_size, n_samples)
+
+    if perplexity <= 0 or perplexity >= actual_size:
+        raise ValueError(
+            "Perplexity must be positive and smaller than the sample size."
+        )
+
+    rng = np.random.default_rng(random_state)
+
+    selected_positions = np.sort(
+        rng.choice(
+            n_samples,
+            size=actual_size,
+            replace=False,
+        )
+    )
+
+    sample = pca_embeddings[selected_positions]
+    sampled_ids = article_ids[selected_positions]
+
+    print(
+        f"\nRunning t-SNE on {actual_size:,} articles "
+        f"with perplexity={perplexity}..."
+    )
+
+    model = TSNE(
+        n_components=2,
+        perplexity=perplexity,
+        init="pca",
+        learning_rate="auto",
+        max_iter=1000,
+        random_state=random_state,
+    )
+
+    coordinates = model.fit_transform(sample)
+    coordinates = np.asarray(coordinates, dtype=np.float32)
+
+    if not np.isfinite(coordinates).all():
+        raise ValueError("t-SNE output contains invalid values.")
+
+    print(f"t-SNE output shape: {coordinates.shape}")
+
+    return coordinates, sampled_ids
+
+# ---------------------------------------------------------
+# Save metadata
+# ---------------------------------------------------------
+
+def save_metadata(
+    original_shape,
+    pca_shape,
+    tsne_shape,
+    pca_model,
+    sample_size,
+    perplexity,
+):
+    metadata = {
+        "original_embedding_shape": list(original_shape),
+        "pca_shape": list(pca_shape),
+        "pca_components": int(pca_shape[1]),
+        "pca_explained_variance_ratio": float(
+            pca_model.explained_variance_ratio_.sum()
+        ),
+        "tsne_shape": list(tsne_shape),
+        "tsne_sample_size": int(sample_size),
+        "tsne_perplexity": float(perplexity),
+        "random_state": 42,
+        "id_alignment": "row_index_equals_article_id",
+    }
+
+    with open(METADATA_PATH, "w", encoding="utf-8") as file:
+        json.dump(metadata, file, indent=4)
+
+# ---------------------------------------------------------
+# Main pipeline
+# ---------------------------------------------------------
+
+def run(
+    n_components=50,
+    tsne_sample_size=5000,
+    perplexity=30,
+    random_state=42,
+    force=False,
+):
+    PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
+
+    df, embeddings = load_data()
+    article_ids = df["id"].to_numpy()
+
+    # PCA
+    if (
+        PCA_OUTPUT_PATH.exists()
+        and PCA_MODEL_PATH.exists()
+        and not force
+    ):
+        print("\nExisting PCA outputs found. Loading them.")
+
+        pca_embeddings = np.load(PCA_OUTPUT_PATH, mmap_mode="r")
+        pca_model = joblib.load(PCA_MODEL_PATH)
+
+        if pca_embeddings.shape[0] != len(df):
+            raise ValueError("Existing PCA output has the wrong row count.")
+
+        if pca_embeddings.shape[1] != n_components:
+            raise ValueError(
+                "Existing PCA output has a different component count. "
+                "Run with --force."
+            )
+
+    else:
+        pca_embeddings, pca_model = reduce_with_pca(
+            embeddings=embeddings,
+            n_components=n_components,
+            random_state=random_state,
+        )
+
+        np.save(PCA_OUTPUT_PATH, pca_embeddings)
+        joblib.dump(pca_model, PCA_MODEL_PATH)
+
+        print(f"Saved PCA embeddings: {PCA_OUTPUT_PATH}")
+        print(f"Saved PCA model: {PCA_MODEL_PATH}")
+
+    # t-SNE
+    if (
+        TSNE_OUTPUT_PATH.exists()
+        and TSNE_IDS_PATH.exists()
+        and not force
+    ):
+        print("\nExisting t-SNE outputs found. Loading them.")
+
+        tsne_coordinates = np.load(TSNE_OUTPUT_PATH)
+        tsne_ids = np.load(TSNE_IDS_PATH)
+
+        if len(tsne_coordinates) != len(tsne_ids):
+            raise ValueError("t-SNE coordinates and IDs do not match.")
+
+    else:
+        tsne_coordinates, tsne_ids = reduce_with_tsne(
+            pca_embeddings=pca_embeddings,
+            article_ids=article_ids,
+            sample_size=tsne_sample_size,
+            perplexity=perplexity,
+            random_state=random_state,
+        )
+
+        np.save(TSNE_OUTPUT_PATH, tsne_coordinates)
+        np.save(TSNE_IDS_PATH, tsne_ids)
+
+        print(f"Saved t-SNE coordinates: {TSNE_OUTPUT_PATH}")
+        print(f"Saved t-SNE article IDs: {TSNE_IDS_PATH}")
+
+    save_metadata(
+        original_shape=embeddings.shape,
+        pca_shape=pca_embeddings.shape,
+        tsne_shape=tsne_coordinates.shape,
+        pca_model=pca_model,
+        sample_size=len(tsne_coordinates),
+        perplexity=perplexity,
+    )
+
+    print("\nDimensionality reduction completed.")
+    print(f"Original dimensions: {embeddings.shape[1]}")
+    print(f"PCA dimensions: {pca_embeddings.shape[1]}")
+    print(f"t-SNE dimensions: {tsne_coordinates.shape[1]}")
+
+# ---------------------------------------------------------
+# Command-line execution
+# ---------------------------------------------------------
+
+if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser(
+        description="Perform PCA and t-SNE on news embeddings."
+    )
+
+    parser.add_argument(
+        "--components",
+        type=int,
+        default=50,
+    )
+
+    parser.add_argument(
+        "--tsne-sample-size",
+        type=int,
+        default=5000,
+    )
+
+    parser.add_argument(
+        "--perplexity",
+        type=float,
+        default=30,
+    )
+
+    parser.add_argument(
+        "--random-state",
+        type=int,
+        default=42,
+    )
+
+    parser.add_argument(
+        "--force",
+        action="store_true",
+    )
+
+    args = parser.parse_args()
+
+    run(
+        n_components=args.components,
+        tsne_sample_size=args.tsne_sample_size,
+        perplexity=args.perplexity,
+        random_state=args.random_state,
+        force=args.force,
+    )

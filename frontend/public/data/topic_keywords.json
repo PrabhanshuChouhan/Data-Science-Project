@@ -1,0 +1,1922 @@
+[
+  {
+    "algorithm": "KMeans",
+    "cluster": 0,
+    "rank": 1,
+    "term": "kids",
+    "mean_tfidf": 0.03151305392384529,
+    "cluster_size": 9262
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 0,
+    "rank": 2,
+    "term": "children",
+    "mean_tfidf": 0.027827486395835876,
+    "cluster_size": 9262
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 0,
+    "rank": 3,
+    "term": "parents",
+    "mean_tfidf": 0.022637024521827698,
+    "cluster_size": 9262
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 0,
+    "rank": 4,
+    "term": "child",
+    "mean_tfidf": 0.02125762216746807,
+    "cluster_size": 9262
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 0,
+    "rank": 5,
+    "term": "baby",
+    "mean_tfidf": 0.016937019303441048,
+    "cluster_size": 9262
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 0,
+    "rank": 6,
+    "term": "mom",
+    "mean_tfidf": 0.01661035232245922,
+    "cluster_size": 9262
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 0,
+    "rank": 7,
+    "term": "mother",
+    "mean_tfidf": 0.013080483302474022,
+    "cluster_size": 9262
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 0,
+    "rank": 8,
+    "term": "parenting",
+    "mean_tfidf": 0.012522964738309383,
+    "cluster_size": 9262
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 0,
+    "rank": 9,
+    "term": "daughter",
+    "mean_tfidf": 0.012109982781112194,
+    "cluster_size": 9262
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 0,
+    "rank": 10,
+    "term": "day",
+    "mean_tfidf": 0.01169524248689413,
+    "cluster_size": 9262
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 0,
+    "rank": 11,
+    "term": "family",
+    "mean_tfidf": 0.011417518369853497,
+    "cluster_size": 9262
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 0,
+    "rank": 12,
+    "term": "year",
+    "mean_tfidf": 0.011380611918866634,
+    "cluster_size": 9262
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 0,
+    "rank": 13,
+    "term": "time",
+    "mean_tfidf": 0.011166217736899853,
+    "cluster_size": 9262
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 0,
+    "rank": 14,
+    "term": "parent",
+    "mean_tfidf": 0.011029575020074844,
+    "cluster_size": 9262
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 0,
+    "rank": 15,
+    "term": "son",
+    "mean_tfidf": 0.010873700492084026,
+    "cluster_size": 9262
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 1,
+    "rank": 1,
+    "term": "food",
+    "mean_tfidf": 0.025417914614081383,
+    "cluster_size": 10924
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 1,
+    "rank": 2,
+    "term": "recipes",
+    "mean_tfidf": 0.017961369827389717,
+    "cluster_size": 10924
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 1,
+    "rank": 3,
+    "term": "eat",
+    "mean_tfidf": 0.013529307208955288,
+    "cluster_size": 10924
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 1,
+    "rank": 4,
+    "term": "recipe",
+    "mean_tfidf": 0.012520679272711277,
+    "cluster_size": 10924
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 1,
+    "rank": 5,
+    "term": "make",
+    "mean_tfidf": 0.012512541376054287,
+    "cluster_size": 10924
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 1,
+    "rank": 6,
+    "term": "best",
+    "mean_tfidf": 0.011896844021975994,
+    "cluster_size": 10924
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 1,
+    "rank": 7,
+    "term": "foods",
+    "mean_tfidf": 0.011382064782083035,
+    "cluster_size": 10924
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 1,
+    "rank": 8,
+    "term": "eating",
+    "mean_tfidf": 0.010897703468799591,
+    "cluster_size": 10924
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 1,
+    "rank": 9,
+    "term": "healthy",
+    "mean_tfidf": 0.010835791006684303,
+    "cluster_size": 10924
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 1,
+    "rank": 10,
+    "term": "day",
+    "mean_tfidf": 0.010048383846879005,
+    "cluster_size": 10924
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 1,
+    "rank": 11,
+    "term": "photos",
+    "mean_tfidf": 0.009638273157179356,
+    "cluster_size": 10924
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 1,
+    "rank": 12,
+    "term": "just",
+    "mean_tfidf": 0.008615447208285332,
+    "cluster_size": 10924
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 1,
+    "rank": 13,
+    "term": "diet",
+    "mean_tfidf": 0.008464695885777473,
+    "cluster_size": 10924
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 1,
+    "rank": 14,
+    "term": "like",
+    "mean_tfidf": 0.008180045522749424,
+    "cluster_size": 10924
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 1,
+    "rank": 15,
+    "term": "weight",
+    "mean_tfidf": 0.007919175550341606,
+    "cluster_size": 10924
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 2,
+    "rank": 1,
+    "term": "people",
+    "mean_tfidf": 0.010751547291874886,
+    "cluster_size": 16594
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 2,
+    "rank": 2,
+    "term": "court",
+    "mean_tfidf": 0.00999392755329609,
+    "cluster_size": 16594
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 2,
+    "rank": 3,
+    "term": "new",
+    "mean_tfidf": 0.009469196200370789,
+    "cluster_size": 16594
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 2,
+    "rank": 4,
+    "term": "state",
+    "mean_tfidf": 0.009207352995872498,
+    "cluster_size": 16594
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 2,
+    "rank": 5,
+    "term": "gay",
+    "mean_tfidf": 0.009000618942081928,
+    "cluster_size": 16594
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 2,
+    "rank": 6,
+    "term": "health",
+    "mean_tfidf": 0.008841720409691334,
+    "cluster_size": 16594
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 2,
+    "rank": 7,
+    "term": "rights",
+    "mean_tfidf": 0.0075762332417070866,
+    "cluster_size": 16594
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 2,
+    "rank": 8,
+    "term": "law",
+    "mean_tfidf": 0.007260612677782774,
+    "cluster_size": 16594
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 2,
+    "rank": 9,
+    "term": "care",
+    "mean_tfidf": 0.007073359563946724,
+    "cluster_size": 16594
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 2,
+    "rank": 10,
+    "term": "states",
+    "mean_tfidf": 0.006914095487445593,
+    "cluster_size": 16594
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 2,
+    "rank": 11,
+    "term": "americans",
+    "mean_tfidf": 0.006720841862261295,
+    "cluster_size": 16594
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 2,
+    "rank": 12,
+    "term": "gun",
+    "mean_tfidf": 0.006704823113977909,
+    "cluster_size": 16594
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 2,
+    "rank": 13,
+    "term": "supreme",
+    "mean_tfidf": 0.006524296011775732,
+    "cluster_size": 16594
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 2,
+    "rank": 14,
+    "term": "police",
+    "mean_tfidf": 0.0065115587785840034,
+    "cluster_size": 16594
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 2,
+    "rank": 15,
+    "term": "supreme court",
+    "mean_tfidf": 0.0064793420024216175,
+    "cluster_size": 16594
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 3,
+    "rank": 1,
+    "term": "travel",
+    "mean_tfidf": 0.023280395194888115,
+    "cluster_size": 10228
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 3,
+    "rank": 2,
+    "term": "photos",
+    "mean_tfidf": 0.01927117258310318,
+    "cluster_size": 10228
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 3,
+    "rank": 3,
+    "term": "world",
+    "mean_tfidf": 0.01753745786845684,
+    "cluster_size": 10228
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 3,
+    "rank": 4,
+    "term": "best",
+    "mean_tfidf": 0.013062965124845505,
+    "cluster_size": 10228
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 3,
+    "rank": 5,
+    "term": "city",
+    "mean_tfidf": 0.011938918381929398,
+    "cluster_size": 10228
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 3,
+    "rank": 6,
+    "term": "new",
+    "mean_tfidf": 0.0109983766451478,
+    "cluster_size": 10228
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 3,
+    "rank": 7,
+    "term": "hotel",
+    "mean_tfidf": 0.010603581555187702,
+    "cluster_size": 10228
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 3,
+    "rank": 8,
+    "term": "trip",
+    "mean_tfidf": 0.01006031222641468,
+    "cluster_size": 10228
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 3,
+    "rank": 9,
+    "term": "vacation",
+    "mean_tfidf": 0.009973736479878426,
+    "cluster_size": 10228
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 3,
+    "rank": 10,
+    "term": "10",
+    "mean_tfidf": 0.009329903870821,
+    "cluster_size": 10228
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 3,
+    "rank": 11,
+    "term": "hotels",
+    "mean_tfidf": 0.009321658872067928,
+    "cluster_size": 10228
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 3,
+    "rank": 12,
+    "term": "summer",
+    "mean_tfidf": 0.009073465131223202,
+    "cluster_size": 10228
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 3,
+    "rank": 13,
+    "term": "time",
+    "mean_tfidf": 0.00861405674368143,
+    "cluster_size": 10228
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 3,
+    "rank": 14,
+    "term": "like",
+    "mean_tfidf": 0.00824387464672327,
+    "cluster_size": 10228
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 3,
+    "rank": 15,
+    "term": "places",
+    "mean_tfidf": 0.008202279917895794,
+    "cluster_size": 10228
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 4,
+    "rank": 1,
+    "term": "trump",
+    "mean_tfidf": 0.05720670148730278,
+    "cluster_size": 22325
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 4,
+    "rank": 2,
+    "term": "donald",
+    "mean_tfidf": 0.02775590308010578,
+    "cluster_size": 22325
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 4,
+    "rank": 3,
+    "term": "donald trump",
+    "mean_tfidf": 0.02722429297864437,
+    "cluster_size": 22325
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 4,
+    "rank": 4,
+    "term": "president",
+    "mean_tfidf": 0.01857173629105091,
+    "cluster_size": 22325
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 4,
+    "rank": 5,
+    "term": "clinton",
+    "mean_tfidf": 0.017005784437060356,
+    "cluster_size": 22325
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 4,
+    "rank": 6,
+    "term": "gop",
+    "mean_tfidf": 0.015589835122227669,
+    "cluster_size": 22325
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 4,
+    "rank": 7,
+    "term": "obama",
+    "mean_tfidf": 0.013446918688714504,
+    "cluster_size": 22325
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 4,
+    "rank": 8,
+    "term": "hillary",
+    "mean_tfidf": 0.01305880956351757,
+    "cluster_size": 22325
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 4,
+    "rank": 9,
+    "term": "hillary clinton",
+    "mean_tfidf": 0.011561554856598377,
+    "cluster_size": 22325
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 4,
+    "rank": 10,
+    "term": "house",
+    "mean_tfidf": 0.011277894489467144,
+    "cluster_size": 22325
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 4,
+    "rank": 11,
+    "term": "says",
+    "mean_tfidf": 0.010497644543647766,
+    "cluster_size": 22325
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 4,
+    "rank": 12,
+    "term": "republicans",
+    "mean_tfidf": 0.010003112256526947,
+    "cluster_size": 22325
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 4,
+    "rank": 13,
+    "term": "said",
+    "mean_tfidf": 0.009850479662418365,
+    "cluster_size": 22325
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 4,
+    "rank": 14,
+    "term": "republican",
+    "mean_tfidf": 0.009721134789288044,
+    "cluster_size": 22325
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 4,
+    "rank": 15,
+    "term": "campaign",
+    "mean_tfidf": 0.009672373533248901,
+    "cluster_size": 22325
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 5,
+    "rank": 1,
+    "term": "new",
+    "mean_tfidf": 0.013080042786896229,
+    "cluster_size": 17831
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 5,
+    "rank": 2,
+    "term": "star",
+    "mean_tfidf": 0.010327169671654701,
+    "cluster_size": 17831
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 5,
+    "rank": 3,
+    "term": "movie",
+    "mean_tfidf": 0.00834895484149456,
+    "cluster_size": 17831
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 5,
+    "rank": 4,
+    "term": "film",
+    "mean_tfidf": 0.008133531548082829,
+    "cluster_size": 17831
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 5,
+    "rank": 5,
+    "term": "gay",
+    "mean_tfidf": 0.008071578107774258,
+    "cluster_size": 17831
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 5,
+    "rank": 6,
+    "term": "video",
+    "mean_tfidf": 0.007546409498900175,
+    "cluster_size": 17831
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 5,
+    "rank": 7,
+    "term": "just",
+    "mean_tfidf": 0.006574505008757114,
+    "cluster_size": 17831
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 5,
+    "rank": 8,
+    "term": "love",
+    "mean_tfidf": 0.006093218922615051,
+    "cluster_size": 17831
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 5,
+    "rank": 9,
+    "term": "like",
+    "mean_tfidf": 0.006017830688506365,
+    "cluster_size": 17831
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 5,
+    "rank": 10,
+    "term": "watch",
+    "mean_tfidf": 0.0059034619480371475,
+    "cluster_size": 17831
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 5,
+    "rank": 11,
+    "term": "year",
+    "mean_tfidf": 0.005885707214474678,
+    "cluster_size": 17831
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 5,
+    "rank": 12,
+    "term": "trailer",
+    "mean_tfidf": 0.0058591002598404884,
+    "cluster_size": 17831
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 5,
+    "rank": 13,
+    "term": "music",
+    "mean_tfidf": 0.005737118422985077,
+    "cluster_size": 17831
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 5,
+    "rank": 14,
+    "term": "actor",
+    "mean_tfidf": 0.005510018207132816,
+    "cluster_size": 17831
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 5,
+    "rank": 15,
+    "term": "says",
+    "mean_tfidf": 0.005461116321384907,
+    "cluster_size": 17831
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 6,
+    "rank": 1,
+    "term": "photos",
+    "mean_tfidf": 0.04209693893790245,
+    "cluster_size": 9795
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 6,
+    "rank": 2,
+    "term": "fashion",
+    "mean_tfidf": 0.0267118401825428,
+    "cluster_size": 9795
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 6,
+    "rank": 3,
+    "term": "style",
+    "mean_tfidf": 0.025338679552078247,
+    "cluster_size": 9795
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 6,
+    "rank": 4,
+    "term": "look",
+    "mean_tfidf": 0.01587892323732376,
+    "cluster_size": 9795
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 6,
+    "rank": 5,
+    "term": "check",
+    "mean_tfidf": 0.015677068382501602,
+    "cluster_size": 9795
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 6,
+    "rank": 6,
+    "term": "dress",
+    "mean_tfidf": 0.0144156813621521,
+    "cluster_size": 9795
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 6,
+    "rank": 7,
+    "term": "week",
+    "mean_tfidf": 0.014133941382169724,
+    "cluster_size": 9795
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 6,
+    "rank": 8,
+    "term": "photo",
+    "mean_tfidf": 0.013859531842172146,
+    "cluster_size": 9795
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 6,
+    "rank": 9,
+    "term": "sure",
+    "mean_tfidf": 0.01208224892616272,
+    "cluster_size": 9795
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 6,
+    "rank": 10,
+    "term": "new",
+    "mean_tfidf": 0.011975955218076706,
+    "cluster_size": 9795
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 6,
+    "rank": 11,
+    "term": "sure check",
+    "mean_tfidf": 0.011530786752700806,
+    "cluster_size": 9795
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 6,
+    "rank": 12,
+    "term": "want sure",
+    "mean_tfidf": 0.011474963277578354,
+    "cluster_size": 9795
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 6,
+    "rank": 13,
+    "term": "twitter",
+    "mean_tfidf": 0.011329607106745243,
+    "cluster_size": 9795
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 6,
+    "rank": 14,
+    "term": "want",
+    "mean_tfidf": 0.01119839958846569,
+    "cluster_size": 9795
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 6,
+    "rank": 15,
+    "term": "twitter facebook",
+    "mean_tfidf": 0.011016077362000942,
+    "cluster_size": 9795
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 7,
+    "rank": 1,
+    "term": "life",
+    "mean_tfidf": 0.020629774779081345,
+    "cluster_size": 17260
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 7,
+    "rank": 2,
+    "term": "people",
+    "mean_tfidf": 0.01245211623609066,
+    "cluster_size": 17260
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 7,
+    "rank": 3,
+    "term": "time",
+    "mean_tfidf": 0.011841104365885258,
+    "cluster_size": 17260
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 7,
+    "rank": 4,
+    "term": "sleep",
+    "mean_tfidf": 0.011527656577527523,
+    "cluster_size": 17260
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 7,
+    "rank": 5,
+    "term": "health",
+    "mean_tfidf": 0.01128949224948883,
+    "cluster_size": 17260
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 7,
+    "rank": 6,
+    "term": "day",
+    "mean_tfidf": 0.009421016089618206,
+    "cluster_size": 17260
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 7,
+    "rank": 7,
+    "term": "make",
+    "mean_tfidf": 0.009315294213593006,
+    "cluster_size": 17260
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 7,
+    "rank": 8,
+    "term": "know",
+    "mean_tfidf": 0.009083187207579613,
+    "cluster_size": 17260
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 7,
+    "rank": 9,
+    "term": "help",
+    "mean_tfidf": 0.008924602530896664,
+    "cluster_size": 17260
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 7,
+    "rank": 10,
+    "term": "need",
+    "mean_tfidf": 0.008652114309370518,
+    "cluster_size": 17260
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 7,
+    "rank": 11,
+    "term": "just",
+    "mean_tfidf": 0.00864492543041706,
+    "cluster_size": 17260
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 7,
+    "rank": 12,
+    "term": "stress",
+    "mean_tfidf": 0.008630990982055664,
+    "cluster_size": 17260
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 7,
+    "rank": 13,
+    "term": "things",
+    "mean_tfidf": 0.008536695502698421,
+    "cluster_size": 17260
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 7,
+    "rank": 14,
+    "term": "like",
+    "mean_tfidf": 0.008451572619378567,
+    "cluster_size": 17260
+  },
+  {
+    "algorithm": "KMeans",
+    "cluster": 7,
+    "rank": 15,
+    "term": "study",
+    "mean_tfidf": 0.0083723533898592,
+    "cluster_size": 17260
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 0,
+    "rank": 1,
+    "term": "kids",
+    "mean_tfidf": 0.030858632177114487,
+    "cluster_size": 8941
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 0,
+    "rank": 2,
+    "term": "children",
+    "mean_tfidf": 0.026038307696580887,
+    "cluster_size": 8941
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 0,
+    "rank": 3,
+    "term": "child",
+    "mean_tfidf": 0.022468876093626022,
+    "cluster_size": 8941
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 0,
+    "rank": 4,
+    "term": "parents",
+    "mean_tfidf": 0.022042473778128624,
+    "cluster_size": 8941
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 0,
+    "rank": 5,
+    "term": "baby",
+    "mean_tfidf": 0.021659089252352715,
+    "cluster_size": 8941
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 0,
+    "rank": 6,
+    "term": "mom",
+    "mean_tfidf": 0.017478587105870247,
+    "cluster_size": 8941
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 0,
+    "rank": 7,
+    "term": "mother",
+    "mean_tfidf": 0.013478541746735573,
+    "cluster_size": 8941
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 0,
+    "rank": 8,
+    "term": "daughter",
+    "mean_tfidf": 0.01331310160458088,
+    "cluster_size": 8941
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 0,
+    "rank": 9,
+    "term": "parenting",
+    "mean_tfidf": 0.012851548381149769,
+    "cluster_size": 8941
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 0,
+    "rank": 10,
+    "term": "day",
+    "mean_tfidf": 0.012065899558365345,
+    "cluster_size": 8941
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 0,
+    "rank": 11,
+    "term": "family",
+    "mean_tfidf": 0.011348962783813477,
+    "cluster_size": 8941
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 0,
+    "rank": 12,
+    "term": "year",
+    "mean_tfidf": 0.011260914616286755,
+    "cluster_size": 8941
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 0,
+    "rank": 13,
+    "term": "time",
+    "mean_tfidf": 0.01114743947982788,
+    "cluster_size": 8941
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 0,
+    "rank": 14,
+    "term": "parent",
+    "mean_tfidf": 0.011030950583517551,
+    "cluster_size": 8941
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 0,
+    "rank": 15,
+    "term": "son",
+    "mean_tfidf": 0.010996026918292046,
+    "cluster_size": 8941
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 1,
+    "rank": 1,
+    "term": "food",
+    "mean_tfidf": 0.028496136888861656,
+    "cluster_size": 8887
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 1,
+    "rank": 2,
+    "term": "recipes",
+    "mean_tfidf": 0.022014856338500977,
+    "cluster_size": 8887
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 1,
+    "rank": 3,
+    "term": "recipe",
+    "mean_tfidf": 0.01534088421612978,
+    "cluster_size": 8887
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 1,
+    "rank": 4,
+    "term": "eat",
+    "mean_tfidf": 0.014308460056781769,
+    "cluster_size": 8887
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 1,
+    "rank": 5,
+    "term": "best",
+    "mean_tfidf": 0.013737063854932785,
+    "cluster_size": 8887
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 1,
+    "rank": 6,
+    "term": "make",
+    "mean_tfidf": 0.013456701301038265,
+    "cluster_size": 8887
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 1,
+    "rank": 7,
+    "term": "foods",
+    "mean_tfidf": 0.012588088400661945,
+    "cluster_size": 8887
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 1,
+    "rank": 8,
+    "term": "photos",
+    "mean_tfidf": 0.011845036409795284,
+    "cluster_size": 8887
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 1,
+    "rank": 9,
+    "term": "day",
+    "mean_tfidf": 0.011075749062001705,
+    "cluster_size": 8887
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 1,
+    "rank": 10,
+    "term": "healthy",
+    "mean_tfidf": 0.01003494393080473,
+    "cluster_size": 8887
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 1,
+    "rank": 11,
+    "term": "eating",
+    "mean_tfidf": 0.009984276257455349,
+    "cluster_size": 8887
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 1,
+    "rank": 12,
+    "term": "just",
+    "mean_tfidf": 0.008997383527457714,
+    "cluster_size": 8887
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 1,
+    "rank": 13,
+    "term": "like",
+    "mean_tfidf": 0.008504441939294338,
+    "cluster_size": 8887
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 1,
+    "rank": 14,
+    "term": "chocolate",
+    "mean_tfidf": 0.007833288982510567,
+    "cluster_size": 8887
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 1,
+    "rank": 15,
+    "term": "cooking",
+    "mean_tfidf": 0.007647894322872162,
+    "cluster_size": 8887
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 2,
+    "rank": 1,
+    "term": "people",
+    "mean_tfidf": 0.010772887617349625,
+    "cluster_size": 21996
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 2,
+    "rank": 2,
+    "term": "gay",
+    "mean_tfidf": 0.010165039449930191,
+    "cluster_size": 21996
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 2,
+    "rank": 3,
+    "term": "new",
+    "mean_tfidf": 0.009690220467746258,
+    "cluster_size": 21996
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 2,
+    "rank": 4,
+    "term": "health",
+    "mean_tfidf": 0.008518149144947529,
+    "cluster_size": 21996
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 2,
+    "rank": 5,
+    "term": "state",
+    "mean_tfidf": 0.006977648474276066,
+    "cluster_size": 21996
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 2,
+    "rank": 6,
+    "term": "court",
+    "mean_tfidf": 0.006705587729811668,
+    "cluster_size": 21996
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 2,
+    "rank": 7,
+    "term": "america",
+    "mean_tfidf": 0.005926206707954407,
+    "cluster_size": 21996
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 2,
+    "rank": 8,
+    "term": "year",
+    "mean_tfidf": 0.00585341127589345,
+    "cluster_size": 21996
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 2,
+    "rank": 9,
+    "term": "women",
+    "mean_tfidf": 0.0056973593309521675,
+    "cluster_size": 21996
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 2,
+    "rank": 10,
+    "term": "americans",
+    "mean_tfidf": 0.00568000040948391,
+    "cluster_size": 21996
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 2,
+    "rank": 11,
+    "term": "states",
+    "mean_tfidf": 0.005660320166498423,
+    "cluster_size": 21996
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 2,
+    "rank": 12,
+    "term": "care",
+    "mean_tfidf": 0.005621902644634247,
+    "cluster_size": 21996
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 2,
+    "rank": 13,
+    "term": "said",
+    "mean_tfidf": 0.00557225476950407,
+    "cluster_size": 21996
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 2,
+    "rank": 14,
+    "term": "time",
+    "mean_tfidf": 0.005533142946660519,
+    "cluster_size": 21996
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 2,
+    "rank": 15,
+    "term": "lgbt",
+    "mean_tfidf": 0.005484168417751789,
+    "cluster_size": 21996
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 3,
+    "rank": 1,
+    "term": "travel",
+    "mean_tfidf": 0.025804081931710243,
+    "cluster_size": 7553
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 3,
+    "rank": 2,
+    "term": "photos",
+    "mean_tfidf": 0.022197633981704712,
+    "cluster_size": 7553
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 3,
+    "rank": 3,
+    "term": "world",
+    "mean_tfidf": 0.019315659999847412,
+    "cluster_size": 7553
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 3,
+    "rank": 4,
+    "term": "best",
+    "mean_tfidf": 0.014723234809935093,
+    "cluster_size": 7553
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 3,
+    "rank": 5,
+    "term": "city",
+    "mean_tfidf": 0.013834581710398197,
+    "cluster_size": 7553
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 3,
+    "rank": 6,
+    "term": "hotel",
+    "mean_tfidf": 0.012431716546416283,
+    "cluster_size": 7553
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 3,
+    "rank": 7,
+    "term": "hotels",
+    "mean_tfidf": 0.011746336705982685,
+    "cluster_size": 7553
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 3,
+    "rank": 8,
+    "term": "trip",
+    "mean_tfidf": 0.011423678137362003,
+    "cluster_size": 7553
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 3,
+    "rank": 9,
+    "term": "new",
+    "mean_tfidf": 0.011080922558903694,
+    "cluster_size": 7553
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 3,
+    "rank": 10,
+    "term": "vacation",
+    "mean_tfidf": 0.010703899897634983,
+    "cluster_size": 7553
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 3,
+    "rank": 11,
+    "term": "10",
+    "mean_tfidf": 0.010521572083234787,
+    "cluster_size": 7553
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 3,
+    "rank": 12,
+    "term": "places",
+    "mean_tfidf": 0.009781137108802795,
+    "cluster_size": 7553
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 3,
+    "rank": 13,
+    "term": "visit",
+    "mean_tfidf": 0.009325710125267506,
+    "cluster_size": 7553
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 3,
+    "rank": 14,
+    "term": "summer",
+    "mean_tfidf": 0.009313523769378662,
+    "cluster_size": 7553
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 3,
+    "rank": 15,
+    "term": "like",
+    "mean_tfidf": 0.008390450850129128,
+    "cluster_size": 7553
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 4,
+    "rank": 1,
+    "term": "trump",
+    "mean_tfidf": 0.05566064268350601,
+    "cluster_size": 22297
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 4,
+    "rank": 2,
+    "term": "donald",
+    "mean_tfidf": 0.026780016720294952,
+    "cluster_size": 22297
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 4,
+    "rank": 3,
+    "term": "donald trump",
+    "mean_tfidf": 0.026275521144270897,
+    "cluster_size": 22297
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 4,
+    "rank": 4,
+    "term": "gop",
+    "mean_tfidf": 0.016992436721920967,
+    "cluster_size": 22297
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 4,
+    "rank": 5,
+    "term": "president",
+    "mean_tfidf": 0.01695444993674755,
+    "cluster_size": 22297
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 4,
+    "rank": 6,
+    "term": "clinton",
+    "mean_tfidf": 0.015764065086841583,
+    "cluster_size": 22297
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 4,
+    "rank": 7,
+    "term": "hillary",
+    "mean_tfidf": 0.012113458476960659,
+    "cluster_size": 22297
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 4,
+    "rank": 8,
+    "term": "obama",
+    "mean_tfidf": 0.011854562908411026,
+    "cluster_size": 22297
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 4,
+    "rank": 9,
+    "term": "house",
+    "mean_tfidf": 0.01151304878294468,
+    "cluster_size": 22297
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 4,
+    "rank": 10,
+    "term": "republicans",
+    "mean_tfidf": 0.011292519047856331,
+    "cluster_size": 22297
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 4,
+    "rank": 11,
+    "term": "hillary clinton",
+    "mean_tfidf": 0.010698210448026657,
+    "cluster_size": 22297
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 4,
+    "rank": 12,
+    "term": "republican",
+    "mean_tfidf": 0.010355730541050434,
+    "cluster_size": 22297
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 4,
+    "rank": 13,
+    "term": "says",
+    "mean_tfidf": 0.010271968320012093,
+    "cluster_size": 22297
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 4,
+    "rank": 14,
+    "term": "said",
+    "mean_tfidf": 0.00974571704864502,
+    "cluster_size": 22297
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 4,
+    "rank": 15,
+    "term": "campaign",
+    "mean_tfidf": 0.009632620960474014,
+    "cluster_size": 22297
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 5,
+    "rank": 1,
+    "term": "new",
+    "mean_tfidf": 0.013112487271428108,
+    "cluster_size": 18782
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 5,
+    "rank": 2,
+    "term": "star",
+    "mean_tfidf": 0.01004772074520588,
+    "cluster_size": 18782
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 5,
+    "rank": 3,
+    "term": "movie",
+    "mean_tfidf": 0.007849156856536865,
+    "cluster_size": 18782
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 5,
+    "rank": 4,
+    "term": "film",
+    "mean_tfidf": 0.007604656275361776,
+    "cluster_size": 18782
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 5,
+    "rank": 5,
+    "term": "video",
+    "mean_tfidf": 0.007519423495978117,
+    "cluster_size": 18782
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 5,
+    "rank": 6,
+    "term": "just",
+    "mean_tfidf": 0.006676203105598688,
+    "cluster_size": 18782
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 5,
+    "rank": 7,
+    "term": "like",
+    "mean_tfidf": 0.006201838608831167,
+    "cluster_size": 18782
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 5,
+    "rank": 8,
+    "term": "music",
+    "mean_tfidf": 0.005997813306748867,
+    "cluster_size": 18782
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 5,
+    "rank": 9,
+    "term": "watch",
+    "mean_tfidf": 0.005845032166689634,
+    "cluster_size": 18782
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 5,
+    "rank": 10,
+    "term": "love",
+    "mean_tfidf": 0.005781727377325296,
+    "cluster_size": 18782
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 5,
+    "rank": 11,
+    "term": "year",
+    "mean_tfidf": 0.005646944046020508,
+    "cluster_size": 18782
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 5,
+    "rank": 12,
+    "term": "trailer",
+    "mean_tfidf": 0.005591438151896,
+    "cluster_size": 18782
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 5,
+    "rank": 13,
+    "term": "says",
+    "mean_tfidf": 0.0054326350800693035,
+    "cluster_size": 18782
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 5,
+    "rank": 14,
+    "term": "time",
+    "mean_tfidf": 0.0052501605823636055,
+    "cluster_size": 18782
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 5,
+    "rank": 15,
+    "term": "actor",
+    "mean_tfidf": 0.0052154771983623505,
+    "cluster_size": 18782
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 6,
+    "rank": 1,
+    "term": "photos",
+    "mean_tfidf": 0.046061210334300995,
+    "cluster_size": 7898
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 6,
+    "rank": 2,
+    "term": "fashion",
+    "mean_tfidf": 0.03181609883904457,
+    "cluster_size": 7898
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 6,
+    "rank": 3,
+    "term": "style",
+    "mean_tfidf": 0.028938740491867065,
+    "cluster_size": 7898
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 6,
+    "rank": 4,
+    "term": "look",
+    "mean_tfidf": 0.017857838422060013,
+    "cluster_size": 7898
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 6,
+    "rank": 5,
+    "term": "check",
+    "mean_tfidf": 0.01745845377445221,
+    "cluster_size": 7898
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 6,
+    "rank": 6,
+    "term": "dress",
+    "mean_tfidf": 0.016936879605054855,
+    "cluster_size": 7898
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 6,
+    "rank": 7,
+    "term": "week",
+    "mean_tfidf": 0.016565613448619843,
+    "cluster_size": 7898
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 6,
+    "rank": 8,
+    "term": "sure",
+    "mean_tfidf": 0.013407067395746708,
+    "cluster_size": 7898
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 6,
+    "rank": 9,
+    "term": "photo",
+    "mean_tfidf": 0.013363325037062168,
+    "cluster_size": 7898
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 6,
+    "rank": 10,
+    "term": "sure check",
+    "mean_tfidf": 0.012865930795669556,
+    "cluster_size": 7898
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 6,
+    "rank": 11,
+    "term": "want sure",
+    "mean_tfidf": 0.01279247086495161,
+    "cluster_size": 7898
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 6,
+    "rank": 12,
+    "term": "beauty",
+    "mean_tfidf": 0.01259959302842617,
+    "cluster_size": 7898
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 6,
+    "rank": 13,
+    "term": "hair",
+    "mean_tfidf": 0.012498006224632263,
+    "cluster_size": 7898
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 6,
+    "rank": 14,
+    "term": "twitter facebook",
+    "mean_tfidf": 0.01235778909176588,
+    "cluster_size": 7898
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 6,
+    "rank": 15,
+    "term": "pinterest",
+    "mean_tfidf": 0.012259800918400288,
+    "cluster_size": 7898
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 7,
+    "rank": 1,
+    "term": "life",
+    "mean_tfidf": 0.019943689927458763,
+    "cluster_size": 17865
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 7,
+    "rank": 2,
+    "term": "time",
+    "mean_tfidf": 0.012269671075046062,
+    "cluster_size": 17865
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 7,
+    "rank": 3,
+    "term": "sleep",
+    "mean_tfidf": 0.012222472578287125,
+    "cluster_size": 17865
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 7,
+    "rank": 4,
+    "term": "people",
+    "mean_tfidf": 0.011516117490828037,
+    "cluster_size": 17865
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 7,
+    "rank": 5,
+    "term": "health",
+    "mean_tfidf": 0.010138737969100475,
+    "cluster_size": 17865
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 7,
+    "rank": 6,
+    "term": "make",
+    "mean_tfidf": 0.0097784623503685,
+    "cluster_size": 17865
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 7,
+    "rank": 7,
+    "term": "stress",
+    "mean_tfidf": 0.00895742978900671,
+    "cluster_size": 17865
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 7,
+    "rank": 8,
+    "term": "things",
+    "mean_tfidf": 0.00882718339562416,
+    "cluster_size": 17865
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 7,
+    "rank": 9,
+    "term": "just",
+    "mean_tfidf": 0.008815759792923927,
+    "cluster_size": 17865
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 7,
+    "rank": 10,
+    "term": "day",
+    "mean_tfidf": 0.008745774626731873,
+    "cluster_size": 17865
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 7,
+    "rank": 11,
+    "term": "ways",
+    "mean_tfidf": 0.008710209280252457,
+    "cluster_size": 17865
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 7,
+    "rank": 12,
+    "term": "don",
+    "mean_tfidf": 0.008600426837801933,
+    "cluster_size": 17865
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 7,
+    "rank": 13,
+    "term": "like",
+    "mean_tfidf": 0.008562717586755753,
+    "cluster_size": 17865
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 7,
+    "rank": 14,
+    "term": "weight",
+    "mean_tfidf": 0.008458185940980911,
+    "cluster_size": 17865
+  },
+  {
+    "algorithm": "GMM",
+    "cluster": 7,
+    "rank": 15,
+    "term": "study",
+    "mean_tfidf": 0.008433917537331581,
+    "cluster_size": 17865
+  }
+]
