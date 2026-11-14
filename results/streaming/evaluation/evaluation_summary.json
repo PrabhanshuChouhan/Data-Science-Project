@@ -1,0 +1,11 @@
+{
+    "total_articles": 114219,
+    "total_months": 84,
+    "total_topics": 32,
+    "unassigned_articles": 23390,
+    "average_topic_stability": 0.9241,
+    "total_emerging_articles": 48131,
+    "total_emerging_topics": 24,
+    "emerging_article_percentage": 42.14,
+    "evaluation_runtime_seconds": 2.16
+}

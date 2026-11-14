@@ -1,0 +1,11 @@
+{
+    "month": "2018-11",
+    "article_count": 111,
+    "embedding_dimensions": 768,
+    "category_counts": {
+        "POLITICS": 66,
+        "ENTERTAINMENT": 39,
+        "QUEER VOICES": 4,
+        "PARENTING": 2
+    }
+}

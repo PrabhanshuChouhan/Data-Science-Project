@@ -1,0 +1,9 @@
+{
+    "month": "2018-08",
+    "article_count": 18,
+    "embedding_dimensions": 768,
+    "category_counts": {
+        "POLITICS": 11,
+        "ENTERTAINMENT": 7
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "month": "2018-01",
+    "article_count": 1252,
+    "embedding_dimensions": 768,
+    "category_counts": {
+        "POLITICS": 708,
+        "ENTERTAINMENT": 415,
+        "QUEER VOICES": 102,
+        "WELLNESS": 15,
+        "TRAVEL": 12
+    }
+}

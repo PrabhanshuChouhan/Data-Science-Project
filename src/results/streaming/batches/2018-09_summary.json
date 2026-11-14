@@ -1,0 +1,11 @@
+{
+    "month": "2018-09",
+    "article_count": 62,
+    "embedding_dimensions": 768,
+    "category_counts": {
+        "POLITICS": 40,
+        "ENTERTAINMENT": 18,
+        "STYLE & BEAUTY": 3,
+        "QUEER VOICES": 1
+    }
+}

@@ -1,21 +1,21 @@
 
 "use client";
 
-import type React from "react";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import {
   Activity,
   BarChart3,
   BrainCircuit,
   ChevronRight,
-  CircleDot,
   Clock3,
   FileText,
   GitBranch,
   Network,
   RefreshCw,
   ShieldCheck,
-  Users,
+  TrendingUp,
+  Layers3,
+  Database,
 } from "lucide-react";
 
 import {
@@ -24,46 +24,33 @@ import {
   Bar,
   BarChart,
   CartesianGrid,
-  Cell,
   Legend,
   Line,
   LineChart,
-  Pie,
-  PieChart,
   ResponsiveContainer,
   Tooltip,
   XAxis,
   YAxis,
 } from "recharts";
 
-// ---------------------------------------------------------
-// TYPES AND CONFIGURATION
-// ---------------------------------------------------------
+type Row = Record<string, any>;
+type Overview = Record<string, number | string | null>;
 
-type Row = Record<string, unknown>;
-type Dataset = Record<string, unknown>;
+type DashboardData = {
+  overview: Overview | null;
+  activity: Row[];
+  growth: Row[];
+  stability: Row[];
+  emerging: Row[];
+  categories: Row[];
+  drift: Row[];
+  network: Row[];
+  influential: Row[];
+  performance: Row[];
+};
 
-const DATA_FILES = [
-  "overview",
-  "category_shares",
-  "category_drift",
-  "semantic_drift",
-  "topic_prevalence",
-  "topic_keywords",
-  "topic_examples",
-  "clustering_metrics",
-  "communities",
-  "central_articles",
-  "event_impact",
-  "event_summary",
-  "private_statistics",
-  "privacy_metadata",
-  "fairness_summary",
-  "author_concentration",
-  "category_by_author_cohort",
-  "category_disparity",
-  "cohort_distribution_divergence",
-] as const;
+const API_BASE =
+  process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
 
 const COLORS = [
   "#2DE2C5",
@@ -78,419 +65,78 @@ const COLORS = [
 
 const NAV_ITEMS = [
   { id: "overview", label: "Overview", icon: Activity },
-  { id: "trends", label: "Trend Intelligence", icon: BarChart3 },
-  { id: "topics", label: "Topic Discovery", icon: BrainCircuit },
+  { id: "timeline", label: "Streaming Timeline", icon: Clock3 },
+  { id: "topics", label: "Topic Intelligence", icon: BrainCircuit },
+  { id: "trends", label: "Trend Analysis", icon: TrendingUp },
+  { id: "drift", label: "Semantic Drift", icon: GitBranch },
   { id: "network", label: "Article Network", icon: Network },
-  { id: "events", label: "Event Analysis", icon: Clock3 },
-  { id: "privacy", label: "Privacy", icon: ShieldCheck },
-  { id: "fairness", label: "Representation", icon: Users },
+  { id: "evaluation", label: "Evaluation", icon: ShieldCheck },
 ];
 
-const MONTH_KEYS = [
-  "month",
-  "window",
-  "window_start",
-  "window_end",
-  "date",
-  "period",
-  "timestamp",
-  "time",
-];
-
-const CATEGORY_KEYS = ["category", "category_name", "label"];
-
-const VALUE_KEYS = [
-  "share",
-  "proportion",
-  "category_share",
-  "percentage",
-  "count",
-  "article_count",
-  "frequency",
-  "value",
-];
-
-const TOPIC_KEYS = [
-  "kmeans_cluster",
-  "topic",
-  "topic_id",
-  "cluster",
-  "cluster_id",
-  "gmm_cluster",
-];
-
-const TOOLTIP_STYLE = {
-  background: "#111B2E",
-  border: "1px solid #26364E",
-  borderRadius: 10,
-  color: "#EAF1FF",
+const EMPTY_DATA: DashboardData = {
+  overview: null,
+  activity: [],
+  growth: [],
+  stability: [],
+  emerging: [],
+  categories: [],
+  drift: [],
+  network: [],
+  influential: [],
+  performance: [],
 };
 
-// ---------------------------------------------------------
-// DATA HELPERS
-// ---------------------------------------------------------
+const TOOLTIP_STYLE = {
+  backgroundColor: "#111a2c",
+  border: "1px solid #26364e",
+  borderRadius: "8px",
+  color: "#edf3ff",
+  fontSize: "11px",
+};
 
-function asRows(value: unknown): Row[] {
-  if (Array.isArray(value)) {
-    return value.filter(
-      (item): item is Row =>
-        typeof item === "object" &&
-        item !== null &&
-        !Array.isArray(item)
-    );
+async function fetchEndpoint(path: string) {
+  const response = await fetch(`${API_BASE}${path}`, {
+    cache: "no-store",
+  });
+
+  if (!response.ok) {
+    throw new Error(`${path}: HTTP ${response.status}`);
   }
 
-  // Also support objects that wrap rows in a data/records/results property.
-  if (typeof value === "object" && value !== null) {
-    const object = value as Dataset;
-
-    for (const key of ["data", "records", "rows", "results"]) {
-      if (Array.isArray(object[key])) {
-        return asRows(object[key]);
-      }
-    }
-  }
-
-  return [];
+  return response.json();
 }
 
-function asObject(value: unknown): Dataset {
-  return typeof value === "object" &&
-    value !== null &&
-    !Array.isArray(value)
-    ? (value as Dataset)
-    : {};
+function asArray(value: any): Row[] {
+  return Array.isArray(value) ? value : [];
 }
 
-function getValue(row: Row, keys: string[]): unknown {
-  for (const key of keys) {
-    if (
-      row[key] !== undefined &&
-      row[key] !== null &&
-      row[key] !== ""
-    ) {
-      return row[key];
-    }
-  }
-
-  return undefined;
+function getNumber(value: any): number | null {
+  if (value === null || value === undefined || value === "") return null;
+  const number = Number(value);
+  return Number.isFinite(number) ? number : null;
 }
 
-function getText(value: unknown, fallback = "—"): string {
-  if (value === undefined || value === null || value === "") {
-    return fallback;
-  }
-
-  if (typeof value === "object") {
-    return JSON.stringify(value);
-  }
-
-  return String(value);
-}
-
-function getNumber(value: unknown): number | null {
-  if (typeof value === "number" && Number.isFinite(value)) {
-    return value;
-  }
-
-  if (typeof value === "string" && value.trim() !== "") {
-    const parsed = Number(value);
-
-    return Number.isFinite(parsed) ? parsed : null;
-  }
-
-  return null;
-}
-
-function formatNumber(value: unknown): string {
+function formatNumber(value: any) {
   const number = getNumber(value);
-
-  return number === null
-    ? "—"
-    : number.toLocaleString("en-IN", {
-        maximumFractionDigits: 3,
-      });
-}
-
-function formatPercent(value: unknown): string {
-  const number = getNumber(value);
-
-  if (number === null) return "—";
-
-  return `${(number <= 1 ? number * 100 : number).toFixed(1)}%`;
-}
-
-function formatDate(value: unknown): string {
-  if (!value) return "—";
-
-  const raw = String(value);
-  const date = new Date(raw);
-
-  if (Number.isNaN(date.getTime())) return raw;
-
-  return date.toLocaleDateString("en-IN", {
-    month: "short",
-    year: "numeric",
+  return number === null ? "—" : number.toLocaleString("en-IN", {
+    maximumFractionDigits: 2,
   });
 }
 
-function titleCase(value: string): string {
-  return value
-    .replaceAll("_", " ")
-    .replace(/\b\w/g, (letter) => letter.toUpperCase());
+function formatPercent(value: any) {
+  const number = getNumber(value);
+  return number === null ? "—" : `${number.toFixed(2)}%`;
 }
 
-function getMonthKey(row: Row): string {
-  return getText(getValue(row, MONTH_KEYS), "");
+function findKey(row: Row | undefined, candidates: string[]) {
+  if (!row) return undefined;
+  return candidates.find((key) => key in row);
 }
 
-function normalizeRows(
-  rows: Row[],
-  aliases: Record<string, string[]>
-): Row[] {
-  return rows.map((row) => {
-    const normalized: Row = { ...row };
-
-    for (const [target, candidates] of Object.entries(aliases)) {
-      const value = getValue(row, candidates);
-
-      if (value !== undefined) {
-        normalized[target] = value;
-      }
-    }
-
-    return normalized;
-  });
+function displayKey(row: Row | undefined, candidates: string[], fallback = "—") {
+  const key = findKey(row, candidates);
+  return key ? String(row?.[key] ?? fallback) : fallback;
 }
-
-function findColumn(
-  rows: Row[],
-  candidates: string[]
-): string | undefined {
-  if (!rows.length) return undefined;
-
-  return candidates.find((key) =>
-    rows.some((row) => row[key] !== undefined && row[key] !== null)
-  );
-}
-
-function getDynamicColumns(
-  rows: Row[],
-  limit = 7
-): { key: string; label: string }[] {
-  if (!rows.length) return [];
-
-  return Object.keys(rows[0])
-    .slice(0, limit)
-    .map((key) => ({
-      key,
-      label: titleCase(key),
-    }));
-}
-
-// ---------------------------------------------------------
-// CATEGORY DATA NORMALIZATION
-// ---------------------------------------------------------
-
-function buildCategoryChart(rows: Row[]) {
-  if (!rows.length) {
-    return {
-      data: [] as Row[],
-      categories: [] as string[],
-      totals: [] as Row[],
-    };
-  }
-
-  const monthKey = findColumn(rows, MONTH_KEYS);
-
-  const categoryKey = findColumn(rows, CATEGORY_KEYS);
-
-  const valueKey = findColumn(rows, VALUE_KEYS);
-
-  // Long format:
-  // month | category | share
-  // month | category | count
-  if (monthKey && categoryKey && valueKey) {
-    const grouped = new Map<string, Row>();
-    const totals = new Map<string, number>();
-    const categories = new Set<string>();
-
-    for (const row of rows) {
-      const month = getText(row[monthKey], "");
-      const category = getText(row[categoryKey], "");
-      const value = getNumber(row[valueKey]);
-
-      if (!month || !category || value === null) continue;
-
-      categories.add(category);
-
-      if (!grouped.has(month)) {
-        grouped.set(month, { month });
-      }
-
-      grouped.get(month)![category] = value;
-
-      totals.set(
-        category,
-        (totals.get(category) ?? 0) + value
-      );
-    }
-
-    const categoryList = Array.from(categories).sort();
-
-    const data = Array.from(grouped.values()).sort((a, b) =>
-      getText(a.month).localeCompare(getText(b.month))
-    );
-
-    const totalRows = categoryList.map((category) => ({
-      name: category,
-      value: totals.get(category) ?? 0,
-    }));
-
-    return {
-      data,
-      categories: categoryList,
-      totals: totalRows,
-    };
-  }
-
-  // Wide format:
-  // month | ENTERTAINMENT | POLITICS | WELLNESS ...
-  if (monthKey) {
-    const excluded = new Set([
-      monthKey,
-      "id",
-      "total",
-      "article_count",
-      "window_count",
-      "date",
-    ]);
-
-    const categories = Object.keys(rows[0]).filter(
-      (key) =>
-        !excluded.has(key) &&
-        rows.some((row) => getNumber(row[key]) !== null)
-    );
-
-    const data = rows
-      .map((row) => {
-        const point: Row = {
-          month: getText(row[monthKey], ""),
-        };
-
-        for (const category of categories) {
-          point[category] = getNumber(row[category]);
-        }
-
-        return point;
-      })
-      .filter((row) => row.month)
-      .sort((a, b) =>
-        getText(a.month).localeCompare(getText(b.month))
-      );
-
-    const totals = categories.map((category) => ({
-      name: category,
-      value: rows.reduce(
-        (sum, row) => sum + (getNumber(row[category]) ?? 0),
-        0
-      ),
-    }));
-
-    return { data, categories, totals };
-  }
-
-  // Category-only data:
-  // category | count
-  if (categoryKey && valueKey) {
-    const totals = new Map<string, number>();
-
-    for (const row of rows) {
-      const category = getText(row[categoryKey], "");
-      const value = getNumber(row[valueKey]);
-
-      if (!category || value === null) continue;
-
-      totals.set(
-        category,
-        (totals.get(category) ?? 0) + value
-      );
-    }
-
-    const totalRows = Array.from(totals.entries()).map(
-      ([name, value]) => ({ name, value })
-    );
-
-    return {
-      data: [],
-      categories: totalRows.map((row) => row.name),
-      totals: totalRows,
-    };
-  }
-
-  return {
-    data: [],
-    categories: [] as string[],
-    totals: [] as Row[],
-  };
-}
-
-// ---------------------------------------------------------
-// GENERIC CHART HELPERS
-// ---------------------------------------------------------
-
-function getNumericChartData(
-  rows: Row[],
-  labelKeys: string[],
-  valueKeys: string[]
-) {
-  return rows
-    .map((row) => ({
-      label: getText(getValue(row, labelKeys), ""),
-      value: getNumber(getValue(row, valueKeys)),
-    }))
-    .filter(
-      (item): item is { label: string; value: number } =>
-        item.label !== "" && item.value !== null
-    );
-}
-
-function buildMultiSeriesData(
-  rows: Row[],
-  labelKeys: string[],
-  seriesKeys: string[]
-) {
-  const labelKey = findColumn(rows, labelKeys);
-
-  if (!labelKey) return { data: [], series: [] as string[] };
-
-  const series = seriesKeys.filter((key) =>
-    rows.some((row) => getNumber(row[key]) !== null)
-  );
-
-  const data = rows
-    .map((row) => {
-      const point: Row = {
-        label: getText(row[labelKey], ""),
-      };
-
-      for (const key of series) {
-        point[key] = getNumber(row[key]);
-      }
-
-      return point;
-    })
-    .filter((row) => row.label)
-    .sort((a, b) =>
-      getText(a.label).localeCompare(getText(b.label))
-    );
-
-  return { data, series };
-}
-
-// ---------------------------------------------------------
-// DISPLAY COMPONENTS
-// ---------------------------------------------------------
 
 function SectionHeading({
   eyebrow,
@@ -499,16 +145,14 @@ function SectionHeading({
 }: {
   eyebrow: string;
   title: string;
-  description?: string;
+  description: string;
 }) {
   return (
     <div className="section-heading">
       <div>
         <p className="eyebrow">{eyebrow}</p>
         <h2>{title}</h2>
-        {description && (
-          <p className="section-description">{description}</p>
-        )}
+        <p className="section-description">{description}</p>
       </div>
     </div>
   );
@@ -516,94 +160,90 @@ function SectionHeading({
 
 function Panel({
   title,
-  subtitle,
+  description,
   children,
-  className = "",
 }: {
   title: string;
-  subtitle?: string;
+  description?: string;
   children: React.ReactNode;
-  className?: string;
 }) {
   return (
-    <section className={`panel ${className}`}>
+    <div className="panel">
       <div className="panel-heading">
         <div>
           <h3>{title}</h3>
-          {subtitle && <p>{subtitle}</p>}
+          {description && <p>{description}</p>}
         </div>
       </div>
-
       {children}
-    </section>
+    </div>
   );
 }
 
-function EmptyState({
-  message = "No data available yet.",
-}: {
-  message?: string;
-}) {
-  return <div className="empty-state">{message}</div>;
-}
-
 function MetricCard({
-  label,
+  title,
   value,
-  detail,
+  description,
   icon: Icon,
+  color,
 }: {
-  label: string;
+  title: string;
   value: string;
-  detail: string;
-  icon: React.ElementType;
+  description: string;
+  icon: any;
+  color?: string;
 }) {
   return (
     <div className="metric-card">
       <div className="metric-top">
-        <span>{label}</span>
-
-        <div className="metric-icon">
-          <Icon size={18} />
+        <span>{title}</span>
+        <div className="metric-icon" style={{ color: color || "#2DE2C5" }}>
+          <Icon size={17} />
         </div>
       </div>
-
       <div className="metric-value">{value}</div>
-      <p>{detail}</p>
+      <p>{description}</p>
     </div>
   );
+}
+
+function EmptyState({ message = "No data available for this visualization." }) {
+  return <div className="empty-state">{message}</div>;
 }
 
 function DataTable({
   rows,
   columns,
-  emptyMessage,
+  limit = 12,
 }: {
   rows: Row[];
-  columns: { key: string; label: string }[];
-  emptyMessage?: string;
+  columns?: string[];
+  limit?: number;
 }) {
-  if (!rows.length || !columns.length) {
-    return <EmptyState message={emptyMessage} />;
-  }
+  if (!rows.length) return <EmptyState />;
+
+  const keys = columns || Object.keys(rows[0]).slice(0, 6);
 
   return (
     <div className="table-scroll">
       <table>
         <thead>
           <tr>
-            {columns.map((column) => (
-              <th key={column.key}>{column.label}</th>
+            {keys.map((key) => (
+              <th key={key}>{key.replaceAll("_", " ")}</th>
             ))}
           </tr>
         </thead>
-
         <tbody>
-          {rows.map((row, index) => (
+          {rows.slice(0, limit).map((row, index) => (
             <tr key={index}>
-              {columns.map((column) => (
-                <td key={column.key}>
-                  {getText(row[column.key])}
+              {keys.map((key) => (
+                <td key={key}>
+                  {row[key] === null || row[key] === undefined
+                    ? "—"
+                    : typeof row[key] === "number"
+                      ? formatNumber(row[key])
+                      : String(row[key])}
                 </td>
               ))}
             </tr>
@@ -614,539 +254,264 @@ function DataTable({
   );
 }
 
-// ---------------------------------------------------------
-// MAIN DASHBOARD
-// ---------------------------------------------------------
-
 export default function Home() {
-  const [data, setData] = useState<Dataset>({});
+  const [data, setData] = useState<DashboardData>(EMPTY_DATA);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const [lastUpdated, setLastUpdated] = useState("");
   const [activeSection, setActiveSection] = useState("overview");
-
-  // -------------------------------------------------------
-  // LOAD JSON DATA
-  // -------------------------------------------------------
 
   const loadData = useCallback(async () => {
     setLoading(true);
     setError("");
 
-    try {
-      const entries = await Promise.all(
-        DATA_FILES.map(async (name) => {
-          try {
-            const response = await fetch(`/data/${name}.json`, {
-              cache: "no-store",
-            });
+    const endpoints = [
+      fetchEndpoint("/api/overview"),
+      fetchEndpoint("/api/topics/activity"),
+      fetchEndpoint("/api/topics/growth"),
+      fetchEndpoint("/api/topics/stability"),
+      fetchEndpoint("/api/topics/emerging"),
+      fetchEndpoint("/api/trends/categories"),
+      fetchEndpoint("/api/analysis/semantic-drift"),
+      fetchEndpoint("/api/analysis/network"),
+      fetchEndpoint("/api/analysis/influential-articles"),
+      fetchEndpoint("/api/evaluation/performance"),
+    ];
 
-            if (!response.ok) {
-              return [name, null] as const;
-            }
+    const results = await Promise.allSettled(endpoints);
 
-            return [name, await response.json()] as const;
-          } catch {
-            return [name, null] as const;
-          }
-        })
-      );
+    const value = (index: number) =>
+      results[index].status === "fulfilled"
+        ? results[index].value
+        : null;
 
-      setData(Object.fromEntries(entries));
-    } catch {
+    const failures = results
+      .map((result, index) =>
+        result.status === "rejected" ? index : -1
+      )
+      .filter((index) => index !== -1);
+
+    setData({
+      overview: value(0),
+      activity: asArray(value(1)),
+      growth: asArray(value(2)),
+      stability: asArray(value(3)),
+      emerging: asArray(value(4)),
+      categories: asArray(value(5)),
+      drift: asArray(value(6)),
+      network: asArray(value(7)),
+      influential: asArray(value(8)),
+      performance: asArray(value(9)),
+    });
+
+    if (failures.length) {
       setError(
-        "Could not load dashboard data. Check your exported JSON files."
+        `${failures.length} endpoint(s) could not be loaded. Check that the backend is running and the corresponding data files exist.`
       );
-    } finally {
-      setLoading(false);
     }
+
+    setLastUpdated(new Date().toLocaleTimeString());
+    setLoading(false);
   }, []);
 
   useEffect(() => {
-    void loadData();
+    loadData();
   }, [loadData]);
 
-  // -------------------------------------------------------
-  // EXTRACT DATASETS
-  // -------------------------------------------------------
+  const topicActivityChart = useMemo(() => {
+    const grouped: Record<string, Row> = {};
 
-  const overview = asObject(data.overview);
+    data.activity.forEach((row) => {
+      const month = String(row.month ?? "");
+      const topic = `Topic ${row.topic_id}`;
+      if (!month) return;
 
-  const categoryRows = asRows(data.category_shares);
-  const driftRows = asRows(data.category_drift);
-  const semanticRows = asRows(data.semantic_drift);
-  const prevalenceRows = asRows(data.topic_prevalence);
+      if (!grouped[month]) grouped[month] = { month };
+      grouped[month][topic] = getNumber(row.article_count) ?? 0;
+    });
 
-  const keywordRows = asRows(data.topic_keywords);
-  const exampleRows = asRows(data.topic_examples);
-  const metricRows = asRows(data.clustering_metrics);
-
-  const communityRows = asRows(data.communities);
-  const centralRows = asRows(data.central_articles);
-
-  const eventRows = asRows(data.event_impact);
-  const eventSummaryRows = asRows(data.event_summary);
-
-  const privateRows = asRows(data.private_statistics);
-  const privacyMetadata = asObject(data.privacy_metadata);
-
-  const fairnessSummary = asObject(data.fairness_summary);
-  const authorRows = asRows(data.author_concentration);
-  const cohortRows = asRows(data.category_by_author_cohort);
-  const disparityRows = asRows(data.category_disparity);
-  const divergenceRows = asRows(data.cohort_distribution_divergence);
-
-  // -------------------------------------------------------
-  // CATEGORY CHART
-  // -------------------------------------------------------
-
-  const categoryChart = useMemo(
-    () => buildCategoryChart(categoryRows),
-    [data.category_shares]
-  );
-
-  // -------------------------------------------------------
-  // SEMANTIC DRIFT CHART
-  // -------------------------------------------------------
-
-  const semanticChart = useMemo(
-    () =>
-      getNumericChartData(
-        semanticRows,
-        MONTH_KEYS,
-        [
-          "mean_js_divergence",
-          "mean_drift",
-          "semantic_drift",
-          "drift_score",
-          "mean_js",
-          "js_divergence",
-          "mean_dimension_js",
-          "mean_js_distance",
-        ]
-      ),
-    [data.semantic_drift]
-  );
-
-  // -------------------------------------------------------
-  // TOPIC PREVALENCE CHART
-  // -------------------------------------------------------
-
-  const prevalenceLabelKey = findColumn(prevalenceRows, MONTH_KEYS);
-
-  const prevalenceValueKey = findColumn(prevalenceRows, [
-    "share",
-    "proportion",
-    "prevalence",
-    "count",
-    "article_count",
-    "topic_share",
-  ]);
-
-  const prevalenceTopicKey = findColumn(prevalenceRows, TOPIC_KEYS);
-
-  const prevalenceChart = useMemo(() => {
-    if (
-      prevalenceLabelKey &&
-      prevalenceValueKey &&
-      prevalenceTopicKey
-    ) {
-      const grouped = new Map<string, Row>();
-      const topics = new Set<string>();
-
-      for (const row of prevalenceRows) {
-        const month = getText(row[prevalenceLabelKey], "");
-        const topic = getText(row[prevalenceTopicKey], "");
-        const value = getNumber(row[prevalenceValueKey]);
-
-        if (!month || !topic || value === null) continue;
-
-        topics.add(topic);
-
-        if (!grouped.has(month)) {
-          grouped.set(month, { label: month });
-        }
-
-        grouped.get(month)![`Topic ${topic}`] = value;
-      }
-
-      return {
-        data: Array.from(grouped.values()).sort((a, b) =>
-          getText(a.label).localeCompare(getText(b.label))
-        ),
-        topics: Array.from(topics).map((topic) => `Topic ${topic}`),
-      };
-    }
-
-    const chart = getNumericChartData(
-      prevalenceRows,
-      MONTH_KEYS,
-      [
-        "share",
-        "proportion",
-        "prevalence",
-        "count",
-        "article_count",
-        "topic_share",
-      ]
+    return Object.values(grouped).sort((a, b) =>
+      String(a.month).localeCompare(String(b.month))
     );
+  }, [data.activity]);
 
-    return {
-      data: chart.map((item) => ({
-        label: item.label,
-        value: item.value,
-      })),
-      topics: [] as string[],
-    };
-  }, [
-    data.topic_prevalence,
-    prevalenceLabelKey,
-    prevalenceValueKey,
-    prevalenceTopicKey,
-  ]);
+  const topTopics = useMemo(() => {
+    const totals: Record<string, number> = {};
 
-  // -------------------------------------------------------
-  // TOPIC KEYWORDS
-  // -------------------------------------------------------
+    data.activity.forEach((row) => {
+      const id = String(row.topic_id);
+      totals[id] = (totals[id] || 0) + (getNumber(row.article_count) || 0);
+    });
 
-  const topicKey = findColumn(keywordRows, TOPIC_KEYS);
+    return Object.entries(totals)
+      .map(([id, count]) => ({ id, count }))
+      .sort((a, b) => b.count - a.count)
+      .slice(0, 8);
+  }, [data.activity]);
 
-  const topicCounts = useMemo(() => {
-    if (!topicKey) return [];
+  const latestActivity = useMemo(() => {
+    const months = [...new Set(data.activity.map((row) => row.month))]
+      .filter(Boolean)
+      .sort();
 
-    return Array.from(
-      new Set(
-        keywordRows.map((row) => getText(row[topicKey], ""))
-      )
-    ).filter(Boolean);
-  }, [data.topic_keywords, topicKey]);
+    const latest = months[months.length - 1];
+    return data.activity
+      .filter((row) => row.month === latest)
+      .sort(
+        (a, b) =>
+          (getNumber(b.article_count) || 0) -
+          (getNumber(a.article_count) || 0)
+      );
+  }, [data.activity]);
 
-  // -------------------------------------------------------
-  // NORMALIZE TABLE DATA
-  // -------------------------------------------------------
+  const categoryChart = useMemo(() => {
+    if (!data.categories.length) return [];
 
-  const normalizedDriftRows = normalizeRows(driftRows, {
-    month: MONTH_KEYS,
-    category: CATEGORY_KEYS,
-    share_change: [
-      "share_change",
-      "difference",
-      "absolute_change",
-      "change",
-      "delta",
-    ],
-    adjusted_p_value: [
-      "adjusted_p_value",
-      "p_adjusted",
-      "pvalue_adjusted",
-      "fdr_p_value",
-      "p_adj",
-    ],
-  });
-
-  const normalizedPrivateRows = normalizeRows(privateRows, {
-    month: MONTH_KEYS,
-    category: CATEGORY_KEYS,
-    noisy_count: [
-      "noisy_count",
-      "count_noisy",
-      "private_count",
-      "noisy_value",
-    ],
-    noisy_share: [
-      "noisy_share",
-      "share_noisy",
-      "private_share",
-      "noisy_proportion",
-    ],
-  });
-
-  const normalizedExamples = normalizeRows(exampleRows, {
-    kmeans_cluster: TOPIC_KEYS,
-    headline: [
-      "headline",
-      "title",
-      "article_title",
-      "text",
-    ],
-    text: [
-      "text",
-      "article_text",
-      "description",
-      "short_description",
-      "headline",
-      "title",
-    ],
-    category: CATEGORY_KEYS,
-  });
-
-  const normalizedCentralArticles = normalizeRows(centralRows, {
-    id: [
-      "id",
-      "article_id",
-      "node_id",
-    ],
-    pagerank: [
-      "pagerank",
-      "page_rank",
-      "pageRank",
-    ],
-    degree_centrality: [
-      "degree_centrality",
-      "degree",
-      "centrality",
-    ],
-    weighted_degree: [
-      "weighted_degree",
-      "weighted_degree_centrality",
-      "strength",
-    ],
-  });
-
-  const normalizedCommunities = normalizeRows(communityRows, {
-    community: [
-      "community",
-      "community_id",
-      "partition",
-      "id",
-    ],
-    size: [
-      "size",
-      "articles",
+    const sample = data.categories[0];
+    const monthKey = findKey(sample, ["month", "current_month", "date"]);
+    const categoryKey = findKey(sample, ["category", "topic", "name"]);
+    const valueKey = findKey(sample, [
       "article_count",
-      "n_articles",
-      "node_count",
-    ],
-    top_categories: [
-      "top_categories",
-      "categories",
-      "category_distribution",
-    ],
-    top_keywords: [
-      "top_keywords",
-      "keywords",
-      "terms",
-      "community_keywords",
-    ],
-  });
-
-  const normalizedSemanticRows = normalizeRows(semanticRows, {
-    month: MONTH_KEYS,
-    drift_score: [
-      "mean_js_divergence",
-      "mean_drift",
-      "semantic_drift",
-      "drift_score",
-      "mean_js",
-      "js_divergence",
-      "mean_dimension_js",
-      "mean_js_distance",
-    ],
-  });
-
-  const normalizedPrevalenceRows = normalizeRows(prevalenceRows, {
-    month: MONTH_KEYS,
-    topic: TOPIC_KEYS,
-    value: [
-      "share",
-      "proportion",
-      "prevalence",
       "count",
-      "article_count",
-      "topic_share",
-    ],
-  });
+      "percentage",
+      "share",
+      "category_count",
+    ]);
 
-  // -------------------------------------------------------
-  // CLUSTERING METRICS
-  // -------------------------------------------------------
+    if (!monthKey || !categoryKey || !valueKey) return [];
 
-  const normalizedMetricRows = metricRows.map((row) => ({
-    ...row,
-    model: getValue(row, [
-      "model",
-      "algorithm",
-      "method",
-      "clustering_method",
-      "name",
-    ]),
-    silhouette: getValue(row, [
-      "silhouette",
-      "silhouette_score",
-    ]),
-    davies_bouldin: getValue(row, [
-      "davies_bouldin",
-      "davies_bouldin_score",
-      "db_score",
-    ]),
-    calinski_harabasz: getValue(row, [
-      "calinski_harabasz",
-      "calinski_harabasz_score",
-      "ch_score",
-    ]),
-    nmi: getValue(row, [
-      "nmi",
-      "normalized_mutual_information",
-      "normalized_mutual_info",
-    ]),
-  }));
+    const grouped: Record<string, Row> = {};
 
-  // -------------------------------------------------------
-  // OVERVIEW VALUES
-  // -------------------------------------------------------
+    data.categories.forEach((row) => {
+      const month = String(row[monthKey] ?? "");
+      const category = String(row[categoryKey] ?? "Unknown");
+      if (!month) return;
+      if (!grouped[month]) grouped[month] = { month };
+      grouped[month][category] = getNumber(row[valueKey]) ?? 0;
+    });
 
-  const dateRange = asObject(overview.date_range);
+    return Object.values(grouped).sort((a, b) =>
+      String(a.month).localeCompare(String(b.month))
+    );
+  }, [data.categories]);
 
-  const startDate = dateRange.start;
-  const endDate = dateRange.end;
+  const categoryNames = useMemo(() => {
+    if (!categoryChart.length) return [];
+    return Object.keys(categoryChart[0]).filter((key) => key !== "month");
+  }, [categoryChart]);
 
-  // -------------------------------------------------------
-  // NAVIGATION
-  // -------------------------------------------------------
+  const overview = data.overview || {};
+
+  const topicCount = getNumber(overview.total_topics);
+  const totalArticles = getNumber(overview.total_articles);
+  const unassigned = getNumber(overview.unassigned_articles);
+  const emergingArticles = getNumber(overview.total_emerging_articles);
+  const emergingTopics = getNumber(overview.total_emerging_topics);
+  const stabilityScore = getNumber(overview.average_topic_stability);
+  const emergingPercentage = getNumber(overview.emerging_article_percentage);
 
   const scrollToSection = (id: string) => {
     setActiveSection(id);
-
     document.getElementById(id)?.scrollIntoView({
       behavior: "smooth",
       block: "start",
     });
   };
 
-  // -------------------------------------------------------
-  // LOADING SCREEN
-  // -------------------------------------------------------
-
   if (loading) {
     return (
-      <main className="loading-screen">
+      <div className="loading-screen">
         <div className="loading-mark">
-          <Activity size={30} />
+          <Activity size={27} />
         </div>
-
-        <h2>Streaming Intelligence Engine</h2>
-        <p>Loading analytical results...</p>
-      </main>
+        <h2>Streamline Engine</h2>
+        <p>Loading streaming intelligence data...</p>
+      </div>
     );
   }
 
-  // -------------------------------------------------------
-  // DASHBOARD
-  // -------------------------------------------------------
-
   return (
-    <main className="app-shell">
-
-      {/* SIDEBAR */}
-
+    <div className="app-shell">
       <aside className="sidebar">
         <div className="brand">
           <div className="brand-mark">
-            <Activity size={22} />
+            <Activity size={23} />
           </div>
-
           <div>
             <strong>STREAMLINE</strong>
-            <span>DATA INTELLIGENCE</span>
+            <span>NEWS INTELLIGENCE ENGINE</span>
           </div>
         </div>
 
         <div className="sidebar-label">WORKSPACE</div>
 
         <nav className="nav-list">
-          {NAV_ITEMS.map(({ id, label, icon: Icon }) => (
-            <button
-              key={id}
-              onClick={() => scrollToSection(id)}
-              className={`nav-item ${
-                activeSection === id ? "active" : ""
-              }`}
-            >
-              <Icon size={18} />
-              <span>{label}</span>
-
-              {activeSection === id && (
-                <ChevronRight size={15} />
-              )}
-            </button>
-          ))}
+          {NAV_ITEMS.map((item) => {
+            const Icon = item.icon;
+            return (
+              <button
+                key={item.id}
+                className={`nav-item ${
+                  activeSection === item.id ? "active" : ""
+                }`}
+                onClick={() => scrollToSection(item.id)}
+              >
+                <Icon size={17} />
+                <span>{item.label}</span>
+                <ChevronRight size={14} />
+              </button>
+            );
+          })}
         </nav>
 
         <div className="sidebar-bottom">
           <div className="status-dot" />
-
           <div>
-            <strong>Analysis workspace</strong>
-            <span>Historical dataset mode</span>
+            <strong>Backend connection</strong>
+            <span>{error ? "Partial data connection" : "API connected"}</span>
           </div>
         </div>
       </aside>
 
-      {/* MAIN CONTENT */}
-
-      <div className="main-content">
-
-        {/* TOPBAR */}
-
+      <main className="main-content">
         <header className="topbar">
           <div>
-            <span className="breadcrumb">WORKSPACE / </span>
-            <strong>INTELLIGENCE OVERVIEW</strong>
+            <strong>NEWS STREAM INTELLIGENCE</strong>
+            <div className="breadcrumb">Dashboard / Analytics</div>
           </div>
 
           <div className="topbar-right">
-            <span className="dataset-status">
+            <div className="dataset-status">
               <span className="status-dot" />
-              DATA LOADED
-            </span>
-
-            <button
-              className="refresh-button"
-              onClick={() => void loadData()}
-            >
-              <RefreshCw size={15} />
+              HISTORICAL STREAM DATA
+            </div>
+            <button className="refresh-button" onClick={loadData}>
+              <RefreshCw size={14} />
               Refresh
             </button>
           </div>
         </header>
 
         <div className="dashboard">
+          {error && <div className="error-banner">{error}</div>}
 
-          {/* =================================================
-              OVERVIEW
-          ================================================= */}
-
-          <section
-            id="overview"
-            className="dashboard-section"
-          >
+          {/* OVERVIEW */}
+          <section id="overview" className="dashboard-section">
             <div className="hero">
               <div>
-                <p className="eyebrow">
-                  NEWS STREAM ANALYTICS / HISTORICAL MODE
-                </p>
-
+                <p className="eyebrow">STREAMING ANALYTICS PLATFORM</p>
                 <h1>
-                  Streaming Data
-                  <br />
-                  <span>Intelligence Engine</span>
+                  Understand the <span>News Stream.</span>
                 </h1>
-
                 <p className="hero-description">
-                  Discover emerging topics, track changing narratives,
-                  identify influential articles, and investigate shifts
-                  in news coverage.
+                  Track evolving topics, discover emerging discussions,
+                  monitor semantic changes, and analyze relationships across
+                  a chronological collection of news articles.
                 </p>
-
                 <div className="hero-meta">
-                  <span>
-                    <Clock3 size={14} />
-                    {formatDate(startDate)} — {formatDate(endDate)}
-                  </span>
-
-                  <span>
-                    <FileText size={14} />
-                    Historical news dataset
-                  </span>
+                  <span><Database size={14} /> 2012–2018 dataset</span>
+                  <span><Layers3 size={14} /> Monthly processing</span>
+                  <span><ShieldCheck size={14} /> Evaluation enabled</span>
                 </div>
               </div>
 
@@ -1154,729 +519,735 @@ export default function Home() {
                 <div className="orbit orbit-one" />
                 <div className="orbit orbit-two" />
                 <div className="orbit orbit-three" />
-
                 <div className="orbit-core">
-                  <Activity size={38} />
+                  <BrainCircuit size={31} />
                 </div>
-
-                <span className="orbit-point point-one" />
-                <span className="orbit-point point-two" />
-                <span className="orbit-point point-three" />
+                <div className="orbit-point point-one" />
+                <div className="orbit-point point-two" />
+                <div className="orbit-point point-three" />
               </div>
             </div>
 
-            {error && (
-              <div className="error-banner">{error}</div>
-            )}
-
             <SectionHeading
-              eyebrow="SYSTEM SNAPSHOT"
-              title="Dataset overview"
-              description="A summary of the data and analysis currently available."
+              eyebrow="SYSTEM OVERVIEW"
+              title="Streaming at a glance"
+              description="A summary of the processed news collection and topic discovery results."
             />
 
             <div className="metrics-grid">
               <MetricCard
-                label="Total articles"
-                value={formatNumber(overview.total_articles)}
-                detail="Articles in the processed dataset"
+                title="Total Articles"
+                value={formatNumber(totalArticles)}
+                description="Articles processed across all monthly batches"
                 icon={FileText}
               />
-
               <MetricCard
-                label="Categories"
-                value={formatNumber(overview.total_categories)}
-                detail="News categories retained"
-                icon={CircleDot}
-              />
-
-              <MetricCard
-                label="Time windows"
-                value={formatNumber(overview.total_windows)}
-                detail="Distinct chronological windows"
+                title="Time Periods"
+                value={formatNumber(overview.total_months)}
+                description="Chronological monthly batches"
                 icon={Clock3}
+                color="#8B9CFF"
               />
-
               <MetricCard
-                label="Discovered topics"
-                value={formatNumber(overview.total_topics)}
-                detail="Clustering groups identified"
+                title="Discovered Topics"
+                value={formatNumber(topicCount)}
+                description="Initial and emerging topic groups"
                 icon={BrainCircuit}
+                color="#B58CFF"
               />
-
               <MetricCard
-                label="Graph nodes"
-                value={formatNumber(overview.graph_nodes)}
-                detail="Articles represented in the graph"
-                icon={Network}
+                title="Emerging Topics"
+                value={formatNumber(emergingTopics)}
+                description="New topic groups identified"
+                icon={TrendingUp}
+                color="#F6B85E"
+              />
+              <MetricCard
+                title="Unassigned Articles"
+                value={formatNumber(unassigned)}
+                description="Articles not assigned to a topic"
+                icon={Layers3}
+                color="#FF718B"
+              />
+            </div>
+
+            <div className="metrics-grid metrics-grid-small">
+              <MetricCard
+                title="Emerging Articles"
+                value={formatNumber(emergingArticles)}
+                description={`${formatPercent(emergingPercentage)} of all articles`}
+                icon={Activity}
+              />
+              <MetricCard
+                title="Average Topic Stability"
+                value={
+                  stabilityScore === null
+                    ? "—"
+                    : `${(stabilityScore * 100).toFixed(2)}%`
+                }
+                description="Average topic-ID overlap score"
+                icon={ShieldCheck}
+                color="#9BD88B"
+              />
+              <MetricCard
+                title="Evaluation Runtime"
+                value={`${formatNumber(overview.evaluation_runtime_seconds)} s`}
+                description="Time taken by evaluation calculations"
+                icon={Clock3}
+                color="#F6B85E"
               />
             </div>
 
             <div className="two-column">
-
-              {/* CATEGORY DISTRIBUTION */}
-
               <Panel
-                title="Category distribution"
-                subtitle="Number of articles in each news category"
+                title="Topic activity over time"
+                description="Monthly article counts for discovered topics."
               >
-                {categoryChart.totals.length > 0 ? (
+                {topicActivityChart.length ? (
                   <div className="chart-wrap">
-                    <ResponsiveContainer
-                      width="100%"
-                      height={280}
-                    >
-                      <PieChart>
-                        <Pie
-                          data={categoryChart.totals}
-                          dataKey="value"
-                          nameKey="name"
-                          innerRadius={65}
-                          outerRadius={100}
-                          paddingAngle={3}
-                        >
-                          {categoryChart.totals.map(
-                            (item, index) => (
-                              <Cell key={String(item.name)} fill={COLORS[index % COLORS.length]} />
-                            )
-                          )}
-                        </Pie>
-
-                        <Tooltip
-                          contentStyle={TOOLTIP_STYLE}
-                          formatter={(value) => [
-                            formatNumber(value),
-                            "Articles",
-                          ]}
+                    <ResponsiveContainer width="100%" height={280}>
+                      <LineChart data={topicActivityChart}>
+                        <CartesianGrid stroke="#26364e" strokeDasharray="3 3" />
+                        <XAxis
+                          dataKey="month"
+                          stroke="#8998ae"
+                          tick={{ fontSize: 9 }}
+                          minTickGap={35}
                         />
-
-                        <Legend />
-                      </PieChart>
+                        <YAxis stroke="#8998ae" tick={{ fontSize: 10 }} />
+                        <Tooltip contentStyle={TOOLTIP_STYLE} />
+                        <Legend wrapperStyle={{ fontSize: 10 }} />
+                        {topTopics.slice(0, 5).map((topic, index) => (
+                          <Line
+                            key={topic.id}
+                            type="monotone"
+                            dataKey={`Topic ${topic.id}`}
+                            name={`Topic ${topic.id}`}
+                            stroke={COLORS[index % COLORS.length]}
+                            dot={false}
+                            strokeWidth={2}
+                          />
+                        ))}
+                      </LineChart>
                     </ResponsiveContainer>
                   </div>
                 ) : (
-                  <EmptyState message="Category distribution data is unavailable." />
+                  <EmptyState />
                 )}
               </Panel>
 
-              {/* CLUSTERING EVALUATION */}
-
               <Panel
-                title="Clustering evaluation"
-                subtitle="Internal and external clustering metrics"
+                title="Largest discovered topics"
+                description="Total articles assigned to each topic across the dataset."
               >
-                <DataTable
-                  rows={normalizedMetricRows}
-                  columns={[
-                    { key: "model", label: "Model" },
-                    { key: "silhouette", label: "Silhouette" },
-                    {
-                      key: "davies_bouldin",
-                      label: "Davies-Bouldin",
-                    },
-                    {
-                      key: "calinski_harabasz",
-                      label: "Calinski-Harabasz",
-                    },
-                    { key: "nmi", label: "NMI" },
-                  ]}
-                />
+                {topTopics.length ? (
+                  <div className="chart-wrap">
+                    <ResponsiveContainer width="100%" height={280}>
+                      <BarChart
+                        data={topTopics}
+                        layout="vertical"
+                        margin={{ left: 5, right: 15 }}
+                      >
+                        <CartesianGrid stroke="#26364e" strokeDasharray="3 3" />
+                        <XAxis type="number" stroke="#8998ae" tick={{ fontSize: 10 }} />
+                        <YAxis
+                          type="category"
+                          dataKey="id"
+                          stroke="#8998ae"
+                          tick={{ fontSize: 10 }}
+                          tickFormatter={(value) => `Topic ${value}`}
+                          width={65}
+                        />
+                        <Tooltip contentStyle={TOOLTIP_STYLE} />
+                        <Bar dataKey="count" fill="#2DE2C5" radius={[0, 5, 5, 0]} />
+                      </BarChart>
+                    </ResponsiveContainer>
+                  </div>
+                ) : (
+                  <EmptyState />
+                )}
               </Panel>
             </div>
           </section>
 
-          {/* =================================================
-              TREND INTELLIGENCE
-          ================================================= */}
-
-          <section
-            id="trends"
-            className="dashboard-section"
-          >
+          {/* STREAMING TIMELINE */}
+          <section id="timeline" className="dashboard-section">
             <SectionHeading
-              eyebrow="TEMPORAL INTELLIGENCE"
-              title="Trend detection"
-              description="Track category popularity and identify statistically significant changes over time."
+              eyebrow="CHRONOLOGICAL PROCESSING"
+              title="Streaming Timeline"
+              description="Explore how the monthly news batches were processed over time."
             />
 
-            {/* CATEGORY SHARE */}
+            <div className="metrics-grid metrics-grid-small">
+              <MetricCard
+                title="Monthly Batches"
+                value={formatNumber(overview.total_months)}
+                description="Total chronological batches"
+                icon={Clock3}
+              />
+              <MetricCard
+                title="Total Articles"
+                value={formatNumber(totalArticles)}
+                description="Articles across all batches"
+                icon={FileText}
+                color="#8B9CFF"
+              />
+              <MetricCard
+                title="Activity Records"
+                value={formatNumber(data.activity.length)}
+                description="Monthly topic activity observations"
+                icon={BarChart3}
+                color="#F6B85E"
+              />
+            </div>
 
             <Panel
-              title="Category share over time"
-              subtitle="Monthly category proportions across the observation period"
+              title="Monthly article volume"
+              description="Number of articles processed in each monthly batch."
             >
-              {categoryChart.data.length > 0 &&
-              categoryChart.categories.length > 0 ? (
+              {data.performance.length ? (
                 <div className="chart-wrap">
-                  <ResponsiveContainer
-                    width="100%"
-                    height={350}
-                  >
-                    <AreaChart data={categoryChart.data}>
-                      <CartesianGrid
-                        stroke="#26364E"
-                        strokeDasharray="3 3"
+                  <ResponsiveContainer width="100%" height={320}>
+                    <AreaChart data={data.performance}>
+                      <defs>
+                        <linearGradient id="articleGradient" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0%" stopColor="#2DE2C5" stopOpacity={0.35} />
+                          <stop offset="95%" stopColor="#2DE2C5" stopOpacity={0.02} />
+                        </linearGradient>
+                      </defs>
+                      <CartesianGrid stroke="#26364e" strokeDasharray="3 3" />
+                      <XAxis dataKey="month" stroke="#8998ae" tick={{ fontSize: 9 }} minTickGap={35} />
+                      <YAxis stroke="#8998ae" tick={{ fontSize: 10 }} />
+                      <Tooltip contentStyle={TOOLTIP_STYLE} />
+                      <Area
+                        type="monotone"
+                        dataKey="article_count"
+                        name="Articles"
+                        stroke="#2DE2C5"
+                        fill="url(#articleGradient)"
+                        strokeWidth={2}
                       />
-
-                      <XAxis
-                        dataKey="month"
-                        stroke="#8493A9"
-                        tick={{ fontSize: 11 }}
-                      />
-
-                      <YAxis
-                        stroke="#8493A9"
-                        tick={{ fontSize: 11 }}
-                        tickFormatter={(value) =>
-                          value <= 1
-                            ? `${(value * 100).toFixed(0)}%`
-                            : value
-                        }
-                      />
-
-                      <Tooltip
-                        contentStyle={TOOLTIP_STYLE}
-                      />
-
-                      <Legend />
-
-                      {categoryChart.categories.map(
-                        (category, index) => (
-                          <Area
-                            key={category}
-                            type="monotone"
-                            dataKey={category}
-                            stackId="1"
-                            stroke={COLORS[index % COLORS.length]}
-                            fill={COLORS[index % COLORS.length]}
-                            fillOpacity={0.12}
-                            strokeWidth={2}
-                          />
-                        )
-                      )}
                     </AreaChart>
                   </ResponsiveContainer>
                 </div>
               ) : (
-                <EmptyState message="Category time-series data is unavailable." />
+                <EmptyState />
               )}
             </Panel>
 
             <div className="two-column">
-
-              {/* CATEGORY DRIFT */}
-
               <Panel
-                title="Category drift detections"
-                subtitle="Statistical changes between adjacent time windows"
+                title="Processing performance"
+                description="Processing time and throughput, where available."
               >
                 <DataTable
-                  rows={normalizedDriftRows.slice(0, 30)}
+                  rows={data.performance}
                   columns={[
-                    { key: "month", label: "Window" },
-                    { key: "category", label: "Category" },
-                    {
-                      key: "share_change",
-                      label: "Share change",
-                    },
-                    {
-                      key: "adjusted_p_value",
-                      label: "Adjusted p-value",
-                    },
+                    "month",
+                    "article_count",
+                    "processing_seconds",
+                    "articles_per_second",
                   ]}
                 />
               </Panel>
 
-              {/* SEMANTIC DRIFT */}
-
               <Panel
-                title="Semantic drift"
-                subtitle="Changes in embedding distributions over time"
+                title="Latest monthly topic activity"
+                description="Topics with the highest article counts in the latest available month."
               >
-                {semanticChart.length > 0 ? (
+                <DataTable
+                  rows={latestActivity}
+                  columns={["month", "topic_id", "article_count"]}
+                />
+              </Panel>
+            </div>
+
+            <div className="method-note">
+              Processing time and throughput are shown as unavailable when
+              the source dataset contains null values. Monthly article volume
+              is still available.
+            </div>
+          </section>
+
+          {/* TOPIC INTELLIGENCE */}
+          <section id="topics" className="dashboard-section">
+            <SectionHeading
+              eyebrow="DISCOVERY AND TRACKING"
+              title="Topic Intelligence"
+              description="Inspect topic activity, growth, stability, and emerging topic groups."
+            />
+
+            <div className="metrics-grid metrics-grid-small">
+              <MetricCard
+                title="Total Topics"
+                value={formatNumber(topicCount)}
+                description="Topics discovered by the engine"
+                icon={BrainCircuit}
+              />
+              <MetricCard
+                title="Emerging Topics"
+                value={formatNumber(emergingTopics)}
+                description="Emerging topic groups"
+                icon={TrendingUp}
+                color="#F6B85E"
+              />
+              <MetricCard
+                title="Emerging Articles"
+                value={formatNumber(emergingArticles)}
+                description="Articles assigned to emerging topics"
+                icon={FileText}
+                color="#8B9CFF"
+              />
+            </div>
+
+            <Panel
+              title="Topic cards"
+              description="Topics ranked by their total article volume."
+            >
+              {topTopics.length ? (
+                <div className="topic-grid">
+                  {topTopics.map((topic, index) => (
+                    <div className="topic-card" key={topic.id}>
+                      <div className="topic-card-top">
+                        <span className="topic-number">
+                          TOPIC {topic.id}
+                        </span>
+                        <span
+                          className="topic-dot"
+                          style={{ background: COLORS[index % COLORS.length] }}
+                        />
+                      </div>
+                      <div className="metric-value">
+                        {formatNumber(topic.count)}
+                      </div>
+                      <p>Articles assigned</p>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <EmptyState />
+              )}
+            </Panel>
+
+            <div className="two-column">
+              <Panel
+                title="Topic growth"
+                description="Monthly change in topic article counts."
+              >
+                {data.growth.length ? (
                   <div className="chart-wrap">
-                    <ResponsiveContainer
-                      width="100%"
-                      height={270}
-                    >
-                      <LineChart data={semanticChart}>
-                        <CartesianGrid
-                          stroke="#26364E"
-                          strokeDasharray="3 3"
-                        />
-
-                        <XAxis
-                          dataKey="label"
-                          stroke="#8493A9"
-                          tick={{ fontSize: 10 }}
-                        />
-
-                        <YAxis
-                          stroke="#8493A9"
-                          tick={{ fontSize: 11 }}
-                        />
-
-                        <Tooltip
-                          contentStyle={TOOLTIP_STYLE}
-                        />
-
+                    <ResponsiveContainer width="100%" height={280}>
+                      <LineChart data={data.growth.slice(-60)}>
+                        <CartesianGrid stroke="#26364e" strokeDasharray="3 3" />
+                        <XAxis dataKey="month" stroke="#8998ae" tick={{ fontSize: 9 }} minTickGap={35} />
+                        <YAxis stroke="#8998ae" tick={{ fontSize: 10 }} />
+                        <Tooltip contentStyle={TOOLTIP_STYLE} />
                         <Line
                           type="monotone"
-                          dataKey="value"
-                          name="Semantic drift"
-                          stroke="#2DE2C5"
-                          strokeWidth={2}
+                          dataKey="growth_percentage"
+                          name="Growth %"
+                          stroke="#8B9CFF"
                           dot={false}
+                          strokeWidth={2}
                         />
                       </LineChart>
                     </ResponsiveContainer>
                   </div>
                 ) : (
-                  <EmptyState message="No compatible semantic drift score column was found." />
+                  <EmptyState />
+                )}
+              </Panel>
+
+              <Panel
+                title="Topic stability"
+                description="Jaccard stability between consecutive monthly topic sets."
+              >
+                {data.stability.length ? (
+                  <div className="chart-wrap">
+                    <ResponsiveContainer width="100%" height={280}>
+                      <LineChart data={data.stability}>
+                        <CartesianGrid stroke="#26364e" strokeDasharray="3 3" />
+                        <XAxis dataKey="current_month" stroke="#8998ae" tick={{ fontSize: 9 }} minTickGap={35} />
+                        <YAxis
+                          domain={[0, 1]}
+                          stroke="#8998ae"
+                          tick={{ fontSize: 10 }}
+                        />
+                        <Tooltip contentStyle={TOOLTIP_STYLE} />
+                        <Line
+                          type="monotone"
+                          dataKey="topic_jaccard_stability"
+                          name="Topic Jaccard Stability"
+                          stroke="#2DE2C5"
+                          dot={false}
+                          strokeWidth={2}
+                        />
+                      </LineChart>
+                    </ResponsiveContainer>
+                  </div>
+                ) : (
+                  <EmptyState />
                 )}
               </Panel>
             </div>
 
-            {/* TOPIC PREVALENCE */}
+            <Panel
+              title="Emerging topic records"
+              description="Records returned by the emerging-topic evaluation endpoint."
+            >
+              <DataTable rows={data.emerging} />
+            </Panel>
 
             <Panel
-              title="Topic prevalence over time"
-              subtitle="How discovered clusters change in representation"
+              title="Topic growth records"
+              description="Previous and current article counts with calculated growth."
             >
-              {prevalenceChart.data.length > 0 ? (
+              <DataTable rows={data.growth} />
+            </Panel>
+          </section>
+
+          {/* TREND ANALYSIS */}
+          <section id="trends" className="dashboard-section">
+            <SectionHeading
+              eyebrow="CATEGORY MOVEMENT"
+              title="Trend Analysis"
+              description="Monitor changes in category activity throughout the historical news stream."
+            />
+
+            <Panel
+              title="Category activity over time"
+              description="Category-level trends from the category analysis output."
+            >
+              {categoryChart.length && categoryNames.length ? (
                 <div className="chart-wrap">
-                  <ResponsiveContainer
-                    width="100%"
-                    height={300}
-                  >
-                    <BarChart data={prevalenceChart.data}>
-                      <CartesianGrid
-                        stroke="#26364E"
-                        strokeDasharray="3 3"
-                      />
-
-                      <XAxis
-                        dataKey="label"
-                        stroke="#8493A9"
-                        tick={{ fontSize: 11 }}
-                      />
-
-                      <YAxis stroke="#8493A9" />
-
-                      <Tooltip
-                        contentStyle={TOOLTIP_STYLE}
-                      />
-
-                      <Legend />
-
-                      {prevalenceChart.topics.length > 0 ? (
-                        prevalenceChart.topics.map(
-                          (topic, index) => (
-                            <Bar
-                              key={topic}
-                              dataKey={topic}
-                              fill={COLORS[index % COLORS.length]}
-                              radius={[4, 4, 0, 0]}
-                            />
-                          )
-                        )
-                      ) : (
-                        <Bar
-                          dataKey="value"
-                          name="Prevalence"
-                          fill="#8B9CFF"
-                          radius={[5, 5, 0, 0]}
+                  <ResponsiveContainer width="100%" height={330}>
+                    <LineChart data={categoryChart}>
+                      <CartesianGrid stroke="#26364e" strokeDasharray="3 3" />
+                      <XAxis dataKey="month" stroke="#8998ae" tick={{ fontSize: 9 }} minTickGap={35} />
+                      <YAxis stroke="#8998ae" tick={{ fontSize: 10 }} />
+                      <Tooltip contentStyle={TOOLTIP_STYLE} />
+                      <Legend wrapperStyle={{ fontSize: 10 }} />
+                      {categoryNames.slice(0, 8).map((category, index) => (
+                        <Line
+                          key={category}
+                          type="monotone"
+                          dataKey={category}
+                          name={category}
+                          stroke={COLORS[index % COLORS.length]}
+                          dot={false}
+                          strokeWidth={2}
                         />
-                      )}
-                    </BarChart>
+                      ))}
+                    </LineChart>
                   </ResponsiveContainer>
                 </div>
               ) : (
-                <EmptyState message="Topic prevalence data is unavailable." />
+                <EmptyState message="Category trend records are available, but their field structure does not match the expected month/category/value format. See the raw records below." />
               )}
             </Panel>
-          </section>
-
-          {/* =================================================
-              TOPIC DISCOVERY
-          ================================================= */}
-
-          <section
-            id="topics"
-            className="dashboard-section"
-          >
-            <SectionHeading
-              eyebrow="UNSUPERVISED LEARNING"
-              title="Topic discovery"
-              description="Explore the clusters discovered from article text embeddings and their representative keywords."
-            />
-
-            <div className="topic-grid">
-              {topicCounts.length > 0 ? (
-                topicCounts.map((topic, index) => {
-                  const matching = keywordRows.filter(
-                    (row) =>
-                      getText(row[topicKey!]) === topic
-                  );
-
-                  return (
-                    <div
-                      className="topic-card"
-                      key={topic}
-                    >
-                      <div className="topic-card-top">
-                        <span className="topic-number">
-                          TOPIC {topic}
-                        </span>
-
-                        <span
-                          className="topic-dot"
-                          style={{
-                            background:
-                              COLORS[index % COLORS.length],
-                          }}
-                        />
-                      </div>
-
-                      <div className="keyword-list">
-                        {matching.slice(0, 10).map(
-                          (row, wordIndex) => {
-                            const word = getText(
-                              getValue(row, [
-                                "keyword",
-                                "term",
-                                "word",
-                                "top_keyword",
-                              ]),
-                              ""
-                            );
-
-                            return word ? (
-                              <span key={wordIndex}>
-                                {word}
-                              </span>
-                            ) : null;
-                          }
-                        )}
-                      </div>
-                    </div>
-                  );
-                })
-              ) : (
-                <EmptyState message="Topic keyword data is not available." />
-              )}
-            </div>
-
-            {/* REPRESENTATIVE ARTICLES */}
 
             <Panel
-              title="Representative articles"
-              subtitle="Examples associated with discovered topics"
+              title="Category trend records"
+              description="Source records returned by the category trends endpoint."
             >
-              <DataTable
-                rows={normalizedExamples.slice(0, 30)}
-                columns={[
-                  { key: "kmeans_cluster", label: "Topic" },
-                  { key: "headline", label: "Headline" },
-                  { key: "text", label: "Article text" },
-                  { key: "category", label: "Category" },
-                ]}
-              />
+              <DataTable rows={data.categories} />
             </Panel>
           </section>
 
-          {/* =================================================
-              ARTICLE NETWORK
-          ================================================= */}
-
-          <section
-            id="network"
-            className="dashboard-section"
-          >
+          {/* SEMANTIC DRIFT */}
+          <section id="drift" className="dashboard-section">
             <SectionHeading
-              eyebrow="RELATIONSHIP ANALYSIS"
-              title="Article network"
-              description="Explore influential articles and communities formed by content similarity."
-            />
-
-            <div className="two-column">
-
-              {/* INFLUENTIAL ARTICLES */}
-
-              <Panel
-                title="Influential articles"
-                subtitle="Ranked by graph centrality or PageRank"
-              >
-                <DataTable
-                  rows={normalizedCentralArticles.slice(0, 25)}
-                  columns={[
-                    { key: "id", label: "Article ID" },
-                    { key: "pagerank", label: "PageRank" },
-                    {
-                      key: "degree_centrality",
-                      label: "Degree",
-                    },
-                    {
-                      key: "weighted_degree",
-                      label: "Weighted degree",
-                    },
-                  ]}
-                />
-              </Panel>
-
-              {/* COMMUNITIES */}
-
-              <Panel
-                title="Detected communities"
-                subtitle="Groups of closely related articles"
-              >
-                <DataTable
-                  rows={normalizedCommunities.slice(0, 25)}
-                  columns={[
-                    { key: "community", label: "Community" },
-                    { key: "size", label: "Articles" },
-                    {
-                      key: "top_categories",
-                      label: "Top categories",
-                    },
-                    {
-                      key: "top_keywords",
-                      label: "Keywords",
-                    },
-                  ]}
-                />
-              </Panel>
-            </div>
-          </section>
-
-          {/* =================================================
-              EVENT ANALYSIS
-          ================================================= */}
-
-          <section
-            id="events"
-            className="dashboard-section"
-          >
-            <SectionHeading
-              eyebrow="EVENT-BASED ANALYSIS"
-              title="Event impact"
-              description="Examine changes in category trends around documented events using interrupted time-series analysis."
-            />
-
-            <Panel
-              title="Event impact estimates"
-              subtitle="Estimated level and trend changes around each event"
-            >
-              <DataTable
-                rows={eventRows}
-                columns={getDynamicColumns(eventRows, 10)}
-              />
-            </Panel>
-
-            <Panel
-              title="Event summary"
-              subtitle="Aggregated results from the event analysis"
-            >
-              <DataTable
-                rows={eventSummaryRows}
-                columns={getDynamicColumns(eventSummaryRows, 8)}
-              />
-            </Panel>
-
-            <p className="method-note">
-              Interpretation note: these are observational time-series
-              associations. They do not establish that an event caused
-              a change in news coverage.
-            </p>
-          </section>
-
-          {/* =================================================
-              PRIVACY
-          ================================================= */}
-
-          <section
-            id="privacy"
-            className="dashboard-section"
-          >
-            <SectionHeading
-              eyebrow="PRIVACY ENGINEERING"
-              title="Differential privacy"
-              description="Inspect privacy-protected category statistics and the release parameters."
+              eyebrow="MEANING OVER TIME"
+              title="Semantic Drift"
+              description="Measure how the semantic representation of news changes between consecutive months."
             />
 
             <div className="metrics-grid metrics-grid-small">
               <MetricCard
-                label="Privacy budget"
-                value={getText(
-                  getValue(privacyMetadata, [
-                    "epsilon_per_month",
-                    "epsilon",
-                  ])
-                )}
-                detail="Configured epsilon value"
-                icon={ShieldCheck}
-              />
-
-              <MetricCard
-                label="Composition"
-                value={getText(
-                  getValue(privacyMetadata, [
-                    "composition",
-                    "composition_method",
-                    "accounting_method",
-                  ]),
-                  "See metadata"
-                )}
-                detail="Privacy accounting method"
+                title="Monthly Comparisons"
+                value={formatNumber(data.drift.length)}
+                description="Records in semantic drift analysis"
                 icon={GitBranch}
               />
-
               <MetricCard
-                label="Adjacency"
-                value={getText(
-                  getValue(privacyMetadata, [
-                    "adjacency",
-                    "adjacency_definition",
-                  ]),
-                  "See metadata"
-                )}
-                detail="Record-level privacy definition"
-                icon={Users}
+                title="Latest Semantic Drift"
+                value={
+                  data.drift.length
+                    ? formatNumber(data.drift[data.drift.length - 1].semantic_drift)
+                    : "—"
+                }
+                description="Latest available semantic drift score"
+                icon={Activity}
+                color="#F6B85E"
+              />
+              <MetricCard
+                title="Latest Similarity"
+                value={
+                  data.drift.length
+                    ? formatNumber(data.drift[data.drift.length - 1].cosine_similarity)
+                    : "—"
+                }
+                description="Cosine similarity with previous month"
+                icon={ShieldCheck}
+                color="#9BD88B"
               />
             </div>
 
             <Panel
-              title="Private category statistics"
-              subtitle="Noisy category counts and shares released by the privacy mechanism"
+              title="Semantic similarity and drift"
+              description="Cosine similarity and semantic drift across monthly comparisons."
             >
-              <DataTable
-                rows={normalizedPrivateRows.slice(0, 40)}
-                columns={[
-                  { key: "month", label: "Month" },
-                  { key: "category", label: "Category" },
-                  {
-                    key: "noisy_count",
-                    label: "Noisy count",
-                  },
-                  {
-                    key: "noisy_share",
-                    label: "Noisy share",
-                  },
-                ]}
-              />
+              {data.drift.length ? (
+                <div className="chart-wrap">
+                  <ResponsiveContainer width="100%" height={320}>
+                    <LineChart data={data.drift}>
+                      <CartesianGrid stroke="#26364e" strokeDasharray="3 3" />
+                      <XAxis dataKey="month" stroke="#8998ae" tick={{ fontSize: 9 }} minTickGap={35} />
+                      <YAxis domain={[0, 1]} stroke="#8998ae" tick={{ fontSize: 10 }} />
+                      <Tooltip contentStyle={TOOLTIP_STYLE} />
+                      <Legend wrapperStyle={{ fontSize: 10 }} />
+                      <Line
+                        type="monotone"
+                        dataKey="cosine_similarity"
+                        name="Cosine Similarity"
+                        stroke="#2DE2C5"
+                        dot={false}
+                        strokeWidth={2}
+                        connectNulls
+                      />
+                      <Line
+                        type="monotone"
+                        dataKey="semantic_drift"
+                        name="Semantic Drift"
+                        stroke="#FF718B"
+                        dot={false}
+                        strokeWidth={2}
+                        connectNulls
+                      />
+                    </LineChart>
+                  </ResponsiveContainer>
+                </div>
+              ) : (
+                <EmptyState />
+              )}
             </Panel>
 
             <Panel
-              title="Privacy metadata"
-              subtitle="Configuration and accounting details"
+              title="Distribution drift"
+              description="Monthly distribution drift values."
             >
-              <pre className="metadata-block">
-                {JSON.stringify(
-                  privacyMetadata,
-                  null,
-                  2
-                )}
-              </pre>
+              {data.drift.length ? (
+                <div className="chart-wrap">
+                  <ResponsiveContainer width="100%" height={260}>
+                    <AreaChart data={data.drift}>
+                      <CartesianGrid stroke="#26364e" strokeDasharray="3 3" />
+                      <XAxis dataKey="month" stroke="#8998ae" tick={{ fontSize: 9 }} minTickGap={35} />
+                      <YAxis stroke="#8998ae" tick={{ fontSize: 10 }} />
+                      <Tooltip contentStyle={TOOLTIP_STYLE} />
+                      <Area
+                        type="monotone"
+                        dataKey="distribution_drift"
+                        name="Distribution Drift"
+                        stroke="#8B9CFF"
+                        fill="#8B9CFF"
+                        fillOpacity={0.12}
+                        connectNulls
+                      />
+                    </AreaChart>
+                  </ResponsiveContainer>
+                </div>
+              ) : (
+                <EmptyState />
+              )}
             </Panel>
 
-            <p className="method-note">
-              Privacy protection applies only to the statistics
-              released by this mechanism. It does not automatically
-              privatize article text, embeddings, graph outputs,
-              or other dashboard analyses.
-            </p>
+            <div className="method-note">
+              Semantic drift and distribution drift are separate measurements.
+              The first is based on changes in semantic similarity; the second
+              tracks changes in the distribution of the analyzed data.
+            </div>
           </section>
 
-          {/* =================================================
-              REPRESENTATION / FAIRNESS
-          ================================================= */}
-
-          <section
-            id="fairness"
-            className="dashboard-section"
-          >
+          {/* ARTICLE NETWORK */}
+          <section id="network" className="dashboard-section">
             <SectionHeading
-              eyebrow="REPRESENTATION AUDIT"
-              title="Author and category representation"
-              description="Analyze byline concentration and differences in category coverage across author activity cohorts."
+              eyebrow="RELATIONSHIP AND INFLUENCE"
+              title="Article Network"
+              description="Explore influential articles using PageRank and network degree."
             />
 
+            <div className="metrics-grid metrics-grid-small">
+              <MetricCard
+                title="Network Articles"
+                value={formatNumber(data.network.length)}
+                description="Article records returned by the network endpoint"
+                icon={Network}
+              />
+              <MetricCard
+                title="Influential Records"
+                value={formatNumber(data.influential.length)}
+                description="Records in the influential articles output"
+                icon={TrendingUp}
+                color="#F6B85E"
+              />
+              <MetricCard
+                title="Network Edges"
+                value="Not provided"
+                description="The current API does not expose edge records"
+                icon={GitBranch}
+                color="#8B9CFF"
+              />
+            </div>
+
             <Panel
-              title="Representation summary"
-              subtitle="Summary generated by the representation audit"
+              title="Top articles by PageRank"
+              description="Articles with the highest PageRank scores in the network output."
             >
-              <pre className="metadata-block">
-                {JSON.stringify(
-                  fairnessSummary,
-                  null,
-                  2
+              <DataTable
+                rows={[...data.network].sort(
+                  (a, b) =>
+                    (getNumber(b.pagerank) || 0) -
+                    (getNumber(a.pagerank) || 0)
                 )}
-              </pre>
+                columns={[
+                  "id",
+                  "date",
+                  "category",
+                  "pagerank",
+                  "degree",
+                  "text_preview",
+                ]}
+                limit={15}
+              />
             </Panel>
 
             <Panel
-              title="Author concentration"
-              subtitle="Distribution of published articles across authors"
+              title="Influential articles"
+              description="Precomputed influential article records."
             >
-              <DataTable
-                rows={authorRows}
-                columns={getDynamicColumns(authorRows, 8)}
-              />
+              <DataTable rows={data.influential} limit={15} />
             </Panel>
+          </section>
+
+          {/* EVALUATION */}
+          <section id="evaluation" className="dashboard-section">
+            <SectionHeading
+              eyebrow="SYSTEM PERFORMANCE"
+              title="Evaluation"
+              description="Review the quantitative results generated by the streaming evaluation pipeline."
+            />
+
+            <div className="metrics-grid">
+              <MetricCard
+                title="Total Articles"
+                value={formatNumber(totalArticles)}
+                description="Total processed news articles"
+                icon={FileText}
+              />
+              <MetricCard
+                title="Total Topics"
+                value={formatNumber(topicCount)}
+                description="Discovered topic groups"
+                icon={BrainCircuit}
+                color="#8B9CFF"
+              />
+              <MetricCard
+                title="Topic Stability"
+                value={
+                  stabilityScore === null
+                    ? "—"
+                    : `${(stabilityScore * 100).toFixed(2)}%`
+                }
+                description="Average topic-ID overlap score"
+                icon={ShieldCheck}
+                color="#9BD88B"
+              />
+              <MetricCard
+                title="Emerging Article Share"
+                value={formatPercent(emergingPercentage)}
+                description="Percentage of articles in emerging topics"
+                icon={TrendingUp}
+                color="#F6B85E"
+              />
+              <MetricCard
+                title="Unassigned Articles"
+                value={formatNumber(unassigned)}
+                description="Articles without a topic assignment"
+                icon={Layers3}
+                color="#FF718B"
+              />
+            </div>
 
             <div className="two-column">
               <Panel
-                title="Category disparity"
-                subtitle="Differences in category representation across cohorts"
+                title="Topic stability evaluation"
+                description="Monthly Jaccard stability values."
               >
-                <DataTable
-                  rows={disparityRows.slice(0, 30)}
-                  columns={getDynamicColumns(disparityRows, 7)}
-                />
+                {data.stability.length ? (
+                  <div className="chart-wrap">
+                    <ResponsiveContainer width="100%" height={270}>
+                      <AreaChart data={data.stability}>
+                        <CartesianGrid stroke="#26364e" strokeDasharray="3 3" />
+                        <XAxis dataKey="current_month" stroke="#8998ae" tick={{ fontSize: 9 }} minTickGap={35} />
+                        <YAxis domain={[0, 1]} stroke="#8998ae" tick={{ fontSize: 10 }} />
+                        <Tooltip contentStyle={TOOLTIP_STYLE} />
+                        <Area
+                          type="monotone"
+                          dataKey="topic_jaccard_stability"
+                          name="Jaccard Stability"
+                          stroke="#2DE2C5"
+                          fill="#2DE2C5"
+                          fillOpacity={0.12}
+                        />
+                      </AreaChart>
+                    </ResponsiveContainer>
+                  </div>
+                ) : (
+                  <EmptyState />
+                )}
               </Panel>
 
               <Panel
-                title="Cohort distribution divergence"
-                subtitle="Distribution distance from the overall author population"
+                title="Evaluation summary"
+                description="Overall evaluation metrics returned by the backend."
               >
                 <DataTable
-                  rows={divergenceRows}
-                  columns={getDynamicColumns(divergenceRows, 7)}
+                  rows={Object.entries(overview).map(([metric, value]) => ({
+                    metric,
+                    value: value ?? "—",
+                  }))}
+                  columns={["metric", "value"]}
+                  limit={20}
                 />
               </Panel>
             </div>
 
             <Panel
-              title="Category by author cohort"
-              subtitle="Category composition across low, medium, and high activity groups"
+              title="Processing performance records"
+              description="Monthly article counts and processing measurements."
             >
-              <DataTable
-                rows={cohortRows.slice(0, 40)}
-                columns={getDynamicColumns(cohortRows, 8)}
-              />
+              <DataTable rows={data.performance} limit={20} />
             </Panel>
 
-            <p className="method-note">
-              This is a descriptive representation audit based on
-              byline activity. It does not measure protected demographic
-              groups or prove discrimination.
-            </p>
+            <div className="method-note">
+              Interpretation note: topic stability here represents topic-ID
+              overlap between consecutive periods. It should not be treated
+              as an independent measure of semantic topic coherence.
+              Emerging-topic counts describe detected groups, not verified
+              precision or recall.
+            </div>
           </section>
-
-          {/* FOOTER */}
 
           <footer className="footer">
             <div className="footer-brand">
               <Activity size={16} />
-              STREAMLINE DATA INTELLIGENCE
+              STREAMLINE ENGINE
             </div>
-
-            <span>
-              Historical analysis · Statistical and ML-based insights
-            </span>
+            <span>Historical news stream analytics · 2012–2018</span>
+            <span>Last updated: {lastUpdated || "—"}</span>
           </footer>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
   );
 }

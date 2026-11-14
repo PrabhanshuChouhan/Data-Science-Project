@@ -1,0 +1,89 @@
+[
+    {
+        "topic_id":0,
+        "topic_type":"existing",
+        "article_count":18,
+        "categories":[
+            "PARENTING",
+            "QUEER VOICES",
+            "WELLNESS"
+        ]
+    },
+    {
+        "topic_id":1,
+        "topic_type":"existing",
+        "article_count":68,
+        "categories":[
+            "ENTERTAINMENT",
+            "PARENTING",
+            "QUEER VOICES",
+            "STYLE & BEAUTY",
+            "TRAVEL",
+            "WELLNESS"
+        ]
+    },
+    {
+        "topic_id":2,
+        "topic_type":"existing",
+        "article_count":24,
+        "categories":[
+            "PARENTING",
+            "QUEER VOICES",
+            "WELLNESS"
+        ]
+    },
+    {
+        "topic_id":3,
+        "topic_type":"existing",
+        "article_count":20,
+        "categories":[
+            "FOOD & DRINK",
+            "PARENTING",
+            "QUEER VOICES",
+            "TRAVEL",
+            "WELLNESS"
+        ]
+    },
+    {
+        "topic_id":4,
+        "topic_type":"existing",
+        "article_count":15,
+        "categories":[
+            "FOOD & DRINK",
+            "PARENTING",
+            "STYLE & BEAUTY",
+            "WELLNESS"
+        ]
+    },
+    {
+        "topic_id":5,
+        "topic_type":"existing",
+        "article_count":29,
+        "categories":[
+            "ENTERTAINMENT",
+            "PARENTING",
+            "QUEER VOICES",
+            "STYLE & BEAUTY",
+            "TRAVEL",
+            "WELLNESS"
+        ]
+    },
+    {
+        "topic_id":6,
+        "topic_type":"existing",
+        "article_count":17,
+        "categories":[
+            "PARENTING",
+            "WELLNESS"
+        ]
+    },
+    {
+        "topic_id":7,
+        "topic_type":"existing",
+        "article_count":17,
+        "categories":[
+            "TRAVEL",
+            "WELLNESS"
+        ]
+    }
+]

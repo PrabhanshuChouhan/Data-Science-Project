@@ -1,0 +1,12 @@
+{
+    "month": "2015-09",
+    "article_count": 1263,
+    "embedding_dimensions": 768,
+    "category_counts": {
+        "POLITICS": 648,
+        "ENTERTAINMENT": 395,
+        "WELLNESS": 114,
+        "QUEER VOICES": 95,
+        "TRAVEL": 11
+    }
+}

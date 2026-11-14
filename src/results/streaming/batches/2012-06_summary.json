@@ -1,0 +1,14 @@
+{
+    "month": "2012-06",
+    "article_count": 1914,
+    "embedding_dimensions": 768,
+    "category_counts": {
+        "WELLNESS": 713,
+        "STYLE & BEAUTY": 422,
+        "PARENTING": 304,
+        "TRAVEL": 263,
+        "FOOD & DRINK": 130,
+        "ENTERTAINMENT": 49,
+        "QUEER VOICES": 33
+    }
+}

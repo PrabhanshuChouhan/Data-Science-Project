@@ -1,0 +1,15 @@
+{
+    "month": "2014-04",
+    "article_count": 1577,
+    "embedding_dimensions": 768,
+    "category_counts": {
+        "WELLNESS": 524,
+        "PARENTING": 236,
+        "TRAVEL": 225,
+        "FOOD & DRINK": 173,
+        "STYLE & BEAUTY": 152,
+        "POLITICS": 128,
+        "ENTERTAINMENT": 82,
+        "QUEER VOICES": 57
+    }
+}

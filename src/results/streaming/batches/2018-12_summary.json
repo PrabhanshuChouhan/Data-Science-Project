@@ -1,0 +1,12 @@
+{
+    "month": "2018-12",
+    "article_count": 111,
+    "embedding_dimensions": 768,
+    "category_counts": {
+        "POLITICS": 77,
+        "ENTERTAINMENT": 27,
+        "STYLE & BEAUTY": 5,
+        "FOOD & DRINK": 1,
+        "WELLNESS": 1
+    }
+}
