@@ -2,6 +2,8 @@
     "month": "2015-07",
     "article_count": 1267,
     "embedding_dimensions": 768,
+    "processing_seconds": 0.040734400012297556,
+    "articles_per_second": 31103.931802542756,
     "category_counts": {
         "ENTERTAINMENT": 525,
         "POLITICS": 454,

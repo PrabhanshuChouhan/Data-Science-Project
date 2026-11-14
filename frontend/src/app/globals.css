@@ -463,6 +463,10 @@ button {
   margin-top: 17px;
 }
 
+.growth-chart-grid.expanded {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .panel {
   min-width: 0;
   padding: 21px;
@@ -504,6 +508,48 @@ button {
   width: 100%;
   min-width: 0;
   min-height: 250px;
+}
+
+.chart-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.chart-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.chart-control select,
+.chart-size-button {
+  min-height: 32px;
+  padding: 6px 9px;
+  color: var(--text);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font: inherit;
+}
+
+.chart-control select {
+  color-scheme: dark;
+}
+
+.chart-size-button {
+  cursor: pointer;
+}
+
+.chart-control select:focus-visible,
+.chart-size-button:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
 }
 
 .empty-state {
@@ -580,6 +626,18 @@ tbody tr:hover {
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 1px;
+}
+
+.topic-name {
+  min-height: 36px;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.topic-card .metric-value {
+  margin-top: 6px;
 }
 
 .topic-dot {

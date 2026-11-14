@@ -2,6 +2,8 @@
     "month": "2017-11",
     "article_count": 1262,
     "embedding_dimensions": 768,
+    "processing_seconds": 0.08313680000719614,
+    "articles_per_second": 15179.800039101385,
     "category_counts": {
         "POLITICS": 770,
         "ENTERTAINMENT": 292,

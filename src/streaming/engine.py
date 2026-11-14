@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+import time
 import numpy as np
 
 from src.data_loader import load_news, load_embeddings
@@ -13,7 +14,12 @@ from src.streaming.topic_reporter import TopicReporter
 BASE_DIR = Path(__file__).resolve().parent.parent
 OUTPUT_DIR = BASE_DIR / "results" / "streaming"/"batches"
 
-def save_monthly_batch(month: str,batch,batch_embeddings):
+def save_monthly_batch(
+    month: str,
+    batch,
+    batch_embeddings,
+    processing_seconds: float,
+):
     """Save one monthly batch and its corresponding embeddings."""
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -31,6 +37,12 @@ def save_monthly_batch(month: str,batch,batch_embeddings):
         "month": month,
         "article_count": int(len(batch)),
         "embedding_dimensions": int(batch_embeddings.shape[1]),
+        "processing_seconds": processing_seconds,
+        "articles_per_second": (
+            len(batch) / processing_seconds
+            if processing_seconds > 0
+            else None
+        ),
         "category_counts": {
             str(category): int(count)
             for category, count in batch["category"].value_counts().items()
@@ -74,6 +86,7 @@ class StreamingEngine:
                 continue
 
             print(f"Processing month: {month} with {len(batch)} articles.")
+            processing_started = time.perf_counter()
             article_ids = batch["id"].to_numpy(dtype=int)
             if np.any(article_ids < 0) or np.any(article_ids >= len(embeddings)):
                 raise ValueError(
@@ -83,12 +96,14 @@ class StreamingEngine:
 
              # Step 1: Assign articles to existing or emerging topics.
             topic_labels = tracker.process_batch(batch_embeddings)
+            processing_seconds = time.perf_counter() - processing_started
             
             #step 2: Save articles and their embeddings
             save_monthly_batch(
                 month=month,
                 batch=batch,
                 batch_embeddings=batch_embeddings,
+                processing_seconds=processing_seconds,
             )
             
             # Step 3: Save topic assignments and monthly summary.

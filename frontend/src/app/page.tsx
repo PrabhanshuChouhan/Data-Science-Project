@@ -45,6 +45,7 @@ type DashboardData = {
   categories: Row[];
   drift: Row[];
   network: Row[];
+  networkEdges: number | null;
   influential: Row[];
   performance: Row[];
 };
@@ -82,6 +83,7 @@ const EMPTY_DATA: DashboardData = {
   categories: [],
   drift: [],
   network: [],
+  networkEdges: null,
   influential: [],
   performance: [],
 };
@@ -126,6 +128,15 @@ function formatNumber(value: any) {
 function formatPercent(value: any) {
   const number = getNumber(value);
   return number === null ? "—" : `${number.toFixed(2)}%`;
+}
+
+function getTopicLabel(
+  topicId: string | number | null | undefined,
+  topicName?: unknown
+) {
+  const name = typeof topicName === "string" ? topicName.trim() : "";
+  const id = String(topicId ?? "").trim();
+  return name || `Topic ${id || "Unknown"}`;
 }
 
 function findKey(row: Row | undefined, candidates: string[]) {
@@ -242,7 +253,11 @@ function DataTable({
                   {row[key] === null || row[key] === undefined
                     ? "—"
                     : typeof row[key] === "number"
-                      ? formatNumber(row[key])
+                      ? key === "pagerank"
+                        ? row[key].toFixed(6)
+                        : key === "growth_percentage"
+                          ? `${formatNumber(row[key])}%`
+                          : formatNumber(row[key])
                       : String(row[key])}
                 </td>
               ))}
@@ -260,6 +275,8 @@ export default function Home() {
   const [error, setError] = useState("");
   const [lastUpdated, setLastUpdated] = useState("");
   const [activeSection, setActiveSection] = useState("overview");
+  const [growthWindow, setGrowthWindow] = useState("24");
+  const [growthChartExpanded, setGrowthChartExpanded] = useState(false);
 
   const loadData = useCallback(async () => {
     setLoading(true);
@@ -285,6 +302,8 @@ export default function Home() {
         ? results[index].value
         : null;
 
+    const networkPayload = value(7);
+
     const failures = results
       .map((result, index) =>
         result.status === "rejected" ? index : -1
@@ -299,7 +318,8 @@ export default function Home() {
       emerging: asArray(value(4)),
       categories: asArray(value(5)),
       drift: asArray(value(6)),
-      network: asArray(value(7)),
+      network: asArray(networkPayload?.nodes),
+      networkEdges: getNumber(networkPayload?.metadata?.total_edges),
       influential: asArray(value(8)),
       performance: asArray(value(9)),
     });
@@ -318,12 +338,32 @@ export default function Home() {
     loadData();
   }, [loadData]);
 
+  const topicNames = useMemo(() => {
+    const names: Record<string, string> = {};
+
+    data.activity.forEach((row) => {
+      const id = String(row.topic_id ?? "");
+      if (id && row.topic_name) {
+        names[id] = getTopicLabel(id, row.topic_name);
+      }
+    });
+
+    data.growth.forEach((row) => {
+      const id = String(row.topic_id ?? "");
+      if (id && row.topic_name && !names[id]) {
+        names[id] = getTopicLabel(id, row.topic_name);
+      }
+    });
+
+    return names;
+  }, [data.activity, data.growth]);
+
   const topicActivityChart = useMemo(() => {
     const grouped: Record<string, Row> = {};
 
     data.activity.forEach((row) => {
       const month = String(row.month ?? "");
-      const topic = `Topic ${row.topic_id}`;
+      const topic = `topic_${row.topic_id}`;
       if (!month) return;
 
       if (!grouped[month]) grouped[month] = { month };
@@ -344,10 +384,14 @@ export default function Home() {
     });
 
     return Object.entries(totals)
-      .map(([id, count]) => ({ id, count }))
+      .map(([id, count]) => ({
+        id,
+        count,
+        name: topicNames[id] || getTopicLabel(id),
+      }))
       .sort((a, b) => b.count - a.count)
       .slice(0, 8);
-  }, [data.activity]);
+  }, [data.activity, topicNames]);
 
   const latestActivity = useMemo(() => {
     const months = [...new Set(data.activity.map((row) => row.month))]
@@ -357,12 +401,72 @@ export default function Home() {
     const latest = months[months.length - 1];
     return data.activity
       .filter((row) => row.month === latest)
+      .map((row): Row => ({
+        ...row,
+        topic_name: getTopicLabel(
+          row.topic_id,
+          row.topic_name || topicNames[String(row.topic_id)]
+        ),
+      }))
       .sort(
         (a, b) =>
           (getNumber(b.article_count) || 0) -
           (getNumber(a.article_count) || 0)
       );
-  }, [data.activity]);
+  }, [data.activity, topicNames]);
+
+  const topicGrowthChart = useMemo(() => {
+    const topicIds = new Set(topTopics.slice(0, 5).map((topic) => topic.id));
+    const grouped: Record<string, Row> = {};
+
+    data.growth.forEach((row) => {
+      const month = String(row.month ?? "");
+      const topicId = String(row.topic_id ?? "");
+      if (!month || !topicIds.has(topicId)) return;
+
+      if (!grouped[month]) grouped[month] = { month };
+      grouped[month][`topic_${topicId}`] = getNumber(row.growth_percentage);
+    });
+
+    return Object.values(grouped).sort((a, b) =>
+      String(a.month).localeCompare(String(b.month))
+    );
+  }, [data.growth, topTopics]);
+
+  const visibleTopicGrowth = useMemo(
+    () =>
+      growthWindow === "all"
+        ? topicGrowthChart
+        : topicGrowthChart.slice(-Number(growthWindow)),
+    [growthWindow, topicGrowthChart]
+  );
+
+  const latestTopicGrowth = useMemo(() => {
+    const latestMonth = data.growth.reduce((latest, row) => {
+      const month = String(row.month ?? "");
+      return month > latest ? month : latest;
+    }, "");
+
+    return data.growth
+      .filter((row) => String(row.month ?? "") === latestMonth)
+      .map((row): Row => {
+        const previous = getNumber(row.previous_articles) ?? 0;
+        const current = getNumber(row.current_articles) ?? 0;
+
+        return {
+          ...row,
+          topic_name: getTopicLabel(
+            row.topic_id,
+            row.topic_name || topicNames[String(row.topic_id)]
+          ),
+          article_change: current - previous,
+        };
+      })
+      .sort(
+        (a, b) =>
+          Math.abs(b.article_change) - Math.abs(a.article_change)
+      );
+  }, [data.growth, topicNames]);
 
   const categoryChart = useMemo(() => {
     if (!data.categories.length) return [];
@@ -621,8 +725,8 @@ export default function Home() {
                           <Line
                             key={topic.id}
                             type="monotone"
-                            dataKey={`Topic ${topic.id}`}
-                            name={`Topic ${topic.id}`}
+                            dataKey={`topic_${topic.id}`}
+                            name={topic.name}
                             stroke={COLORS[index % COLORS.length]}
                             dot={false}
                             strokeWidth={2}
@@ -652,11 +756,10 @@ export default function Home() {
                         <XAxis type="number" stroke="#8998ae" tick={{ fontSize: 10 }} />
                         <YAxis
                           type="category"
-                          dataKey="id"
+                          dataKey="name"
                           stroke="#8998ae"
                           tick={{ fontSize: 10 }}
-                          tickFormatter={(value) => `Topic ${value}`}
-                          width={65}
+                          width={145}
                         />
                         <Tooltip contentStyle={TOOLTIP_STYLE} />
                         <Bar dataKey="count" fill="#2DE2C5" radius={[0, 5, 5, 0]} />
@@ -738,7 +841,7 @@ export default function Home() {
             <div className="two-column">
               <Panel
                 title="Processing performance"
-                description="Processing time and throughput, where available."
+                description="Monthly batch preparation and topic-assignment time and throughput."
               >
                 <DataTable
                   rows={data.performance}
@@ -748,6 +851,7 @@ export default function Home() {
                     "processing_seconds",
                     "articles_per_second",
                   ]}
+                    limit={data.performance.length}
                 />
               </Panel>
 
@@ -757,15 +861,14 @@ export default function Home() {
               >
                 <DataTable
                   rows={latestActivity}
-                  columns={["month", "topic_id", "article_count"]}
+                  columns={["month", "topic_name", "topic_id", "article_count"]}
                 />
               </Panel>
             </div>
 
             <div className="method-note">
-              Processing time and throughput are shown as unavailable when
-              the source dataset contains null values. Monthly article volume
-              is still available.
+              Processing time measures monthly batch preparation and topic
+              assignment; report and file-writing time is excluded.
             </div>
           </section>
 
@@ -802,7 +905,7 @@ export default function Home() {
 
             <Panel
               title="Topic cards"
-              description="Topics ranked by their total article volume."
+              description="Topics ranked by total article volume. Names are generated from each topic's category and headline terms."
             >
               {topTopics.length ? (
                 <div className="topic-grid">
@@ -817,6 +920,7 @@ export default function Home() {
                           style={{ background: COLORS[index % COLORS.length] }}
                         />
                       </div>
+                      <div className="topic-name">{topic.name}</div>
                       <div className="metric-value">
                         {formatNumber(topic.count)}
                       </div>
@@ -829,30 +933,82 @@ export default function Home() {
               )}
             </Panel>
 
-            <div className="two-column">
+            <div
+              className={`two-column growth-chart-grid ${
+                growthChartExpanded ? "expanded" : ""
+              }`}
+            >
               <Panel
-                title="Topic growth"
-                description="Monthly change in topic article counts."
+                title="Monthly topic growth"
+                description="Monthly percentage change for the five highest-volume topics; blank means no prior count. Use the time window to zoom."
               >
-                {data.growth.length ? (
-                  <div className="chart-wrap">
-                    <ResponsiveContainer width="100%" height={280}>
-                      <LineChart data={data.growth.slice(-60)}>
-                        <CartesianGrid stroke="#26364e" strokeDasharray="3 3" />
-                        <XAxis dataKey="month" stroke="#8998ae" tick={{ fontSize: 9 }} minTickGap={35} />
-                        <YAxis stroke="#8998ae" tick={{ fontSize: 10 }} />
-                        <Tooltip contentStyle={TOOLTIP_STYLE} />
-                        <Line
-                          type="monotone"
-                          dataKey="growth_percentage"
-                          name="Growth %"
-                          stroke="#8B9CFF"
-                          dot={false}
-                          strokeWidth={2}
-                        />
-                      </LineChart>
-                    </ResponsiveContainer>
-                  </div>
+                {visibleTopicGrowth.length ? (
+                  <>
+                    <div className="chart-toolbar">
+                      <label className="chart-control">
+                        <span>Time window</span>
+                        <select
+                          value={growthWindow}
+                          onChange={(event) =>
+                            setGrowthWindow(event.target.value)
+                          }
+                        >
+                          <option value="12">Last 12 months</option>
+                          <option value="24">Last 24 months</option>
+                          <option value="36">Last 36 months</option>
+                          <option value="60">Last 60 months</option>
+                          <option value="all">All months</option>
+                        </select>
+                      </label>
+                      <button
+                        type="button"
+                        className="chart-size-button"
+                        aria-expanded={growthChartExpanded}
+                        onClick={() =>
+                          setGrowthChartExpanded((expanded) => !expanded)
+                        }
+                      >
+                        {growthChartExpanded ? "Compact chart" : "Expand chart"}
+                      </button>
+                    </div>
+                    <div className="chart-wrap">
+                      <ResponsiveContainer
+                        width="100%"
+                        height={growthChartExpanded ? 440 : 300}
+                      >
+                        <LineChart data={visibleTopicGrowth}>
+                          <CartesianGrid
+                            stroke="#26364e"
+                            strokeDasharray="3 3"
+                          />
+                          <XAxis
+                            dataKey="month"
+                            stroke="#8998ae"
+                            tick={{ fontSize: 9 }}
+                            minTickGap={35}
+                          />
+                          <YAxis
+                            stroke="#8998ae"
+                            tick={{ fontSize: 10 }}
+                            tickFormatter={(value) => `${value}%`}
+                          />
+                          <Tooltip contentStyle={TOOLTIP_STYLE} />
+                          <Legend wrapperStyle={{ fontSize: 10 }} />
+                          {topTopics.slice(0, 5).map((topic, index) => (
+                            <Line
+                              key={topic.id}
+                              type="monotone"
+                              dataKey={`topic_${topic.id}`}
+                              name={topic.name}
+                              stroke={COLORS[index % COLORS.length]}
+                              dot={false}
+                              strokeWidth={2}
+                            />
+                          ))}
+                        </LineChart>
+                      </ResponsiveContainer>
+                    </div>
+                  </>
                 ) : (
                   <EmptyState />
                 )}
@@ -899,10 +1055,22 @@ export default function Home() {
             </Panel>
 
             <Panel
-              title="Topic growth records"
-              description="Previous and current article counts with calculated growth."
+              title="Latest monthly topic growth"
+              description="Latest month, sorted by absolute article-count change."
             >
-              <DataTable rows={data.growth} />
+              <DataTable
+                rows={latestTopicGrowth}
+                columns={[
+                  "month",
+                  "topic_name",
+                  "topic_id",
+                  "previous_articles",
+                  "current_articles",
+                  "article_change",
+                  "growth_percentage",
+                ]}
+                limit={latestTopicGrowth.length}
+              />
             </Panel>
           </section>
 
@@ -1092,8 +1260,12 @@ export default function Home() {
               />
               <MetricCard
                 title="Network Edges"
-                value="Not provided"
-                description="The current API does not expose edge records"
+                value={
+                  data.networkEdges === null
+                    ? "—"
+                    : formatNumber(data.networkEdges)
+                }
+                description="Edges in the article similarity graph"
                 icon={GitBranch}
                 color="#8B9CFF"
               />
@@ -1226,7 +1398,10 @@ export default function Home() {
               title="Processing performance records"
               description="Monthly article counts and processing measurements."
             >
-              <DataTable rows={data.performance} limit={20} />
+              <DataTable
+                rows={data.performance}
+                limit={data.performance.length}
+              />
             </Panel>
 
             <div className="method-note">

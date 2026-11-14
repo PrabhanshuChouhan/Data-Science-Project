@@ -1,7 +1,8 @@
 
+import json
+import os
 from pathlib import Path
 
-import json
 import pandas as pd
 
 from fastapi import FastAPI
@@ -18,6 +19,16 @@ CATEGORY_DIR = (
     BASE_DIR / "src" / "results" / "streaming" / "analysis"
 )
 
+# Override with comma-separated frontend origins when deploying.
+CORS_ORIGINS = [
+    origin.strip()
+    for origin in os.getenv(
+        "CORS_ORIGINS",
+        "http://localhost:3000,http://127.0.0.1:3000",
+    ).split(",")
+    if origin.strip()
+]
+
 app = FastAPI(
     title="News Stream Intelligence API",
     description="API for streaming topic discovery and trend analysis",
@@ -27,9 +38,9 @@ app = FastAPI(
 # Allow the Next.js frontend to communicate with this API.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Restrict this to the deployed frontend later.
-    allow_credentials=True,
-    allow_methods=["*"],
+    allow_origins=CORS_ORIGINS,
+    allow_credentials=False,
+    allow_methods=["GET"],
     allow_headers=["*"],
 )
 

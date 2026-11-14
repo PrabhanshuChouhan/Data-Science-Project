@@ -5,6 +5,7 @@ import time
 
 import numpy as np
 import pandas as pd
+from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS, TfidfVectorizer
 
 
 BASE_DIR = Path.cwd()
@@ -49,11 +50,160 @@ def load_reports():
     return data
 
 
+def calculate_topic_names(data):
+    """Build readable topic labels from dominant categories and headline terms."""
+
+    assigned = data[data["topic_id"] != -1].copy()
+
+    if assigned.empty:
+        return {}
+
+    assigned["headline"] = (
+        assigned["text"]
+        .fillna("")
+        .astype(str)
+        .str.split(r"\.\s+", n=1)
+        .str[0]
+    )
+
+    topic_documents = (
+        assigned.groupby("topic_id")["headline"]
+        .agg(" ".join)
+        .sort_index()
+    )
+
+    boilerplate = {
+        "photo", "photos", "picture", "pictures", "images", "look", "looks",
+        "day", "days", "tip", "tips", "time", "rise", "huffpost",
+        "huffington", "post", "story", "stories", "read", "watch", "video",
+        "news", "newsbrief", "says", "said", "told", "new", "year", "years",
+        "make", "ways", "best", "like", "daily", "email", "roundup",
+        "morning", "headline", "today", "week", "weeks", "things", "thing",
+        "want", "going", "comes", "coming", "think", "help", "say", "saying",
+        "get", "got", "take", "takes", "just", "does", "did", "really", "way",
+        "monday", "tuesday", "wednesday", "thursday", "friday", "saturday",
+        "sunday", "january", "february", "march", "april", "may", "june",
+        "july", "august", "september", "october", "november", "december",
+        "sing", "sings", "song", "songs", "know", "need", "quiz", "jan",
+        "feb", "mar", "apr", "jun", "jul", "aug", "sep", "sept", "oct",
+        "nov", "dec", "success", "death", "dead", "died", "brother",
+        "action", "tweet", "tweets", "hill", "huffpollster",
+    }
+
+    vectorizer = TfidfVectorizer(
+        stop_words=sorted(set(ENGLISH_STOP_WORDS) | boilerplate),
+        ngram_range=(1, 2),
+        max_features=30_000,
+        sublinear_tf=True,
+    )
+    topic_terms = vectorizer.fit_transform(topic_documents)
+    feature_names = vectorizer.get_feature_names_out()
+
+    category_counts = (
+        assigned.groupby(["topic_id", "category"])
+        .size()
+        .rename("article_count")
+        .reset_index()
+        .sort_values(
+            ["topic_id", "article_count", "category"],
+            ascending=[True, False, True],
+        )
+        .drop_duplicates("topic_id")
+        .set_index("topic_id")["category"]
+        .to_dict()
+    )
+
+    acronyms = {
+        "Dsm": "DSM",
+        "Epa": "EPA",
+        "Fbi": "FBI",
+        "Gop": "GOP",
+        "Isis": "ISIS",
+        "Lgbtq": "LGBTQ",
+        "Nato": "NATO",
+        "Nra": "NRA",
+        "Us": "US",
+    }
+
+    curated_names = {
+        3: "Food & Drink: Recipes and Cooking",
+        5: "Wellness: Memoirs and Personal Essays",
+        16: "Entertainment: Christmas Movies and Holiday Stories",
+        23: "Politics: Daily News Briefings",
+    }
+
+    topic_names = {}
+    used_names = set()
+
+    for row_index, topic_id in enumerate(topic_documents.index):
+        category = str(category_counts.get(topic_id, "Topic")).title()
+        category_tokens = set(category.lower().replace("&", " ").split())
+        scores = topic_terms.getrow(row_index).toarray().ravel()
+        selected_terms = []
+        term_order = sorted(
+            range(len(scores)),
+            key=lambda index: (
+                scores[index]
+                * (1.1 if " " in feature_names[index] else 1.0),
+                scores[index],
+            ),
+            reverse=True,
+        )
+
+        for term_index in term_order:
+            if scores[term_index] <= 0:
+                break
+
+            term = str(feature_names[term_index])
+
+            if any(character.isdigit() for character in term):
+                continue
+
+            term_tokens = set(term.split())
+            if term in category_tokens:
+                continue
+
+            if any(
+                term_tokens & set(selected.split())
+                for selected in selected_terms
+            ):
+                continue
+
+            selected_terms.append(term)
+            if len(selected_terms) == 3:
+                break
+
+        formatted_terms = [
+            " ".join(
+                acronyms.get(word, word)
+                for word in term.title().split()
+            )
+            for term in selected_terms
+        ]
+
+        if formatted_terms:
+            topic_name = f"{category}: {', '.join(formatted_terms[:2])}"
+            if topic_name in used_names and len(formatted_terms) > 2:
+                topic_name = f"{category}: {', '.join(formatted_terms)}"
+        else:
+            topic_name = f"{category} Topic"
+
+        topic_name = curated_names.get(int(topic_id), topic_name)
+
+        if topic_name in used_names:
+            topic_name = f"{topic_name} ({int(topic_id)})"
+
+        topic_names[int(topic_id)] = topic_name
+        used_names.add(topic_name)
+
+    return topic_names
+
+
 # --------------------------------------------------
 # 2. Topic activity across months
 # --------------------------------------------------
 
-def calculate_topic_activity(data):
+def calculate_topic_activity(data, topic_names=None):
 
     activity = (
         data[data["topic_id"] != -1]
@@ -61,6 +211,9 @@ def calculate_topic_activity(data):
         .size()
         .reset_index(name="article_count")
     )
+
+    if topic_names is not None:
+        activity["topic_name"] = activity["topic_id"].map(topic_names)
 
     return activity
 
@@ -155,6 +308,14 @@ def calculate_topic_growth(activity):
     ).sort_index()
 
     growth_records = []
+    topic_names = {}
+
+    if "topic_name" in activity.columns:
+        topic_names = (
+            activity.drop_duplicates("topic_id")
+            .set_index("topic_id")["topic_name"]
+            .to_dict()
+        )
 
     for topic_id in pivot.columns:
 
@@ -173,6 +334,10 @@ def calculate_topic_growth(activity):
             growth_records.append({
                 "month": counts.index[i],
                 "topic_id": int(topic_id),
+                "topic_name": topic_names.get(
+                    int(topic_id),
+                    f"Topic {topic_id}",
+                ),
                 "previous_articles": previous,
                 "current_articles": current,
                 "growth_percentage": growth_percentage
@@ -232,7 +397,8 @@ def run_evaluation():
 
     print("Calculating topic activity...")
 
-    activity = calculate_topic_activity(data)
+    topic_names = calculate_topic_names(data)
+    activity = calculate_topic_activity(data, topic_names)
 
     print("Calculating topic stability...")
 

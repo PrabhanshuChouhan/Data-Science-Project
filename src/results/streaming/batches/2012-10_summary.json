@@ -2,6 +2,8 @@
     "month": "2012-10",
     "article_count": 1997,
     "embedding_dimensions": 768,
+    "processing_seconds": 0.16949569998541847,
+    "articles_per_second": 11782.009810111995,
     "category_counts": {
         "WELLNESS": 692,
         "STYLE & BEAUTY": 359,

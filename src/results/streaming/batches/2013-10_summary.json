@@ -2,6 +2,8 @@
     "month": "2013-10",
     "article_count": 2202,
     "embedding_dimensions": 768,
+    "processing_seconds": 0.2432975000119768,
+    "articles_per_second": 9050.647868932489,
     "category_counts": {
         "WELLNESS": 726,
         "PARENTING": 386,

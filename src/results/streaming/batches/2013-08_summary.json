@@ -2,6 +2,8 @@
     "month": "2013-08",
     "article_count": 1940,
     "embedding_dimensions": 768,
+    "processing_seconds": 0.1443868999776896,
+    "articles_per_second": 13436.121977130648,
     "category_counts": {
         "WELLNESS": 595,
         "TRAVEL": 328,

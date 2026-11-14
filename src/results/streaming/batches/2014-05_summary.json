@@ -2,6 +2,8 @@
     "month": "2014-05",
     "article_count": 924,
     "embedding_dimensions": 768,
+    "processing_seconds": 0.05580860000918619,
+    "articles_per_second": 16556.58805001215,
     "category_counts": {
         "POLITICS": 342,
         "WELLNESS": 241,
